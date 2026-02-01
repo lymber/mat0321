@@ -26,13 +26,17 @@ and view it with
 pretext view course
 ```
 
-Also included is the start of a slide deck.  This is a single file in the `source/slides` folder.  You could use this for all the slides in a course (as a single slideshow), or create separate slideshows.  In that case, you might want to build those separate ones with something like,
+Also included is the start of a slide deck.  This is a single file in
+the `source/slides` folder.  You could use this for all the slides in a
+course (as a single slideshow), or create separate slideshows.  In that
+case, you might want to build those separate ones with something like,
 
 ```bash
 pretext build slides
 ```
 
-In either case, you will need to uncomment the "slide" targets inside `project.ptx`.
+In either case, you will need to uncomment the "slide" targets inside
+`project.ptx`.
 
 ### Creating a landing page for multiple targets
 
@@ -42,7 +46,15 @@ Build the entire course with:
 pretext build --deploys
 ```
 
-This will build the course "book" (and the slide deck if you uncomment that target in `project.ptx`).  You can create a landing page with links to each of these automatically with the command,
+This will build the course "book" (and the slide deck if you uncomment
+that target in `project.ptx`). Unfortunately deploying to github pages
+are not fully functional, so you should have a `gh-pages` branch and
+put the contents of `output/course` besides `slides` and
+`slides-annotated` if any to it. Then push that brach. In Settings, go
+to Pages and set that `gh-pages` (`/ (root)`) in the Brand under Build
+and Deploy section. 
+
+<!-- You can create a landing page with links to each of these automatically with the command,
 
 ```bash
 pretext deploy --stage-only
@@ -115,3 +127,5 @@ Open the file `.devcontainer/devcontainer.json` and edit the line that contains
 ```
 
 VS Code should prompt you to rebuild your codespace, which you should do (you do not need to do a "full rebuild" though).  This docker image contains sagemath and you should be able to add sageplots and generate them successfully now.
+
+-->
