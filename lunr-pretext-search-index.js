@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Syllabus",
-  "body": " Syllabus        Course Information  This is the syllabus for course name (MATH xxx, section xxx) for [term] 20xx. It is a [n] credit course.    Instructor  Prof. Lastname, Office Location, prof.lastname@example.edu .    Student Hours  TBD    Class meets  course times and location.    Course Description  course description from catalog    Prerequisite  list of prerequisites    Textbook and course materials   textbook name by textbook author.       Course Overview        Assessments and Grades     "
+  "body": " Syllabus        Informações da disciplinas  This is the syllabus for course name (MATH xxx, section xxx) for [term] 20xx. It is a [4] credit course.    Ministrante  Prof. Alexandre Lymberopoulos, Sala 151-A, lymber@ime.usp.br .    Horários de Atendimento:  A definir    Aulas  Terças: 08:00 - 09:40 (Sala B-xx)  Quintas: 10:00 - 11:40 (Sala B-xx)    Descrição e Ementa  course description from catalog    Pré-requisitos  list of prerequisites    Bibliografia   textbook name by textbook author.       Course Overview        Assessments and Grades     "
 },
 {
   "id": "sec-course-info-2",
