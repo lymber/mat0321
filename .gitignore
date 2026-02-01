@@ -1,0 +1,9 @@
+# PreTeXt build artifacts
+output/
+logs/
+tmp/
+
+# OS/editor junk
+*~
+*.swp
+.DS_Store
