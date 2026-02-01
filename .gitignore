@@ -2,6 +2,7 @@
 output/
 logs/
 tmp/
+.error_schema.log
 
 # OS/editor junk
 *~
