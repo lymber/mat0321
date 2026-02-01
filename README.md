@@ -17,7 +17,7 @@ Requires:
 
 Build HTML notes:
 ```bash
-pretext build web
+pretext build
 ```
 
 and view it with
