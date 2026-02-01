@@ -1,8 +1,11 @@
 # MAT0321 - Cálculo Integral
 
-PreTeXt source for MAT0321 - Cálculo Integral (Integral Calculus) taught at Instituto de Matemática e Estatística da Universidade de São Paulo in the firmst semester od 2026.
+PreTeXt source for MAT0321 - Cálculo Integral (Integral Calculus) taught
+at Instituto de Matemática e Estatística da Universidade de São Paulo in
+the firmst semester od 2026.
 
-This course aims to stabilh the Stokes theorem in the context of differtial forms and submanifolds of $\mathbb{R}^n$.
+This course aims to stabilh the Stokes theorem in the context of
+differtial forms and submanifolds of the Euclidian $n$-dimensional space. 
 
 ## Build
 
