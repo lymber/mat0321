@@ -9,39 +9,42 @@
   </introduction>
   <!-- Include chapters -->
   <subsection xml:id="sec-course-info">
-    <title>Course Information</title>
+    <title>Informações da disciplinas</title>
 
     <p>
       This is the syllabus for <term>course name (MATH xxx, section xxx)</term> for [term] 20xx.
-      It is a [n] credit course.
+      It is a [4] credit course.
       <!-- use a description list (dl) for short items -->
       <dl>
         <li>
-          <title>Instructor</title>
+          <title>Ministrante</title>
 
           <p>
-            Prof. Lastname, Office Location, <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
+            Prof. Alexandre Lymberopoulos, Sala 151-A, <url href="mailto:lymber@ime.usp.br">lymber@ime.usp.br</url>.
           </p>
         </li>
 
         <li>
-          <title>Student Hours</title>
+          <title>Horários de Atendimento:</title>
 
           <p>
-            TBD
+            A definir
           </p>
         </li>
 
         <li>
-          <title>Class meets</title>
+          <title>Aulas</title>
 
           <p>
-            course times and location.
+            Terças: 08:00 - 09:40 (Sala B-xx)
+          </p>
+	  <p>
+            Quintas: 10:00 - 11:40 (Sala B-xx)
           </p>
         </li>
 
         <li>
-          <title>Course Description</title>
+          <title>Descrição e Ementa</title>
 
           <p>
             course description from catalog
@@ -49,7 +52,7 @@
         </li>
 
         <li>
-          <title>Prerequisite</title>
+          <title>Pré-requisitos</title>
 
           <p>
             list of prerequisites
@@ -57,7 +60,7 @@
         </li>
 
         <li>
-          <title>Textbook and course materials</title>
+          <title>Bibliografia</title>
 
           <p>
             <pubtitle>textbook name</pubtitle>

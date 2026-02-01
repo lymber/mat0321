@@ -8,7 +8,7 @@
   <book>
     <title>Cálculo Integral</title>
 
-    <subtitle>MAT0321 -  Primeiro Semestre 2026</subtitle>
+    <subtitle>MAT0321 -  2026/1</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
