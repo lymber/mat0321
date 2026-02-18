@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="activity-01-intro-activity">
+<worksheet xml:id="lista01">
   <title>Lista 01</title>
 
   <!-- Optional introduction -->
@@ -12,31 +12,312 @@
   </introduction>
 
   <!-- Exercises start here. -->
-  <exercise workspace="2in">
+  <exercise>  <!-- option to leave blank space: workspace="2in" -->
     <statement>
       <p>
-        This is the first exercise.
+        Justifique com detalhes a validade da propriedade (4) utilizada
+        na demonstração feita em sala do Teorema da Função Inversa.
       </p>
     </statement>
-    <hint>
-      <p>
-	Uma boa dica
-      </p>
-    </hint>
   </exercise>
 
-  <exercise workspace="2in">
+  <exercise>
     <statement>
       <p>
-        This is the second exercise.
+         Seja <m>f\colon\R^2\to\R^2</m> dada por
+	 <m>f(x,y)=(x^2-y^2,2xy)</m>.
+	 <ol marker="a.">
+	   <li>
+	     Mostre que <m>f</m> é injetora no conjunto
+	     <m>A=\big\{(x,y)\in\R^2\colon x&gt;0\big\}</m>.
+	   </li>
+	   <li>
+	     Descreva o conjunto <m>f(A)</m>.
+	   </li>
+	   <li>
+	     Denotando por
+	     <m>g</m> a inversa de <m>f</m>, determine, se possível,
+	     <m>Dg(0,1)</m>.
+	   </li>
+	 </ol>
       </p>
     </statement>
-    <hint>
-      <p>
-	Uma boa dica
-      </p>
-    </hint>
   </exercise>
 
-  
+  <exercise>
+    <statement>
+      <p>
+	Repita o exercício acima para <m>f\colon\R^2\to\R^2</m> dada por
+	<m>f(x,y)=(e^x\cos y, e^x\sin y)</m>, sendo o conjunto
+	<m>A=\big\{(x,y)\in\R^2\colon 0&lt;y&lt;\pi/2\big\}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Considere a função <m>F\colon\R^3\to\R</m> dada por
+	<me>F(x,y,z)=z^3+3z+2x^4+y^2-x^2-2y.</me>
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que a equação <m>F(x,y,z)=0</m> define uma função
+	    <m>z=f(x,y)</m> de classe <m>\mathscr{C}^2</m> em todo o
+	    plano.
+	  </li>
+	  <li>
+	    Determine os pontos críticos de <m>f</m>.
+	  </li>
+	  <li>
+	    Classifique esses pontos críticos quanto a máximos locais,
+	    mínimos locais ou selas.
+	  </li>
+	  <li>Escreva o polinômio de
+	    Taylor de ordem 1 e seu resto para <m>f</m> em torno de
+	    <m>(1,1)</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f\colon[0,2]\to\R^*_+</m> uma função contínua tal que
+	<m>\displaystyle \int_0^1
+	f(t)\,dt=\int_1^2f(t)\,dt=1</m>. Mostre que existe função
+	<m>g\colon[0,1]\to[0,2]</m>, de classe <m>\mathscr{C}^1</m>, tal
+	que <m>\displaystyle \int_x^{g(x)}f(t)\,dt=1</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Identificando os espaço das matrizes quadradas de ordem <m>n</m>,
+	<m>M_n(\R)</m>, com <m>\R^{n^2}</m> definimos a função
+	<m>f\colon\R^{n^2}\to\R^{n^2}</m> por <m>f(X)=X^2</m>.
+	<ol marker="a.">
+	  <li>
+	    Mostre que <m>f</m> é de classe <m>\mathscr{C}^\infty</m>.
+	  </li>
+	  <li>
+	    Determine <m>Df(X_0)</m> para cada <m>X_0\in\R^{n^2}</m>.
+	  </li>
+	  <li>
+	    Mostre que, numa vizinhança de <m>Y_0=\id</m>, cada matriz
+	    possui uma única raiz quadrada, isto é, para cada <m>Y</m>
+	    nessa vizinhança existe uma única matriz <m>X</m> tal que
+	    <m>X^2=Y</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>SL(3)=\big\{A\in M_3(\R)\colon\det A=1\big\}</m>.
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que <m>SL(3)</m> é, localmente, gráfico de uma função de
+	    classe <m>\mathscr{C}^\infty</m>.
+	  </li>
+	  <li>
+	    Determine a dimensão do plano tangente em cada ponto desse
+	    gráfico.
+	  </li>
+	  <li>
+	    Explicite o plano tangente a esse gráfico em <m>X_0=\id</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>S=\big\{A\in M_2(\R)\colon\posto A=1\big\}</m>.
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que <m>S</m> é, localmente, gráfico de uma função real de
+	    classe <m>\mathscr{C}^1</m>.
+	  </li>
+
+	  <li>
+	    Determine a dimensão do plano tangente a esse gráfico em
+	    <m>A_0= \begin{bmatrix} 0&amp;0\\ 0&amp;1 \end{bmatrix}</m>.
+	  </li>
+	</ol>
+
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>p(x)=a_0+a_1x+a_2x^2+\cdots+a_nx^n</m> um polinômio com
+	coeficientes reais tal que <m>x_0</m> é uma raiz real simples de
+	<m>p(x)</m>.
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que todo polinômio de grau <m>n</m> ``suficientemente
+	    próximo'' de <m>p(x)</m> tem uma raiz real pŕoxima de
+	    <m>x_0</m> que varia suavemente em termos dos coeficientes do
+	    polinômio.
+	  </li>
+	  <li>
+	    Determine a diferencial dessa função que
+	    associa os coeficientes do polinômio a essa raiz simples.
+	  </li>
+	</ol>
+      </p>
+
+      <p>
+	Pode-se obter resultado semelhante se a raiz de <m>p(x)</m> não é
+	simples?  Dê exemplos.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f\colon\R^m\times\R^n\to\R^n</m> uma função de classe
+	<m>\mathscr{C}^1</m>. Para cada <m>x\in\R^m</m> considere a
+	função <m>f_x:\R^n\to\R^n</m> dada por
+	<m>f_x(y)=f(x,y)</m>. Suponha que exista <m>a\in\R^m</m> tal
+	que <m>f_a</m> tem um ponto fixo <m>b\in\R^n</m>, isto é,
+	<m>f_a(b)=b</m> e que <m>Df_a(b)</m> é uma transformação linear
+	que não tem <m>1</m> como autovalor. Mostre que, para <m>x</m>
+	suficientemente próximo de <m>a</m> a função <m>f_x</m> tem um
+	único ponto fixo próximo de <m>b</m> que varia suavemente com
+	<m>x</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Demonstre a seguinte versão da forma local das imersões:
+	<theorem >
+	  <statement>
+	    <p>
+	      Se <m>f\colon A\to\R^{n+p}</m>, de classe
+	      <m>\mathscr{C}^1</m> no aberto <m>A\subset\R^n</m>, é uma
+	      imersão em <m>x_0\in A</m> então existe um difeomorfismo
+	      <m>h\colon W\to U\times V</m> entre os abertos <m>W</m>,
+	      contendo <m>f(x_0)</m> e <m>U\times V\subset\R^n\times
+	      R^p</m>, contendo <m>(x_0,0)</m>, tal que <m>h\circ
+	      f(x)=(x,0)</m> para todo <m>x\in U</m>.
+	    </p>
+	  </statement>
+	</theorem>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>f\colon A\subset\R^{n+p}\to\R^p</m> é de classe
+	<m>\mathscr{C}^1</m> no aberto <m>A</m> com <m>n>0</m> então
+	<m>f</m> não é injetora.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f\colon A\to\R^k</m> uma função de classe
+	<m>\mathscr{C}^1</m> no aberto <m>A\subset\R^{n+k}</m>. Um vetor
+	<m>c\in\R^k</m> é <term>valor regular</term> de <m>f</m> se
+	<m>Df(x)</m> é sobrejetora, para todo <m>x\in f^{-1}(c)</m>.
+      </p>
+
+      <p>
+	Mostre que o gráfico de qualquer função <m>g\colon
+	A\subset\R^n\to\R^k</m> é a imagem inversa de um valor regular.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que a curva em <m>\R^3</m> dada pelo sistema <m>
+	\begin{cases} x^2+y^2&amp;=&amp;1\\ x^2+z^2&amp;=&amp;1
+	\end{cases}</m> não é a imagem inversa de um valor
+	regular.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	O cone <m>z^2=x^2+y^2</m> é imagem inversa de valor regular?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f\colon \R^3\to\R</m> dada por
+	<m>f(x,y,z)=z^2+\big(2-\sqrt{x^2+y^2}\big)^2</m>. Mostre que
+	<m>1</m> é valor regular de <m>f</m> e descreva
+	<m>f^{-1}(1)</m>.
+      </p>
+
+      <p>
+	Mostre ainda que <m>f^{-1}(1)</m> é gráfico de uma função
+	<m>g\colon A\subset\R^2\to\R</m> numa vizinhança de
+	<m>(1,0,0)</m>. Determine o plano tangente ao gráfico de
+	<m>g</m> nesse ponto.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>c</m> é valor regular de <m>f</m> então, para
+	cada <m>x_0\in f^{-1}(c)</m> existem abertos <m>U\subset\R^n</m>
+	e <m>V\subset\R^k</m> tais que <m>f^{-1}(c)\cap (U\times V)</m>
+	é o gráfico de uma função <m>g\colon U\to V</m> de classe
+	<m>\mathscr{C}^1</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>\sigma\colon\R^2\to\R^3</m> uma imersão injetora de
+	classe <m>\mathscr{C}^1</m> e <m>\gamma\colon\R\to\R^3</m> uma curva
+	de classe <m>\mathscr{C}^1</m> tal que
+	<m>\gamma(\R)\subset\sigma(\R^2)</m>.
+      </p>
+
+      <p>
+	Mostre que existem <m>\delta>0</m> e
+	<m>\alpha\colon]-\delta,\delta[\to\R^2</m>, de classe
+	<m>\mathscr{C}^1</m> tal que
+	<m>\gamma|_{]-\delta,\delta[}=\sigma\circ\alpha</m>.
+      </p>
+    </statement>
+  </exercise>
+
 </worksheet>
