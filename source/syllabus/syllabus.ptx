@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Syllabus</title>
+  <title>Ementa</title>
 
   <introduction>
-    <p>
+    <p>Bem vindos ao curso de Cálculo Integral, oferecido para os alunos
+    do Bacharelado em Matemática do IME-USP.
     </p>
   </introduction>
   <!-- Include chapters -->
   <subsection xml:id="sec-course-info">
-    <title>Informações da disciplinas</title>
+    <title>Informações da disciplina</title>
 
     <p>
-      This is the syllabus for <term>course name (MATH xxx, section xxx)</term> for [term] 20xx.
-      It is a [4] credit course.
+      Este é o conjunto de informações para o <term>Cálculo Integral
+      (MAT0321)</term> no primeiro semestre de 2026, que consiste de 4
+      créditos-aula, ou seja 4 horas-aula semanais, totalizando 60 horas-aula.
       <!-- use a description list (dl) for short items -->
       <dl>
         <li>
@@ -21,14 +23,6 @@
 
           <p>
             Prof. Alexandre Lymberopoulos, Sala 151-A, <url href="mailto:lymber@ime.usp.br">lymber@ime.usp.br</url>.
-          </p>
-        </li>
-
-        <li>
-          <title>Horários de Atendimento:</title>
-
-          <p>
-            A definir
           </p>
         </li>
 
@@ -44,18 +38,47 @@
         </li>
 
         <li>
+          <title>Horários de Atendimento:</title>
+
+          <p>
+            A definir
+          </p>
+        </li>
+
+	<li>
+	  <title>Monitoria</title>
+
+	  <p>A definir</p>
+	</li>
+
+        <li>
           <title>Descrição e Ementa</title>
 
           <p>
-            course description from catalog
+            Objetivos: Estudo da integral de Riemann em <m>\R^n</m>,
+	    integração de formas diferenciais, Teorema de Stokes.
           </p>
+
+	  <p> Conteúdo Programático:
+	  <ol>
+	    <li>Integral de Riemann em <m>\R^n</m>. Integrabilidade de
+	    funções contínuas. Critérios de integrabilidade.Demonstração
+	    do teorema de mudança de variáveis e de Fubini.</li>
+	    <li>Formas diferenciais em <m>\R^n</m>. Campos
+	    vetoriais. Relação entre formas e operadores vetoriais.</li>
+	    <li>Teorema de Stokes (em linguagem de formas
+	    diferenciais). Aplicações à análise vetorial clássica.</li>
+	    <li>Formas exatas e formas fechadas.</li>
+	    <li>Tópicos adicionais se o tempo permitir.</li>
+	  </ol>
+	  </p>
         </li>
 
         <li>
           <title>Pré-requisitos</title>
 
           <p>
-            list of prerequisites
+            MAT0311 - Cálculo Diferencial e Integral V
           </p>
         </li>
 
@@ -63,27 +86,105 @@
           <title>Bibliografia</title>
 
           <p>
-            <pubtitle>textbook name</pubtitle>
-            by textbook author.
+            <pubtitle>Calculus on Manifolds: A Modern Approach to Classical Theorems of Advanced Calculus</pubtitle>
+            de Michael Spivak.
           </p>
+
+	  <p>
+            <pubtitle>Analisys on Manifolds</pubtitle>
+            de James R. Munkres.
+          </p>
+
+	  <p>
+	    <pubtitle>Um curso de Análise, volume 2</pubtitle> de Elon
+	    Lages Lina.
+	  </p>
         </li>
       </dl>
     </p>
 
   <!-- Use paragraphs to break apart subsections -->
     <paragraphs>
-      <title>Course Overview</title>
+      <title>Descrição do Curso</title>
 
       <p>
+	Neste curso vamos generalizar, na verdade unificar, os
+	teoremas do cálculo vetorial vistos para curvas e superfícies em
+	<m>\R^2</m> e <m>\R^3</m>, a saber os teoremas de Green, Gauss e
+	Stokes. Para isso começamos retomando os principais resultados
+	sobre funções diferenciáveis de <m>\R^m</m> em <m>\R^n</m>: os
+	teoremas da função inversa, da função implícita, do posto e as
+	formas locais das imersões e submersões.
+      </p>
+      <p>
+	Passamos em seguida para a teoria de integração para funções
+	<m>f\colon\R^n\to\R</m> examinando os teoremas de Fubini e
+	mudança de variáveis nesse contexto. Tudo isso é bastante
+	análogo ao que já foi visto em cursos anteriores.
+      </p>
+      <p>A novidade começa com a teoria de formas diferenciais, para as
+      quais começamos estudando aplicações multilineares do ponto de
+      vista algébrico para só então "temperar" isso com derivadas e
+      campos vetoriais. Em seguida estudamos as subvariedades do
+      <m>\R^n</m> e condições para orientabilidade das mesmas.</p>
+      <p>Com isso podemos definir a integral de uma forma diferencial
+      sobre uma variedade, que é uma maneira de estudar objetos
+      geométricos e analíticos de maneira global. Finalmente enunciamos
+      o teorema de Stokes e vai ser muito legal que ele é nada mais do
+      que uma generalização do Teorema Fundamental do Cálculo, visto no
+      primeiro semestre da graduação.</p>
+      <p>
+	Se o tempo permitir, vamos estudar a relação entre condições
+	sobre formas diferenciais e a topologia do espaço onde elas
+	estão definidas, através dos grupos de cohomologia de de Rham.
       </p>
     </paragraphs>
   </subsection>
 
   <!-- Other subsections for larger dividers -->
   <subsection xml:id="sec-assessments">
-    <title>Assessments and Grades</title>
+    <title>Avaliação e Notas</title>
 
     <p>
+      A avaliação do curso consistirá de três provas e a entrega
+      periódica de exercícios.
     </p>
+
+    <dl>
+      <li>
+	<title>Provas:</title>
+
+	<p>
+	  <strong>P<sub>1</sub></strong>: data
+	</p>
+	<p>
+	  <strong>P<sub>2</sub></strong>: data
+	</p>
+	<p>
+	  <strong>P<sub>3</sub></strong>: data
+	</p>
+
+      </li>
+
+      <li>
+	<title>Exercícios:</title>
+
+	<p>
+	  Veja em <xref ref="homework" text="custom">Entregas</xref>.
+	</p>
+
+      </li>
+    </dl>
+
+    <dl>
+      <li>
+	<title>Notas na disciplina:</title>
+
+	<p>
+	  Veja <url href="https://ime.usp.br/">aqui</url>.
+	</p>
+
+      </li>
+    </dl>
   </subsection>
 </section>
