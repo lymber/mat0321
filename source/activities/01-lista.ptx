@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-01-intro-activity">
+  <title>Lista 01</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Primeira Lista de Exercícios.
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        This is the first exercise.
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Uma boa dica
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        This is the second exercise.
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Uma boa dica
+      </p>
+    </hint>
+  </exercise>
+
+  
+</worksheet>
