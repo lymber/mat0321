@@ -3,7 +3,8 @@
 <!-- first chapter. Fill in and comment/uncomment to see how this -->
 <!-- works. -->
 
-<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude"
+	     xml:id="frontmatter">
   <bibinfo>
     <author>
       <personname>Prof. Alexandre Lymberopoulos</personname>
@@ -11,7 +12,8 @@
       <institution>Universidade de São Paulo</institution>
     </author>
     <date>
-      Last Updated: <today />
+      Última atualização: <today />.
+      <!-- , <timeofday />. -->
     </date>
   </bibinfo>
 
