@@ -13,7 +13,7 @@
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
 
-    <chapter xml:id="course-documents">
+    <chapter xml:id="documentos">
       <title>Informações</title>
 
       <introduction>
@@ -30,7 +30,7 @@
       <xi:include href="./syllabus/aval.ptx" />
     </chapter>
 
-    <chapter xml:id="course-notes">
+    <chapter xml:id="cronograma">
       <title>Andamento das Aulas</title>
 
       <introduction>
@@ -48,7 +48,7 @@
 
     </chapter>
 
-    <chapter xml:id="activities">
+    <chapter xml:id="listas">
       <title>Listas de Exercícios</title>
 
       <introduction>
@@ -63,7 +63,7 @@
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
-    <chapter xml:id="handouts">
+    <chapter xml:id="resumos">
       <title>Resumos</title>
 
       <introduction>
@@ -77,7 +77,7 @@
       <xi:include href="./handouts/handout-template.ptx"/>
     </chapter>
 
-    <chapter xml:id="homework">
+    <chapter xml:id="tarefas">
       <title>Entregas</title>
 
       <!-- Include homework files -->
