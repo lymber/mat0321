@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+<pretext xml:lang="pt-BR" xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- Include common macros etc: -->
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
@@ -14,20 +14,23 @@
     <xi:include href="./frontmatter.ptx" />
 
     <chapter xml:id="course-documents">
-      <title>Course Documents</title>
+      <title>Documentos</title>
 
       <!-- Course syllabus -->
       <xi:include href="./syllabus/syllabus.ptx" />
-      <!-- Other documents could go here, like a schedule, project description, etc. -->
+      <!-- Other documents could go here, like a schedule, project
+	   description, etc. -->
     </chapter>
 
     <chapter xml:id="course-notes">
-      <title>Course Notes</title>
+      <title>Andamento das Aulas</title>
 
       <introduction>
         <p>
-          The following notes are intended to remind you what we covered each week.
-          They are not a substitute for attending class and not a substitute for reading the textbook.
+          A seguir apresentamos uma lista curta dos tópicos abordados em
+	  cada aula, para lembrá-los do que foi visto e ajudar a manter
+	  um ritmo de estudos. Isto não substitui a presença às aulas,
+	  tampouco a leitura dos textos de referência.
         </p>
       </introduction>
 
@@ -37,13 +40,12 @@
 
     </chapter>
 
-
     <chapter xml:id="activities">
-      <title>In-Class Activities</title>
+      <title>Listas de Exercícios</title>
 
       <introduction>
         <p>
-          These are copies of the in-class activities distributed during the semester.
+          Estas são as listas de exercícios utilizadas durante o semestre.
         </p>
       </introduction>
 
@@ -54,16 +56,24 @@
     </chapter>
 
     <chapter xml:id="handouts">
-      <title>Handouts</title>
+      <title>Resumos</title>
+
+      <introduction>
+	<p>
+	  Aqui estão resumos, com principais resultados e definições
+	  abordados nas aulas.
+	</p>
+      </introduction>
+
       <!-- Include handouts -->
       <xi:include href="./handouts/handout-template.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">
-      <title>Homework</title>
+      <title>Entregas</title>
 
       <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
+      <xi:include href="./homework/homework-01.ptx" />
 
     </chapter>
 
