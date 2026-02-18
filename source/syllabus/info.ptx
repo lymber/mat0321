@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="info" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Informações da disciplina</title>
+
+    <p>
+      Este é o conjunto de informações para o <term>Cálculo Integral
+      (MAT0321)</term> no primeiro semestre de 2026, que consiste de 4
+      créditos-aula, ou seja 4 horas-aula semanais, totalizando 60 horas-aula.
+      <!-- use a description list (dl) for short items -->
+      <dl>
+	<li>
+          <title>Ministrante</title>
+	  
+          <p>
+            Prof. Alexandre Lymberopoulos, Sala 151-A, <url href="mailto:lymber@ime.usp.br">lymber@ime.usp.br</url>.
+          </p>
+	</li>
+	
+        <li>
+          <title>Aulas</title>
+	  
+          <p>
+            Terças: 08:00 - 09:40 (Sala B-xx)
+          </p>
+	  <p>
+            Quintas: 10:00 - 11:40 (Sala B-xx)
+          </p>
+        </li>
+
+        <li>
+          <title>Horários de Atendimento</title>
+
+          <p>
+            A definir
+          </p>
+        </li>
+
+	<li>
+	  <title>Monitoria</title>
+
+	  <p>A definir</p>
+	</li>
+
+        <li>
+          <title>Descrição e Ementa</title>
+
+          <p>
+            Objetivos: Estudo da integral de Riemann em <m>\R^n</m>,
+	    integração de formas diferenciais, Teorema de Stokes.
+          </p>
+
+	  <p> Conteúdo Programático:
+	  <ol>
+	    <li>Integral de Riemann em <m>\R^n</m>. Integrabilidade de
+	    funções contínuas. Critérios de integrabilidade.Demonstração
+	    do teorema de mudança de variáveis e de Fubini.</li>
+	    <li>Formas diferenciais em <m>\R^n</m>. Campos
+	    vetoriais. Relação entre formas e operadores vetoriais.</li>
+	    <li>Teorema de Stokes (em linguagem de formas
+	    diferenciais). Aplicações à análise vetorial clássica.</li>
+	    <li>Formas exatas e formas fechadas.</li>
+	    <li>Tópicos adicionais se o tempo permitir.</li>
+	  </ol>
+	  </p>
+        </li>
+
+        <li>
+          <title>Pré-requisitos</title>
+
+          <p>
+            MAT0311 - Cálculo Diferencial e Integral V
+          </p>
+        </li>
+
+        <li>
+          <title>Bibliografia</title>
+
+          <p>
+            <pubtitle>Calculus on Manifolds: A Modern Approach to Classical Theorems of Advanced Calculus</pubtitle>
+            de Michael Spivak.
+          </p>
+
+	  <p>
+            <pubtitle>Analisys on Manifolds</pubtitle>
+            de James R. Munkres.
+          </p>
+
+	  <p>
+	    <pubtitle>Um curso de Análise, volume 2</pubtitle> de Elon
+	    Lages Lina.
+	  </p>
+        </li>
+      </dl>
+    </p>
+
+</section>
