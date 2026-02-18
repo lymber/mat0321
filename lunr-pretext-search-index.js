@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Avaliação e Notas",
-  "body": " Avaliação e Notas  A avaliação do curso consistirá de duas provas e a entrega periódica de exercícios:     Provas   P 1 : data   P 2 : data    Exercícios  Veja em Entregas .     O cálculo da média de primeira avaliação é dado por:  é a média aritimética das provas e é a média dos exercícios, depois de descartada a pior nota dentre esses exercícios.  Ao aluno que faltar em uma das provas será ofertada uma avaliação substitutiva, cuja nota entra no lugar daquela onde houve a ausência.     Notas  Veja aqui .     "
+  "body": " Avaliação e Notas  A avaliação do curso consistirá de duas provas e a entrega periódica de exercícios:     Provas   P 1 : data   P 2 : data    Exercícios  Veja em Entregas .     O cálculo da média de primeira avaliação é dado por:  é a média aritimética das provas e é a média dos exercícios, depois de descartada a pior nota dentre esses exercícios.  Ao aluno que faltar em uma das provas será ofertada uma avaliação substitutiva, cuja nota entra no lugar daquela onde houve a ausência.  Caso , o aluno tem direito a uma prova de recuperação, , que será sua nota de segunda avaliação.     Notas  Veja aqui .     "
 },
 {
   "id": "notes-week-01",
