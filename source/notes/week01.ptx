@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-week-01">
-  <title>Week 1</title>
+  <title>Semana 01</title>
 
   <introduction>
     <p>
-      This is an outline of the topics we covered in the first week of class.
+      Linhas gerais do que foi coberto na primeira semana de aulas.
     </p>
   </introduction>
 
   <!-- Can also be <handout> instead of <subsection> to get a printable version -->
   <subsection>
-    <title>Monday 8/22</title>
+    <title>24/02 <ndash />  Terça</title>
 
     <p>
     </p>
@@ -19,15 +19,7 @@
 
 
   <subsection>
-    <title>Wednesday 8/24</title>
-
-    <p>
-    </p>
-  </subsection>
-
-
-  <subsection>
-    <title>Friday 8/26</title>
+    <title>26/02 <ndash /> Quinta</title>
 
     <p>
     </p>
