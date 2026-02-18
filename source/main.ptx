@@ -14,12 +14,20 @@
     <xi:include href="./frontmatter.ptx" />
 
     <chapter xml:id="course-documents">
-      <title>Documentos</title>
+      <title>Informações</title>
 
+      <introduction>
+	<p>Bem vindos ao curso de Cálculo Integral, oferecido para os alunos
+	do Bacharelado em Matemática do IME-USP.
+	</p>
+      </introduction>
+      
       <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
+      <xi:include href="./syllabus/info.ptx" />
       <!-- Other documents could go here, like a schedule, project
 	   description, etc. -->
+      <xi:include href="./syllabus/descricao.ptx" />
+      <xi:include href="./syllabus/aval.ptx" />
     </chapter>
 
     <chapter xml:id="course-notes">
@@ -50,7 +58,7 @@
       </introduction>
 
       <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/01-intro-activity.ptx"/>
+      <xi:include href="./activities/01-lista.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
