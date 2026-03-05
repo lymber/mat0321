@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout xml:id="handout-func_diff">
+  <title>Funções diferenciáveis
+  </title>
+
+  <page>
+    <p workspace="1in">
+      <lemma xml:id="lema-tvm">
+	<title>Desigualdade do Valor Médio</title>
+
+	<statement>
+	  <p>
+	    Sejam <m>A\subset\R^n</m> um retângulo e <m>f\colon
+	    A\to\R^n</m> uma função de classe <m>\mathscr{C}^1</m>. Se
+	    <m>\left|\dfrac{\partial f^i}{\partial
+	    x_j}(x)\right|=|D_jf^i(x)|\leq M</m>, para todo
+	    <m>x\in\mathring{A}</m>, então <m>|f(y)-f(x)|\leq n^2M|y-x|</m>.
+	  </p>
+	</statement>
+
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+      </lemma>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-tfinv">
+	<title>Teorema da Função Inversa</title>
+
+	<statement>
+	  <p>
+	    Sejam <m>f\colon A\subset\R^n\to\R^n</m> uma função de
+	    classe <m>\mathscr{C}^1</m> e <m>a\in A</m> tal que <m>\det
+	    f'(a)\neq 0</m>. Então existem abertos <m>V,W\subset\R^n</m>
+	    com <m>a\in V</m> e <m>f(a)\in W</m> tais que <m>f\colon
+	    V\to W</m> tem inversa <m>f^{-1}\colon W\to V</m>
+	    diferenciável satisfazendo
+	    <me>\big(f^{-1}\big)'(y)=\Big[f'\big(f^{-1}(y)\big)\Big]^{-1}
+	    \quad\text{, ou seja}\quad
+	    Df^{-1}(y)=\Big[Df\big(f^{-1}(y)\big)\Big]^{-1}.</me>
+	  </p>
+	</statement>
+
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-funcimp">
+	<title>Função Dada Implicitamente</title>
+
+	<statement>
+	  <p>
+	    Uma função <m>g\colon A\subset\R^n\to\R^m</m> é <term>dada
+	    implicitamente</term> por <m>f\colon
+	    \R^n\times\R^m\to\R^m</m> se <m>f\big(x,g(x)\big)=0</m>, para
+	    todo <m>x\in A</m>.
+	  </p>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-tfimp">
+	<title>Teorema da Função Implícita</title>
+
+	<statement>
+	  <p>
+	    Sejam <m>f\colon A\subset\R^n\times\R^m\to\R^m</m> uma função de
+	    classe <m>\mathscr{C}^1</m> definida num aberto contendo
+	    <m>(a,b)</m>, com <m>a\in\R^n</m> e <m>b\in\R^m</m> tal que
+	    <m>f(a,b)=0</m>.
+	  </p>
+
+	  <p>Se a submatriz do Jacobiano
+	  <m>\big(D_{n+j}f^i(a,b)\big)_{m\times m}</m> tem determinante
+	  não nulo, então existem abertos <m>A\in\R^n</m> e
+	  <m>B\in\R^m</m>, com <m>a\in A</m> e <m>b\in B</m> e uma
+	  função <m>g\colon A\to B</m>, de classe <m>\mathscr{C}^1</m>,
+	  satisfazendo <m>f\big(x,g(x)\big)=0</m> para todo <m>x\in
+	  A</m>.
+	  </p>
+
+	  <p>Além disso,
+	  <me>
+	    \Big[Dg(x)\Big]_{m\times
+	    n}=-\Big[D_{n+j}f^i\big(x,g(x)\big)\Big]_{m\times m}^{-1}
+	    \Big[D_jf^i\big(x,g(x)\big)\Big]_{m\times n},</me> para todo
+	    <m>x\in A</m>.
+	  </p>
+	</statement>
+	
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+  </page>
+
+  <page>
+    <p workspace="1in">
+      <definition xml:id="def-imersao">
+	<title>Imersão</title>
+
+	<statement>
+	  <p>
+	    Uma função <m>f\colon A\subset\R^n\to\R^{m}</m> é uma
+	    <term>imersão em <m>x_0\in A</m></term> se
+	    <m>Df(x_0)\colon\R^n\to\R^{n+k}</m> é uma transformação
+	    linear injetora (logo <m>n\geq k</m>).
+	  </p>
+
+	  <p>
+	    Se uma função é uma imersão em todos os pontos de seu
+	    domínio, dizemos simplesmente que ela é uma
+	    <term>imersão</term>.
+	  </p>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <proposition xml:id="prop-iminj">
+	<title>Homeomorfismo Sobre a Imagem</title>
+
+	<statement>
+	  <p>
+	    Seja <m>f\colon A\subset\R^n\to\R^{n+k}</m> uma imersão de
+	    classe <m>\mathscr{C}^1</m> em <m>x_0\in A</m>. Então
+	    <m>f</m> é localmente injetora em <m>x_0</m>, ou seja,
+	    existe um aberto <m>U\subseteq A</m>, <m>x_0\in U</m> tal
+	    que <m>f\colon U\to f(U)</m> é bijetora.
+	  </p>
+
+	  <p>
+	    Além disso, <m>f^{-1}\colon f(U)\to U</m> é contínua.
+	  </p>
+	</statement>
+	
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+      </proposition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-fli">
+	<title>Forma Local das Imersões</title>
+
+	<statement>
+	  <p>
+	    Sejam <m>f\colon A\subset\R^n\to\R^{n+p}</m> uma imersão de
+	    classe <m>\mathscr{C}^1</m> em <m>x_0\in A</m>. Então existe
+	    <m>U\subset A</m>, <m>x_0\in U</m>, tal que <m>f(U)</m> é o
+	    gráfico de uma função <m>g\colon V\subset\R^n\to\R^p</m> de
+	    classe <m>\mathscr{C}^1</m>.
+	  </p>
+	</statement>
+	
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>    
+    
+    <p workspace="1in">
+      <definition xml:id="def-submersao">
+	<title>Submersão</title>
+
+	<statement>
+	  <p>
+	    Uma função <m>f\colon A\subset\R^n\to\R^{m}</m> é uma
+	    <term>submersão em <m>x_0\in A</m></term> se
+	    <m>Df(x_0)\colon\R^n\to\R^{m}</m> é uma transformação
+	    linear sobrejetora (logo <m>n\geq m</m>).
+	  </p>
+
+	  <p>
+	    Se uma função é uma submersão em todos os pontos de seu
+	    domínio, dizemos simplesmente que ela é uma
+	    <term>submersão</term>.
+	  </p>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-fls">
+	<title>Forma Local das Submersões</title>
+
+	<statement>
+	  <p>
+	    Sejam <m>f\colon A\subset\R^{n+p}\to\R^{p}</m> uma submersão
+	    de classe <m>\mathscr{C}^1</m> em <m>x_0\in A</m>. Então
+	    existe <m>W\subset A</m>, <m>x_0\in W</m>, tal que
+	    <m>f(W)</m> é um aberto de <m>\R^p</m>.
+	  </p>
+	</statement>
+	
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      <corollary xml:id="cor-fls">
+
+	<statement>
+	  <p>
+	    Sejam <m>f\colon A\subset\R^{n+p}\to\R^{p}</m> uma submersão
+	    de classe <m>\mathscr{C}^1</m> em <m>x_0\in A</m>. Então
+	    <m>f</m> é aberta (isto é, a imagem direta por <m>f</m> de qualquer
+	    aberto é um aberto) e, se <m>n&gt; 0</m>, então <m>f</m> não
+	    é injetora.
+	  </p>
+	</statement>
+	
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+      </corollary>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-posto">
+	<title>Teorema do Posto</title>
+
+	<statement>
+	  <p>
+	    Seja <m>f\colon A\subset\R^{m}\to\R^{n}</m> uma função de
+	    classe <m>\mathscr{C}^1</m> tal que <m>\text{posto}\,
+	    Df(x)=p</m>, para algum <m>0&lt; p&lt; n</m> em uma
+	    vizinhança de <m>x_0\in A</m>. Então existe <m>W\subset
+	    A</m>, aberto com <m>x_0\in W</m>, tal que <m>f(W)</m> é o
+	    gráfico de uma função <m>g\colon\R^p\to\R^{n-p}</m> de
+	    classe <m>\mathscr{C}^1</m>.
+	  </p>
+	</statement>
+	
+	<proof>
+	  <p>
+	    Feito em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+  </page>
+
+</handout>
