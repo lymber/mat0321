@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Semana 01",
-  "body": " Semana 01   Linhas gerais do que foi coberto na primeira semana de aulas.     24\/02 Terça      26\/02 Quinta     "
+  "body": " Semana 01   Linhas gerais do que foi coberto na primeira semana de aulas.     24\/02 Terça  Apresentação do curso. Revisão de algums tópicos do cálculo diferencial: desigualdade do valor médio, teorema da função inversa. Veja .    26\/02 Quinta  Teorema da função implícita. Forma local das imersões. Veja .   "
 },
 {
   "id": "cronograma-semana-02",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Semana 02",
-  "body": " Semana 02   Linhas gerais do que foi coberto na segunda semana de aulas.     02\/03 Terça      04\/03 Quinta     "
+  "body": " Semana 02   Linhas gerais do que foi coberto na segunda semana de aulas.     02\/03 Terça  Conserto da forma local das imersões. Forma local das submersões. Motivação e enunciado do teorema do posto. Veja .    04\/03 Quinta  Teorema do posto. Integração em : definição e propriedades elementares. Veja e .   "
 },
 {
   "id": "lista01",
@@ -226,13 +226,121 @@ var ptx_lunr_docs = [
   "body": "  Sejam uma imersão injetora de classe e uma curva de classe tal que .  Mostre que existem e , de classe tal que .   "
 },
 {
-  "id": "resumos-3",
+  "id": "handout-func_diff",
   "level": "1",
-  "url": "resumos-3.html",
+  "url": "handout-func_diff.html",
   "type": "Material de apoio",
   "number": "",
-  "title": "Integração em <span class=\"process-math\">\\(\\R^n\\)<\/span> – Definições e Primeiros Resultados",
-  "body": " Integração em  Definições e Primeiros Resultados   A first paragraph with some space for notes below it.   "
+  "title": "Funções diferenciáveis",
+  "body": " Funções diferenciáveis     Desigualdade do Valor Médio   Sejam um retângulo e uma função de classe . Se , para todo , então .    Feito em sala.       Teorema da Função Inversa   Sejam uma função de classe e tal que . Então existem abertos com e tais que tem inversa diferenciável satisfazendo     Feito em sala.       Função Dada Implicitamente   Uma função é dada implicitamente por se , para todo .       Teorema da Função Implícita   Sejam uma função de classe definida num aberto contendo , com e tal que .  Se a submatriz do Jacobiano tem determinante não nulo, então existem abertos e , com e e uma função , de classe , satisfazendo para todo .  Além disso, para todo .    Feito em sala.         Imersão   Uma função é uma imersão em se é uma transformação linear injetora (logo ).  Se uma função é uma imersão em todos os pontos de seu domínio, dizemos simplesmente que ela é uma imersão .       Homeomorfismo Sobre a Imagem   Seja uma imersão de classe em . Então é localmente injetora em , ou seja, existe um aberto , tal que é bijetora.  Além disso, é contínua.    Feito em sala.       Forma Local das Imersões   Sejam uma imersão de classe em . Então existe , , tal que é o gráfico de uma função de classe .    Feito em sala.       Submersão   Uma função é uma submersão em se é uma transformação linear sobrejetora (logo ).  Se uma função é uma submersão em todos os pontos de seu domínio, dizemos simplesmente que ela é uma submersão .       Forma Local das Submersões   Sejam uma submersão de classe em . Então existe , , tal que é um aberto de .    Feito em sala.        Sejam uma submersão de classe em . Então é aberta (isto é, a imagem direta por de qualquer aberto é um aberto) e, se , então não é injetora.    Feito em sala.       Teorema do Posto   Seja uma função de classe tal que , para algum em uma vizinhança de . Então existe , aberto com , tal que é o gráfico de uma função de classe .    Feito em sala.      "
+},
+{
+  "id": "lema-tvm",
+  "level": "2",
+  "url": "handout-func_diff.html#lema-tvm",
+  "type": "Lema",
+  "number": "2",
+  "title": "Desigualdade do Valor Médio.",
+  "body": " Desigualdade do Valor Médio   Sejam um retângulo e uma função de classe . Se , para todo , então .    Feito em sala.   "
+},
+{
+  "id": "teo-tfinv",
+  "level": "2",
+  "url": "handout-func_diff.html#teo-tfinv",
+  "type": "Teorema",
+  "number": "3",
+  "title": "Teorema da Função Inversa.",
+  "body": " Teorema da Função Inversa   Sejam uma função de classe e tal que . Então existem abertos com e tais que tem inversa diferenciável satisfazendo     Feito em sala.   "
+},
+{
+  "id": "handout-func_diff-2-3",
+  "level": "2",
+  "url": "handout-func_diff.html#handout-func_diff-2-3",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dada implicitamente "
+},
+{
+  "id": "teo-tfimp",
+  "level": "2",
+  "url": "handout-func_diff.html#teo-tfimp",
+  "type": "Teorema",
+  "number": "5",
+  "title": "Teorema da Função Implícita.",
+  "body": " Teorema da Função Implícita   Sejam uma função de classe definida num aberto contendo , com e tal que .  Se a submatriz do Jacobiano tem determinante não nulo, então existem abertos e , com e e uma função , de classe , satisfazendo para todo .  Além disso, para todo .    Feito em sala.   "
+},
+{
+  "id": "handout-func_diff-3-1",
+  "level": "2",
+  "url": "handout-func_diff.html#handout-func_diff-3-1",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "imersão em imersão "
+},
+{
+  "id": "prop-iminj",
+  "level": "2",
+  "url": "handout-func_diff.html#prop-iminj",
+  "type": "Proposição",
+  "number": "7",
+  "title": "Homeomorfismo Sobre a Imagem.",
+  "body": " Homeomorfismo Sobre a Imagem   Seja uma imersão de classe em . Então é localmente injetora em , ou seja, existe um aberto , tal que é bijetora.  Além disso, é contínua.    Feito em sala.   "
+},
+{
+  "id": "teo-fli",
+  "level": "2",
+  "url": "handout-func_diff.html#teo-fli",
+  "type": "Teorema",
+  "number": "8",
+  "title": "Forma Local das Imersões.",
+  "body": " Forma Local das Imersões   Sejam uma imersão de classe em . Então existe , , tal que é o gráfico de uma função de classe .    Feito em sala.   "
+},
+{
+  "id": "handout-func_diff-3-4",
+  "level": "2",
+  "url": "handout-func_diff.html#handout-func_diff-3-4",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "submersão em submersão "
+},
+{
+  "id": "teo-fls",
+  "level": "2",
+  "url": "handout-func_diff.html#teo-fls",
+  "type": "Teorema",
+  "number": "10",
+  "title": "Forma Local das Submersões.",
+  "body": " Forma Local das Submersões   Sejam uma submersão de classe em . Então existe , , tal que é um aberto de .    Feito em sala.   "
+},
+{
+  "id": "cor-fls",
+  "level": "2",
+  "url": "handout-func_diff.html#cor-fls",
+  "type": "Corolário",
+  "number": "11",
+  "title": "",
+  "body": "  Sejam uma submersão de classe em . Então é aberta (isto é, a imagem direta por de qualquer aberto é um aberto) e, se , então não é injetora.    Feito em sala.   "
+},
+{
+  "id": "teo-posto",
+  "level": "2",
+  "url": "handout-func_diff.html#teo-posto",
+  "type": "Teorema",
+  "number": "12",
+  "title": "Teorema do Posto.",
+  "body": " Teorema do Posto   Seja uma função de classe tal que , para algum em uma vizinhança de . Então existe , aberto com , tal que é o gráfico de uma função de classe .    Feito em sala.   "
+},
+{
+  "id": "handout-intRn",
+  "level": "1",
+  "url": "handout-intRn.html",
+  "type": "Material de apoio",
+  "number": "",
+  "title": "Integração em <span class=\"process-math\">\\(\\R^n\\)<\/span>",
+  "body": " Integração em    No forno...   "
 },
 {
   "id": "tarefas-2",
