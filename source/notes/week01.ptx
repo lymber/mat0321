@@ -14,6 +14,9 @@
     <title>24/02 <ndash />  Terça</title>
 
     <p>
+      Apresentação do curso. Revisão de algums tópicos do cálculo
+      diferencial: desigualdade do valor médio, teorema da função
+      inversa. Veja <xref ref="handout-func_diff" text="title" />.
     </p>
   </subsection>
 
@@ -22,6 +25,8 @@
     <title>26/02 <ndash /> Quinta</title>
 
     <p>
+      Teorema da função implícita. Forma local das imersões. Veja <xref
+      ref="handout-func_diff" text="title" />.
     </p>
   </subsection>
 </section>

@@ -14,6 +14,9 @@
     <title>02/03 <ndash /> Terça</title>
 
     <p>
+      Conserto da forma local das imersões. Forma local das
+      submersões. Motivação e enunciado do teorema do posto. Veja <xref
+      ref="handout-func_diff" text="title"/>.
     </p>
   </subsection>
 
@@ -22,6 +25,9 @@
     <title>04/03 <ndash /> Quinta</title>
 
     <p>
+      Teorema do posto. Integração em <m>\R^n</m>: definição e
+      propriedades elementares. Veja <xref ref="handout-func_diff"
+      text="title"/> e <xref ref="handout-intRn" text="title"/>.
     </p>
   </subsection>
 </section>
