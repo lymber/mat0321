@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="cronograma-semana-03">
+  <title>Semana 02</title>
+
+  <introduction>
+    <p>
+      Linhas gerais do que foi coberto na terceira semana de aulas.
+    </p>
+  </introduction>
+
+  <!-- Can also be <handout> instead of <subsection> to get a printable version -->
+  <subsection>
+    <title>09/03 <ndash /> Terça</title>
+
+    <p>
+      Retomada de alguns resultados anteriores. Conjuntos de medida nula
+      e conteúdo nulo. Critério de Integrabilidade. Veja <xref
+      ref="handout-intRn" text="title"/>.
+      <!-- (de
+      <xref ref="def-parts" text="title" /> até <xref ref="prop-propint"
+      text="title" />. -->
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>11/03 <ndash /> Quinta</title>
+
+    <p>
+      Blowing in the wind...
+    </p>
+  </subsection>
+</section>
