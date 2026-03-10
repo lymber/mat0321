@@ -27,7 +27,9 @@
     <p>
       Teorema do posto. Integração em <m>\R^n</m>: definição e
       propriedades elementares. Veja <xref ref="handout-func_diff"
-      text="title"/> e <xref ref="handout-intRn" text="title"/>.
+      text="title"/> e <xref ref="handout-intRn" text="title"/> (de
+      <xref ref="def-parts" text="title" /> até <xref ref="prop-propint"
+      text="title" />.
     </p>
   </subsection>
 </section>
