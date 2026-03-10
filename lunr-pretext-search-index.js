@@ -52,7 +52,16 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Semana 02",
-  "body": " Semana 02   Linhas gerais do que foi coberto na segunda semana de aulas.     02\/03 Terça  Conserto da forma local das imersões. Forma local das submersões. Motivação e enunciado do teorema do posto. Veja .    04\/03 Quinta  Teorema do posto. Integração em : definição e propriedades elementares. Veja e .   "
+  "body": " Semana 02   Linhas gerais do que foi coberto na segunda semana de aulas.     02\/03 Terça  Conserto da forma local das imersões. Forma local das submersões. Motivação e enunciado do teorema do posto. Veja .    04\/03 Quinta  Teorema do posto. Integração em : definição e propriedades elementares. Veja e (de até .   "
+},
+{
+  "id": "cronograma-semana-03",
+  "level": "1",
+  "url": "cronograma-semana-03.html",
+  "type": "Seção",
+  "number": "",
+  "title": "Semana 03",
+  "body": " Semana 03   Linhas gerais do que foi coberto na terceira semana de aulas.     09\/03 Terça  Retomada de alguns resultados anteriores. Conjuntos de medida nula e conteúdo nulo. Critério de Integrabilidade. Veja .     11\/03 Quinta  Blowing in the wind...   "
 },
 {
   "id": "lista01",
@@ -340,7 +349,70 @@ var ptx_lunr_docs = [
   "type": "Material de apoio",
   "number": "",
   "title": "Integração em <span class=\"process-math\">\\(\\R^n\\)<\/span>",
-  "body": " Integração em    No forno...   "
+  "body": " Integração em      Partições de intervalos e retângulos   Uma partição de um intervalo é um subconjunto : .  Se é um retângulo limitado, digamos , uma partição de é uma coleção , onde cada é uma partição de .  Uma partição é mais fina que , ou um refinamento de , se .     divide em subretângulos disjuntos.       Somas superior e inferior   Sejam uma função limitada no retângulo limitado , uma partição de e um subretângulo desta partição. Definimos e indicamos por o volume do subretângulo .   Com isso, a soma superior e a soma inferior de com a relação a são os números reais      para qualquer partição nas condições acima.       Propriedades das somas superior e inferior   Se , então e .    Feito em sala       Comparação entre somas superior e inferior   Sejam e partições quaisquer. Então ., então e .    Feito em sala       Função integrável   Uma função limitada definida no retângulo limitado é integrável se .   Notação:  ou ou ainda .       Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se para todo existe partição de tal que .    Feito em sala       Propriedades da integral   Sejam um retângulo limitado, funções limitadas e integrávels e . Então    é integrável e .          é integrável e .       Parte feita em sala e parte é um exercício.      "
+},
+{
+  "id": "handout-intRn-2-1",
+  "level": "2",
+  "url": "handout-intRn.html#handout-intRn-2-1",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "partição de um intervalo uma partição de mais fina que refinamento de "
+},
+{
+  "id": "handout-intRn-2-2",
+  "level": "2",
+  "url": "handout-intRn.html#handout-intRn-2-2",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "volume do subretângulo . soma superior soma inferior de com a relação a "
+},
+{
+  "id": "lem-somas",
+  "level": "2",
+  "url": "handout-intRn.html#lem-somas",
+  "type": "Lema",
+  "number": "17",
+  "title": "Propriedades das somas superior e inferior.",
+  "body": " Propriedades das somas superior e inferior   Se , então e .    Feito em sala   "
+},
+{
+  "id": "cor-somas",
+  "level": "2",
+  "url": "handout-intRn.html#cor-somas",
+  "type": "Corolário",
+  "number": "18",
+  "title": "Comparação entre somas superior e inferior.",
+  "body": " Comparação entre somas superior e inferior   Sejam e partições quaisquer. Então ., então e .    Feito em sala   "
+},
+{
+  "id": "handout-intRn-2-5",
+  "level": "2",
+  "url": "handout-intRn.html#handout-intRn-2-5",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integrável Notação: "
+},
+{
+  "id": "prop-crit",
+  "level": "2",
+  "url": "handout-intRn.html#prop-crit",
+  "type": "Proposição",
+  "number": "20",
+  "title": "Critério de integrabilidade.",
+  "body": " Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se para todo existe partição de tal que .    Feito em sala   "
+},
+{
+  "id": "prop-propint",
+  "level": "2",
+  "url": "handout-intRn.html#prop-propint",
+  "type": "Proposição",
+  "number": "21",
+  "title": "Propriedades da integral.",
+  "body": " Propriedades da integral   Sejam um retângulo limitado, funções limitadas e integrávels e . Então    é integrável e .          é integrável e .       Parte feita em sala e parte é um exercício.   "
 },
 {
   "id": "tarefas-2",
