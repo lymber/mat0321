@@ -21,10 +21,10 @@
           <title>Aulas</title>
 	  
           <p>
-            Terças: 08:00 - 09:40 (Sala B-xx)
+            Terças: 08:00 - 09:40 (Sala A-132)
           </p>
 	  <p>
-            Quintas: 10:00 - 11:40 (Sala B-xx)
+            Quintas: 10:00 - 11:40 (Sala A-132)
           </p>
         </li>
 
@@ -32,16 +32,29 @@
           <title>Horários de Atendimento</title>
 
           <p>
-            A definir
+            Segundas-feiras: das 14:00 às 16:00.
           </p>
         </li>
 
 	<li>
 	  <title>Monitoria</title>
 
-	  <p>A definir</p>
-	</li>
+	  <p>Temos dois monitores para o curso, com os seguintes
+	  hor[arios de atedimento:
 
+	  <ul>
+	    <li>
+	      <p>Caio: Terças, às 14:00, na sala B-143;
+	      </p>
+	    </li>
+	    <li>
+	      <p>Raul: Quintas, às 13:00, na sala B-143.
+	      </p>
+	    </li>
+	  </ul>
+	  </p>
+	</li>
+	  
         <li>
           <title>Descrição e Ementa</title>
 
@@ -87,7 +100,7 @@
           </p>
 
 	  <p>
-	    <pubtitle>Um curso de Análise, volume 2</pubtitle> de Elon
+	    <pubtitle>Um Curso de Análise, volume 2</pubtitle> de Elon
 	    Lages Lina.
 	  </p>
         </li>
