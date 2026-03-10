@@ -6,8 +6,183 @@
 
   <page>
     <p workspace="1in">
-      No forno...
-    </p>
-  </page>
+      <definition xml:id="def-parts">
+	<title>Partições de intervalos e retângulos</title>
+	<statement>
+	  <p>
+	    Uma <term>partição de um intervalo <m>[a,b]</m></term> é um
+	    subconjunto <m>P\subset [a,b]</m>:
+	    <m>P=\big\{a=t_0&lt;t_1&lt;\ldots&lt;t_n=b\big\}</m>.
+	  </p>
 
+	  <p>
+	    Se <m>A\subset\R^n</m> é um retângulo limitado, digamos
+	    <m>A=[a_1,b_1]\times\cdots\times[a_n,b_n]</m>, <term>uma partição
+	    de <m>A</m></term> é uma coleção
+	    <m>P=\big(P_1,\ldots,P_n\big)</m>, onde cada <m>P_i</m> é
+	    uma partição de <m>[a_i,b_i]</m>.
+	  </p>
+
+	  <p>
+	    Uma partição <m>P'</m> é <term>mais fina que
+	    <m>P</m></term>, ou um <term>refinamento de <m>P</m></term>,
+	    se <m>P\subset P'</m>.
+	  </p>
+	</statement>
+	<remark>
+	  <p>
+	    <m>P</m> divide <m>A</m> em subretângulos disjuntos.
+	  </p>
+	</remark>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-somas">
+	<title>Somas superior e inferior</title>
+	<statement>
+	  <p>
+	    Sejam <m>f\colon A\subset\R^n\to\R</m> uma função limitada
+	    no retângulo limitado <m>A\subset\R^n</m>, <m>P</m> uma
+	    partição de <m>A</m> e <m>S\subset A</m> um subretângulo
+	    desta partição. Definimos <me>m_s(f)=\inf\big\{f(x)\colon
+	    x\in S\big\}\quad\text{e}\quad M_S(f)=\sup\big\{f(x)\colon
+	    x\in S\big\}</me> e indicamos por <m>v(S)</m> o <term>volume
+	    do subretângulo <m>S</m>.</term>
+	  </p>
+
+	  <p>
+	    Com isso, a <term>soma superior</term> e a <term>soma
+	    inferior de <m>f</m> com a relação a <m>P</m></term> são os
+	    números reais <me>U(f,P)=\sum_S M_S(f)v(S)\quad\text{e}\quad
+	    L(f,P)=\sum_P m_S(f)v(S).</me>
+	  </p>
+	</statement>
+	<remark>
+	  <p>
+	    <m>L(f,P)\leq U(f,P)</m> para qualquer partição nas
+	    condições acima.
+	  </p>
+	</remark>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <lemma xml:id="lem-somas">
+	<title>Propriedades das somas superior e inferior</title>
+	<statement>
+	  <p>
+	    Se <m>P\subset P'</m>, então <m>L(f,P)\leq L(f,P')</m> e
+	    <m>U(f,P')\leq U(f,P)</m>.
+	  </p>
+	</statement>
+	<proof>
+	  <p>
+	    Feito em sala
+	  </p>
+	</proof>
+      </lemma>
+    </p>
+
+    <p workspace="1in">
+      <corollary xml:id="cor-somas">
+	<title>Comparação entre somas superior e inferior</title>
+	<statement>
+	  <p>
+	    Sejam <m>P</m> e <m>P'</m> partições quaisquer. Então
+	    <m>L(f,P')\leq U(f,P)</m>., então <m>L(f,P)\leq L(f,P')</m> e
+	    <m>U(f,P')\leq U(f,P)</m>.
+	  </p>
+	</statement>
+	<proof>
+	  <p>
+	    Feito em sala
+	  </p>
+	</proof>
+      </corollary>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-integral">
+	<title>Função integrável</title>
+	<statement>
+	  <p>
+	    Uma função limitada <m>f\colon A\subset\R^n\to\R</m>
+	    definida no retângulo limitado <m>A\subset\R^n</m> é
+	    <term>integrável</term> se <m>\sup\limits_P
+	    L(f,P)=\inf\limits_P U(f,P)</m>.
+	  </p>
+
+	  <p>
+	   <term>Notação:</term> <m>\displaystyle\int_A
+	   f(x_1,\ldots,x_n)\, dx_1\ldots dx_n</m> ou
+	   <m>\displaystyle\int_A f(x)\, dx</m> ou ainda
+	   <m>\displaystyle\int_A f</m>.
+	  </p>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <proposition xml:id="prop-crit">
+	<title>Critério de integrabilidade</title>
+	<statement>
+	  <p>
+	    Uma função limitada <m>f\colon A\subset\R^n\to\R</m>, 
+	    definida no retângulo limitado <m>A\subset\R^n</m>, é
+	    integrável se e somente se para todo <m>\epsilon&gt;0</m>
+	    existe partição <m>P</m> de <m>A</m> tal que
+	    <m>U(f,P)-L(f,P)&lt;\epsilon</m>.
+	  </p>
+	</statement>
+	<proof>
+	  <p>
+	    Feito em sala
+	  </p>
+	</proof>
+      </proposition>
+    </p>
+      
+    <p workspace="1in">
+      <proposition xml:id="prop-propint">
+	<title>Propriedades da integral</title>
+	<statement>
+	  <p>
+	    Sejam <m>A\subset\R^n</m> um retângulo limitado,
+	    <m>f,g\colon A\subset\R^n\to\R</m> funções limitadas e
+	    integrávels e <m>k\in\R</m>. Então
+
+	    <ul>
+	      <li>
+		<p>
+		  <m>f+kg</m> é integrável e <m>\displaystyle\int_A
+		  f(x)+kg(X)\, dx=\int_A f(x)\, dx+k\int_A g(x)\,
+		  dx</m>.
+		</p>
+	      </li>
+	      <li>
+		<p>
+		  <m>f\leq g\implies \displaystyle\int_A f(x)\,
+		  dx\leq\int_A g(x)\, dx</m>
+		</p>
+	      </li>
+	      <li>
+		<p>
+		  <m>|f|</m> é integrável e
+		  <m>\displaystyle\left|\int_Af(x)\, dx\right|\leq\int_A
+		  \big|f(x)\big|\, dx</m>.
+		</p>
+	      </li>
+	    </ul>
+	  </p>
+	</statement>
+	<proof>
+	  <p>
+	    Parte feita em sala e parte é um exercício.
+	  </p>
+	</proof>
+      </proposition>
+    </p>
+
+  </page>
 </handout>
