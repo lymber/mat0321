@@ -13,12 +13,14 @@
 	  <title>Provas</title>
 	  
 	  <p>
-	    <strong>P<sub>1</sub></strong>: data
+	    <strong>P<sub>1</sub></strong>: 26 de Março
 	  </p>
 	  <p>
-	    <strong>P<sub>2</sub></strong>: data
+	    <strong>P<sub>2</sub></strong>: 14 de Maio
 	  </p>
-	  
+	  <p>
+	    <strong>P<sub>3</sub></strong>: 25 de Junho
+	  </p>
 	</li>
 	
 	<li>
@@ -42,14 +44,14 @@
 
     <p>
       Ao aluno que faltar em uma das provas será ofertada uma avaliação
-      substitutiva, cuja nota entra no lugar daquela onde houve a
-      ausência.
+      substitutiva (realizada em 30 de Junho), cuja nota entra no
+      lugar daquela onde houve a ausência.
     </p>
 
     <p>
       Caso <m>3\leq M_1&lt; 5</m>, o aluno tem direito a uma prova de
-      recuperação, <m>P_{rec}</m>, que será sua nota de segunda
-      avaliação.
+      recuperação, <m>P_{rec}</m> (a ser marcada), que será sua nota de
+      segunda avaliação.
     </p>
     
     <p>
