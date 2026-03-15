@@ -184,5 +184,107 @@
       </proposition>
     </p>
 
+    <p workspace="1in">
+      <definition xml:id="def-medcontnulo">
+	<title>Medida nula e Conteúdo nulo</title>
+	<statement>
+	  <p>
+	    Um conjunto <m>A\subset\R^n</m> tem <term>medida nula</term>
+	    se para todo <m>\epsilon&gt; 0</m> existe uma cobertura
+	    <emph>enumerável</emph> por retângulos fechados (ou
+	    abertos), <m>\big\{U_i\big\}_{i=1}^\infty</m>, de <m>A</m>
+	    tal que <m>\sum\limits_{i=1}^\infty v(U_i)&lt;\epsilon</m>.
+	  </p>
+
+	  <p>
+	    Um conjunto <m>A\subset\R^n</m> tem <term>conteúdo
+	    nulo</term> se para todo <m>\epsilon&gt; 0</m> existe uma
+	    cobertura <emph>finita</emph> por retângulos fechados
+	    (ou abertos), <m>\big\{U_i\big\}_{i=1}^n</m>, de
+	    <m>A</m> tal que <m>\sum\limits_{i=1}^n
+	    v(U_i)&lt;\epsilon</m>.
+	  </p>
+	</statement>
+
+	<remark>
+	  <p>
+	    Se <m>A</m> tem conteúdo nulo, então <m>A</m> tem medida nula,
+	    mas não vale a recíproca.
+	  </p>
+	</remark>
+
+	<remark>
+	  <p>
+	    Se <m>A\subset\R^n</m> é compacto e tem medida nula, então
+	    também tem conteúdo nulo.
+	  </p>
+	</remark>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-crit">
+	<title>Critério de integrabilidade</title>
+	<statement>
+	  <p>
+	    Uma função limitada <m>f\colon A\subset\R^n\to\R</m>,
+	    definida no retângulo limitado <m>A\subset\R^n</m>, é
+	    integrável se e somente se o conjunto <me>B=\big\{x\in
+	    A\colon f\text{ é descontínua em }x\big\}</me> tem medida
+	    nula.
+	  </p>
+	</statement>
+	<proof>
+	  <p>
+	    Feito em sala
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-intlim">
+	<title>Integral em Conjuntos Limitados</title>
+	<statement>
+	  <p>
+	    Sejam <m>B\subset\R^n</m> um conjunto limitado e
+	    <m>A\subset\R^n</m> um retângulo tal que <m>B\subset
+	    A</m>. A <term>função característica de <m>B</m> relativa a
+	    <m>A</m></term>, <m>\chi_B\colon A\to\R</m>  é dada por
+	    <m>\chi_B=1</m>, se <m>x\in B</m> e <m>\chi_B=0</m>, se
+	    <m>x\not\in B</m>.
+	  </p>
+
+	  <remark>
+	    <p>
+	      A função <m>\chi_B</m> é integrável se, e somente se,
+	      <m>\partial B</m> (fronteira de <m>B</m>) tem medida nula
+	      (e portanto conteúdo nulo). Nesse caso, dizemos que
+	      <m>B</m> é <term><m>J-</m>mensurável (Jordan
+	      mensurável)</term>.
+	    </p>
+	  </remark>
+
+	  <p>
+	    Assim, definimos a integral de <m>f</m> em <m>B</m> por
+	    <me>\int_B f(x)\, dx = \int_A f(x)\chi_B(x)\, dx,</me>
+	    desde que a integral do lado direito exista.
+	  </p>
+
+	  <remark>
+	    <p>
+	      Existem conjuntos abertos que não são
+	      <m>J-</m>mensuráveis. Exemplo: <m>(0,1)^2\setminus
+	      \big(C\times [0,1]\big)</m>, onde <m>C</m> é o conjunto de
+	      <url
+		  href="https://en.wikipedia.org/wiki/Smith%E2%80%93Volterra%E2%80%93Cantor_set">Cantor
+	      "gordo"</url>.
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+
   </page>
+
 </handout>
