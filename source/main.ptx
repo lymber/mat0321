@@ -45,6 +45,7 @@
       <xi:include href="./notes/week01.ptx"/>
       <xi:include href="./notes/week02.ptx"/>
       <xi:include href="./notes/week03.ptx"/>
+      <xi:include href="./notes/week04.ptx"/>
       <!-- etc. -->
 
     </chapter>
@@ -77,6 +78,9 @@
       <!-- Include handouts -->
       <xi:include href="./handouts/handout-diffRn.ptx"/>
       <xi:include href="./handouts/handout-intRn.ptx"/>
+      <xi:include href="./handouts/handout-fubini.ptx"/>
+      <xi:include href="./handouts/handout-partunit.ptx"/>
+      <xi:include href="./handouts/handout-mudvar.ptx"/>
     </chapter>
 
     <chapter xml:id="tarefas">
