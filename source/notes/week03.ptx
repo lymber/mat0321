@@ -11,7 +11,7 @@
 
   <!-- Can also be <handout> instead of <subsection> to get a printable version -->
   <subsection>
-    <title>09/03 <ndash /> Terça</title>
+    <title>10/03 <ndash /> Terça</title>
 
     <p>
       Retomada de alguns resultados anteriores. Conjuntos de medida nula
@@ -25,10 +25,12 @@
 
 
   <subsection>
-    <title>11/03 <ndash /> Quinta</title>
+    <title>12/03 <ndash /> Quinta</title>
 
     <p>
-      Blowing in the wind...
+      Teorema de Fubini: motivações, exemplos e uma tentativa frustrada
+      de demonstração. Veja <xref
+      ref="handout-fubini" text="title"/>
     </p>
   </subsection>
 </section>

@@ -11,7 +11,7 @@
 
   <!-- Can also be <handout> instead of <subsection> to get a printable version -->
   <subsection>
-    <title>02/03 <ndash /> Terça</title>
+    <title>03/03 <ndash /> Terça</title>
 
     <p>
       Conserto da forma local das imersões. Forma local das
@@ -22,7 +22,7 @@
 
 
   <subsection>
-    <title>04/03 <ndash /> Quinta</title>
+    <title>05/03 <ndash /> Quinta</title>
 
     <p>
       Teorema do posto. Integração em <m>\R^n</m>: definição e
