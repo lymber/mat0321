@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout xml:id="handout-fubini">
+  <title>Teorema de Fubini</title>
+
+  <page>
+
+    <p>
+      Para uma função limitada <m>f\colon A\subset\R^n\to\R</m>
+      definimos, por conveniência, <me>\underline{\int_A} f(x)\, dx = \sup_P
+      L(f,P)\qquad\text{e}\qquad\overline{\int_A} f(x)\, dx = \inf_P U(f,P),</me>
+      que coincidem se, e somente se, <m>f</m> é integrável.
+    </p>
+    
+    <p workspace="1in">
+      <theorem xml:id="teo-fubini">
+	<title>Teorema de Fubini</title>
+	<statement>
+	  <p>
+	    Sejam <m>A\subset\R^n</m> e <m>B\subset\R^m</m> retângulos
+	    fechados, e <m>f\colon A\times B\to\R</m> uma função
+	    integrável. Para cada <m>x\in A</m>, defina <m>g_x\colon
+	    B\to\R</m> por <m>g_x\colon B\to\R</m> por
+	    <m>g_x(y)=f(x,y)</m> e <me>\mathscr{L}(x)=\underline{\int_B}
+	    g_x(y)\, dy\qquad\text{e}\qquad\mathscr{U}(x)=\overline{\int_B}
+	    g_x(y)\, dy.</me>
+	  </p>
+
+	  <p>
+	    Então as funções <m>\mathscr{L}</m> e <m>\mathscr{U}</m> são
+	    integráveis em <m>A</m> e vale que
+	    <me>\int_A\mathscr{L}(x)\, dx = \int_{A\times B}f(x,y)\,
+	    dxdy = \int_A\mathscr{U}(x)\, dx.</me>
+	  </p>
+	</statement>
+
+	<remark>
+	  <p>
+	    Escrevendo por extenso, temos <me> \mathscr{L}(x)=
+	    \underline{\int_B}f(x,y)\, dy\quad\text{e}\quad \mathscr{U}(x)=
+	    \overline{\int_B}f(x,y)\, dy,</me> ou seja,
+	    <me>\int_A\left(\underline{\int_B} f(x,y)\, dy\right)\,
+	    dx=\int_{A\times B} f(x,y)\, dxdy =
+	    \int_A\left(\overline{\int_B} f(x,y)\, dy\right)\, dx.</me>
+	  </p>
+	</remark>
+	
+	<proof>
+	  <p>
+	    Feito em sala
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+  </page>
+
+</handout>
