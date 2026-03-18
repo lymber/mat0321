@@ -15,6 +15,7 @@
     \newcommand{\R}{\mathbb R}
     \newcommand{\id}{\mathrm{Id}}
     \newcommand{\posto}{\mathrm{posto}}
+    \DeclareMathOperator\supp{supp}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
