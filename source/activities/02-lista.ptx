@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="lista02">
+  <title>Lista 02 <ndash /> Integração em <m>\R^n</m></title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Segunda Lista de Exercícios.
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise>  <!-- option to leave blank space: workspace="2in" -->
+    <statement>
+      <p>
+	Seja <m>f\colon[0,1]\times[0,1]\to\R</m> dada por <me>f(x,y)=
+	\begin{cases}
+	0,&amp;\text{se }0\leq x&lt;\frac{1}{2},\\
+	1,&amp;\text{se }\frac{1}{2}\leq x\leq 1.
+	\end{cases}</me>
+      </p>
+      <p>
+	Mostre que <m>f</m> é integrável e que
+	<m>\displaystyle{\int_{[0,1]\times[0,1]}f=\frac{1}{2}}</m>. 
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f\colon[0,1]\times[0,1]\to\R</m> dada por <me>f(x,y)=
+	\begin{cases}
+	0,&amp;\text{se }x\text{ é irracional},\\
+	0,&amp;\text{se }x\text{ é racional e }y\text{ é irracional},\\
+	1/q,&amp;\text{se }x\text{ é racional e
+	}y=p/q\text{ na forma irredutível.}
+	\end{cases}</me>
+      </p>
+      <p>
+	Mostre que <m>f</m> é integrável e que
+	<m>\displaystyle{\int_{[0,1]\times[0,1]}f=0}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que um conjunto ilimitado não pode ter conteúdo nulo.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Dê um exemplo de conjunto fechado de medida nula que não tem
+	conteúdo nulo.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>A</m> é um conjunto de conteúdo nulo então seu bordo
+	também tem conteúdo nulo.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>f</m> e <m>g</m> são limitadas e integráveis sobre um
+	conjunto limitado <m>A\subset\R^n</m> então <m>fg</m> também o é.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que:
+
+	<ol marker="a.">
+	  <li>
+	   se <m>C</m> tem conteúdo nulo então <m>C</m> é limitado por um retângulo
+	   fechado <m>A</m>, <m>C</m> é <m>J-</m>mensurável e
+	   <m>\displaystyle\int_A\chi_C=0</m>;
+	  </li>
+	  <li>
+	    se <m>C</m> é limitado, tem medida nula e
+	    <m>\displaystyle\int_A\chi_C</m> existe então
+	    <m>\displaystyle\int_A\chi_C=0</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+	Determine <m>L(f,P)</m> para uma partição <m>P</m> qualquer de
+	<m>A</m> e use que um retângulo não pode ter conteúdo nulo.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Dê um exemplo de conjunto limitado <m>C</m> tal que
+	<m>\displaystyle\int_A\chi_C</m> não existe.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>f\colon[a,b]\to\R</m> é crescente, então <m>f</m> é
+	integrável.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>A</m> um conjunto <m>J-</m>mensurável e <m>\epsilon
+	>0</m>. Mostre que existe um compacto <m>C\subset A</m>,
+	<m>J-</m>mensurável, tal que <m>\displaystyle\int_{A\setminus
+	C}1&lt;\epsilon</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	 Seja <m>f\colon[a,b]\times[a,b]\to\R</m> contínua. Mostre que
+	 <me>\int_a^b\left(\int_a^y f(x,y)\,dx\right)\,dy = \int_a^b\left(\int_x^b
+	 f(x,y)\,dy\right)\,dx.</me>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Use o teorema de Fubini para dar um prova simples do Teorema de
+	Schwarz, ou seja, <m>\dfrac{\partial^2 f}{\partial x\partial y} =
+	\dfrac{\partial^2 f}{\partial y\partial x}</m>, se <m>f</m> é uma função
+	de classe <m>\mathscr{C}^2</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="volume_rot">
+    <statement>
+      <p>
+	Deduza uma fórmula para o cálculo do volume de um sólido em
+	<m>\R^3</m> obtido pela rotação de uma região <m>J-</m>mensurável no plano
+	<m>yz</m> ao redor do eixo <m>Oz</m> (suponha que a região em questão não
+	intercepta o eixo <m>Oz</m>).
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f\colon[a,b]\times[c,d]\to\R</m> contínua com
+	<m>\frac{\partial f}{\partial y}</m> também contínua e defina
+	<m>F\colon[c,d]\to\R</m> por <m>F(y)=\displaystyle\int_a^b
+	f(x,y)\,dx</m>. Mostre que <m>F'(y)=\displaystyle\int_a^b\frac{\partial
+	f}{\partial y}(x,y)\,dx</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Escreva <m>F(y)</m> como uma integral iterada.
+      </p>
+      <p>
+	A hipótese sobre a continuidade de <m>\dfrac{\partial
+	f}{\partial y}</m> contínua é realmente necessária?
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>A</m> e <m>B</m> conjuntos <m>J-</m>mensuráveis
+	contidos num paralelepípedo <m>R\times
+	[a,b]\subset\R^3</m>. Defina
+	<m>A_c=\big\{(x,y)\in R:(x,y,c)\in A\big\}</m> e <m>B_c</m> de
+	modo análogo. Suponha que <m>A_c</m> e <m>B_c</m> sejam, para cada
+	<m>c\in[a,b]</m>, conjuntos <m>J-</m>mensuráveis em <m>\R^2</m> de mesma
+	área. Mostre que <m>A</m> e <m>B</m> têm o mesmo volume.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f_n\colon\R\to\R</m> dada por <me>f_n(x)=
+	\begin{cases}
+	\frac{e^{-1/x}}{x^n},&amp;\text{se }x&gt;0,\\
+	\hfill 0,&amp;\mbox{se }x\leq 0.
+	\end{cases}</me>
+      </p>
+
+      <p>
+	<ol marker="a.">
+	  <li>
+	    Mostre que <m>f_n</m> é contínua em <m>x_0=0</m>.
+	    <hint>
+	      <p>
+		Mostre que <m>a&lt;e^a</m> para todo <m>a\in\R</m> e
+		depois defina <m>a=\frac{t}{2n}</m> para mostrar que
+		<m>\frac{t^n}{e^t}&lt;\frac{(2n)^n}{e^{t\slash
+		2}}</m>. Faça então <m>t=\frac{1}{x}</m> e <m>x\to
+		0^+</m>.
+	      </p>
+	    </hint>
+	  </li>
+
+	  <li>
+	    Mostre que <m>f_n</m> é diferenciável em <m>x=0</m>.
+	  </li>
+
+	  <li>
+	    Mostre que <m>f_n'(x)=f_{n+2}(x)-nf_{n+1}(x)</m> para todo
+	    <m>x\in\R</m>.
+	  </li>
+
+	  <li>
+	    Conclua que <m>f_n</m> é de classe
+	    <m>\mathscr{C}^\infty</m>. Ela é analítica real?
+	  </li>
+
+	  <li>
+	    Esboce o gráfico de <m>g(x)=f_0(x)f_0(1-x)</m>.
+	  </li>
+
+	  <li>
+	    Seja <m>A=[a_1,b_1]\times\ldots\times[a_n,b_n]</m> um
+	    retângulo em <m>\R^n</m>. Construa uma função, de classe
+	    <m>\mathscr{C}^\infty</m>, <m>\phi\colon\R^n\to\R</m> tal
+	    que <m>\phi(x)>0</m> para <m>x\in\mathring{A}</m> e
+	    <m>\phi(x)=0</m>, em caso contrário.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que a coleção de funções dadas por
+	<m>\phi_{2m+1}(x)=f(x-m\pi)</m>, se <m>m\geq 0</m>, e
+	<m>\phi_{2m}(x)=f(x+m\pi)</m>, se <m>m\geq 1</m>, onde <me>f(x)=
+	\begin{cases}
+	\frac{1+\cos(x)}{2},&amp;\text{se }-\pi\leq x\leq\pi,\\
+	\hfill 0,&amp;\text{em caso contrário}.
+	\end{cases}</me> são
+	uma partição da unidade.
+      </p>
+
+      <p>
+	Determine o suporte de cada <m>\phi_i</m> e mostre que cada
+	<m>x\in\R</m> tem uma vizinhança que intercepta no máximo três
+	desses suportes.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>S</m> um subconjunto arbitrário de <m>\R^n</m> e
+	<m>x_0\in S</m>. Dizemos que uma função <m>f\colon S\to\R</m> é
+	de <term>classe <m>\mathscr{C}^r</m> em <m>x_0</m></term> se
+	existe um aberto <m>U</m>, contendo <m>x_0</m>, e uma função
+	<m>g\colon U\to\R</m>, de classe <m>\mathscr{C}^r</m>, tal que
+	<m>g(x)=f(x)</m> para todo <m>x\in U\cap S</m>.
+      </p>
+
+      <p>
+	Mostre nesse caso que se <m>\phi\colon\R^n\to\R</m> é de classe
+	<m>\mathscr{C}^r</m> e cujo suporte está contido em <m>U</m>
+	então
+	<me>h(x)=
+	\begin{cases}
+	\phi(x)g(x),&amp;\text{se }x\in U\\
+	\hfill 0,&amp;\text{se }x\not\in\supp\phi.
+	\end{cases}</me> é uma função bem definida e de classe
+	<m>\mathscr{C}^r</m> em <m>\R^n</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>f\colon S\to\R</m> é de classe
+	<m>\mathscr{C}^r</m> em cada ponto <m>x_0\in S\subset\R^n</m>,
+	então <m>f</m> pode ser estendida a uma função <m>h\colon
+	A\to\R</m>, onde <m>A</m> é um aberto de <m>\R^n</m> contendo
+	<m>S</m>.
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+	Determine uma cobertura apropriada para <m>S</m>, defina <m>A</m>
+	como sua reunião e então tome uma partição da unidade
+	subordinada a esta cobertura.
+	</p>
+    </hint>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>S</m> a porção do primeiro quadrante de <m>\R^2</m> limitada pelas
+	hipérboles <m>xy=1</m> e <m>xy=2</m>, além das retas <m>y=x</m> e
+	<m>y=4x</m>. Calcule <m>\displaystyle\int_S x^2y^3\,dx\,dy</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Considere <m>x=u/v</m> e <m>y=uv</m>.
+      </p>
+    </hint>
+  </exercise>
+
+    <exercise>
+    <statement>
+      <p>
+	Seja <m>S</m> o tetraedro de vértices <m>(0,0,0), (1,2,3), (0,1,2)</m> e
+	<m>(-1,1,1)</m>. Calcule <m>\displaystyle\int_S
+	x+2y-z\,dx\,dy\,dz</m>.	
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Considere uma mudança que ``endireita'' o tetraedro.
+      </p>
+    </hint>
+  </exercise>
+
+    <exercise>
+    <statement>
+      <p>
+	Defina <m>f\colon]0,\infty[\times]0,2\pi[\to\R^2</m> por
+	<m>f(r,\theta)=(r\cos\theta,r\sin\theta)</m>.
+      </p>
+
+      <p>
+	<ol marker="a.">
+	  <li>
+	  Mostre que <m>f</m> é injetora, calcule <m>f'(r,\theta)</m> e
+	  mostre que <m>\det f'(r,\theta)\neq 0</m> para todo
+	  <m>(r,\theta)</m>. Determine o conjunto
+	  <m>f\big(]0,\infty[\times]0,2\pi[\big)</m>.
+	  </li>
+	  <li>
+	    Explicite a expressão de <m>f^{-1}(x,y)</m>.
+	  </li>
+	  <li>
+	    <p>
+	      Seja <m>C\subset\R^2</m> a região delimitada por círculos
+	      de raios <m>r_1</m> e <m>r_2</m>, <m>0&lt;r_1&lt;r_2</m> e
+	      pela retas que passam pela origem que fazem ângulo
+	      <m>\theta_1</m> e <m>\theta_2</m> com o eixo dos <m>x</m>,
+	      respectivamente. Se <m>h\colon C\to\R</m> é uma função
+	      integrável tal que
+	      <m>h(x,y)=g\big(r(x,y),\theta(x,y)\big)</m>, mostre que
+	      <me>\int_C h=\int_{r_1}^{r_2}\left(\int_{\theta_1}^{\theta_2}
+	      g(r,\theta)r\,d\theta\right)\,dr.</me>
+	    </p>
+	    <p>
+	      Mostre também que se <m>B_r=\big\{(x,y)\in\R^2:x^2+y^2\leq
+	      r\big\}</m> então <me>\int_{B_r} h=\int_0^r\left(\int_0^{2\pi}
+	      rg(r,\theta)\,d\theta\right)\,dr.</me>
+	    </p>
+	  </li>
+	  <li>
+	    Se <m>C_r=[-r,r]\times[-r,r]</m>, mostre que <me>\int_{B_r}
+	    e^{-x^2-y^2}\,dx\,dy = \pi(1-e^{-r^2})\quad\text{e}\quad
+	    \int_{C_r} e^{-x^2-y^2}\,dx\,dy = \left(\int_{-r}^r
+	    e^{-x^2}\,dx\right)^2.</me>
+	  </li>
+	  <li>
+	    Prove também que <me>\lim_{r\to\infty}\int_{B_r}
+	    e^{-x^2-y^2}\,dx\,dy=\lim_{r\to\infty}\int_{C_r}
+	    e^{-x^2-y^2}\,dx\,dy</me> e conclua que
+	    <m>\displaystyle{\int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt{\pi}}</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+    <exercise>
+    <statement>
+      <p>
+	Sejam <m>0&lt;a&lt;b</m>. Considere o círculo no plano
+	<m>Oxz</m> de raio <m>a</m> e centro em <m>(b,0,0)</m>. Ao
+	rotacionar esse círculo em torno do eixo <m>Oz</m> obtemos uma
+	superfície chamada <term>toro</term> (vide Exercício <xref
+	ref="toro-valreg" text="global"/> da <xref ref="lista01" text="title"
+	/>). Se realizamos esse processo com o disco ao invés do círculo
+	obtemos o <term>toro sólido</term>.
+      </p>
+
+      <p>
+	Determine o volume do toro sólido.
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Você pode calcular isto diretamente, mas é bem mais conveniente
+	utilizar as <term>coordenadas cilíndricas</term> do <m>\R^3</m>:
+	<m>g(r,\theta, z)=(r\cos\theta,r\sin\theta,z)</m>. Determine a
+	região no domínio de <m>g</m> que tem o toro como imagem.
+      </p>
+      <p>
+	O resultado obtido é um caso particular do Exercício
+	<xref ref="volume_rot" text="global"/> desta lista.
+      </p>
+    </hint>
+  </exercise>
+  
+</worksheet>
