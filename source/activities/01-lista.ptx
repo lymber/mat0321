@@ -272,7 +272,7 @@
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise xml:id="toro-valreg">
     <statement>
       <p>
 	Seja <m>f\colon \R^3\to\R</m> dada por
