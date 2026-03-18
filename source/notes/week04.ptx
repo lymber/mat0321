@@ -14,10 +14,8 @@
     <title>17/03 <ndash /> Terça</title>
 
     <p>
-      Demonstração do Teorema de Fubini. Exemplos. Partições da
-      Unidade. Veja <xref
-      ref="handout-fubini" text="title"/> e <xref
-      ref="handout-partunit" text="title"/>.
+      Demonstração do Teorema de Fubini. Exemplos. Veja <xref
+      ref="handout-fubini" text="title"/>.
     </p>
   </subsection>
 
@@ -26,9 +24,8 @@
     <title>19/03 <ndash /> Quinta</title>
 
     <p>
-      Partições da unidade e integração. Mudança de variáveis. Veja <xref
-      ref="handout-partunit" text="title"/> e <xref
-      ref="handout-mudvar" text="title"/>
+      Partições da unidade. Veja <xref
+      ref="handout-partunit" text="title"/>.
     </p>
   </subsection>
 </section>
