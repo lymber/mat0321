@@ -70,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Semana 04",
-  "body": " Semana 04   Linhas gerais do que foi coberto na quarta semana de aulas.     17\/03 Terça  Demonstração do Teorema de Fubini. Exemplos. Partições da Unidade. Veja e .    19\/03 Quinta  Partições da unidade e integração. Mudança de variáveis. Veja e    "
+  "body": " Semana 04   Linhas gerais do que foi coberto na quarta semana de aulas.     17\/03 Terça  Demonstração do Teorema de Fubini. Exemplos. Veja .    19\/03 Quinta  Partições da unidade. Veja .   "
 },
 {
   "id": "lista01",
@@ -691,7 +691,7 @@ var ptx_lunr_docs = [
   "type": "Material de apoio",
   "number": "",
   "title": "Partições da Unidade",
-  "body": " Partições da Unidade     Partição da Unidade   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala      "
+  "body": " Partições da Unidade     Partição da Unidade   Logo mais.        Feito em sala      "
 },
 {
   "id": "teo-partunit",
@@ -700,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Teorema",
   "number": "31",
   "title": "Partição da Unidade.",
-  "body": " Partição da Unidade   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala   "
+  "body": " Partição da Unidade   Logo mais.        Feito em sala   "
 },
 {
   "id": "handout-mudvar",
@@ -709,7 +709,7 @@ var ptx_lunr_docs = [
   "type": "Material de apoio",
   "number": "",
   "title": "Mudança de variáveis",
-  "body": " Mudança de variáveis     Mudança de variáveis   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala      "
+  "body": " Mudança de variáveis     Mudança de variáveis   Cedo ou tarde aparece. Na verdade aparecerá no momento exato em que for necessário.        Feito em sala      "
 },
 {
   "id": "teo-mudvar",
@@ -718,7 +718,7 @@ var ptx_lunr_docs = [
   "type": "Teorema",
   "number": "33",
   "title": "Mudança de variáveis.",
-  "body": " Mudança de variáveis   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala   "
+  "body": " Mudança de variáveis   Cedo ou tarde aparece. Na verdade aparecerá no momento exato em que for necessário.        Feito em sala   "
 },
 {
   "id": "tarefas-2",
