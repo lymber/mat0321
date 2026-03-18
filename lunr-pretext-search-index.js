@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Avaliação e Notas",
-  "body": " Avaliação e Notas  A avaliação do curso consistirá de duas provas e a entrega periódica de exercícios:     Provas   P 1 : data   P 2 : data    Exercícios  Veja em Entregas .     O cálculo da média de primeira avaliação é dado por:  é a média aritimética das provas e é a média dos exercícios, depois de descartada a pior nota dentre esses exercícios.  Ao aluno que faltar em uma das provas será ofertada uma avaliação substitutiva, cuja nota entra no lugar daquela onde houve a ausência.  Caso , o aluno tem direito a uma prova de recuperação, , que será sua nota de segunda avaliação.     Notas  Veja aqui .     "
+  "body": " Avaliação e Notas  A avaliação do curso consistirá de duas provas e a entrega periódica de exercícios:     Provas   P 1 : 16 de Abril   P 2 : 28 de Maio   P 3 : 25 de Junho    Exercícios  Veja em Entregas .     O cálculo da média de primeira avaliação é dado por:  é a média aritimética das provas e é a média dos exercícios, depois de descartada a pior nota dentre esses exercícios.  Ao aluno que faltar em uma das provas será ofertada uma avaliação substitutiva (realizada em 30 de Junho), cuja nota entra no lugar daquela onde houve a ausência.  Caso , o aluno tem direito a uma prova de recuperação, (a ser marcada), que será sua nota de segunda avaliação.     Notas  Veja aqui .     "
 },
 {
   "id": "cronograma-semana-01",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Semana 02",
-  "body": " Semana 02   Linhas gerais do que foi coberto na segunda semana de aulas.     02\/03 Terça  Conserto da forma local das imersões. Forma local das submersões. Motivação e enunciado do teorema do posto. Veja .    04\/03 Quinta  Teorema do posto. Integração em : definição e propriedades elementares. Veja e (de até .   "
+  "body": " Semana 02   Linhas gerais do que foi coberto na segunda semana de aulas.     03\/03 Terça  Conserto da forma local das imersões. Forma local das submersões. Motivação e enunciado do teorema do posto. Veja .    05\/03 Quinta  Teorema do posto. Integração em : definição e propriedades elementares. Veja e (de até .   "
 },
 {
   "id": "cronograma-semana-03",
@@ -61,7 +61,16 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Semana 03",
-  "body": " Semana 03   Linhas gerais do que foi coberto na terceira semana de aulas.     09\/03 Terça  Retomada de alguns resultados anteriores. Conjuntos de medida nula e conteúdo nulo. Critério de Integrabilidade. Veja .     11\/03 Quinta  Blowing in the wind...   "
+  "body": " Semana 03   Linhas gerais do que foi coberto na terceira semana de aulas.     10\/03 Terça  Retomada de alguns resultados anteriores. Conjuntos de medida nula e conteúdo nulo. Critério de Integrabilidade. Veja .     12\/03 Quinta  Teorema de Fubini: motivações, exemplos e uma tentativa frustrada de demonstração. Veja    "
+},
+{
+  "id": "cronograma-semana-04",
+  "level": "1",
+  "url": "cronograma-semana-04.html",
+  "type": "Seção",
+  "number": "",
+  "title": "Semana 04",
+  "body": " Semana 04   Linhas gerais do que foi coberto na quarta semana de aulas.     17\/03 Terça  Demonstração do Teorema de Fubini. Exemplos. Partições da Unidade. Veja e .    19\/03 Quinta  Partições da unidade e integração. Mudança de variáveis. Veja e    "
 },
 {
   "id": "lista01",
@@ -208,9 +217,9 @@ var ptx_lunr_docs = [
   "body": "  O cone é imagem inversa de valor regular?   "
 },
 {
-  "id": "lista01-18",
+  "id": "toro-valreg",
   "level": "2",
-  "url": "lista01.html#lista01-18",
+  "url": "lista01.html#toro-valreg",
   "type": "Exercício da Lista",
   "number": "16",
   "title": "",
@@ -233,6 +242,222 @@ var ptx_lunr_docs = [
   "number": "18",
   "title": "",
   "body": "  Sejam uma imersão injetora de classe e uma curva de classe tal que .  Mostre que existem e , de classe tal que .   "
+},
+{
+  "id": "lista02",
+  "level": "1",
+  "url": "lista02.html",
+  "type": "Lista de Exercícios",
+  "number": "",
+  "title": "Lista 02 – Integração em <span class=\"process-math\">\\(\\R^n\\)<\/span>",
+  "body": " Lista 02 Integração em    Segunda Lista de Exercícios.       Seja dada por   Mostre que é integrável e que .      Seja dada por   Mostre que é integrável e que .      Mostre que um conjunto ilimitado não pode ter conteúdo nulo.      Dê um exemplo de conjunto fechado de medida nula que não tem conteúdo nulo.      Mostre que se é um conjunto de conteúdo nulo então seu bordo também tem conteúdo nulo.      Mostre que se e são limitadas e integráveis sobre um conjunto limitado então também o é.      Mostre que:  se tem conteúdo nulo então é limitado por um retângulo fechado , é mensurável e ;  se é limitado, tem medida nula e existe então .      Determine para uma partição qualquer de e use que um retângulo não pode ter conteúdo nulo.      Dê um exemplo de conjunto limitado tal que não existe.      Mostre que se é crescente, então é integrável.      Sejam um conjunto mensurável e . Mostre que existe um compacto , mensurável, tal que .      Seja contínua. Mostre que       Use o teorema de Fubini para dar um prova simples do Teorema de Schwarz, ou seja, , se é uma função de classe .      Deduza uma fórmula para o cálculo do volume de um sólido em obtido pela rotação de uma região mensurável no plano ao redor do eixo (suponha que a região em questão não intercepta o eixo ).      Seja contínua com também contínua e defina por . Mostre que .    Escreva como uma integral iterada.  A hipótese sobre a continuidade de contínua é realmente necessária?      Sejam e conjuntos mensuráveis contidos num paralelepípedo . Defina e de modo análogo. Suponha que e sejam, para cada , conjuntos mensuráveis em de mesma área. Mostre que e têm o mesmo volume.      Seja dada por     Mostre que é contínua em .  Mostre que para todo e depois defina para mostrar que . Faça então e .    Mostre que é diferenciável em .  Mostre que para todo .  Conclua que é de classe . Ela é analítica real?  Esboce o gráfico de .  Seja um retângulo em . Construa uma função, de classe , tal que para e , em caso contrário.        Mostre que a coleção de funções dadas por , se , e , se , onde são uma partição da unidade.  Determine o suporte de cada e mostre que cada tem uma vizinhança que intercepta no máximo três desses suportes.      Sejam um subconjunto arbitrário de e . Dizemos que uma função é de classe em se existe um aberto , contendo , e uma função , de classe , tal que para todo .  Mostre nesse caso que se é de classe e cujo suporte está contido em então é uma função bem definida e de classe em .      Mostre que se é de classe em cada ponto , então pode ser estendida a uma função , onde é um aberto de contendo .    Determine uma cobertura apropriada para , defina como sua reunião e então tome uma partição da unidade subordinada a esta cobertura.      Seja a porção do primeiro quadrante de limitada pelas hipérboles e , além das retas e . Calcule .    Considere e .      Seja o tetraedro de vértices e . Calcule .    Considere uma mudança que ``endireita'' o tetraedro.      Defina por .    Mostre que é injetora, calcule e mostre que para todo . Determine o conjunto .  Explicite a expressão de .   Seja a região delimitada por círculos de raios e , e pela retas que passam pela origem que fazem ângulo e com o eixo dos , respectivamente. Se é uma função integrável tal que , mostre que   Mostre também que se então    Se , mostre que   Prove também que e conclua que .        Sejam . Considere o círculo no plano de raio e centro em . Ao rotacionar esse círculo em torno do eixo obtemos uma superfície chamada toro (vide Exercício da ). Se realizamos esse processo com o disco ao invés do círculo obtemos o toro sólido .  Determine o volume do toro sólido.    Você pode calcular isto diretamente, mas é bem mais conveniente utilizar as coordenadas cilíndricas do : . Determine a região no domínio de que tem o toro como imagem.  O resultado obtido é um caso particular do Exercício desta lista.    "
+},
+{
+  "id": "lista02-3",
+  "level": "2",
+  "url": "lista02.html#lista02-3",
+  "type": "Exercício da Lista",
+  "number": "1",
+  "title": "",
+  "body": "   Seja dada por   Mostre que é integrável e que .   "
+},
+{
+  "id": "lista02-4",
+  "level": "2",
+  "url": "lista02.html#lista02-4",
+  "type": "Exercício da Lista",
+  "number": "2",
+  "title": "",
+  "body": "  Seja dada por   Mostre que é integrável e que .   "
+},
+{
+  "id": "lista02-5",
+  "level": "2",
+  "url": "lista02.html#lista02-5",
+  "type": "Exercício da Lista",
+  "number": "3",
+  "title": "",
+  "body": "  Mostre que um conjunto ilimitado não pode ter conteúdo nulo.   "
+},
+{
+  "id": "lista02-6",
+  "level": "2",
+  "url": "lista02.html#lista02-6",
+  "type": "Exercício da Lista",
+  "number": "4",
+  "title": "",
+  "body": "  Dê um exemplo de conjunto fechado de medida nula que não tem conteúdo nulo.   "
+},
+{
+  "id": "lista02-7",
+  "level": "2",
+  "url": "lista02.html#lista02-7",
+  "type": "Exercício da Lista",
+  "number": "5",
+  "title": "",
+  "body": "  Mostre que se é um conjunto de conteúdo nulo então seu bordo também tem conteúdo nulo.   "
+},
+{
+  "id": "lista02-8",
+  "level": "2",
+  "url": "lista02.html#lista02-8",
+  "type": "Exercício da Lista",
+  "number": "6",
+  "title": "",
+  "body": "  Mostre que se e são limitadas e integráveis sobre um conjunto limitado então também o é.   "
+},
+{
+  "id": "lista02-9",
+  "level": "2",
+  "url": "lista02.html#lista02-9",
+  "type": "Exercício da Lista",
+  "number": "7",
+  "title": "",
+  "body": "  Mostre que:  se tem conteúdo nulo então é limitado por um retângulo fechado , é mensurável e ;  se é limitado, tem medida nula e existe então .      Determine para uma partição qualquer de e use que um retângulo não pode ter conteúdo nulo.   "
+},
+{
+  "id": "lista02-10",
+  "level": "2",
+  "url": "lista02.html#lista02-10",
+  "type": "Exercício da Lista",
+  "number": "8",
+  "title": "",
+  "body": "  Dê um exemplo de conjunto limitado tal que não existe.   "
+},
+{
+  "id": "lista02-11",
+  "level": "2",
+  "url": "lista02.html#lista02-11",
+  "type": "Exercício da Lista",
+  "number": "9",
+  "title": "",
+  "body": "  Mostre que se é crescente, então é integrável.   "
+},
+{
+  "id": "lista02-12",
+  "level": "2",
+  "url": "lista02.html#lista02-12",
+  "type": "Exercício da Lista",
+  "number": "10",
+  "title": "",
+  "body": "  Sejam um conjunto mensurável e . Mostre que existe um compacto , mensurável, tal que .   "
+},
+{
+  "id": "lista02-13",
+  "level": "2",
+  "url": "lista02.html#lista02-13",
+  "type": "Exercício da Lista",
+  "number": "11",
+  "title": "",
+  "body": "  Seja contínua. Mostre que    "
+},
+{
+  "id": "lista02-14",
+  "level": "2",
+  "url": "lista02.html#lista02-14",
+  "type": "Exercício da Lista",
+  "number": "12",
+  "title": "",
+  "body": "  Use o teorema de Fubini para dar um prova simples do Teorema de Schwarz, ou seja, , se é uma função de classe .   "
+},
+{
+  "id": "volume_rot",
+  "level": "2",
+  "url": "lista02.html#volume_rot",
+  "type": "Exercício da Lista",
+  "number": "13",
+  "title": "",
+  "body": "  Deduza uma fórmula para o cálculo do volume de um sólido em obtido pela rotação de uma região mensurável no plano ao redor do eixo (suponha que a região em questão não intercepta o eixo ).   "
+},
+{
+  "id": "lista02-16",
+  "level": "2",
+  "url": "lista02.html#lista02-16",
+  "type": "Exercício da Lista",
+  "number": "14",
+  "title": "",
+  "body": "  Seja contínua com também contínua e defina por . Mostre que .    Escreva como uma integral iterada.  A hipótese sobre a continuidade de contínua é realmente necessária?   "
+},
+{
+  "id": "lista02-17",
+  "level": "2",
+  "url": "lista02.html#lista02-17",
+  "type": "Exercício da Lista",
+  "number": "15",
+  "title": "",
+  "body": "  Sejam e conjuntos mensuráveis contidos num paralelepípedo . Defina e de modo análogo. Suponha que e sejam, para cada , conjuntos mensuráveis em de mesma área. Mostre que e têm o mesmo volume.   "
+},
+{
+  "id": "lista02-18",
+  "level": "2",
+  "url": "lista02.html#lista02-18",
+  "type": "Exercício da Lista",
+  "number": "16",
+  "title": "",
+  "body": "  Seja dada por     Mostre que é contínua em .  Mostre que para todo e depois defina para mostrar que . Faça então e .    Mostre que é diferenciável em .  Mostre que para todo .  Conclua que é de classe . Ela é analítica real?  Esboce o gráfico de .  Seja um retângulo em . Construa uma função, de classe , tal que para e , em caso contrário.     "
+},
+{
+  "id": "lista02-19",
+  "level": "2",
+  "url": "lista02.html#lista02-19",
+  "type": "Exercício da Lista",
+  "number": "17",
+  "title": "",
+  "body": "  Mostre que a coleção de funções dadas por , se , e , se , onde são uma partição da unidade.  Determine o suporte de cada e mostre que cada tem uma vizinhança que intercepta no máximo três desses suportes.   "
+},
+{
+  "id": "lista02-20",
+  "level": "2",
+  "url": "lista02.html#lista02-20",
+  "type": "Exercício da Lista",
+  "number": "18",
+  "title": "",
+  "body": "  Sejam um subconjunto arbitrário de e . Dizemos que uma função é de classe em se existe um aberto , contendo , e uma função , de classe , tal que para todo .  Mostre nesse caso que se é de classe e cujo suporte está contido em então é uma função bem definida e de classe em .   "
+},
+{
+  "id": "lista02-21",
+  "level": "2",
+  "url": "lista02.html#lista02-21",
+  "type": "Exercício da Lista",
+  "number": "19",
+  "title": "",
+  "body": "  Mostre que se é de classe em cada ponto , então pode ser estendida a uma função , onde é um aberto de contendo .    Determine uma cobertura apropriada para , defina como sua reunião e então tome uma partição da unidade subordinada a esta cobertura.   "
+},
+{
+  "id": "lista02-22",
+  "level": "2",
+  "url": "lista02.html#lista02-22",
+  "type": "Exercício da Lista",
+  "number": "20",
+  "title": "",
+  "body": "  Seja a porção do primeiro quadrante de limitada pelas hipérboles e , além das retas e . Calcule .    Considere e .   "
+},
+{
+  "id": "lista02-23",
+  "level": "2",
+  "url": "lista02.html#lista02-23",
+  "type": "Exercício da Lista",
+  "number": "21",
+  "title": "",
+  "body": "  Seja o tetraedro de vértices e . Calcule .    Considere uma mudança que ``endireita'' o tetraedro.   "
+},
+{
+  "id": "lista02-24",
+  "level": "2",
+  "url": "lista02.html#lista02-24",
+  "type": "Exercício da Lista",
+  "number": "22",
+  "title": "",
+  "body": "  Defina por .    Mostre que é injetora, calcule e mostre que para todo . Determine o conjunto .  Explicite a expressão de .   Seja a região delimitada por círculos de raios e , e pela retas que passam pela origem que fazem ângulo e com o eixo dos , respectivamente. Se é uma função integrável tal que , mostre que   Mostre também que se então    Se , mostre que   Prove também que e conclua que .     "
+},
+{
+  "id": "lista02-25",
+  "level": "2",
+  "url": "lista02.html#lista02-25",
+  "type": "Exercício da Lista",
+  "number": "23",
+  "title": "",
+  "body": "  Sejam . Considere o círculo no plano de raio e centro em . Ao rotacionar esse círculo em torno do eixo obtemos uma superfície chamada toro (vide Exercício da ). Se realizamos esse processo com o disco ao invés do círculo obtemos o toro sólido .  Determine o volume do toro sólido.    Você pode calcular isto diretamente, mas é bem mais conveniente utilizar as coordenadas cilíndricas do : . Determine a região no domínio de que tem o toro como imagem.  O resultado obtido é um caso particular do Exercício desta lista.   "
 },
 {
   "id": "handout-func_diff",
@@ -349,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Material de apoio",
   "number": "",
   "title": "Integração em <span class=\"process-math\">\\(\\R^n\\)<\/span>",
-  "body": " Integração em      Partições de intervalos e retângulos   Uma partição de um intervalo é um subconjunto : .  Se é um retângulo limitado, digamos , uma partição de é uma coleção , onde cada é uma partição de .  Uma partição é mais fina que , ou um refinamento de , se .     divide em subretângulos disjuntos.       Somas superior e inferior   Sejam uma função limitada no retângulo limitado , uma partição de e um subretângulo desta partição. Definimos e indicamos por o volume do subretângulo .   Com isso, a soma superior e a soma inferior de com a relação a são os números reais      para qualquer partição nas condições acima.       Propriedades das somas superior e inferior   Se , então e .    Feito em sala       Comparação entre somas superior e inferior   Sejam e partições quaisquer. Então ., então e .    Feito em sala       Função integrável   Uma função limitada definida no retângulo limitado é integrável se .   Notação:  ou ou ainda .       Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se para todo existe partição de tal que .    Feito em sala       Propriedades da integral   Sejam um retângulo limitado, funções limitadas e integrávels e . Então    é integrável e .          é integrável e .       Parte feita em sala e parte é um exercício.      "
+  "body": " Integração em      Partições de intervalos e retângulos   Uma partição de um intervalo é um subconjunto : .  Se é um retângulo limitado, digamos , uma partição de é uma coleção , onde cada é uma partição de .  Uma partição é mais fina que , ou um refinamento de , se .     divide em subretângulos disjuntos.       Somas superior e inferior   Sejam uma função limitada no retângulo limitado , uma partição de e um subretângulo desta partição. Definimos e indicamos por o volume do subretângulo .   Com isso, a soma superior e a soma inferior de com a relação a são os números reais      para qualquer partição nas condições acima.       Propriedades das somas superior e inferior   Se , então e .    Feito em sala       Comparação entre somas superior e inferior   Sejam e partições quaisquer. Então ., então e .    Feito em sala       Função integrável   Uma função limitada definida no retângulo limitado é integrável se .   Notação:  ou ou ainda .       Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se para todo existe partição de tal que .    Feito em sala       Propriedades da integral   Sejam um retângulo limitado, funções limitadas e integrávels e . Então    é integrável e .          é integrável e .       Parte feita em sala e parte é um exercício.       Medida nula e Conteúdo nulo   Um conjunto tem medida nula se para todo existe uma cobertura enumerável por retângulos fechados (ou abertos), , de tal que .  Um conjunto tem conteúdo nulo se para todo existe uma cobertura finita por retângulos fechados (ou abertos), , de tal que .    Se tem conteúdo nulo, então tem medida nula, mas não vale a recíproca.    Se é compacto e tem medida nula, então também tem conteúdo nulo.       Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se o conjunto tem medida nula.    Feito em sala       Integral em Conjuntos Limitados   Sejam um conjunto limitado e um retângulo tal que . A função característica de relativa a , é dada por , se e , se .   A função é integrável se, e somente se, (fronteira de ) tem medida nula (e portanto conteúdo nulo). Nesse caso, dizemos que é mensurável (Jordan mensurável) .   Assim, definimos a integral de em por desde que a integral do lado direito exista.   Existem conjuntos abertos que não são mensuráveis. Exemplo: , onde é o conjunto de Cantor \"gordo\" .       "
 },
 {
   "id": "handout-intRn-2-1",
@@ -413,6 +638,87 @@ var ptx_lunr_docs = [
   "number": "21",
   "title": "Propriedades da integral.",
   "body": " Propriedades da integral   Sejam um retângulo limitado, funções limitadas e integrávels e . Então    é integrável e .          é integrável e .       Parte feita em sala e parte é um exercício.   "
+},
+{
+  "id": "handout-intRn-2-8",
+  "level": "2",
+  "url": "handout-intRn.html#handout-intRn-2-8",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "medida nula conteúdo nulo "
+},
+{
+  "id": "teo-crit",
+  "level": "2",
+  "url": "handout-intRn.html#teo-crit",
+  "type": "Teorema",
+  "number": "25",
+  "title": "Critério de integrabilidade.",
+  "body": " Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se o conjunto tem medida nula.    Feito em sala   "
+},
+{
+  "id": "handout-intRn-2-10",
+  "level": "2",
+  "url": "handout-intRn.html#handout-intRn-2-10",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "função característica de relativa a mensurável (Jordan mensurável) "
+},
+{
+  "id": "handout-fubini",
+  "level": "1",
+  "url": "handout-fubini.html",
+  "type": "Material de apoio",
+  "number": "",
+  "title": "Teorema de Fubini",
+  "body": " Teorema de Fubini   Para uma função limitada definimos, por conveniência, que coincidem se, e somente se, é integrável.    Teorema de Fubini   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala      "
+},
+{
+  "id": "teo-fubini",
+  "level": "2",
+  "url": "handout-fubini.html#teo-fubini",
+  "type": "Teorema",
+  "number": "29",
+  "title": "Teorema de Fubini.",
+  "body": " Teorema de Fubini   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala   "
+},
+{
+  "id": "handout-partunit",
+  "level": "1",
+  "url": "handout-partunit.html",
+  "type": "Material de apoio",
+  "number": "",
+  "title": "Partições da Unidade",
+  "body": " Partições da Unidade     Partição da Unidade   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala      "
+},
+{
+  "id": "teo-partunit",
+  "level": "2",
+  "url": "handout-partunit.html#teo-partunit",
+  "type": "Teorema",
+  "number": "31",
+  "title": "Partição da Unidade.",
+  "body": " Partição da Unidade   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala   "
+},
+{
+  "id": "handout-mudvar",
+  "level": "1",
+  "url": "handout-mudvar.html",
+  "type": "Material de apoio",
+  "number": "",
+  "title": "Mudança de variáveis",
+  "body": " Mudança de variáveis     Mudança de variáveis   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala      "
+},
+{
+  "id": "teo-mudvar",
+  "level": "2",
+  "url": "handout-mudvar.html#teo-mudvar",
+  "type": "Teorema",
+  "number": "33",
+  "title": "Mudança de variáveis.",
+  "body": " Mudança de variáveis   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala   "
 },
 {
   "id": "tarefas-2",

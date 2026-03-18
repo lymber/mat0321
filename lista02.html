@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="pt-BR" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lista 02 – Integração em \R^n</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Cálculo Integral">
+<meta property="book:author" content="Prof. Alexandre Lymberopoulos">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.19';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Executar (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Ir ao conteúdo principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Cálculo Integral</span> <span class="subtitle">MAT0321 -  2026/1</span></a></h1>
+<p class="byline">Prof. Alexandre Lymberopoulos</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Sumário"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Sumário</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Buscando por: </h2>
+<div id="searchempty" class="searchempty"><span>Não encontrado.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="lista01.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="up-button button" href="listas.html" title="Acima"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Acima</span></a><a class="next-button button" href="resumos.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\id}{\mathrm{Id}}
+\newcommand{\posto}{\mathrm{posto}}
+\DeclareMathOperator\supp{supp}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Pré-textual</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="documentos.html" class="internal"><span class="title">Informações</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="info.html" class="internal"><span class="title">Informações da disciplina</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="descricao.html" class="internal"><span class="title">Descrição do Curso</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="aval.html" class="internal"><span class="title">Avaliação e Notas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="cronograma.html" class="internal"><span class="title">Andamento das Aulas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-01.html" class="internal"><span class="title">Semana 01</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-01.html#cronograma-semana-01-3" class="internal"><span class="title">24/02 –  Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-01.html#cronograma-semana-01-4" class="internal"><span class="title">26/02 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-02.html" class="internal"><span class="title">Semana 02</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-02.html#cronograma-semana-02-3" class="internal"><span class="title">03/03 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-02.html#cronograma-semana-02-4" class="internal"><span class="title">05/03 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-03.html" class="internal"><span class="title">Semana 03</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-03.html#cronograma-semana-03-3" class="internal"><span class="title">10/03 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-03.html#cronograma-semana-03-4" class="internal"><span class="title">12/03 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-04.html" class="internal"><span class="title">Semana 04</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-04.html#cronograma-semana-04-3" class="internal"><span class="title">17/03 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-04.html#cronograma-semana-04-4" class="internal"><span class="title">19/03 – Quinta</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="listas.html" class="internal"><span class="title">Listas de Exercícios</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="lista02.html" class="internal"><span class="title">Lista 02 – Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="resumos.html" class="internal"><span class="title">Resumos</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-func_diff.html" class="internal"><span class="title">Funções diferenciáveis</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-intRn.html" class="internal"><span class="title">Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-fubini.html" class="internal"><span class="title">Teorema de Fubini</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-partunit.html" class="internal"><span class="title">Partições da Unidade</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-mudvar.html" class="internal"><span class="title">Mudança de variáveis</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="tarefas.html" class="internal"><span class="title">Entregas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="tarefas-2.html" class="internal"><span class="title">Atividade 01</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Pré-visualização da impressão</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Formato do papel</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Opções de impressão</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-hint-checkbox">Esconder dicas</label><input type="checkbox" id="hide-hint-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Imprimir cabeçalho</span><label>Primeira página<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Página atual<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Imprimir rodapé</span><label>Primeira página<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Página atual<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Destacar área para solução</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Imprimir" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Imprimir</span></button>
+</div>
+</div>
+<section class="worksheet" id="lista02" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<span class="type">Lista de Exercícios</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lista 02 – Integração em <span class="process-math">\(\R^n\)</span></span><div class="print-links"><a href="?printpreview=lista02" class="print-link" title="Pré-visualização da impressão"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="introduction" id="lista02-2"><div class="para" id="lista02-2-1">Segunda Lista de Exercícios.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div></section><article class="exercise exercise-like" id="lista02-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="lista02-3-1-1">
+<div class="para">Seja <span class="process-math">\(f\colon[0,1]\times[0,1]\to\R\)</span> dada por</div>
+<div class="displaymath process-math" id="lista02-3-1-1-2">
+\begin{equation*}
+f(x,y)=
+\begin{cases}
+0,&amp;\text{se }0\leq x&lt;\frac{1}{2},\\
+1,&amp;\text{se }\frac{1}{2}\leq x\leq 1.
+\end{cases}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-3-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para" id="lista02-3-1-2">Mostre que <span class="process-math">\(f\)</span> é integrável e que <span class="process-math">\(\displaystyle{\int_{[0,1]\times[0,1]}f=\frac{1}{2}}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-3-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 1"><a href="#lista02-3" title="Copy heading and permalink for Exercício da Lista 1" aria-label="Copy heading and permalink for Exercício da Lista 1">🔗</a></div></article><article class="exercise exercise-like" id="lista02-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="lista02-4-1-1">
+<div class="para">Seja <span class="process-math">\(f\colon[0,1]\times[0,1]\to\R\)</span> dada por</div>
+<div class="displaymath process-math" id="lista02-4-1-1-2">
+\begin{equation*}
+f(x,y)=
+\begin{cases}
+0,&amp;\text{se }x\text{ é irracional},\\
+0,&amp;\text{se }x\text{ é racional e }y\text{ é irracional},\\
+1/q,&amp;\text{se }x\text{ é racional e
+}y=p/q\text{ na forma irredutível.}
+\end{cases}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-4-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para" id="lista02-4-1-2">Mostre que <span class="process-math">\(f\)</span> é integrável e que <span class="process-math">\(\displaystyle{\int_{[0,1]\times[0,1]}f=0}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-4-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 2"><a href="#lista02-4" title="Copy heading and permalink for Exercício da Lista 2" aria-label="Copy heading and permalink for Exercício da Lista 2">🔗</a></div></article><article class="exercise exercise-like" id="lista02-5"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-5-1-1">Mostre que um conjunto ilimitado não pode ter conteúdo nulo.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-5-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 3"><a href="#lista02-5" title="Copy heading and permalink for Exercício da Lista 3" aria-label="Copy heading and permalink for Exercício da Lista 3">🔗</a></div></article><article class="exercise exercise-like" id="lista02-6"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-6-1-1">Dê um exemplo de conjunto fechado de medida nula que não tem conteúdo nulo.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-6-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 4"><a href="#lista02-6" title="Copy heading and permalink for Exercício da Lista 4" aria-label="Copy heading and permalink for Exercício da Lista 4">🔗</a></div></article><article class="exercise exercise-like" id="lista02-7"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-7-1-1">Mostre que se <span class="process-math">\(A\)</span> é um conjunto de conteúdo nulo então seu bordo também tem conteúdo nulo.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-7-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 5"><a href="#lista02-7" title="Copy heading and permalink for Exercício da Lista 5" aria-label="Copy heading and permalink for Exercício da Lista 5">🔗</a></div></article><article class="exercise exercise-like" id="lista02-8"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-8-1-1">Mostre que se <span class="process-math">\(f\)</span> e <span class="process-math">\(g\)</span> são limitadas e integráveis sobre um conjunto limitado <span class="process-math">\(A\subset\R^n\)</span> então <span class="process-math">\(fg\)</span> também o é.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-8-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 6"><a href="#lista02-8" title="Copy heading and permalink for Exercício da Lista 6" aria-label="Copy heading and permalink for Exercício da Lista 6">🔗</a></div></article><article class="exercise exercise-like" id="lista02-9"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="lista02-9-1-1">
+<div class="para">Mostre que:</div>
+<ol class="lower-alpha ol-marker-1" id="lista02-9-1-1-1">
+<li id="lista02-9-1-1-1-1">
+<div class="para" id="p-derived-lista02-9-1-1-1-1">se <span class="process-math">\(C\)</span> tem conteúdo nulo então <span class="process-math">\(C\)</span> é limitado por um retângulo fechado <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(C\)</span> é <span class="process-math">\(J-\)</span>mensurável e <span class="process-math">\(\displaystyle\int_A\chi_C=0\text{;}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 7.a"><a href="#lista02-9-1-1-1-1" title="Copy heading and permalink for Item 7.a" aria-label="Copy heading and permalink for Item 7.a">🔗</a></div>
+</li>
+<li id="lista02-9-1-1-1-2">
+<div class="para" id="p-derived-lista02-9-1-1-1-2">se <span class="process-math">\(C\)</span> é limitado, tem medida nula e <span class="process-math">\(\displaystyle\int_A\chi_C\)</span> existe então <span class="process-math">\(\displaystyle\int_A\chi_C=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 7.b"><a href="#lista02-9-1-1-1-2" title="Copy heading and permalink for Item 7.b" aria-label="Copy heading and permalink for Item 7.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-9-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="solutions"><details id="lista02-9-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="lista02-9-2-1">Determine <span class="process-math">\(L(f,P)\)</span> para uma partição <span class="process-math">\(P\)</span> qualquer de <span class="process-math">\(A\)</span> e use que um retângulo não pode ter conteúdo nulo.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-9-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 7.1"><a href="#lista02-9-2" title="Copy heading and permalink for Dica 7.1" aria-label="Copy heading and permalink for Dica 7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercício da Lista 7"><a href="#lista02-9" title="Copy heading and permalink for Exercício da Lista 7" aria-label="Copy heading and permalink for Exercício da Lista 7">🔗</a></div></article><article class="exercise exercise-like" id="lista02-10"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-10-1-1">Dê um exemplo de conjunto limitado <span class="process-math">\(C\)</span> tal que <span class="process-math">\(\displaystyle\int_A\chi_C\)</span> não existe.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-10-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 8"><a href="#lista02-10" title="Copy heading and permalink for Exercício da Lista 8" aria-label="Copy heading and permalink for Exercício da Lista 8">🔗</a></div></article><article class="exercise exercise-like" id="lista02-11"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-11-1-1">Mostre que se <span class="process-math">\(f\colon[a,b]\to\R\)</span> é crescente, então <span class="process-math">\(f\)</span> é integrável.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-11-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 9"><a href="#lista02-11" title="Copy heading and permalink for Exercício da Lista 9" aria-label="Copy heading and permalink for Exercício da Lista 9">🔗</a></div></article><article class="exercise exercise-like" id="lista02-12"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-12-1-1">Sejam <span class="process-math">\(A\)</span> um conjunto <span class="process-math">\(J-\)</span>mensurável e <span class="process-math">\(\epsilon
+&gt;0\text{.}\)</span> Mostre que existe um compacto <span class="process-math">\(C\subset A\text{,}\)</span> <span class="process-math">\(J-\)</span>mensurável, tal que <span class="process-math">\(\displaystyle\int_{A\setminus
+C}1&lt;\epsilon\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-12-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 10"><a href="#lista02-12" title="Copy heading and permalink for Exercício da Lista 10" aria-label="Copy heading and permalink for Exercício da Lista 10">🔗</a></div></article><article class="exercise exercise-like" id="lista02-13"><h3 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="lista02-13-1-1">
+<div class="para">Seja <span class="process-math">\(f\colon[a,b]\times[a,b]\to\R\)</span> contínua. Mostre que</div>
+<div class="displaymath process-math" id="lista02-13-1-1-2">
+\begin{equation*}
+\int_a^b\left(\int_a^y f(x,y)\,dx\right)\,dy = \int_a^b\left(\int_x^b
+f(x,y)\,dy\right)\,dx.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-13-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 11"><a href="#lista02-13" title="Copy heading and permalink for Exercício da Lista 11" aria-label="Copy heading and permalink for Exercício da Lista 11">🔗</a></div></article><article class="exercise exercise-like" id="lista02-14"><h3 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-14-1-1">Use o teorema de Fubini para dar um prova simples do Teorema de Schwarz, ou seja, <span class="process-math">\(\dfrac{\partial^2 f}{\partial x\partial y} =
+\dfrac{\partial^2 f}{\partial y\partial x}\text{,}\)</span> se <span class="process-math">\(f\)</span> é uma função de classe <span class="process-math">\(\mathscr{C}^2\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-14-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 12"><a href="#lista02-14" title="Copy heading and permalink for Exercício da Lista 12" aria-label="Copy heading and permalink for Exercício da Lista 12">🔗</a></div></article><article class="exercise exercise-like" id="volume_rot"><h3 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="volume_rot-1-1">Deduza uma fórmula para o cálculo do volume de um sólido em <span class="process-math">\(\R^3\)</span> obtido pela rotação de uma região <span class="process-math">\(J-\)</span>mensurável no plano <span class="process-math">\(yz\)</span> ao redor do eixo <span class="process-math">\(Oz\)</span> (suponha que a região em questão não intercepta o eixo <span class="process-math">\(Oz\)</span>).<div class="autopermalink" data-description="Parágrafo"><a href="#volume_rot-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 13"><a href="#volume_rot" title="Copy heading and permalink for Exercício da Lista 13" aria-label="Copy heading and permalink for Exercício da Lista 13">🔗</a></div></article><article class="exercise exercise-like" id="lista02-16"><h3 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-16-1-1">Seja <span class="process-math">\(f\colon[a,b]\times[c,d]\to\R\)</span> contínua com <span class="process-math">\(\frac{\partial f}{\partial y}\)</span> também contínua e defina <span class="process-math">\(F\colon[c,d]\to\R\)</span> por <span class="process-math">\(F(y)=\displaystyle\int_a^b
+f(x,y)\,dx\text{.}\)</span> Mostre que <span class="process-math">\(F'(y)=\displaystyle\int_a^b\frac{\partial
+f}{\partial y}(x,y)\,dx\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-16-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="solutions"><details id="lista02-16-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="lista02-16-2-1">Escreva <span class="process-math">\(F(y)\)</span> como uma integral iterada.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-16-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="lista02-16-2-2">A hipótese sobre a continuidade de <span class="process-math">\(\dfrac{\partial
+f}{\partial y}\)</span> contínua é realmente necessária?<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-16-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 14.1"><a href="#lista02-16-2" title="Copy heading and permalink for Dica 14.1" aria-label="Copy heading and permalink for Dica 14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercício da Lista 14"><a href="#lista02-16" title="Copy heading and permalink for Exercício da Lista 14" aria-label="Copy heading and permalink for Exercício da Lista 14">🔗</a></div></article><article class="exercise exercise-like" id="lista02-17"><h3 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-17-1-1">Sejam <span class="process-math">\(A\)</span> e <span class="process-math">\(B\)</span> conjuntos <span class="process-math">\(J-\)</span>mensuráveis contidos num paralelepípedo <span class="process-math">\(R\times
+[a,b]\subset\R^3\text{.}\)</span> Defina <span class="process-math">\(A_c=\big\{(x,y)\in R:(x,y,c)\in A\big\}\)</span> e <span class="process-math">\(B_c\)</span> de modo análogo. Suponha que <span class="process-math">\(A_c\)</span> e <span class="process-math">\(B_c\)</span> sejam, para cada <span class="process-math">\(c\in[a,b]\text{,}\)</span> conjuntos <span class="process-math">\(J-\)</span>mensuráveis em <span class="process-math">\(\R^2\)</span> de mesma área. Mostre que <span class="process-math">\(A\)</span> e <span class="process-math">\(B\)</span> têm o mesmo volume.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-17-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 15"><a href="#lista02-17" title="Copy heading and permalink for Exercício da Lista 15" aria-label="Copy heading and permalink for Exercício da Lista 15">🔗</a></div></article><article class="exercise exercise-like" id="lista02-18"><h3 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="lista02-18-1-1">
+<div class="para">Seja <span class="process-math">\(f_n\colon\R\to\R\)</span> dada por</div>
+<div class="displaymath process-math" id="lista02-18-1-1-2">
+\begin{equation*}
+f_n(x)=
+\begin{cases}
+\frac{e^{-1/x}}{x^n},&amp;\text{se }x&gt;0,\\
+\hfill 0,&amp;\mbox{se }x\leq 0.
+\end{cases}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-18-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para logical" id="lista02-18-1-2">
+<ol class="lower-alpha ol-marker-1" id="lista02-18-1-2-1">
+<li id="lista02-18-1-2-1-1">
+<div class="para" id="p-derived-lista02-18-1-2-1-1">Mostre que <span class="process-math">\(f_n\)</span> é contínua em <span class="process-math">\(x_0=0\text{.}\)</span> <details id="lista02-18-1-2-1-1-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="lista02-18-1-2-1-1-3-1">Mostre que <span class="process-math">\(a&lt;e^a\)</span> para todo <span class="process-math">\(a\in\R\)</span> e depois defina <span class="process-math">\(a=\frac{t}{2n}\)</span> para mostrar que <span class="process-math">\(\frac{t^n}{e^t}&lt;\frac{(2n)^n}{e^{t\slash
+2}}\text{.}\)</span> Faça então <span class="process-math">\(t=\frac{1}{x}\)</span> e <span class="process-math">\(x\to
+0^+\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-18-1-2-1-1-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 16.a.1"><a href="#lista02-18-1-2-1-1-3" title="Copy heading and permalink for Dica 16.a.1" aria-label="Copy heading and permalink for Dica 16.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 16.a"><a href="#lista02-18-1-2-1-1" title="Copy heading and permalink for Item 16.a" aria-label="Copy heading and permalink for Item 16.a">🔗</a></div>
+</li>
+<li id="lista02-18-1-2-1-2">
+<div class="para" id="p-derived-lista02-18-1-2-1-2">Mostre que <span class="process-math">\(f_n\)</span> é diferenciável em <span class="process-math">\(x=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 16.b"><a href="#lista02-18-1-2-1-2" title="Copy heading and permalink for Item 16.b" aria-label="Copy heading and permalink for Item 16.b">🔗</a></div>
+</li>
+<li id="lista02-18-1-2-1-3">
+<div class="para" id="p-derived-lista02-18-1-2-1-3">Mostre que <span class="process-math">\(f_n'(x)=f_{n+2}(x)-nf_{n+1}(x)\)</span> para todo <span class="process-math">\(x\in\R\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 16.c"><a href="#lista02-18-1-2-1-3" title="Copy heading and permalink for Item 16.c" aria-label="Copy heading and permalink for Item 16.c">🔗</a></div>
+</li>
+<li id="lista02-18-1-2-1-4">
+<div class="para" id="p-derived-lista02-18-1-2-1-4">Conclua que <span class="process-math">\(f_n\)</span> é de classe <span class="process-math">\(\mathscr{C}^\infty\text{.}\)</span> Ela é analítica real?</div>
+<div class="autopermalink" data-description="Item 16.d"><a href="#lista02-18-1-2-1-4" title="Copy heading and permalink for Item 16.d" aria-label="Copy heading and permalink for Item 16.d">🔗</a></div>
+</li>
+<li id="lista02-18-1-2-1-5">
+<div class="para" id="p-derived-lista02-18-1-2-1-5">Esboce o gráfico de <span class="process-math">\(g(x)=f_0(x)f_0(1-x)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 16.e"><a href="#lista02-18-1-2-1-5" title="Copy heading and permalink for Item 16.e" aria-label="Copy heading and permalink for Item 16.e">🔗</a></div>
+</li>
+<li id="lista02-18-1-2-1-6">
+<div class="para" id="p-derived-lista02-18-1-2-1-6">Seja <span class="process-math">\(A=[a_1,b_1]\times\ldots\times[a_n,b_n]\)</span> um retângulo em <span class="process-math">\(\R^n\text{.}\)</span> Construa uma função, de classe <span class="process-math">\(\mathscr{C}^\infty\text{,}\)</span> <span class="process-math">\(\phi\colon\R^n\to\R\)</span> tal que <span class="process-math">\(\phi(x)&gt;0\)</span> para <span class="process-math">\(x\in\mathring{A}\)</span> e <span class="process-math">\(\phi(x)=0\text{,}\)</span> em caso contrário.</div>
+<div class="autopermalink" data-description="Item 16.f"><a href="#lista02-18-1-2-1-6" title="Copy heading and permalink for Item 16.f" aria-label="Copy heading and permalink for Item 16.f">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-18-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 16"><a href="#lista02-18" title="Copy heading and permalink for Exercício da Lista 16" aria-label="Copy heading and permalink for Exercício da Lista 16">🔗</a></div></article><article class="exercise exercise-like" id="lista02-19"><h3 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="lista02-19-1-1">
+<div class="para">Mostre que a coleção de funções dadas por <span class="process-math">\(\phi_{2m+1}(x)=f(x-m\pi)\text{,}\)</span> se <span class="process-math">\(m\geq 0\text{,}\)</span> e <span class="process-math">\(\phi_{2m}(x)=f(x+m\pi)\text{,}\)</span> se <span class="process-math">\(m\geq 1\text{,}\)</span> onde</div>
+<div class="displaymath process-math" id="lista02-19-1-1-5">
+\begin{equation*}
+f(x)=
+\begin{cases}
+\frac{1+\cos(x)}{2},&amp;\text{se }-\pi\leq x\leq\pi,\\
+\hfill 0,&amp;\text{em caso contrário}.
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">são uma partição da unidade.</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-19-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para" id="lista02-19-1-2">Determine o suporte de cada <span class="process-math">\(\phi_i\)</span> e mostre que cada <span class="process-math">\(x\in\R\)</span> tem uma vizinhança que intercepta no máximo três desses suportes.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-19-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 17"><a href="#lista02-19" title="Copy heading and permalink for Exercício da Lista 17" aria-label="Copy heading and permalink for Exercício da Lista 17">🔗</a></div></article><article class="exercise exercise-like" id="lista02-20"><h3 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-20-1-1">Sejam <span class="process-math">\(S\)</span> um subconjunto arbitrário de <span class="process-math">\(\R^n\)</span> e <span class="process-math">\(x_0\in S\text{.}\)</span> Dizemos que uma função <span class="process-math">\(f\colon S\to\R\)</span> é de <dfn class="terminology">classe <span class="process-math">\(\mathscr{C}^r\)</span> em <span class="process-math">\(x_0\)</span></dfn> se existe um aberto <span class="process-math">\(U\text{,}\)</span> contendo <span class="process-math">\(x_0\text{,}\)</span> e uma função <span class="process-math">\(g\colon U\to\R\text{,}\)</span> de classe <span class="process-math">\(\mathscr{C}^r\text{,}\)</span> tal que <span class="process-math">\(g(x)=f(x)\)</span> para todo <span class="process-math">\(x\in U\cap S\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-20-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para logical" id="lista02-20-1-2">
+<div class="para">Mostre nesse caso que se <span class="process-math">\(\phi\colon\R^n\to\R\)</span> é de classe <span class="process-math">\(\mathscr{C}^r\)</span> e cujo suporte está contido em <span class="process-math">\(U\)</span> então</div>
+<div class="displaymath process-math" id="lista02-20-1-2-4">
+\begin{equation*}
+h(x)=
+\begin{cases}
+\phi(x)g(x),&amp;\text{se }x\in U\\
+\hfill 0,&amp;\text{se }x\not\in\supp\phi.
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">é uma função bem definida e de classe <span class="process-math">\(\mathscr{C}^r\)</span> em <span class="process-math">\(\R^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-20-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 18"><a href="#lista02-20" title="Copy heading and permalink for Exercício da Lista 18" aria-label="Copy heading and permalink for Exercício da Lista 18">🔗</a></div></article><article class="exercise exercise-like" id="lista02-21"><h3 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-21-1-1">Mostre que se <span class="process-math">\(f\colon S\to\R\)</span> é de classe <span class="process-math">\(\mathscr{C}^r\)</span> em cada ponto <span class="process-math">\(x_0\in S\subset\R^n\text{,}\)</span> então <span class="process-math">\(f\)</span> pode ser estendida a uma função <span class="process-math">\(h\colon
+A\to\R\text{,}\)</span> onde <span class="process-math">\(A\)</span> é um aberto de <span class="process-math">\(\R^n\)</span> contendo <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-21-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="solutions"><details id="lista02-21-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="lista02-21-2-1">Determine uma cobertura apropriada para <span class="process-math">\(S\text{,}\)</span> defina <span class="process-math">\(A\)</span> como sua reunião e então tome uma partição da unidade subordinada a esta cobertura.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-21-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 19.1"><a href="#lista02-21-2" title="Copy heading and permalink for Dica 19.1" aria-label="Copy heading and permalink for Dica 19.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercício da Lista 19"><a href="#lista02-21" title="Copy heading and permalink for Exercício da Lista 19" aria-label="Copy heading and permalink for Exercício da Lista 19">🔗</a></div></article><article class="exercise exercise-like" id="lista02-22"><h3 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-22-1-1">Seja <span class="process-math">\(S\)</span> a porção do primeiro quadrante de <span class="process-math">\(\R^2\)</span> limitada pelas hipérboles <span class="process-math">\(xy=1\)</span> e <span class="process-math">\(xy=2\text{,}\)</span> além das retas <span class="process-math">\(y=x\)</span> e <span class="process-math">\(y=4x\text{.}\)</span> Calcule <span class="process-math">\(\displaystyle\int_S x^2y^3\,dx\,dy\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-22-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="solutions"><details id="lista02-22-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="lista02-22-2-1">Considere <span class="process-math">\(x=u/v\)</span> e <span class="process-math">\(y=uv\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-22-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 20.1"><a href="#lista02-22-2" title="Copy heading and permalink for Dica 20.1" aria-label="Copy heading and permalink for Dica 20.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercício da Lista 20"><a href="#lista02-22" title="Copy heading and permalink for Exercício da Lista 20" aria-label="Copy heading and permalink for Exercício da Lista 20">🔗</a></div></article><article class="exercise exercise-like" id="lista02-23"><h3 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-23-1-1">Seja <span class="process-math">\(S\)</span> o tetraedro de vértices <span class="process-math">\((0,0,0), (1,2,3), (0,1,2)\)</span> e <span class="process-math">\((-1,1,1)\text{.}\)</span> Calcule <span class="process-math">\(\displaystyle\int_S
+x+2y-z\,dx\,dy\,dz\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-23-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="solutions"><details id="lista02-23-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="lista02-23-2-1">Considere uma mudança que ``endireita’’ o tetraedro.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-23-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 21.1"><a href="#lista02-23-2" title="Copy heading and permalink for Dica 21.1" aria-label="Copy heading and permalink for Dica 21.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercício da Lista 21"><a href="#lista02-23" title="Copy heading and permalink for Exercício da Lista 21" aria-label="Copy heading and permalink for Exercício da Lista 21">🔗</a></div></article><article class="exercise exercise-like" id="lista02-24"><h3 class="heading"><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-24-1-1">Defina <span class="process-math">\(f\colon]0,\infty[\times]0,2\pi[\to\R^2\)</span> por <span class="process-math">\(f(r,\theta)=(r\cos\theta,r\sin\theta)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lista02-24-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para logical" id="lista02-24-1-2">
+<ol class="lower-alpha ol-marker-1" id="lista02-24-1-2-1">
+<li id="lista02-24-1-2-1-1">
+<div class="para" id="p-derived-lista02-24-1-2-1-1">Mostre que <span class="process-math">\(f\)</span> é injetora, calcule <span class="process-math">\(f'(r,\theta)\)</span> e mostre que <span class="process-math">\(\det f'(r,\theta)\neq 0\)</span> para todo <span class="process-math">\((r,\theta)\text{.}\)</span> Determine o conjunto <span class="process-math">\(f\big(]0,\infty[\times]0,2\pi[\big)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 22.a"><a href="#lista02-24-1-2-1-1" title="Copy heading and permalink for Item 22.a" aria-label="Copy heading and permalink for Item 22.a">🔗</a></div>
+</li>
+<li id="lista02-24-1-2-1-2">
+<div class="para" id="p-derived-lista02-24-1-2-1-2">Explicite a expressão de <span class="process-math">\(f^{-1}(x,y)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 22.b"><a href="#lista02-24-1-2-1-2" title="Copy heading and permalink for Item 22.b" aria-label="Copy heading and permalink for Item 22.b">🔗</a></div>
+</li>
+<li id="lista02-24-1-2-1-3">
+<div class="para logical" id="lista02-24-1-2-1-3-1">
+<div class="para">Seja <span class="process-math">\(C\subset\R^2\)</span> a região delimitada por círculos de raios <span class="process-math">\(r_1\)</span> e <span class="process-math">\(r_2\text{,}\)</span> <span class="process-math">\(0&lt;r_1&lt;r_2\)</span> e pela retas que passam pela origem que fazem ângulo <span class="process-math">\(\theta_1\)</span> e <span class="process-math">\(\theta_2\)</span> com o eixo dos <span class="process-math">\(x\text{,}\)</span> respectivamente. Se <span class="process-math">\(h\colon C\to\R\)</span> é uma função integrável tal que <span class="process-math">\(h(x,y)=g\big(r(x,y),\theta(x,y)\big)\text{,}\)</span> mostre que</div>
+<div class="displaymath process-math" id="lista02-24-1-2-1-3-1-10">
+\begin{equation*}
+\int_C h=\int_{r_1}^{r_2}\left(\int_{\theta_1}^{\theta_2}
+g(r,\theta)r\,d\theta\right)\,dr.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-24-1-2-1-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="lista02-24-1-2-1-3-2">
+<div class="para">Mostre também que se <span class="process-math">\(B_r=\big\{(x,y)\in\R^2:x^2+y^2\leq
+r\big\}\)</span> então</div>
+<div class="displaymath process-math" id="lista02-24-1-2-1-3-2-2">
+\begin{equation*}
+\int_{B_r} h=\int_0^r\left(\int_0^{2\pi}
+rg(r,\theta)\,d\theta\right)\,dr.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-24-1-2-1-3-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 22.c"><a href="#lista02-24-1-2-1-3" title="Copy heading and permalink for Item 22.c" aria-label="Copy heading and permalink for Item 22.c">🔗</a></div>
+</li>
+<li id="lista02-24-1-2-1-4">
+<div class="para" id="p-derived-lista02-24-1-2-1-4">Se <span class="process-math">\(C_r=[-r,r]\times[-r,r]\text{,}\)</span> mostre que<div class="displaymath process-math" id="lista02-24-1-2-1-4-2">
+\begin{equation*}
+\int_{B_r}
+e^{-x^2-y^2}\,dx\,dy = \pi(1-e^{-r^2})\quad\text{e}\quad
+\int_{C_r} e^{-x^2-y^2}\,dx\,dy = \left(\int_{-r}^r
+e^{-x^2}\,dx\right)^2.
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item 22.d"><a href="#lista02-24-1-2-1-4" title="Copy heading and permalink for Item 22.d" aria-label="Copy heading and permalink for Item 22.d">🔗</a></div>
+</li>
+<li id="lista02-24-1-2-1-5">
+<div class="para" id="p-derived-lista02-24-1-2-1-5">Prove também que<div class="displaymath process-math" id="lista02-24-1-2-1-5-1">
+\begin{equation*}
+\lim_{r\to\infty}\int_{B_r}
+e^{-x^2-y^2}\,dx\,dy=\lim_{r\to\infty}\int_{C_r}
+e^{-x^2-y^2}\,dx\,dy
+\end{equation*}
+</div>e conclua que <span class="process-math">\(\displaystyle{\int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt{\pi}}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 22.e"><a href="#lista02-24-1-2-1-5" title="Copy heading and permalink for Item 22.e" aria-label="Copy heading and permalink for Item 22.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-24-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercício da Lista 22"><a href="#lista02-24" title="Copy heading and permalink for Exercício da Lista 22" aria-label="Copy heading and permalink for Exercício da Lista 22">🔗</a></div></article><article class="exercise exercise-like" id="lista02-25"><h3 class="heading"><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="lista02-25-1-1">Sejam <span class="process-math">\(0&lt;a&lt;b\text{.}\)</span> Considere o círculo no plano <span class="process-math">\(Oxz\)</span> de raio <span class="process-math">\(a\)</span> e centro em <span class="process-math">\((b,0,0)\text{.}\)</span> Ao rotacionar esse círculo em torno do eixo <span class="process-math">\(Oz\)</span> obtemos uma superfície chamada <dfn class="terminology">toro</dfn> (vide Exercício <a href="lista01.html#toro-valreg" class="xref" data-knowl="./knowl/xref/toro-valreg.html" data-reveal-label="Revelar" data-close-label="Fechar" title="Exercício da Lista 16">16</a> da <a href="lista01.html" class="internal" title="Lista de Exercícios: Lista 01">Lista 01</a>). Se realizamos esse processo com o disco ao invés do círculo obtemos o <dfn class="terminology">toro sólido</dfn>.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-25-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para" id="lista02-25-1-2">Determine o volume do toro sólido.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-25-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="solutions"><details id="lista02-25-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="lista02-25-2-1">Você pode calcular isto diretamente, mas é bem mais conveniente utilizar as <dfn class="terminology">coordenadas cilíndricas</dfn> do <span class="process-math">\(\R^3\text{:}\)</span> <span class="process-math">\(g(r,\theta, z)=(r\cos\theta,r\sin\theta,z)\text{.}\)</span> Determine a região no domínio de <span class="process-math">\(g\)</span> que tem o toro como imagem.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-25-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="lista02-25-2-2">O resultado obtido é um caso particular do Exercício <a href="lista02.html#volume_rot" class="xref" data-knowl="./knowl/xref/volume_rot.html" data-reveal-label="Revelar" data-close-label="Fechar" title="Exercício da Lista 13">13</a> desta lista.<div class="autopermalink" data-description="Parágrafo"><a href="#lista02-25-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 23.1"><a href="#lista02-25-2" title="Copy heading and permalink for Dica 23.1" aria-label="Copy heading and permalink for Dica 23.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercício da Lista 23"><a href="#lista02-25" title="Copy heading and permalink for Exercício da Lista 23" aria-label="Copy heading and permalink for Exercício da Lista 23">🔗</a></div></article><div class="autopermalink" data-description="Lista de Exercícios: Lista 02 – Integração em \R^n"><a href="#lista02" title="Copy heading and permalink for Lista de Exercícios: Lista 02 – Integração em \R^n" aria-label="Copy heading and permalink for Lista de Exercícios: Lista 02 – Integração em \R^n">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="lista01.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="resumos.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
