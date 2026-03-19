@@ -223,8 +223,8 @@
 	      <p>
 		Mostre que <m>a&lt;e^a</m> para todo <m>a\in\R</m> e
 		depois defina <m>a=\frac{t}{2n}</m> para mostrar que
-		<m>\frac{t^n}{e^t}&lt;\frac{(2n)^n}{e^{t\slash
-		2}}</m>. Faça então <m>t=\frac{1}{x}</m> e <m>x\to
+		<m>\frac{t^n}{e^t}&lt;\frac{(2n)^n}{e^{t/2}}</m>. Faça
+		então <m>t=\frac{1}{x}</m> e <m>x\to
 		0^+</m>.
 	      </p>
 	    </hint>
