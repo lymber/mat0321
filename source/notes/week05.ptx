@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="cronograma-semana-05">
+  <title>Semana 05</title>
+
+  <introduction>
+    <p>
+      Linhas gerais do que foi coberto na quinta semana de aulas.
+    </p>
+  </introduction>
+
+  <!-- Can also be <handout> instead of <subsection> to get a printable version -->
+  <subsection>
+    <title>24/03 <ndash /> Terça</title>
+
+    <p>
+      Existência de partição suave da unidade. Aplicações à teoria de
+      integração. <xref
+      ref="handout-partunit" text="title"/>.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>26/03 <ndash /> Quinta</title>
+
+    <p>
+      Mudança de variáveis na integral. Veja <xref
+      ref="handout-mudavar" text="title"/>.
+    </p>
+  </subsection>
+</section>
