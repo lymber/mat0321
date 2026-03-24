@@ -232,8 +232,8 @@
 		  <m>\R^3</m>.</caption>
 
 		<image width="80%" xml:id="img-plateauRn">
-		  <!-- <description>Gráfico de uma função plateau em
-		  <m>\R^3</m>.</description> -->
+		  <description>Gráfico de uma função plateau em
+		  <m>\R^3</m>.</description>
 
 		  <asymptote label="plateau">
 		    import graph3;
@@ -262,7 +262,7 @@
 		    draw(Label("$B_{r_1}(0)$",E),circle((0,0,0), 1,normal=Z),dashed);
 		    draw(Label("$B_{r_2}(0)$",SSW),circle((0,0,0), 2,normal=Z),dashed);
 		    
-		    xaxis3("$x$",Arrow3); 
+		    xaxis3("$x$",Arrow3);
 		    yaxis3("$y$",Arrow3);
 		    zaxis3("$z$",Arrow3);
 		  </asymptote>
