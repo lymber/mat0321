@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Semana 05",
-  "body": " Semana 05   Linhas gerais do que foi coberto na quinta semana de aulas.     24\/03 Terça  Existência de partição suave da unidade em . Aplicações à teoria de integração. .    26\/03 Quinta  Mudança de variáveis na integral. Veja .   "
+  "body": " Semana 05   Linhas gerais do que foi coberto na quinta semana de aulas.     24\/03 Terça  Existência de partição suave da unidade em . Aplicações à teoria de integração. Veja .    26\/03 Quinta  Mais integração e partições da unidade. Mudança de variáveis na integral. Veja e .   "
 },
 {
   "id": "lista01",
@@ -127,9 +127,9 @@ var ptx_lunr_docs = [
   "body": "  Considere a função dada por   Mostre que a equação define uma função de classe em todo o plano.  Determine os pontos críticos de .  Classifique esses pontos críticos quanto a máximos locais, mínimos locais ou selas.  Escreva o polinômio de Taylor de ordem 1 e seu resto para em torno de .     "
 },
 {
-  "id": "home01-2",
+  "id": "home01-1",
   "level": "2",
-  "url": "lista01.html#home01-2",
+  "url": "lista01.html#home01-1",
   "type": "Exercício da Lista",
   "number": "5",
   "title": "",
@@ -244,9 +244,9 @@ var ptx_lunr_docs = [
   "body": "  Mostre que se é valor regular de então, para cada existem abertos e tais que é o gráfico de uma função de classe .   "
 },
 {
-  "id": "home01-1",
+  "id": "home01-2",
   "level": "2",
-  "url": "lista01.html#home01-1",
+  "url": "lista01.html#home01-2",
   "type": "Exercício da Lista",
   "number": "18",
   "title": "",
@@ -700,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Material de apoio",
   "number": "",
   "title": "Partições da Unidade",
-  "body": " Partições da Unidade     Colagem de funções contínuas   Sejam é um conjunto da forma , com cada fechado (logo é fechado) ou , com cada aberto (logo é aberto). Se, para cada ou , é uma função contínua tal que , então existe uma única função contínua tal que .    Segue-se do fato de que a continuidade é uma propriedade local.       Colagem de funções suavess   O mesmo vale para uma coleção suave de funções quandos os são abertos.    O que acontece se os são fechados?    Novamente usamos que o conceito de diferenciabilidade é local.       Diferenciabilidade em fechados   Se é um fechado, então é diferenciável se existe aberto em tal que e , diferenciável, tal que .    O conceito não depende do aberto contendo e da função que extende .        Denote, respectivamente, por e o conjunto dos números reais não positivos e não negativos. As funções , dada por , e , dada por .  A interseção dos dois domínios é um fechado e não existe uma função suave que extende simultaneamente e para .         Função suave não analítica   A função dada por é de classe em toda a reta real.    A função acima é de classe , mas não é analítica. Veja seu gráfico:  Gráfico de .         O resultado é imediato para ou . Em , basta verificar (por indução) que onde é um polinômio de grau no máximo .  Com isso é fácil mostrar que é contínua em , para todo natural .         Funções \"cut-off\"   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico:  Gráfico de .         Basta tomar , onde é a função definina no .       Funções \"plateau\" em   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico rm :  Gráfico de uma função plateau em .          Basta tomar , onde é a função definina no .       Paracompacidade de   Sejam uma coleção de abertos de e . Então existe uma coleção enumerável de bolas fechadas tal que:   ;  cada está contido em algum ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos .      Feito em sala       Partição suave da unidade   Sejam uma coleção de abertos de e . Uma partição suave da unidade para é uma coleção , onde cada é suave, satisfazendo:   para todo e ;   ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos ;   , para todo . Se, além disso, a coleção também verifica:   é compacto e   , dizemos que tem suporte compacto e é subordinada à cobertura de .       O suporte de uma função  é o conjunto        Existência de partição suave da unidade em abertos   Sejam uma coleção de abertos de e . Então existe partição suave da unidade com suporte compacto e subordinada a .    Feito em sala.       Existência de partição suave da unidade   Se é um conjunto qualquer e é uma cobertura aberta de , então existe partição suave da unidade para .    Basta observar que e que este último, por ser um aberto, tem garantida a exitência de uma partição da unidade subordinada a .      "
+  "body": " Partições da Unidade     Colagem de funções contínuas   Sejam é um conjunto da forma , com cada fechado (logo é fechado) ou , com cada aberto (logo é aberto). Se, para cada ou , é uma função contínua tal que , então existe uma única função contínua tal que .    Segue-se do fato de que a continuidade é uma propriedade local.       Colagem de funções suavess   O mesmo vale para uma coleção suave de funções quandos os são abertos.    O que acontece se os são fechados?    Novamente usamos que o conceito de diferenciabilidade é local.       Diferenciabilidade em fechados   Se é um fechado, então é diferenciável se existe aberto em tal que e , diferenciável, tal que .    O conceito não depende do aberto contendo e da função que extende .        Denote, respectivamente, por e o conjunto dos números reais não positivos e não negativos. As funções , dada por , e , dada por .  A interseção dos dois domínios é um fechado e não existe uma função suave que extende simultaneamente e para .         Função suave não analítica   A função dada por é de classe em toda a reta real.    A função acima é de classe , mas não é analítica. Veja seu gráfico:  Gráfico de .         O resultado é imediato para ou . Em , basta verificar (por indução) que onde é um polinômio de grau no máximo .  Com isso é fácil mostrar que é contínua em , para todo natural .         Funções \"cut-off\"   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico:  Gráfico de .         Basta tomar , onde é a função definina no .       Funções \"plateau\" em   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico rm :  Gráfico de uma função plateau em .   Gráfico de uma função plateau em .        Basta tomar , onde é a função definina no .       Paracompacidade de   Sejam uma coleção de abertos de e . Então existe uma coleção enumerável de bolas fechadas tal que:   ;  cada está contido em algum ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos .      Feito em sala       Partição suave da unidade   Sejam uma coleção de abertos de e . Uma partição suave da unidade para é uma coleção , onde cada é suave, satisfazendo:   para todo e ;   ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos ;   , para todo . Se, além disso, a coleção também verifica:   é compacto e   , dizemos que tem suporte compacto e é subordinada à cobertura de .       O suporte de uma função  é o conjunto        Existência de partição suave da unidade em abertos   Sejam uma coleção de abertos de e . Então existe partição suave da unidade com suporte compacto e subordinada a .    Feito em sala.       Existência de partição suave da unidade   Se é um conjunto qualquer e é uma cobertura aberta de , então existe partição suave da unidade para .    Basta observar que e que este último, por ser um aberto, tem garantida a exitência de uma partição da unidade subordinada a .      "
 },
 {
   "id": "fact-colagem_continua",
@@ -763,7 +763,7 @@ var ptx_lunr_docs = [
   "type": "Teorema",
   "number": "43",
   "title": "Funções \"plateau\" em <span class=\"process-math\">\\(\\R^n\\)<\/span>.",
-  "body": " Funções \"plateau\" em   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico rm :  Gráfico de uma função plateau em .          Basta tomar , onde é a função definina no .   "
+  "body": " Funções \"plateau\" em   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico rm :  Gráfico de uma função plateau em .   Gráfico de uma função plateau em .        Basta tomar , onde é a função definina no .   "
 },
 {
   "id": "lema-paracomp",
