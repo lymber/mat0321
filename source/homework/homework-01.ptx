@@ -5,7 +5,7 @@
   <introduction>
     <p>
       <alert>Instruções:</alert> Resolva os exercícios abaixo e
-      entregue-os dentro do prazo.
+      entregue-os até 26/03 durante a aula ou durante a monitoria.
     </p>
   </introduction>
 
@@ -13,10 +13,20 @@
     <exercise>
       <statement>
         <p>
-          This is the first homework exercise.
+          Resolva o Exercício <xref ref="home01-1" text="global"/> da
+	  <xref ref="lista01" text="title"/>
         </p>
       </statement>
     </exercise>
 
+    <exercise>
+      <statement>
+        <p>
+          Resolva o Exercício <xref ref="home01-2" text="global"/> da
+	  <xref ref="lista01" text="title"/>
+        </p>
+      </statement>
+    </exercise>
+    
   </page>
 </worksheet>
