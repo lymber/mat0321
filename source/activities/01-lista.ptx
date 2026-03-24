@@ -82,7 +82,7 @@
     </statement>
   </exercise>
 
-  <exercise xml:id="home01-2">
+  <exercise xml:id="home01-1">
     <statement>
       <p>
 	Seja <m>f\colon[0,2]\to\R^*_+</m> uma função contínua tal que
@@ -302,7 +302,7 @@
     </statement>
   </exercise>
 
-  <exercise xml:id="home01-1">
+  <exercise xml:id="home01-2">
     <statement>
       <p>
 	Sejam <m>\sigma\colon\R^2\to\R^3</m> uma imersão injetora de
