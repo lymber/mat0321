@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -56,10 +56,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.19';
+eBookConfig.runestone_version = '7.13.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Executar (Sage)';
 </script>
@@ -141,9 +141,11 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
-\newcommand{\id}{\mathrm{Id}}
-\newcommand{\posto}{\mathrm{posto}}
+\DeclareMathOperator\id{Id}
+\DeclareMathOperator\posto{posto}
 \DeclareMathOperator\supp{supp}
+\DeclareMathOperator\sgn{sgn}
+\DeclareMathOperator\alt{Alt}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -199,6 +201,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-05.html#cronograma-semana-05-4" class="internal"><span class="title">26/03 – Quinta</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-06.html" class="internal"><span class="title">Semana 06</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-06.html#cronograma-semana-06-3" class="internal"><span class="title">07/04 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-06.html#cronograma-semana-06-4" class="internal"><span class="title">09/04 – Quinta</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -214,8 +223,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-func_diff.html" class="internal"><span class="title">Funções diferenciáveis</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-intRn.html" class="internal"><span class="title">Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-fubini.html" class="internal"><span class="title">Teorema de Fubini</span></a></div></li>
-<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-partunit.html" class="internal"><span class="title">Partições da Unidade</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-partunit.html" class="internal"><span class="title">Partições da Unidade e Integração</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-mudvar.html" class="internal"><span class="title">Mudança de variáveis</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-tensores.html" class="internal"><span class="title">Tensores</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -223,7 +233,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="tarefas-2.html" class="internal"><span class="title">Atividade 01</span></a></div></li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="info"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="info">
+<h2 class="heading hide-type">
 <span class="type">Seção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Informações da disciplina</span>
 </h2>
 <div class="para logical" id="info-2">
@@ -231,8 +243,10 @@ eBookConfig.enable_chatcodes =  false;
 <dl class="description-list">
 <dt id="info-2-2-1">Ministrante<div class="autopermalink" data-description="Item: Ministrante"><a href="#info-2-2-1" title="Copy heading and permalink for Item: Ministrante" aria-label="Copy heading and permalink for Item: Ministrante">🔗</a></div>
 </dt>
-<dd><div class="para" id="info-2-2-1-2">Prof. Alexandre Lymberopoulos, Sala 151-A, <a class="external" href="mailto:lymber@ime.usp.br" target="_blank">lymber@ime.usp.br</a>.<div class="autopermalink" data-description="Parágrafo"><a href="#info-2-2-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="info-2-2-1-2">Prof. Alexandre Lymberopoulos, Sala 151-A, <a class="external" href="mailto:lymber@ime.usp.br" target="_blank">lymber@ime.usp.br</a>.<div class="autopermalink" data-description="Parágrafo"><a href="#info-2-2-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+</dd>
 <dt id="info-2-2-2">Aulas<div class="autopermalink" data-description="Item: Aulas"><a href="#info-2-2-2" title="Copy heading and permalink for Item: Aulas" aria-label="Copy heading and permalink for Item: Aulas">🔗</a></div>
 </dt>
 <dd>
@@ -243,11 +257,14 @@ eBookConfig.enable_chatcodes =  false;
 </dd>
 <dt id="info-2-2-3">Horários de Atendimento<div class="autopermalink" data-description="Item: Horários de Atendimento"><a href="#info-2-2-3" title="Copy heading and permalink for Item: Horários de Atendimento" aria-label="Copy heading and permalink for Item: Horários de Atendimento">🔗</a></div>
 </dt>
-<dd><div class="para" id="info-2-2-3-2">Segundas-feiras: das 14:00 às 16:00.<div class="autopermalink" data-description="Parágrafo"><a href="#info-2-2-3-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="info-2-2-3-2">Segundas-feiras: das 14:00 às 16:00.<div class="autopermalink" data-description="Parágrafo"><a href="#info-2-2-3-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+</dd>
 <dt id="info-2-2-4">Monitoria<div class="autopermalink" data-description="Item: Monitoria"><a href="#info-2-2-4" title="Copy heading and permalink for Item: Monitoria" aria-label="Copy heading and permalink for Item: Monitoria">🔗</a></div>
 </dt>
-<dd><div class="para logical" id="info-2-2-4-2">
+<dd>
+<div class="para logical" id="info-2-2-4-2">
 <div class="para">Temos dois monitores para o curso, com os seguintes hor[arios de atedimento:</div>
 <ul class="disc" id="info-2-2-4-2-1">
 <li id="info-2-2-4-2-1-1">
@@ -262,7 +279,8 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 <div class="autopermalink" data-description="Parágrafo"><a href="#info-2-2-4-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
-</div></dd>
+</div>
+</dd>
 <dt id="info-2-2-5">Descrição e Ementa<div class="autopermalink" data-description="Item: Descrição e Ementa"><a href="#info-2-2-5" title="Copy heading and permalink for Item: Descrição e Ementa" aria-label="Copy heading and permalink for Item: Descrição e Ementa">🔗</a></div>
 </dt>
 <dd>
@@ -297,8 +315,10 @@ eBookConfig.enable_chatcodes =  false;
 </dd>
 <dt id="info-2-2-6">Pré-requisitos<div class="autopermalink" data-description="Item: Pré-requisitos"><a href="#info-2-2-6" title="Copy heading and permalink for Item: Pré-requisitos" aria-label="Copy heading and permalink for Item: Pré-requisitos">🔗</a></div>
 </dt>
-<dd><div class="para" id="info-2-2-6-2">MAT0311 - Cálculo Diferencial e Integral V<div class="autopermalink" data-description="Parágrafo"><a href="#info-2-2-6-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="info-2-2-6-2">MAT0311 - Cálculo Diferencial e Integral V<div class="autopermalink" data-description="Parágrafo"><a href="#info-2-2-6-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+</dd>
 <dt id="info-2-2-7">Bibliografia<div class="autopermalink" data-description="Item: Bibliografia"><a href="#info-2-2-7" title="Copy heading and permalink for Item: Bibliografia" aria-label="Copy heading and permalink for Item: Bibliografia">🔗</a></div>
 </dt>
 <dd>
@@ -315,7 +335,9 @@ eBookConfig.enable_chatcodes =  false;
 </dl>
 <div class="autopermalink" data-description="Parágrafo"><a href="#info-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Seção: Informações da disciplina"><a href="#info" title="Copy heading and permalink for Seção: Informações da disciplina" aria-label="Copy heading and permalink for Seção: Informações da disciplina">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Seção: Informações da disciplina"><a href="#info" title="Copy heading and permalink for Seção: Informações da disciplina" aria-label="Copy heading and permalink for Seção: Informações da disciplina">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="documentos.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="descricao.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

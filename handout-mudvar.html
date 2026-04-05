@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -56,10 +56,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.19';
+eBookConfig.runestone_version = '7.13.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Executar (Sage)';
 </script>
@@ -136,14 +136,16 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handout-partunit.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="up-button button" href="resumos.html" title="Acima"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Acima</span></a><a class="next-button button" href="tarefas.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handout-partunit.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="up-button button" href="resumos.html" title="Acima"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Acima</span></a><a class="next-button button" href="handout-tensores.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
-\newcommand{\id}{\mathrm{Id}}
-\newcommand{\posto}{\mathrm{posto}}
+\DeclareMathOperator\id{Id}
+\DeclareMathOperator\posto{posto}
 \DeclareMathOperator\supp{supp}
+\DeclareMathOperator\sgn{sgn}
+\DeclareMathOperator\alt{Alt}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -199,6 +201,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-05.html#cronograma-semana-05-4" class="internal"><span class="title">26/03 – Quinta</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-06.html" class="internal"><span class="title">Semana 06</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-06.html#cronograma-semana-06-3" class="internal"><span class="title">07/04 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-06.html#cronograma-semana-06-4" class="internal"><span class="title">09/04 – Quinta</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -214,8 +223,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-func_diff.html" class="internal"><span class="title">Funções diferenciáveis</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-intRn.html" class="internal"><span class="title">Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-fubini.html" class="internal"><span class="title">Teorema de Fubini</span></a></div></li>
-<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-partunit.html" class="internal"><span class="title">Partições da Unidade</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-partunit.html" class="internal"><span class="title">Partições da Unidade e Integração</span></a></div></li>
 <li class="toc-item toc-handout active"><div class="toc-title-box"><a href="handout-mudvar.html" class="internal"><span class="title">Mudança de variáveis</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-tensores.html" class="internal"><span class="title">Tensores</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -248,27 +258,86 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Imprimir" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Imprimir</span></button>
 </div>
 </div>
-<section class="handout" id="handout-mudvar" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<section class="handout" id="handout-mudvar" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
 <span class="type">Material de apoio</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mudança de variáveis</span><div class="print-links"><a href="?printpreview=handout-mudvar" class="print-link" title="Pré-visualização da impressão"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="onepage" id="handout-mudvar-2"><div class="para" id="handout-mudvar-2-1">
+<section class="onepage" id="handout-mudvar-2">
+<div class="para" id="handout-mudvar-2-1">
 <article class="theorem theorem-like" id="teo-mudvar"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mudança de variáveis.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mudança de variáveis.</span>
 </h3>
-<div class="para" id="teo-mudvar-2-1">Cedo ou tarde aparece. Na verdade aparecerá no momento exato em que for necessário.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-mudvar-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+<div class="para logical" id="teo-mudvar-2-1">
+<div class="para">Sejam <span class="process-math">\(A\subset\R^n\)</span> um aberto e <span class="process-math">\(g\colon
+A\to\R^n\)</span> uma função injetora de classe <span class="process-math">\(\mathscr{C}^1\text{,}\)</span> com <span class="process-math">\(\det g'(x)\neq 0\text{,}\)</span> para todo <span class="process-math">\(x\in A\text{.}\)</span> Se <span class="process-math">\(f\colon g(A)\to\R\)</span> é integrável, então</div>
+<div class="displaymath process-math" id="teo-mudvar-2-1-7">
+\begin{equation*}
+\int_{g(A)} f = \int_A (f\circ g)|\det g'|.
+\end{equation*}
 </div>
-<article class="remark remark-like" id="teo-mudvar-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="teo-mudvar-3-1"><div class="autopermalink" data-description="Parágrafo"><a href="#teo-mudvar-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
-<div class="autopermalink" data-description="Nota 52"><a href="#teo-mudvar-3" title="Copy heading and permalink for Nota 52" aria-label="Copy heading and permalink for Nota 52">🔗</a></div></article><div class="autopermalink" data-description="Teorema 51: Mudança de variáveis"><a href="#teo-mudvar" title="Copy heading and permalink for Teorema 51: Mudança de variáveis" aria-label="Copy heading and permalink for Teorema 51: Mudança de variáveis">🔗</a></div></article><details id="teo-mudvar-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para" id="teo-mudvar-4-1">Feito em sala<div class="autopermalink" data-description="Parágrafo"><a href="#teo-mudvar-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#teo-mudvar-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 51.1"><a href="#teo-mudvar-4" title="Copy heading and permalink for Demonstração 51.1" aria-label="Copy heading and permalink for Demonstração 51.1">🔗</a></div></article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Teorema 53: Mudança de variáveis"><a href="#teo-mudvar" title="Copy heading and permalink for Teorema 53: Mudança de variáveis" aria-label="Copy heading and permalink for Teorema 53: Mudança de variáveis">🔗</a></div>
+</article>
+<details id="teo-mudvar-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="teo-mudvar-3-1">A prova do teorema é feita por indução, após uma série de reduções, listadas a seguir:<div class="autopermalink" data-description="Parágrafo"><a href="#teo-mudvar-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="teo-mudvar-3-2">
+<ol class="lower-roman ol-marker-2" id="teo-mudvar-3-2-1">
+<li id="teo-mudvar-3-2-1-1">
+<div class="para" id="p-derived-teo-mudvar-3-2-1-1">Se <span class="process-math">\(\mathcal{O}\)</span> é uma cobertura admissível para <span class="process-math">\(A\)</span> e o teorema vale para cada <span class="process-math">\(U\in
+\mathcal{O}\text{,}\)</span> então também vale para o aberto <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item i"><a href="#teo-mudvar-3-2-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="teo-mudvar-3-2-1-2">
+<div class="para" id="p-derived-teo-mudvar-3-2-1-2">Se o teorema vale para a função constante <span class="process-math">\(f\equiv
+1\text{,}\)</span> então também vale para qualquer função integrável.</div>
+<div class="autopermalink" data-description="Item ii"><a href="#teo-mudvar-3-2-1-2" title="Copy heading and permalink for Item ii" aria-label="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+<li id="teo-mudvar-3-2-1-3">
+<div class="para" id="p-derived-teo-mudvar-3-2-1-3">Se o teorema vale para duas funções "mudança de variável", <span class="process-math">\(g\colon A\to\R^n\)</span> e <span class="process-math">\(h\colon
+B\to\R^n\text{,}\)</span> com <span class="process-math">\(g(A)\subset B\text{,}\)</span> então também vale para <span class="process-math">\(h\circ g\colon A\to\R^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item iii"><a href="#teo-mudvar-3-2-1-3" title="Copy heading and permalink for Item iii" aria-label="Copy heading and permalink for Item iii">🔗</a></div>
+</li>
+<li id="teo-mudvar-3-2-1-4">
+<div class="para" id="p-derived-teo-mudvar-3-2-1-4">O teorema vale se a função <span class="process-math">\(g\)</span> é linear.</div>
+<div class="autopermalink" data-description="Item iv"><a href="#teo-mudvar-3-2-1-4" title="Copy heading and permalink for Item iv" aria-label="Copy heading and permalink for Item iv">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#teo-mudvar-3-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="teo-mudvar-3-3">Utilizamos duas funções convenientes para serem as funções <span class="process-math">\(g\)</span> e <span class="process-math">\(h\)</span> de modo que ao menos uma das coordenadas de sua composta fique fixa, permitindo, através do teorema de Fubini, aplicar a hipótese de indução.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-mudvar-3-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 53.1"><a href="#teo-mudvar-3" title="Copy heading and permalink for Demonstração 53.1" aria-label="Copy heading and permalink for Demonstração 53.1">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-mudvar-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Material de apoio: Mudança de variáveis"><a href="#handout-mudvar" title="Copy heading and permalink for Material de apoio: Mudança de variáveis" aria-label="Copy heading and permalink for Material de apoio: Mudança de variáveis">🔗</a></div></section>
+</div>
+<div class="para" id="handout-mudvar-2-2">Um fato importante, que permite a aplicação do teorema de mudança de variáveis em situações práticas, decorre da seguinte simplificação do teorema de Sard:<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-mudvar-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-mudvar-2-3">
+<article class="theorem theorem-like" id="teo-sard"><h3 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Teorema de Sard.</span>
+</h3>
+<div class="para" id="teo-sard-2-1">Sejam <span class="process-math">\(A\subset\R^n\)</span> um aberto e <span class="process-math">\(g\colon
+A\to\R^n\)</span> uma função de classe <span class="process-math">\(\mathscr{C}^1\text{.}\)</span> Então, se <span class="process-math">\(B=\big\{x\in A\colon\det
+g'(x)=0\big\}\text{,}\)</span> o conjunto <span class="process-math">\(g(B)\)</span> tem medida nula.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-sard-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Teorema 54: Teorema de Sard"><a href="#teo-sard" title="Copy heading and permalink for Teorema 54: Teorema de Sard" aria-label="Copy heading and permalink for Teorema 54: Teorema de Sard">🔗</a></div>
+</article><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-mudvar-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-mudvar-2-4">Uma versão mais forte desse teorema lida com funções <span class="process-math">\(f\colon\R^n\to\R^m\text{,}\)</span> de classe <span class="process-math">\(\mathscr{C}^k\text{.}\)</span> O resultado é o mesmo, se <span class="process-math">\(k\geq
+\max\{n-m+1,1\}\)</span> e o conjunto <span class="process-math">\(B\)</span> é formado pelos pontos onde o posto de <span class="process-math">\(g'(x)\)</span> é menor que <span class="process-math">\(m\text{.}\)</span><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-mudvar-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Material de apoio: Mudança de variáveis"><a href="#handout-mudvar" title="Copy heading and permalink for Material de apoio: Mudança de variáveis" aria-label="Copy heading and permalink for Material de apoio: Mudança de variáveis">🔗</a></div>
+</section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="handout-partunit.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="tarefas.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="handout-partunit.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handout-tensores.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

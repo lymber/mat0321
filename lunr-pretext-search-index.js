@@ -82,6 +82,15 @@ var ptx_lunr_docs = [
   "body": " Semana 05   Linhas gerais do que foi coberto na quinta semana de aulas.     24\/03 Terça  Existência de partição suave da unidade em . Aplicações à teoria de integração. Veja .    26\/03 Quinta  Mais integração e partições da unidade. Mudança de variáveis na integral. Veja e .   "
 },
 {
+  "id": "cronograma-semana-06",
+  "level": "1",
+  "url": "cronograma-semana-06.html",
+  "type": "Seção",
+  "number": "",
+  "title": "Semana 06",
+  "body": " Semana 06   Linhas gerais do que foi coberto na sexta semana de aulas.     07\/04 Terça  Mudança de variáveis na integral. Veja . Exemplos.  Rudimentos de tensores. Veja .    09\/04 Quinta  Mais tensores. Produto tensorial e produto exterior. Veja .   "
+},
+{
   "id": "lista01",
   "level": "1",
   "url": "lista01.html",
@@ -699,8 +708,8 @@ var ptx_lunr_docs = [
   "url": "handout-partunit.html",
   "type": "Material de apoio",
   "number": "",
-  "title": "Partições da Unidade",
-  "body": " Partições da Unidade     Colagem de funções contínuas   Sejam é um conjunto da forma , com cada fechado (logo é fechado) ou , com cada aberto (logo é aberto). Se, para cada ou , é uma função contínua tal que , então existe uma única função contínua tal que .    Segue-se do fato de que a continuidade é uma propriedade local.       Colagem de funções suavess   O mesmo vale para uma coleção suave de funções quandos os são abertos.    O que acontece se os são fechados?    Novamente usamos que o conceito de diferenciabilidade é local.       Diferenciabilidade em fechados   Se é um fechado, então é diferenciável se existe aberto em tal que e , diferenciável, tal que .    O conceito não depende do aberto contendo e da função que extende .        Denote, respectivamente, por e o conjunto dos números reais não positivos e não negativos. As funções , dada por , e , dada por .  A interseção dos dois domínios é um fechado e não existe uma função suave que extende simultaneamente e para .         Função suave não analítica   A função dada por é de classe em toda a reta real.    A função acima é de classe , mas não é analítica. Veja seu gráfico:  Gráfico de .         O resultado é imediato para ou . Em , basta verificar (por indução) que onde é um polinômio de grau no máximo .  Com isso é fácil mostrar que é contínua em , para todo natural .         Funções \"cut-off\"   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico:  Gráfico de .         Basta tomar , onde é a função definina no .       Funções \"plateau\" em   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico rm :  Gráfico de uma função plateau em .   Gráfico de uma função plateau em .        Basta tomar , onde é a função definina no .       Paracompacidade de   Sejam uma coleção de abertos de e . Então existe uma coleção enumerável de bolas fechadas tal que:   ;  cada está contido em algum ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos .      Feito em sala       Partição suave da unidade   Sejam uma coleção de abertos de e . Uma partição suave da unidade para é uma coleção , onde cada é suave, satisfazendo:   para todo e ;   ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos ;   , para todo . Se, além disso, a coleção também verifica:   é compacto e   , dizemos que tem suporte compacto e é subordinada à cobertura de .       O suporte de uma função  é o conjunto        Existência de partição suave da unidade em abertos   Sejam uma coleção de abertos de e . Então existe partição suave da unidade com suporte compacto e subordinada a .    Feito em sala.       Existência de partição suave da unidade   Se é um conjunto qualquer e é uma cobertura aberta de , então existe partição suave da unidade para .    Basta observar que e que este último, por ser um aberto, tem garantida a exitência de uma partição da unidade subordinada a .      "
+  "title": "Partições da Unidade e Integração",
+  "body": " Partições da Unidade e Integração     Colagem de funções contínuas   Sejam é um conjunto da forma , com cada fechado (logo é fechado) ou , com cada aberto (logo é aberto). Se, para cada ou , é uma função contínua tal que , então existe uma única função contínua tal que .    Segue-se do fato de que a continuidade é uma propriedade local.       Colagem de funções suavess   O mesmo vale para uma coleção suave de funções quandos os são abertos.    O que acontece se os são fechados?    Novamente usamos que o conceito de diferenciabilidade é local.       Diferenciabilidade em fechados   Se é um fechado, então é diferenciável se existe aberto em tal que e , diferenciável, tal que .    O conceito não depende do aberto contendo e da função que extende .        Denote, respectivamente, por e o conjunto dos números reais não positivos e não negativos. As funções , dada por , e , dada por .  A interseção dos dois domínios é um fechado e não existe uma função suave que extende simultaneamente e para .         Função suave não analítica   A função dada por é de classe em toda a reta real.    A função acima é de classe , mas não é analítica. Veja seu gráfico:  Gráfico de .         O resultado é imediato para ou . Em , basta verificar (por indução) que onde é um polinômio de grau no máximo .  Com isso é fácil mostrar que é contínua em , para todo natural .         Funções \"cut-off\"   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico:  Gráfico de .         Basta tomar , onde é a função definina no .       Funções \"plateau\" em   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico rm :  Gráfico de uma função plateau em .   Gráfico de uma função plateau em .        Basta tomar , onde é a função definina no .       Paracompacidade de   Sejam uma coleção de abertos de e . Então existe uma coleção enumerável de bolas fechadas tal que:   ;  cada está contido em algum ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos .      Feito em sala       Partição suave da unidade   Sejam uma coleção de abertos de e . Uma partição suave da unidade para é uma coleção , onde cada é suave, satisfazendo:   para todo e ;   ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos ;   , para todo . Se, além disso, a coleção também verifica:   é compacto e   , dizemos que tem suporte compacto e é subordinada à cobertura de .       O suporte de uma função  é o conjunto        Existência de partição suave da unidade em abertos   Sejam uma coleção de abertos de e . Então existe partição suave da unidade com suporte compacto e subordinada a .    Feito em sala.       Existência de partição suave da unidade   Se é um conjunto qualquer e é uma cobertura aberta de , então existe partição suave da unidade para .    Basta observar que e que este último, por ser um aberto, tem garantida a exitência de uma partição da unidade subordinada a .       Cobertura admissível   Uma cobertura aberta para um aberto é admissível se , para todo .     Integral estendida   Sejam um aberto, uma cobertura aberta admissível para e uma função localmente limitada, com conjunto de descontinuidades de medida nula.  A função é integrável no sentido extendido se é convergente, onde é uma partição da unidade subordinada à cobertura .     A definição acima requer várias discussões para dar sentido ao somatório indicado. Fizemos isso em sala e também provamos que a convergência dessa soma independe da cobertura e da particão da unidade escolhidas para o aberto . Além disso provamos que se é uma função limitada e é um conjunto mensurável, esta definição coincide com a anterior, justificado o adjetivo \"estendida\".   "
 },
 {
   "id": "fact-colagem_continua",
@@ -802,22 +811,166 @@ var ptx_lunr_docs = [
   "body": " Existência de partição suave da unidade   Se é um conjunto qualquer e é uma cobertura aberta de , então existe partição suave da unidade para .    Basta observar que e que este último, por ser um aberto, tem garantida a exitência de uma partição da unidade subordinada a .   "
 },
 {
+  "id": "handout-partunit-4-7",
+  "level": "2",
+  "url": "handout-partunit.html#handout-partunit-4-7",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "admissível integrável no sentido extendido "
+},
+{
   "id": "handout-mudvar",
   "level": "1",
   "url": "handout-mudvar.html",
   "type": "Material de apoio",
   "number": "",
   "title": "Mudança de variáveis",
-  "body": " Mudança de variáveis     Mudança de variáveis   Cedo ou tarde aparece. Na verdade aparecerá no momento exato em que for necessário.        Feito em sala      "
+  "body": " Mudança de variáveis     Mudança de variáveis   Sejam um aberto e uma função injetora de classe , com , para todo . Se é integrável, então     A prova do teorema é feita por indução, após uma série de reduções, listadas a seguir:    Se é uma cobertura admissível para e o teorema vale para cada , então também vale para o aberto .  Se o teorema vale para a função constante , então também vale para qualquer função integrável.  Se o teorema vale para duas funções \"mudança de variável\", e , com , então também vale para .  O teorema vale se a função é linear.    Utilizamos duas funções convenientes para serem as funções e de modo que ao menos uma das coordenadas de sua composta fique fixa, permitindo, através do teorema de Fubini, aplicar a hipótese de indução.     Um fato importante, que permite a aplicação do teorema de mudança de variáveis em situações práticas, decorre da seguinte simplificação do teorema de Sard:    Teorema de Sard   Sejam um aberto e uma função de classe . Então, se , o conjunto tem medida nula.     Uma versão mais forte desse teorema lida com funções , de classe . O resultado é o mesmo, se e o conjunto é formado pelos pontos onde o posto de é menor que .   "
 },
 {
   "id": "teo-mudvar",
   "level": "2",
   "url": "handout-mudvar.html#teo-mudvar",
   "type": "Teorema",
-  "number": "51",
+  "number": "53",
   "title": "Mudança de variáveis.",
-  "body": " Mudança de variáveis   Cedo ou tarde aparece. Na verdade aparecerá no momento exato em que for necessário.        Feito em sala   "
+  "body": " Mudança de variáveis   Sejam um aberto e uma função injetora de classe , com , para todo . Se é integrável, então     A prova do teorema é feita por indução, após uma série de reduções, listadas a seguir:    Se é uma cobertura admissível para e o teorema vale para cada , então também vale para o aberto .  Se o teorema vale para a função constante , então também vale para qualquer função integrável.  Se o teorema vale para duas funções \"mudança de variável\", e , com , então também vale para .  O teorema vale se a função é linear.    Utilizamos duas funções convenientes para serem as funções e de modo que ao menos uma das coordenadas de sua composta fique fixa, permitindo, através do teorema de Fubini, aplicar a hipótese de indução.   "
+},
+{
+  "id": "teo-sard",
+  "level": "2",
+  "url": "handout-mudvar.html#teo-sard",
+  "type": "Teorema",
+  "number": "54",
+  "title": "Teorema de Sard.",
+  "body": " Teorema de Sard   Sejam um aberto e uma função de classe . Então, se , o conjunto tem medida nula.   "
+},
+{
+  "id": "handout-tensores",
+  "level": "1",
+  "url": "handout-tensores.html",
+  "type": "Material de apoio",
+  "number": "",
+  "title": "Tensores",
+  "body": " Tensores     tensor   Sejam um espaço vetorial e o produto cartesiano de cópias de . Um tensor é uma aplicação multinear , ou seja, para todo .  Definimos as operações de soma de tensores e multiplicação de uma escalar por um tensor de maneira natural:    O conjunto é um espaço vetorial.        Produto escalar   Se é um espaço vetorial com produto escalar (ou produto interno), então este produto interno pode ser visto como um tensor (siméstrico e positivo-definido).       Produto tensorial   Sejam e . O produto tensorial , , é dado por    Observe que .  Além disso, valem as propriedades:   ;   ;   ;   .    Observe também que .        Dimensão de   Sejam um espaço vetorial, uma base de e a base dual de para , ou seja, . Então os tensores , formam uma base para . Em particular .    Visto em sala.       Pullback de tensores   Sejam e uma transformação linear entre os espaços vetoriais e . Definimos o pullback de por como o tensor , dado por   Isso define uma aplicação linear    Observe que , para todos e .        Pullback canônico de um produto interno   Sejam um espaço vetoria, com e um produto interno sobre . Então existem uma base ortonormal de (ou seja, ) e um isomorfismo tal que , para todos , onde é o produto interno usual do ..    Visto em sala.       Tensor alternado   Um tensor é um tensor alternado se para todos .  O conjunto de todos os tensores alternados é denotado por .   O conjunto é um subespaço vetorial de .        Alternador de um tensor   Dado , definimos o tensor por    Com isso temos uma aplicação .        Propriedades de      ;   ;   .     O operador tem todas as características de um tipo muito especial de transformação linear. Você consegue \"projetar\" de que tipo estamos falando?     Feita em sala.     Se e , nem sempre . Vamos \"consertar\" isso:    Produto \"wedge\"   Se e , definimos    Este produto satisfaz as seguintes proripedades:  ;  ;  ;  ; ;          Associatividade do produto wedge     se , com e , então ;   ;  se , e , então .      Feita em sala.       Base e dimensão de   Sejam um espaço vetorial, uma base de e sua base dual. Então é uma base de . Em particular, .    Se , então e portanto se , então , com e é qualquer tensor alternado não-nulo. Se , podemos tomar como o determinante.    Feita em sala.       Mudança de coordenadas e tensores alternados   Sejam um espaço vetorial, uma base de e . Se , então .    Feita em sala.      "
+},
+{
+  "id": "handout-tensores-2-1",
+  "level": "2",
+  "url": "handout-tensores.html#handout-tensores-2-1",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "tensor "
+},
+{
+  "id": "ex-tensor_prodesc",
+  "level": "2",
+  "url": "handout-tensores.html#ex-tensor_prodesc",
+  "type": "Exemplo",
+  "number": "57",
+  "title": "Produto escalar.",
+  "body": " Produto escalar   Se é um espaço vetorial com produto escalar (ou produto interno), então este produto interno pode ser visto como um tensor (siméstrico e positivo-definido).   "
+},
+{
+  "id": "handout-tensores-2-3",
+  "level": "2",
+  "url": "handout-tensores.html#handout-tensores-2-3",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "produto tensorial "
+},
+{
+  "id": "teo-tensdim",
+  "level": "2",
+  "url": "handout-tensores.html#teo-tensdim",
+  "type": "Teorema",
+  "number": "60",
+  "title": "Dimensão de <span class=\"process-math\">\\(\\mathcal{T}^k\\)<\/span>.",
+  "body": " Dimensão de   Sejam um espaço vetorial, uma base de e a base dual de para , ou seja, . Então os tensores , formam uma base para . Em particular .    Visto em sala.   "
+},
+{
+  "id": "handout-tensores-2-5",
+  "level": "2",
+  "url": "handout-tensores.html#handout-tensores-2-5",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "pullback de por "
+},
+{
+  "id": "teo-pullbackproduint",
+  "level": "2",
+  "url": "handout-tensores.html#teo-pullbackproduint",
+  "type": "Teorema",
+  "number": "63",
+  "title": "Pullback canônico de um produto interno.",
+  "body": " Pullback canônico de um produto interno   Sejam um espaço vetoria, com e um produto interno sobre . Então existem uma base ortonormal de (ou seja, ) e um isomorfismo tal que , para todos , onde é o produto interno usual do ..    Visto em sala.   "
+},
+{
+  "id": "handout-tensores-2-7",
+  "level": "2",
+  "url": "handout-tensores.html#handout-tensores-2-7",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "tensor alternado "
+},
+{
+  "id": "def-alternador",
+  "level": "2",
+  "url": "handout-tensores.html#def-alternador",
+  "type": "Definição",
+  "number": "66",
+  "title": "Alternador de um tensor.",
+  "body": " Alternador de um tensor   Dado , definimos o tensor por    Com isso temos uma aplicação .    "
+},
+{
+  "id": "teo-propalt",
+  "level": "2",
+  "url": "handout-tensores.html#teo-propalt",
+  "type": "Teorema",
+  "number": "68",
+  "title": "Propriedades de <span class=\"process-math\">\\(\\alt\\)<\/span>.",
+  "body": " Propriedades de      ;   ;   .     O operador tem todas as características de um tipo muito especial de transformação linear. Você consegue \"projetar\" de que tipo estamos falando?     Feita em sala.   "
+},
+{
+  "id": "def-wedge",
+  "level": "2",
+  "url": "handout-tensores.html#def-wedge",
+  "type": "Definição",
+  "number": "70",
+  "title": "Produto \"wedge\".",
+  "body": " Produto \"wedge\"   Se e , definimos    Este produto satisfaz as seguintes proripedades:  ;  ;  ;  ; ;      "
+},
+{
+  "id": "teo-wedgeassoc",
+  "level": "2",
+  "url": "handout-tensores.html#teo-wedgeassoc",
+  "type": "Teorema",
+  "number": "72",
+  "title": "Associatividade do produto wedge.",
+  "body": " Associatividade do produto wedge     se , com e , então ;   ;  se , e , então .      Feita em sala.   "
+},
+{
+  "id": "teo-basedimwedge",
+  "level": "2",
+  "url": "handout-tensores.html#teo-basedimwedge",
+  "type": "Teorema",
+  "number": "73",
+  "title": "Base e dimensão de <span class=\"process-math\">\\(\\Lambda^k(V)\\)<\/span>.",
+  "body": " Base e dimensão de   Sejam um espaço vetorial, uma base de e sua base dual. Então é uma base de . Em particular, .    Se , então e portanto se , então , com e é qualquer tensor alternado não-nulo. Se , podemos tomar como o determinante.    Feita em sala.   "
+},
+{
+  "id": "teo-determinante",
+  "level": "2",
+  "url": "handout-tensores.html#teo-determinante",
+  "type": "Teorema",
+  "number": "75",
+  "title": "Mudança de coordenadas e <span class=\"process-math\">\\(n-\\)<\/span>tensores alternados.",
+  "body": " Mudança de coordenadas e tensores alternados   Sejam um espaço vetorial, uma base de e . Se , então .    Feita em sala.   "
 },
 {
   "id": "tarefas-2",
