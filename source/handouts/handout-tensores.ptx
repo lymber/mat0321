@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout xml:id="handout-tensores">
+  <title>Tensores</title>
+
+  <page>
+    
+    <p workspace="1in">
+      <definition xml:id="def-tensores">
+	<title><m>k-</m>tensor</title>
+	<statement>
+	  <p>
+	    Sejam <m>V</m> um espaço vetorial e <m>V^k=V\times
+	    V\times\cdots\times V</m> o produto cartesiano de <m>k</m>
+	    cópias de <m>V</m>. Um <term><m>k-</m>tensor</term> é uma aplicação
+	    multinear <m>T\colon V^k\to\R</m> , ou seja,
+	    <md>
+	      <mrow>T(v_1,\ldots,v_i+w_i,\ldots,v_k)&amp;
+	      =T(v_1,\ldots,v_i,\ldots,v_k)+T(v_1,\ldots,w_i,\ldots,v_k);</mrow>
+	      <mrow>T(v_1,\ldots,\alpha
+	      v_i,\ldots,v_k)&amp;
+	      =\alpha T(v_1,\ldots,v_i,\ldots,v_k),</mrow>
+	    </md>
+	    para todo <m>1\leq i\leq k</m>.
+	  </p>
+
+	  <p>
+	    Definimos as operações de soma de <m>k-</m>tensores e
+	    multiplicação de uma escalar por um <m>k-</m>tensor de
+	    maneira natural:
+	    <md>
+	      <mrow>(T+S)(v_1,\ldots,v_k)&amp;
+	      =T(v_1,\ldots,v_k)+S(v_1,\ldots,v_k);</mrow>
+	      <mrow>(\alpha T)(v_1,\ldots,v_k)&amp;
+	      =\alpha T(v_1,\ldots,v_k),</mrow>
+	    </md>
+	  </p>
+
+	  <remark>
+	    <p>
+	      O conjunto <m>\mathcal T^k(V)=\big\{T\colon V^k\to\R\text{
+	      tais que }
+	      T\text{ é }k-\text{tensor}\big\}</m> é um espaço vetorial.
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <example xml:id="ex-tensor_prodesc">
+	<title>Produto escalar</title>
+	<statement>
+	  <p>
+	    Se <m>V</m> é um espaço vetorial com produto escalar (ou
+	    produto interno), então este produto interno pode ser visto
+	    como um <m>2-</m>tensor (siméstrico e positivo-definido).
+	  </p>
+	</statement>
+      </example>
+    </p>
+    
+    <p workspace="1in">
+      <definition xml:id="def-prodtens">
+	<title>Produto tensorial</title>
+	<statement>
+	  <p>
+	    Sejam <m>S\in\mathcal{T}^k(V)</m> e
+	    <m>T\in\mathcal{T}^l(V)</m>. O <term>produto
+	    tensorial</term>, <m>S\otimes T\in\mathcal{T}^{k+l}(V)</m>,
+	    é dado por <me>(S\otimes
+	    T)(v_1,\ldots,v_k,v_{k+1},\ldots,v_{k+l})
+	    =S(v_1,\ldots,v_k)T(v_{k+1},\ldots,v_{k+l}).</me>
+	  </p>
+
+	  <remark>
+	    <p>
+	      Observe que <m>S\times T\neq T\otimes S</m>.
+	    </p>
+
+	    <p>
+	      Além disso, valem as propriedades:
+	      <ol marker="(i)">
+		<li>
+		  <m>(S_1+S_2)\otimes T=S_1\otimes T+S_2\otimes
+		  T</m>;
+		</li>
+
+		<li>
+		  <m>S\otimes(T_1+T_2)=S\otimes T_1+S\otimes
+		  T_2</m>;
+		</li>
+
+		<li>
+		  <m>(\alpha S)\otimes T=S\otimes(\alpha T)=\alpha
+		  (S\otimes T)</m>;
+		</li>
+
+		<li>
+		  <m>(S\otimes T)\otimes U=S\otimes (T\otimes U)</m>.
+		</li>
+	      </ol>
+	    </p>
+
+	    <p>
+	      Observe também que <m>\mathcal T^1(V)=V^\ast</m>.
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-tensdim">
+	<title>Dimensão de <m>\mathcal{T}^k</m></title>
+	<statement>
+	  <p>
+	    Sejam <m>V</m> um espaço vetorial,
+	    <m>\mathcal{B}=\big\{v_1,\ldots,v_n\big\}</m> uma base de <m>V</m> e
+	    <m>\mathcal{B}^\ast=\big\{\phi^1,\ldots,\phi^n\big\}</m> a base
+	    dual de <m>\mathcal B</m> para <m>V^\ast</m>, ou seja,
+	    <m>\phi^i(v_j)=\delta_{ij}</m>. Então os <m>k-</m>tensores
+	    <m>\phi^{i_1}\otimes\cdots\otimes\phi^{i_k}</m>, <m>1\leq
+	    i_1,\ldots,i_k\leq n</m> formam uma base para <m>\mathcal
+	    T^k(V)</m>. Em particular <m>\dim\mathcal T^k=n^k</m>.
+	  </p>
+	</statement>
+
+	<proof>
+	  <p>
+	    Visto em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-pullback">
+	<title>Pullback de tensores</title>
+	<statement>
+	  <p>
+	    Sejam <m>T\in\mathcal{T}^k(W)</m> e <m>f\colon V\to W</m>
+	    uma transformação linear entre os espaços vetoriais <m>V</m>
+	    e <m>W</m>. Definimos o <term>pullback de <m>M</m> por
+	    <m>f</m></term> como o <m>k-</m>tensor <m>f^\ast
+	    T\in\mathcal T^k(V)</m>, dado por <me>f^\ast
+	    T(v_1,\ldots,v_k)=T\big(f(v_1),\ldots,f(v_k)\big).</me>
+	  </p>
+
+	  <p>
+	    Isso define uma aplicação linear
+	    <m>f^\ast\colon\mathcal{T}^k(W)\to\mathcal{T}^k(V)</m>
+	  </p>
+	  
+	  <remark>
+	    <p>
+	      Observe que <m>f^\ast(S\otimes T)=f^\ast S\otimes f^ast
+	      T</m>, para todos <m>S\in\mathcal{T}^k(W)</m> e
+	      <m>T\in\mathcal{T}^l(W)</m>.
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-pullbackproduint">
+	<title>Pullback canônico de um produto interno</title>
+	<statement>
+	  <p>
+	    Sejam <m>V</m> um espaço vetoria, com <m>\dim V=m></m> e
+	    <m>T</m> um produto interno sobre <m>V</m>. Então existem
+	    uma base ortonormal <m>\mathcal
+	    B=\big\{v_1,\ldots,v_n\big\}</m> de <m>V</m> (ou seja,
+	    <m>T(v_1,v_j)=\delta_{ij}</m>) e um isomorfismo
+	    <m>f\colon\to\R^n\to V</m> tal que <m>f^\ast
+	    T(v_1,v_2)=\langle v_1,v_2\rangle</m>, para todos
+	    <m>v_1,v_2\in V</m>, onde <m>\langle\cdot,\cdot\rangle</m> é
+	    o produto interno usual do <m>\R^n</m>..
+	  </p>
+	</statement>
+	
+	<proof>
+	  <p>
+	    Visto em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-tensoralternado">
+	<title>Tensor alternado</title>
+	<statement>
+	  <p>
+	    Um <m>k-</m>tensor <m>\omega\in\mathcal{T}^k(V)</m> é um
+	    <term>tensor alternado</term> se
+	    <me>\omega(v_1,\ldots,v_i,\ldots,v_j,\ldots,v_k)=
+	    -\omega(v_1,\ldots,v_j,\ldots,v_i,\ldots,v_k),</me> para
+	    todos <m>v_1,\ldots,v_k\in V</m>.
+	  </p>
+
+	  <p>
+	    O conjunto de todos os tensores alternados é denotado por
+	    <m>\Lambda^k(V)</m>.
+	  </p>
+	  
+	  <remark>
+	    <p>
+	      O conjunto <m>\Lambda^k(V)</m> é um subespaço vetorial de
+	      <m>\mathcal T^k(V)</m>.
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-alternador">
+	<title>Alternador de um tensor</title>
+	<statement>
+	  <p>
+	    Dado <m>T\in\mathcal{T}^k(V)</m>, definimos o tensor
+	    <m>\alt(T)\in\mathcal T^k(V)</m> por
+	    <me>\alt(T)(v_1,\ldots,v_k)=\frac{1}{k!}\sum_{\sigma\in S_k}
+	    (\sgn\sigma) T(v_{\sigma(1)},\ldots,v_{\sigma(k)}).</me>
+	  </p>
+
+	  <remark>
+	    <p>
+	      Com isso temos uma aplicação <m>\alt\colon\mathcal
+	      T^k(V)\to\mathcal T^k(V)</m>.
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-propalt">
+	<title>Propriedades de <m>\alt</m></title>
+	<statement>
+	  <p>
+	    <ol marker="(i)">
+	      <li>
+		<m>T\in\mathcal T^k(V)\implies \alt(T)\in\Lambda^k(V)</m>;
+	      </li>
+	      <li>
+		<m>\omega\in\Lambda^k(V)\implies\alt(\omega)=\omega</m>;
+	      </li>
+	      <li>
+		<m>T\in\mathcal
+		T^k(V)\implies\alt\big(\alt(T)\big)=\alt(T)</m>.
+	      </li>
+	    </ol>
+	  </p>
+
+	  <remark>
+	    <p>
+	      O operador <m>\alt</m> tem todas as características de um
+	      tipo muito especial de transformação linear. Você consegue
+	      "projetar" de que tipo estamos falando?
+	    </p>
+	  </remark>
+	</statement>
+
+	<proof>
+	  <p>
+	    Feita em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      Se <m>\omega\in\\Lambda^k(V)</m> e <m>\eta\in\Lambda^l(V)</m>, nem
+      sempre <m>\omega\otimes\eta\in\Lambda^{k+l}(V)</m>. Vamos
+      "consertar" isso:
+    </p>
+    
+    <p workspace="1in">
+      <definition xml:id="def-wedge">
+	<title>Produto "wedge"</title>
+	<statement>
+	  <p>
+	    Se <m>\omega\in\Lambda^k(V)</m> e
+	    <m>\eta\in\Lambda^l(V)</m>, definimos 
+	    <me>\omega\wedge\eta=\frac{(k+l)!}{k!\,l!}
+	    \alt(\omega\otimes\eta)\in\Lambda^{k+l}(V).</me>
+	  </p>
+
+	  <remark>
+	    <p>Este produto satisfaz as seguintes proripedades:
+	    <ol marker="(i)" cols="1">
+	      <li><m>(\omega_1+\omega_2)\wedge\eta=
+	      \omega_1\wedge\eta+\omega_2\wedge\eta</m>;
+	      </li>
+	      
+	      <li><m>\omega\wedge(\eta_1+\eta_2)=
+	      \omega\wedge\eta_1+\omega\wedge\eta_2</m>;
+	      </li>
+
+	      <li><m>(a\omega)\wedge\eta=
+	      \omega\wedge(a\eta)=a(\omega\wedge\eta)</m>;
+	      </li>
+
+	      <li><m>\omega\wedge\eta=(-1)^{kl}
+	      \eta\wedge\omega</m>;
+	      
+	      </li><li><m>f^\ast(\omega\wedge\eta)=f^\ast\omega\wedge f^\ast\eta
+	      </m>;
+	      </li>
+	    </ol>
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-wedgeassoc">
+	<title>Associatividade do produto wedge</title>
+	<statement>
+	  <p>
+	    <ol marker="(i)">
+	      <li> se 
+		<m>S\in\mathcal T^k(V)</m>, com <m>\alt(S)=0</m> e
+		<m>T\in\mathcal T^k(V)</m>, então <m>\alt(S\otimes
+		YT)=\alt(T\times S)=0</m>;
+	      </li>
+	      <li>
+		<m>\alt\big(\alt(S\otimes T)\otimes
+		U\big)=\alt(S\otimes T\otimes
+		U)=\alt\big(S\otimes\alt(T\otimes U)\big)</m>;
+	      </li>
+	      <li>
+		se <m>\omega\in\Lambda^k(V)</m>, <m>\eta\Lambda^l(V)</m>
+		e <m>\theta\in\Lambda^m(V)</m>, então
+		<me>(\omega\wedge\eta)\wedge\theta=
+		\omega\wedge(\eta\wedge\theta)=
+		\frac{(k+l+m)!}{k!\,l!\, m!}
+		\alt(\omega\otimes\eta\otimes\theta)\in\Lambda^{k+l+m}(V)</me>.
+	      </li>
+	    </ol>
+	  </p>
+	</statement>
+
+	<proof>
+	  <p>
+	    Feita em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-basedimwedge">
+	<title>Base e dimensão de <m>\Lambda^k(V)</m></title>
+	<statement>
+	  <p>
+	    Sejam <m>V</m> um espaço vetorial,<m>\mathcal
+	    B=\{v_1,\ldots,v_n\}</m> uma base de <m>V</m> e <m>\mathcal
+	    B^\ast=\{\phi^1,\ldots,\phi^n\}</m> sua base dual. Então
+	    <m>\{\phi^{i_1}\wedge\cdots\phi^{i_k}\colon 1\leq i_1\leq
+	    i_2\leq\cdots\leq i_k\leq n\}</m> é uma base de
+	    <m>\Lambda^k(V)</m>. Em particular,
+	    <m>\dim\Lambda^k(V)={{n}\choose{k}}</m>.
+	  </p>
+	</statement>
+
+	<remark>
+	  <p>
+	    Se <m>\dim V=n</m>, então <m>\dim\Lambda^n(V)=1</m> e
+	    portanto se <m>\omega\in\Lambda^n(V)</m>, então
+	    <m>\omega=a\lambda</m>, com <m>a\in\R</m> e <m>\lambda</m> é
+	    qualquer <m>n-</m>tensor alternado não-nulo. Se
+	    <m>V=\R^n</m>, podemos tomar <m>\lambda</m> como o determinante.
+	  </p>
+	</remark>
+	
+	<proof>
+	  <p>
+	    Feita em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-determinante">
+	<title>Mudança de coordenadas e <m>n-</m>tensores alternados</title>
+	<statement>
+	  <p>
+	    Sejam <m>V</m> um espaço vetorial,<m>\mathcal
+	    B=\{v_1,\ldots,v_n\}</m> uma base de <m>V</m> e
+	    <m>\omega\in\Lambda^n(V)</m>. Se <m>u_i=\sum\limits_{j=1}^n
+	    a_{ij}v_j</m>, então
+	    <m>\omega(u_1,\ldots,u_n)=\det(a_{ij})\omega(v_1,\ldots,v_n)</m>.
+	  </p>
+	</statement>
+
+	<proof>
+	  <p>
+	    Feita em sala.
+	  </p>
+	</proof>
+      </theorem>
+    </p>
+  </page>
+
+</handout>
