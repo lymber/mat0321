@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="cronograma-semana-05">
+  <title>Semana 06</title>
+
+  <introduction>
+    <p>
+      Linhas gerais do que foi coberto na sexta semana de aulas.
+    </p>
+  </introduction>
+
+  <!-- Can also be <handout> instead of <subsection> to get a printable version -->
+  <subsection>
+    <title>07/04 <ndash /> Terça</title>
+
+    <p>
+      Mudança de variáveis na integral. Veja <xref ref="handout-mudvar"
+      text="title"/>. Exemplos.
+    </p>
+
+    <p>
+      Rudimentos de tensores. Veja <xref ref="handout-tensores"
+      text="title"/>.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>09/04 <ndash /> Quinta</title>
+
+    <p>
+      Mais tensores. Produto tensorial e produto exterior. Veja <xref
+      ref="handout-tensores" text="title"/>. 
+    </p>
+  </subsection>
+</section>
