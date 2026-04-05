@@ -10,22 +10,83 @@
 	<title>Mudança de variáveis</title>
 	<statement>
 	  <p>
-	    Cedo ou tarde aparece. Na verdade aparecerá no momento exato
-	    em que for necessário.
+	    Sejam <m>A\subset\R^n</m> um aberto e <m>g\colon
+	    A\to\R^n</m> uma função injetora de classe
+	    <m>\mathscr{C}^1</m>, com <m>\det g'(x)\neq 0</m>, para todo
+	    <m>x\in A</m>. Se <m>f\colon g(A)\to\R</m> é integrável,
+	    então <me>\int_{g(A)} f = \int_A (f\circ g)|\det g'|.</me>
 	  </p>
 	</statement>
-
-	<remark>
-	  <p>
-	  </p>
-	</remark>
-	
 	<proof>
 	  <p>
-	    Feito em sala
+	    A prova do teorema é feita por indução, após uma série de
+	    reduções, listadas a seguir:
+	  </p>
+
+	  <p>
+	    <ol marker="(i)">
+	      <li>
+		Se <m>\mathcal{O}</m> é uma cobertura admissível para
+		<m>A</m> e o teorema vale para cada <m>U\in
+		\mathcal{O}</m>, então também vale para o aberto
+		<m>A</m>.
+	      </li>
+
+	      <li>
+		Se o teorema vale para a função constante <m>f\equiv
+		1</m>, então também vale para qualquer função
+		integrável.
+	      </li>
+
+	      <li>
+		Se o teorema vale para duas funções "mudança de
+		variável", <m>g\colon A\to\R^n</m> e <m>h\colon
+		B\to\R^n</m>, com <m>g(A)\subset B</m>, então também
+		vale para <m>h\circ g\colon A\to\R^n</m>.
+	      </li>
+
+	      <li>
+		O teorema vale se a função <m>g</m> é linear.
+	      </li>
+	    </ol>
+	  </p>
+
+	  <p>
+	    Utilizamos duas funções convenientes para serem as funções
+	  <m>g</m> e <m>h</m> de modo que ao menos uma das coordenadas
+	  de sua composta fique fixa, permitindo, através do teorema de
+	  Fubini, aplicar a hipótese de indução.
 	  </p>
 	</proof>
       </theorem>
+    </p>
+
+    <p workspace="1in">
+      Um fato importante, que permite a aplicação do teorema de mudança
+      de variáveis em situações práticas, decorre da seguinte
+      simplificação do teorema de Sard:
+    </p>
+
+    <p workspace="1in">
+      <theorem xml:id="teo-sard">
+	<title>Teorema de Sard</title>
+	<statement>
+	  <p>
+	    Sejam <m>A\subset\R^n</m> um aberto e <m>g\colon
+	    A\to\R^n</m> uma função de classe
+	    <m>\mathscr{C}^1</m>. Então, se <m>B=\big\{x\in A\colon\det
+	    g'(x)=0\big\}</m>, o conjunto <m>g(B)</m> tem medida nula.
+	  </p>
+	</statement>
+      </theorem>
+    </p>
+
+    <p workspace="1in">
+      Uma versão mais forte desse teorema lida com funções
+      <m>f\colon\R^n\to\R^m</m>, de classe
+      <m>\mathscr{C}^k</m>. O resultado é o mesmo, se <m>k\geq
+      \max\{n-m+1,1\}</m> e o conjunto <m>B</m> é formado pelos pontos
+      onde o posto de <m>g'(x)</m> é menor que <m>m</m>.
     </p>
   </page>
 
