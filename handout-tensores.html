@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="pt-BR" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tensores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Cálculo Integral">
+<meta property="book:author" content="Prof. Alexandre Lymberopoulos">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Executar (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Ir ao conteúdo principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Cálculo Integral</span> <span class="subtitle">MAT0321 -  2026/1</span></a></h1>
+<p class="byline">Prof. Alexandre Lymberopoulos</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Sumário"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Sumário</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Buscando por: </h2>
+<div id="searchempty" class="searchempty"><span>Não encontrado.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handout-mudvar.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="up-button button" href="resumos.html" title="Acima"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Acima</span></a><a class="next-button button" href="tarefas.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator\id{Id}
+\DeclareMathOperator\posto{posto}
+\DeclareMathOperator\supp{supp}
+\DeclareMathOperator\sgn{sgn}
+\DeclareMathOperator\alt{Alt}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Pré-textual</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="documentos.html" class="internal"><span class="title">Informações</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="info.html" class="internal"><span class="title">Informações da disciplina</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="descricao.html" class="internal"><span class="title">Descrição do Curso</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="aval.html" class="internal"><span class="title">Avaliação e Notas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="cronograma.html" class="internal"><span class="title">Andamento das Aulas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-01.html" class="internal"><span class="title">Semana 01</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-01.html#cronograma-semana-01-3" class="internal"><span class="title">24/02 –  Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-01.html#cronograma-semana-01-4" class="internal"><span class="title">26/02 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-02.html" class="internal"><span class="title">Semana 02</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-02.html#cronograma-semana-02-3" class="internal"><span class="title">03/03 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-02.html#cronograma-semana-02-4" class="internal"><span class="title">05/03 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-03.html" class="internal"><span class="title">Semana 03</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-03.html#cronograma-semana-03-3" class="internal"><span class="title">10/03 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-03.html#cronograma-semana-03-4" class="internal"><span class="title">12/03 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-04.html" class="internal"><span class="title">Semana 04</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-04.html#cronograma-semana-04-3" class="internal"><span class="title">17/03 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-04.html#cronograma-semana-04-4" class="internal"><span class="title">19/03 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-05.html" class="internal"><span class="title">Semana 05</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-05.html#cronograma-semana-05-3" class="internal"><span class="title">24/03 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-05.html#cronograma-semana-05-4" class="internal"><span class="title">26/03 – Quinta</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="cronograma-semana-06.html" class="internal"><span class="title">Semana 06</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-06.html#cronograma-semana-06-3" class="internal"><span class="title">07/04 – Terça</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="cronograma-semana-06.html#cronograma-semana-06-4" class="internal"><span class="title">09/04 – Quinta</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="listas.html" class="internal"><span class="title">Listas de Exercícios</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista02.html" class="internal"><span class="title">Lista 02 – Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="resumos.html" class="internal"><span class="title">Resumos</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-func_diff.html" class="internal"><span class="title">Funções diferenciáveis</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-intRn.html" class="internal"><span class="title">Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-fubini.html" class="internal"><span class="title">Teorema de Fubini</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-partunit.html" class="internal"><span class="title">Partições da Unidade e Integração</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handout-mudvar.html" class="internal"><span class="title">Mudança de variáveis</span></a></div></li>
+<li class="toc-item toc-handout active"><div class="toc-title-box"><a href="handout-tensores.html" class="internal"><span class="title">Tensores</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="tarefas.html" class="internal"><span class="title">Entregas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="tarefas-2.html" class="internal"><span class="title">Atividade 01</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Pré-visualização da impressão</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Formato do papel</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Opções de impressão</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Imprimir cabeçalho</span><label>Primeira página<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Página atual<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Imprimir rodapé</span><label>Primeira página<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Página atual<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Destacar área para solução</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Imprimir" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Imprimir</span></button>
+</div>
+</div>
+<section class="handout" id="handout-tensores" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
+<span class="type">Material de apoio</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tensores</span><div class="print-links"><a href="?printpreview=handout-tensores" class="print-link" title="Pré-visualização da impressão"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="onepage" id="handout-tensores-2">
+<div class="para" id="handout-tensores-2-1">
+<article class="definition definition-like" id="def-tensores"><h3 class="heading">
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"><span class="process-math">\(k-\)</span>tensor.</span>
+</h3>
+<div class="para logical" id="def-tensores-2-1">
+<div class="para">Sejam <span class="process-math">\(V\)</span> um espaço vetorial e <span class="process-math">\(V^k=V\times
+V\times\cdots\times V\)</span> o produto cartesiano de <span class="process-math">\(k\)</span> cópias de <span class="process-math">\(V\text{.}\)</span> Um <dfn class="terminology"><span class="process-math">\(k-\)</span>tensor</dfn> é uma aplicação multinear <span class="process-math">\(T\colon V^k\to\R\)</span> , ou seja,</div>
+<div class="displaymath process-math" id="def-tensores-2-1-7">
+\begin{align*}
+T(v_1,\ldots,v_i+w_i,\ldots,v_k)&amp;
+=T(v_1,\ldots,v_i,\ldots,v_k)+T(v_1,\ldots,w_i,\ldots,v_k);\\
+T(v_1,\ldots,\alpha
+v_i,\ldots,v_k)&amp;
+=\alpha T(v_1,\ldots,v_i,\ldots,v_k),
+\end{align*}
+</div>
+<div class="para">para todo <span class="process-math">\(1\leq i\leq k\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-tensores-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<div class="para logical" id="def-tensores-2-2">
+<div class="para">Definimos as operações de soma de <span class="process-math">\(k-\)</span>tensores e multiplicação de uma escalar por um <span class="process-math">\(k-\)</span>tensor de maneira natural:</div>
+<div class="displaymath process-math" id="def-tensores-2-2-3">
+\begin{align*}
+(T+S)(v_1,\ldots,v_k)&amp;
+=T(v_1,\ldots,v_k)+S(v_1,\ldots,v_k);\\
+(\alpha T)(v_1,\ldots,v_k)&amp;
+=\alpha T(v_1,\ldots,v_k),
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-tensores-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<article class="remark remark-like" id="def-tensores-2-3"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">56</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-tensores-2-3-1">O conjunto <span class="process-math">\(\mathcal T^k(V)=\big\{T\colon V^k\to\R\text{
+tais que }
+T\text{ é }k-\text{tensor}\big\}\)</span> é um espaço vetorial.<div class="autopermalink" data-description="Parágrafo"><a href="#def-tensores-2-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 56"><a href="#def-tensores-2-3" title="Copy heading and permalink for Nota 56" aria-label="Copy heading and permalink for Nota 56">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 55: k-tensor"><a href="#def-tensores" title="Copy heading and permalink for Definição 55: k-tensor" aria-label="Copy heading and permalink for Definição 55: k-tensor">🔗</a></div>
+</article><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-2">
+<details id="ex-tensor_prodesc" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exemplo</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto escalar.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-tensor_prodesc-2-1">Se <span class="process-math">\(V\)</span> é um espaço vetorial com produto escalar (ou produto interno), então este produto interno pode ser visto como um <span class="process-math">\(2-\)</span>tensor (siméstrico e positivo-definido).<div class="autopermalink" data-description="Parágrafo"><a href="#ex-tensor_prodesc-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exemplo 57: Produto escalar"><a href="#ex-tensor_prodesc" title="Copy heading and permalink for Exemplo 57: Produto escalar" aria-label="Copy heading and permalink for Exemplo 57: Produto escalar">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-3">
+<article class="definition definition-like" id="def-prodtens"><h3 class="heading">
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto tensorial.</span>
+</h3>
+<div class="para logical" id="def-prodtens-2-1">
+<div class="para">Sejam <span class="process-math">\(S\in\mathcal{T}^k(V)\)</span> e <span class="process-math">\(T\in\mathcal{T}^l(V)\text{.}\)</span> O <dfn class="terminology">produto tensorial</dfn>, <span class="process-math">\(S\otimes T\in\mathcal{T}^{k+l}(V)\text{,}\)</span> é dado por</div>
+<div class="displaymath process-math" id="def-prodtens-2-1-5">
+\begin{equation*}
+(S\otimes
+T)(v_1,\ldots,v_k,v_{k+1},\ldots,v_{k+l})
+=S(v_1,\ldots,v_k)T(v_{k+1},\ldots,v_{k+l}).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-prodtens-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<article class="remark remark-like" id="def-prodtens-2-2"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-prodtens-2-2-1">Observe que <span class="process-math">\(S\times T\neq T\otimes S\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-prodtens-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="def-prodtens-2-2-2">
+<div class="para">Além disso, valem as propriedades:</div>
+<ol class="lower-roman ol-marker-2" id="def-prodtens-2-2-2-1">
+<li id="def-prodtens-2-2-2-1-1">
+<div class="para" id="p-derived-def-prodtens-2-2-2-1-1"><span class="process-math">\((S_1+S_2)\otimes T=S_1\otimes T+S_2\otimes
+T\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item i"><a href="#def-prodtens-2-2-2-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="def-prodtens-2-2-2-1-2">
+<div class="para" id="p-derived-def-prodtens-2-2-2-1-2"><span class="process-math">\(S\otimes(T_1+T_2)=S\otimes T_1+S\otimes
+T_2\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item ii"><a href="#def-prodtens-2-2-2-1-2" title="Copy heading and permalink for Item ii" aria-label="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+<li id="def-prodtens-2-2-2-1-3">
+<div class="para" id="p-derived-def-prodtens-2-2-2-1-3"><span class="process-math">\((\alpha S)\otimes T=S\otimes(\alpha T)=\alpha
+(S\otimes T)\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item iii"><a href="#def-prodtens-2-2-2-1-3" title="Copy heading and permalink for Item iii" aria-label="Copy heading and permalink for Item iii">🔗</a></div>
+</li>
+<li id="def-prodtens-2-2-2-1-4">
+<div class="para" id="p-derived-def-prodtens-2-2-2-1-4"><span class="process-math">\((S\otimes T)\otimes U=S\otimes (T\otimes U)\text{.}\)</span></div>
+<div class="autopermalink" data-description="Item iv"><a href="#def-prodtens-2-2-2-1-4" title="Copy heading and permalink for Item iv" aria-label="Copy heading and permalink for Item iv">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-prodtens-2-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="def-prodtens-2-2-3">Observe também que <span class="process-math">\(\mathcal T^1(V)=V^\ast\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-prodtens-2-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 59"><a href="#def-prodtens-2-2" title="Copy heading and permalink for Nota 59" aria-label="Copy heading and permalink for Nota 59">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 58: Produto tensorial"><a href="#def-prodtens" title="Copy heading and permalink for Definição 58: Produto tensorial" aria-label="Copy heading and permalink for Definição 58: Produto tensorial">🔗</a></div>
+</article><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-4">
+<article class="theorem theorem-like" id="teo-tensdim"><h3 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dimensão de <span class="process-math">\(\mathcal{T}^k\)</span>.</span>
+</h3>
+<div class="para" id="teo-tensdim-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetorial, <span class="process-math">\(\mathcal{B}=\big\{v_1,\ldots,v_n\big\}\)</span> uma base de <span class="process-math">\(V\)</span> e <span class="process-math">\(\mathcal{B}^\ast=\big\{\phi^1,\ldots,\phi^n\big\}\)</span> a base dual de <span class="process-math">\(\mathcal B\)</span> para <span class="process-math">\(V^\ast\text{,}\)</span> ou seja, <span class="process-math">\(\phi^i(v_j)=\delta_{ij}\text{.}\)</span> Então os <span class="process-math">\(k-\)</span>tensores <span class="process-math">\(\phi^{i_1}\otimes\cdots\otimes\phi^{i_k}\text{,}\)</span> <span class="process-math">\(1\leq
+i_1,\ldots,i_k\leq n\)</span> formam uma base para <span class="process-math">\(\mathcal
+T^k(V)\text{.}\)</span> Em particular <span class="process-math">\(\dim\mathcal T^k=n^k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-tensdim-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Teorema 60: Dimensão de \mathcal{T}^k"><a href="#teo-tensdim" title="Copy heading and permalink for Teorema 60: Dimensão de \mathcal{T}^k" aria-label="Copy heading and permalink for Teorema 60: Dimensão de \mathcal{T}^k">🔗</a></div>
+</article>
+<details id="teo-tensdim-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="teo-tensdim-3-1">Visto em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-tensdim-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 60.1"><a href="#teo-tensdim-3" title="Copy heading and permalink for Demonstração 60.1" aria-label="Copy heading and permalink for Demonstração 60.1">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-5">
+<article class="definition definition-like" id="def-pullback"><h3 class="heading">
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pullback de tensores.</span>
+</h3>
+<div class="para logical" id="def-pullback-2-1">
+<div class="para">Sejam <span class="process-math">\(T\in\mathcal{T}^k(W)\)</span> e <span class="process-math">\(f\colon V\to W\)</span> uma transformação linear entre os espaços vetoriais <span class="process-math">\(V\)</span> e <span class="process-math">\(W\text{.}\)</span> Definimos o <dfn class="terminology">pullback de <span class="process-math">\(M\)</span> por <span class="process-math">\(f\)</span></dfn> como o <span class="process-math">\(k-\)</span>tensor <span class="process-math">\(f^\ast
+T\in\mathcal T^k(V)\text{,}\)</span> dado por</div>
+<div class="displaymath process-math" id="def-pullback-2-1-8">
+\begin{equation*}
+f^\ast
+T(v_1,\ldots,v_k)=T\big(f(v_1),\ldots,f(v_k)\big).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-pullback-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<div class="para" id="def-pullback-2-2">Isso define uma aplicação linear <span class="process-math">\(f^\ast\colon\mathcal{T}^k(W)\to\mathcal{T}^k(V)\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-pullback-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<article class="remark remark-like" id="def-pullback-2-3"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-pullback-2-3-1">Observe que <span class="process-math">\(f^\ast(S\otimes T)=f^\ast S\otimes f^ast
+T\text{,}\)</span> para todos <span class="process-math">\(S\in\mathcal{T}^k(W)\)</span> e <span class="process-math">\(T\in\mathcal{T}^l(W)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-pullback-2-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 62"><a href="#def-pullback-2-3" title="Copy heading and permalink for Nota 62" aria-label="Copy heading and permalink for Nota 62">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 61: Pullback de tensores"><a href="#def-pullback" title="Copy heading and permalink for Definição 61: Pullback de tensores" aria-label="Copy heading and permalink for Definição 61: Pullback de tensores">🔗</a></div>
+</article><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-6">
+<article class="theorem theorem-like" id="teo-pullbackproduint"><h3 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">63</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pullback canônico de um produto interno.</span>
+</h3>
+<div class="para" id="teo-pullbackproduint-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetoria, com <span class="process-math">\(\dim V=m&gt;\)</span> e <span class="process-math">\(T\)</span> um produto interno sobre <span class="process-math">\(V\text{.}\)</span> Então existem uma base ortonormal <span class="process-math">\(\mathcal
+B=\big\{v_1,\ldots,v_n\big\}\)</span> de <span class="process-math">\(V\)</span> (ou seja, <span class="process-math">\(T(v_1,v_j)=\delta_{ij}\)</span>) e um isomorfismo <span class="process-math">\(f\colon\to\R^n\to V\)</span> tal que <span class="process-math">\(f^\ast
+T(v_1,v_2)=\langle v_1,v_2\rangle\text{,}\)</span> para todos <span class="process-math">\(v_1,v_2\in V\text{,}\)</span> onde <span class="process-math">\(\langle\cdot,\cdot\rangle\)</span> é o produto interno usual do <span class="process-math">\(\R^n\text{..}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-pullbackproduint-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Teorema 63: Pullback canônico de um produto interno"><a href="#teo-pullbackproduint" title="Copy heading and permalink for Teorema 63: Pullback canônico de um produto interno" aria-label="Copy heading and permalink for Teorema 63: Pullback canônico de um produto interno">🔗</a></div>
+</article>
+<details id="teo-pullbackproduint-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="teo-pullbackproduint-3-1">Visto em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-pullbackproduint-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 63.1"><a href="#teo-pullbackproduint-3" title="Copy heading and permalink for Demonstração 63.1" aria-label="Copy heading and permalink for Demonstração 63.1">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-7">
+<article class="definition definition-like" id="def-tensoralternado"><h3 class="heading">
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">64</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tensor alternado.</span>
+</h3>
+<div class="para logical" id="def-tensoralternado-2-1">
+<div class="para">Um <span class="process-math">\(k-\)</span>tensor <span class="process-math">\(\omega\in\mathcal{T}^k(V)\)</span> é um <dfn class="terminology">tensor alternado</dfn> se</div>
+<div class="displaymath process-math" id="def-tensoralternado-2-1-4">
+\begin{equation*}
+\omega(v_1,\ldots,v_i,\ldots,v_j,\ldots,v_k)=
+-\omega(v_1,\ldots,v_j,\ldots,v_i,\ldots,v_k),
+\end{equation*}
+</div>
+<div class="para">para todos <span class="process-math">\(v_1,\ldots,v_k\in V\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-tensoralternado-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<div class="para" id="def-tensoralternado-2-2">O conjunto de todos os tensores alternados é denotado por <span class="process-math">\(\Lambda^k(V)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-tensoralternado-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<article class="remark remark-like" id="def-tensoralternado-2-3"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">65</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-tensoralternado-2-3-1">O conjunto <span class="process-math">\(\Lambda^k(V)\)</span> é um subespaço vetorial de <span class="process-math">\(\mathcal T^k(V)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-tensoralternado-2-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 65"><a href="#def-tensoralternado-2-3" title="Copy heading and permalink for Nota 65" aria-label="Copy heading and permalink for Nota 65">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 64: Tensor alternado"><a href="#def-tensoralternado" title="Copy heading and permalink for Definição 64: Tensor alternado" aria-label="Copy heading and permalink for Definição 64: Tensor alternado">🔗</a></div>
+</article><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-8">
+<article class="definition definition-like" id="def-alternador"><h3 class="heading">
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">66</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Alternador de um tensor.</span>
+</h3>
+<div class="para logical" id="def-alternador-2-1">
+<div class="para">Dado <span class="process-math">\(T\in\mathcal{T}^k(V)\text{,}\)</span> definimos o tensor <span class="process-math">\(\alt(T)\in\mathcal T^k(V)\)</span> por</div>
+<div class="displaymath process-math" id="def-alternador-2-1-3">
+\begin{equation*}
+\alt(T)(v_1,\ldots,v_k)=\frac{1}{k!}\sum_{\sigma\in S_k}
+(\sgn\sigma) T(v_{\sigma(1)},\ldots,v_{\sigma(k)}).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-alternador-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<article class="remark remark-like" id="def-alternador-2-2"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">67</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-alternador-2-2-1">Com isso temos uma aplicação <span class="process-math">\(\alt\colon\mathcal
+T^k(V)\to\mathcal T^k(V)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-alternador-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 67"><a href="#def-alternador-2-2" title="Copy heading and permalink for Nota 67" aria-label="Copy heading and permalink for Nota 67">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 66: Alternador de um tensor"><a href="#def-alternador" title="Copy heading and permalink for Definição 66: Alternador de um tensor" aria-label="Copy heading and permalink for Definição 66: Alternador de um tensor">🔗</a></div>
+</article><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-9">
+<article class="theorem theorem-like" id="teo-propalt"><h3 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">68</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Propriedades de <span class="process-math">\(\alt\)</span>.</span>
+</h3>
+<div class="para logical" id="teo-propalt-2-1">
+<ol class="lower-roman ol-marker-2" id="teo-propalt-2-1-1">
+<li id="teo-propalt-2-1-1-1">
+<div class="para" id="p-derived-teo-propalt-2-1-1-1"><span class="process-math">\(T\in\mathcal T^k(V)\implies \alt(T)\in\Lambda^k(V)\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item i"><a href="#teo-propalt-2-1-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="teo-propalt-2-1-1-2">
+<div class="para" id="p-derived-teo-propalt-2-1-1-2"><span class="process-math">\(\omega\in\Lambda^k(V)\implies\alt(\omega)=\omega\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item ii"><a href="#teo-propalt-2-1-1-2" title="Copy heading and permalink for Item ii" aria-label="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+<li id="teo-propalt-2-1-1-3">
+<div class="para" id="p-derived-teo-propalt-2-1-1-3"><span class="process-math">\(T\in\mathcal
+T^k(V)\implies\alt\big(\alt(T)\big)=\alt(T)\text{.}\)</span></div>
+<div class="autopermalink" data-description="Item iii"><a href="#teo-propalt-2-1-1-3" title="Copy heading and permalink for Item iii" aria-label="Copy heading and permalink for Item iii">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#teo-propalt-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<article class="remark remark-like" id="teo-propalt-2-2"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">69</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="teo-propalt-2-2-1">O operador <span class="process-math">\(\alt\)</span> tem todas as características de um tipo muito especial de transformação linear. Você consegue "projetar" de que tipo estamos falando?<div class="autopermalink" data-description="Parágrafo"><a href="#teo-propalt-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 69"><a href="#teo-propalt-2-2" title="Copy heading and permalink for Nota 69" aria-label="Copy heading and permalink for Nota 69">🔗</a></div>
+</article><div class="autopermalink" data-description="Teorema 68: Propriedades de \alt"><a href="#teo-propalt" title="Copy heading and permalink for Teorema 68: Propriedades de \alt" aria-label="Copy heading and permalink for Teorema 68: Propriedades de \alt">🔗</a></div>
+</article>
+<details id="teo-propalt-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="teo-propalt-3-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-propalt-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 68.1"><a href="#teo-propalt-3" title="Copy heading and permalink for Demonstração 68.1" aria-label="Copy heading and permalink for Demonstração 68.1">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-9" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-10">Se <span class="process-math">\(\omega\in\\Lambda^k(V)\)</span> e <span class="process-math">\(\eta\in\Lambda^l(V)\text{,}\)</span> nem sempre <span class="process-math">\(\omega\otimes\eta\in\Lambda^{k+l}(V)\text{.}\)</span> Vamos "consertar" isso:<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-10" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-11">
+<article class="definition definition-like" id="def-wedge"><h3 class="heading">
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">70</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto "wedge".</span>
+</h3>
+<div class="para logical" id="def-wedge-2-1">
+<div class="para">Se <span class="process-math">\(\omega\in\Lambda^k(V)\)</span> e <span class="process-math">\(\eta\in\Lambda^l(V)\text{,}\)</span> definimos</div>
+<div class="displaymath process-math" id="def-wedge-2-1-3">
+\begin{equation*}
+\omega\wedge\eta=\frac{(k+l)!}{k!\,l!}
+\alt(\omega\otimes\eta)\in\Lambda^{k+l}(V).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-wedge-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> 
+<article class="remark remark-like" id="def-wedge-2-2"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">71</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="def-wedge-2-2-1">
+<div class="para">Este produto satisfaz as seguintes proripedades:</div>
+<ol class="lower-roman ol-marker-2" id="def-wedge-2-2-1-1">
+<li id="def-wedge-2-2-1-1-1">
+<div class="para" id="p-derived-def-wedge-2-2-1-1-1"><span class="process-math">\((\omega_1+\omega_2)\wedge\eta=
+\omega_1\wedge\eta+\omega_2\wedge\eta\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item i"><a href="#def-wedge-2-2-1-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="def-wedge-2-2-1-1-2">
+<div class="para" id="p-derived-def-wedge-2-2-1-1-2"><span class="process-math">\(\omega\wedge(\eta_1+\eta_2)=
+\omega\wedge\eta_1+\omega\wedge\eta_2\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item ii"><a href="#def-wedge-2-2-1-1-2" title="Copy heading and permalink for Item ii" aria-label="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+<li id="def-wedge-2-2-1-1-3">
+<div class="para" id="p-derived-def-wedge-2-2-1-1-3"><span class="process-math">\((a\omega)\wedge\eta=
+\omega\wedge(a\eta)=a(\omega\wedge\eta)\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item iii"><a href="#def-wedge-2-2-1-1-3" title="Copy heading and permalink for Item iii" aria-label="Copy heading and permalink for Item iii">🔗</a></div>
+</li>
+<li id="def-wedge-2-2-1-1-4">
+<div class="para" id="p-derived-def-wedge-2-2-1-1-4"><span class="process-math">\(\omega\wedge\eta=(-1)^{kl}
+\eta\wedge\omega\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item iv"><a href="#def-wedge-2-2-1-1-4" title="Copy heading and permalink for Item iv" aria-label="Copy heading and permalink for Item iv">🔗</a></div>
+</li>
+<li id="def-wedge-2-2-1-1-5">
+<div class="para" id="p-derived-def-wedge-2-2-1-1-5"><span class="process-math">\(f^\ast(\omega\wedge\eta)=f^\ast\omega\wedge f^\ast\eta
+\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item v"><a href="#def-wedge-2-2-1-1-5" title="Copy heading and permalink for Item v" aria-label="Copy heading and permalink for Item v">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#def-wedge-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 71"><a href="#def-wedge-2-2" title="Copy heading and permalink for Nota 71" aria-label="Copy heading and permalink for Nota 71">🔗</a></div>
+</article><div class="autopermalink" data-description='Definição 70: Produto "wedge"'><a href="#def-wedge" title='Copy heading and permalink for Definição 70: Produto "wedge"' aria-label='Copy heading and permalink for Definição 70: Produto "wedge"'>🔗</a></div>
+</article><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-11" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-12">
+<article class="theorem theorem-like" id="teo-wedgeassoc"><h3 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">72</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Associatividade do produto wedge.</span>
+</h3>
+<div class="para logical" id="teo-wedgeassoc-2-1">
+<ol class="lower-roman ol-marker-2" id="teo-wedgeassoc-2-1-1">
+<li id="teo-wedgeassoc-2-1-1-1">
+<div class="para" id="p-derived-teo-wedgeassoc-2-1-1-1">se <span class="process-math">\(S\in\mathcal T^k(V)\text{,}\)</span> com <span class="process-math">\(\alt(S)=0\)</span> e <span class="process-math">\(T\in\mathcal T^k(V)\text{,}\)</span> então <span class="process-math">\(\alt(S\otimes
+YT)=\alt(T\times S)=0\text{;}\)</span>
+</div>
+<div class="autopermalink" data-description="Item i"><a href="#teo-wedgeassoc-2-1-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="teo-wedgeassoc-2-1-1-2">
+<div class="para" id="p-derived-teo-wedgeassoc-2-1-1-2"><span class="process-math">\(\alt\big(\alt(S\otimes T)\otimes
+U\big)=\alt(S\otimes T\otimes
+U)=\alt\big(S\otimes\alt(T\otimes U)\big)\text{;}\)</span></div>
+<div class="autopermalink" data-description="Item ii"><a href="#teo-wedgeassoc-2-1-1-2" title="Copy heading and permalink for Item ii" aria-label="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+<li id="teo-wedgeassoc-2-1-1-3">
+<div class="para" id="p-derived-teo-wedgeassoc-2-1-1-3">se <span class="process-math">\(\omega\in\Lambda^k(V)\text{,}\)</span> <span class="process-math">\(\eta\Lambda^l(V)\)</span> e <span class="process-math">\(\theta\in\Lambda^m(V)\text{,}\)</span> então<div class="displaymath process-math" id="teo-wedgeassoc-2-1-1-3-4">
+\begin{equation*}
+(\omega\wedge\eta)\wedge\theta=
+\omega\wedge(\eta\wedge\theta)=
+\frac{(k+l+m)!}{k!\,l!\, m!}
+\alt(\omega\otimes\eta\otimes\theta)\in\Lambda^{k+l+m}(V)\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item iii"><a href="#teo-wedgeassoc-2-1-1-3" title="Copy heading and permalink for Item iii" aria-label="Copy heading and permalink for Item iii">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#teo-wedgeassoc-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Teorema 72: Associatividade do produto wedge"><a href="#teo-wedgeassoc" title="Copy heading and permalink for Teorema 72: Associatividade do produto wedge" aria-label="Copy heading and permalink for Teorema 72: Associatividade do produto wedge">🔗</a></div>
+</article>
+<details id="teo-wedgeassoc-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="teo-wedgeassoc-3-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-wedgeassoc-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 72.1"><a href="#teo-wedgeassoc-3" title="Copy heading and permalink for Demonstração 72.1" aria-label="Copy heading and permalink for Demonstração 72.1">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-12" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-13">
+<article class="theorem theorem-like" id="teo-basedimwedge"><h3 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">73</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Base e dimensão de <span class="process-math">\(\Lambda^k(V)\)</span>.</span>
+</h3>
+<div class="para" id="teo-basedimwedge-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetorial,<span class="process-math">\(\mathcal
+B=\{v_1,\ldots,v_n\}\)</span> uma base de <span class="process-math">\(V\)</span> e <span class="process-math">\(\mathcal
+B^\ast=\{\phi^1,\ldots,\phi^n\}\)</span> sua base dual. Então <span class="process-math">\(\{\phi^{i_1}\wedge\cdots\phi^{i_k}\colon 1\leq i_1\leq
+i_2\leq\cdots\leq i_k\leq n\}\)</span> é uma base de <span class="process-math">\(\Lambda^k(V)\text{.}\)</span> Em particular, <span class="process-math">\(\dim\Lambda^k(V)={{n}\choose{k}}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-basedimwedge-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<article class="remark remark-like" id="teo-basedimwedge-3"><h4 class="heading">
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">74</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="teo-basedimwedge-3-1">Se <span class="process-math">\(\dim V=n\text{,}\)</span> então <span class="process-math">\(\dim\Lambda^n(V)=1\)</span> e portanto se <span class="process-math">\(\omega\in\Lambda^n(V)\text{,}\)</span> então <span class="process-math">\(\omega=a\lambda\text{,}\)</span> com <span class="process-math">\(a\in\R\)</span> e <span class="process-math">\(\lambda\)</span> é qualquer <span class="process-math">\(n-\)</span>tensor alternado não-nulo. Se <span class="process-math">\(V=\R^n\text{,}\)</span> podemos tomar <span class="process-math">\(\lambda\)</span> como o determinante.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-basedimwedge-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Nota 74"><a href="#teo-basedimwedge-3" title="Copy heading and permalink for Nota 74" aria-label="Copy heading and permalink for Nota 74">🔗</a></div>
+</article><div class="autopermalink" data-description="Teorema 73: Base e dimensão de \Lambda^k(V)"><a href="#teo-basedimwedge" title="Copy heading and permalink for Teorema 73: Base e dimensão de \Lambda^k(V)" aria-label="Copy heading and permalink for Teorema 73: Base e dimensão de \Lambda^k(V)">🔗</a></div>
+</article>
+<details id="teo-basedimwedge-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="teo-basedimwedge-4-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-basedimwedge-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 73.1"><a href="#teo-basedimwedge-4" title="Copy heading and permalink for Demonstração 73.1" aria-label="Copy heading and permalink for Demonstração 73.1">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-13" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="handout-tensores-2-14">
+<article class="theorem theorem-like" id="teo-determinante"><h3 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">75</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mudança de coordenadas e <span class="process-math">\(n-\)</span>tensores alternados.</span>
+</h3>
+<div class="para" id="teo-determinante-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetorial,<span class="process-math">\(\mathcal
+B=\{v_1,\ldots,v_n\}\)</span> uma base de <span class="process-math">\(V\)</span> e <span class="process-math">\(\omega\in\Lambda^n(V)\text{.}\)</span> Se <span class="process-math">\(u_i=\sum\limits_{j=1}^n
+a_{ij}v_j\text{,}\)</span> então <span class="process-math">\(\omega(u_1,\ldots,u_n)=\det(a_{ij})\omega(v_1,\ldots,v_n)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-determinante-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Teorema 75: Mudança de coordenadas e n-tensores alternados"><a href="#teo-determinante" title="Copy heading and permalink for Teorema 75: Mudança de coordenadas e n-tensores alternados" aria-label="Copy heading and permalink for Teorema 75: Mudança de coordenadas e n-tensores alternados">🔗</a></div>
+</article>
+<details id="teo-determinante-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="teo-determinante-3-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-determinante-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 75.1"><a href="#teo-determinante-3" title="Copy heading and permalink for Demonstração 75.1" aria-label="Copy heading and permalink for Demonstração 75.1">🔗</a></div>
+</article></details><div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-14" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Material de apoio: Tensores"><a href="#handout-tensores" title="Copy heading and permalink for Material de apoio: Tensores" aria-label="Copy heading and permalink for Material de apoio: Tensores">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="handout-mudvar.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="tarefas.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
