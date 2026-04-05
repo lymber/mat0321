@@ -13,9 +13,11 @@
     \newcommand{\Z}{\mathbb Z}
     \newcommand{\Q}{\mathbb Q}
     \newcommand{\R}{\mathbb R}
-    \newcommand{\id}{\mathrm{Id}}
-    \newcommand{\posto}{\mathrm{posto}}
+    \DeclareMathOperator\id{Id}
+    \DeclareMathOperator\posto{posto}
     \DeclareMathOperator\supp{supp}
+    \DeclareMathOperator\sgn{sgn}
+    \DeclareMathOperator\alt{Alt}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
