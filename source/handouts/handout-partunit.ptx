@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <handout xml:id="handout-partunit">
-  <title>Partições da Unidade</title>
+  <title>Partições da Unidade e Integração</title>
 
   <page>
 
@@ -426,6 +426,52 @@
 	  </p>
 	</proof>
       </corollary>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-cobadm">
+	<title>Cobertura admissível</title>
+	<statement>
+	  <p>
+	    Uma cobertura aberta
+	    <m>\mathcal{A}=\{A_\lambda}_{\lambda\in\Lambda</m> para um
+	    aberto <m>A\subset\R^n</m> é <term>admissível</term> se
+	    <m>A_\lambda\subset A</m>, para todo
+	    <m>\lambda\in\Lambda</m>.
+	  </p>
+	</statement>
+      </definition>
+
+      <definition xml:id="def-intpart">
+	<title>Integral estendida</title>
+	<statement>
+	  <p>
+	    Sejam <m>A\subset\R^n</m> um aberto, <m>\mathcal{A}</m>
+	    uma cobertura aberta admissível para <m>A</m>  e <m>f\colon
+	    A\to\R</m> uma função localmente limitada, com conjunto de
+	    descontinuidades de medida nula.
+	  </p>
+
+	  <p>
+	    A função <m>f</m> é <term>integrável no sentido
+	    extendido</term> se <me>\sum_{\lambda\in\Lambda}\int_A
+	    \phi_\lambda(x)|f(x)|\, dx</me> é convergente, onde
+	    <m>\big\{\phi_\lambda\big\}_{\lambda\in\Lambda}</m> é uma
+	    partição da unidade subordinada à cobertura <m>\mathcal
+	    A</m>.
+	  </p>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      A definição acima requer várias discussões para dar sentido ao
+      somatório indicado. Fizemos isso em sala e também provamos que a
+      convergência dessa soma independe da cobertura e da particão da
+      unidade escolhidas para o aberto <m>A</m>. Além disso provamos que
+      se <m>f</m> é uma função limitada e <m>A</m> é um conjunto
+      <m>J-</m>mensurável, esta definição coincide com a anterior,
+      justificado o adjetivo "estendida".
     </p>
   </page>
 
