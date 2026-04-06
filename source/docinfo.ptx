@@ -18,6 +18,8 @@
     \DeclareMathOperator\supp{supp}
     \DeclareMathOperator\sgn{sgn}
     \DeclareMathOperator\alt{Alt}
+    \DeclareMathOperator{\rot}{rot}
+    \DeclareMathOperator{\divg}{div}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
