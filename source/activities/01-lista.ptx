@@ -2,14 +2,14 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="lista01">
-  <title>Lista 01</title>
+  <title>Lista 01 - <q>Recordação</q></title>
 
   <!-- Optional introduction -->
-  <introduction>
-    <p>
-      Primeira Lista de Exercícios.
-    </p>
-  </introduction>
+  <!-- <introduction> -->
+  <!--   <p> -->
+  <!--     Primeira Lista de Exercícios. -->
+  <!--   </p> -->
+  <!-- </introduction> -->
 
   <!-- Exercises start here. -->
   <exercise>  <!-- option to leave blank space: workspace="2in" -->
@@ -170,8 +170,8 @@
 
 	<ol marker="a.">
 	  <li>
-	    Mostre que todo polinômio de grau <m>n</m> ``suficientemente
-	    próximo'' de <m>p(x)</m> tem uma raiz real pŕoxima de
+	    Mostre que todo polinômio de grau <m>n</m> <q>suficientemente
+	    próximo</q> de <m>p(x)</m> tem uma raiz real pŕoxima de
 	    <m>x_0</m> que varia suavemente em termos dos coeficientes do
 	    polinômio.
 	  </li>
