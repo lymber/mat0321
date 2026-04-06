@@ -141,11 +141,15 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
 \DeclareMathOperator\id{Id}
 \DeclareMathOperator\posto{posto}
 \DeclareMathOperator\supp{supp}
 \DeclareMathOperator\sgn{sgn}
 \DeclareMathOperator\alt{Alt}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\divg}{div}
+\DeclareMathOperator{\tr}{Tr}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -213,8 +217,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="listas.html" class="internal"><span class="title">Listas de Exercícios</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01 - “Recordação”</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista02.html" class="internal"><span class="title">Lista 02 – Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista03.html" class="internal"><span class="title">Lista 03 – Tensores, Formas Diferenciais, Cadeias e Stokes</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -265,7 +270,7 @@ eBookConfig.enable_chatcodes =  false;
 <section class="onepage" id="handout-tensores-2">
 <div class="para" id="handout-tensores-2-1">
 <article class="definition definition-like" id="def-tensores"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"><span class="process-math">\(k-\)</span>tensor.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"><span class="process-math">\(k-\)</span>tensor.</span>
 </h3>
 <div class="para logical" id="def-tensores-2-1">
 <div class="para">Sejam <span class="process-math">\(V\)</span> um espaço vetorial e <span class="process-math">\(V^k=V\times
@@ -296,31 +301,31 @@ v_i,\ldots,v_k)&amp;
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-tensores-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div> 
 <article class="remark remark-like" id="def-tensores-2-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">56</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="def-tensores-2-3-1">O conjunto <span class="process-math">\(\mathcal T^k(V)=\big\{T\colon V^k\to\R\text{
 tais que }
 T\text{ é }k-\text{tensor}\big\}\)</span> é um espaço vetorial.<div class="autopermalink" data-description="Parágrafo"><a href="#def-tensores-2-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 56"><a href="#def-tensores-2-3" title="Copy heading and permalink for Nota 56" aria-label="Copy heading and permalink for Nota 56">🔗</a></div>
-</article><div class="autopermalink" data-description="Definição 55: k-tensor"><a href="#def-tensores" title="Copy heading and permalink for Definição 55: k-tensor" aria-label="Copy heading and permalink for Definição 55: k-tensor">🔗</a></div>
+<div class="autopermalink" data-description="Nota 59"><a href="#def-tensores-2-3" title="Copy heading and permalink for Nota 59" aria-label="Copy heading and permalink for Nota 59">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 58: k-tensor"><a href="#def-tensores" title="Copy heading and permalink for Definição 58: k-tensor" aria-label="Copy heading and permalink for Definição 58: k-tensor">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-2">
 <details id="ex-tensor_prodesc" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exemplo</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto escalar.</span>
+<span class="type">Exemplo</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto escalar.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="ex-tensor_prodesc-2-1">Se <span class="process-math">\(V\)</span> é um espaço vetorial com produto escalar (ou produto interno), então este produto interno pode ser visto como um <span class="process-math">\(2-\)</span>tensor (siméstrico e positivo-definido).<div class="autopermalink" data-description="Parágrafo"><a href="#ex-tensor_prodesc-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exemplo 57: Produto escalar"><a href="#ex-tensor_prodesc" title="Copy heading and permalink for Exemplo 57: Produto escalar" aria-label="Copy heading and permalink for Exemplo 57: Produto escalar">🔗</a></div>
+<div class="autopermalink" data-description="Exemplo 60: Produto escalar"><a href="#ex-tensor_prodesc" title="Copy heading and permalink for Exemplo 60: Produto escalar" aria-label="Copy heading and permalink for Exemplo 60: Produto escalar">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-3">
 <article class="definition definition-like" id="def-prodtens"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto tensorial.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto tensorial.</span>
 </h3>
 <div class="para logical" id="def-prodtens-2-1">
 <div class="para">Sejam <span class="process-math">\(S\in\mathcal{T}^k(V)\)</span> e <span class="process-math">\(T\in\mathcal{T}^l(V)\text{.}\)</span> O <dfn class="terminology">produto tensorial</dfn>, <span class="process-math">\(S\otimes T\in\mathcal{T}^{k+l}(V)\text{,}\)</span> é dado por</div>
@@ -334,13 +339,13 @@ T)(v_1,\ldots,v_k,v_{k+1},\ldots,v_{k+l})
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-prodtens-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div> 
 <article class="remark remark-like" id="def-prodtens-2-2"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="def-prodtens-2-2-1">Observe que <span class="process-math">\(S\times T\neq T\otimes S\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-prodtens-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para logical" id="def-prodtens-2-2-2">
 <div class="para">Além disso, valem as propriedades:</div>
-<ol class="lower-roman ol-marker-2" id="def-prodtens-2-2-2-1">
+<ol class="lower-roman ol-marker-3" id="def-prodtens-2-2-2-1">
 <li id="def-prodtens-2-2-2-1-1">
 <div class="para" id="p-derived-def-prodtens-2-2-2-1-1"><span class="process-math">\((S_1+S_2)\otimes T=S_1\otimes T+S_2\otimes
 T\text{;}\)</span></div>
@@ -365,32 +370,32 @@ T_2\text{;}\)</span></div>
 </div>
 <div class="para" id="def-prodtens-2-2-3">Observe também que <span class="process-math">\(\mathcal T^1(V)=V^\ast\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-prodtens-2-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 59"><a href="#def-prodtens-2-2" title="Copy heading and permalink for Nota 59" aria-label="Copy heading and permalink for Nota 59">🔗</a></div>
-</article><div class="autopermalink" data-description="Definição 58: Produto tensorial"><a href="#def-prodtens" title="Copy heading and permalink for Definição 58: Produto tensorial" aria-label="Copy heading and permalink for Definição 58: Produto tensorial">🔗</a></div>
+<div class="autopermalink" data-description="Nota 62"><a href="#def-prodtens-2-2" title="Copy heading and permalink for Nota 62" aria-label="Copy heading and permalink for Nota 62">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 61: Produto tensorial"><a href="#def-prodtens" title="Copy heading and permalink for Definição 61: Produto tensorial" aria-label="Copy heading and permalink for Definição 61: Produto tensorial">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-4">
 <article class="theorem theorem-like" id="teo-tensdim"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dimensão de <span class="process-math">\(\mathcal{T}^k\)</span>.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">63</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dimensão de <span class="process-math">\(\mathcal{T}^k\)</span>.</span>
 </h3>
 <div class="para" id="teo-tensdim-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetorial, <span class="process-math">\(\mathcal{B}=\big\{v_1,\ldots,v_n\big\}\)</span> uma base de <span class="process-math">\(V\)</span> e <span class="process-math">\(\mathcal{B}^\ast=\big\{\phi^1,\ldots,\phi^n\big\}\)</span> a base dual de <span class="process-math">\(\mathcal B\)</span> para <span class="process-math">\(V^\ast\text{,}\)</span> ou seja, <span class="process-math">\(\phi^i(v_j)=\delta_{ij}\text{.}\)</span> Então os <span class="process-math">\(k-\)</span>tensores <span class="process-math">\(\phi^{i_1}\otimes\cdots\otimes\phi^{i_k}\text{,}\)</span> <span class="process-math">\(1\leq
 i_1,\ldots,i_k\leq n\)</span> formam uma base para <span class="process-math">\(\mathcal
 T^k(V)\text{.}\)</span> Em particular <span class="process-math">\(\dim\mathcal T^k=n^k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-tensdim-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Teorema 60: Dimensão de \mathcal{T}^k"><a href="#teo-tensdim" title="Copy heading and permalink for Teorema 60: Dimensão de \mathcal{T}^k" aria-label="Copy heading and permalink for Teorema 60: Dimensão de \mathcal{T}^k">🔗</a></div>
+<div class="autopermalink" data-description="Teorema 63: Dimensão de \mathcal{T}^k"><a href="#teo-tensdim" title="Copy heading and permalink for Teorema 63: Dimensão de \mathcal{T}^k" aria-label="Copy heading and permalink for Teorema 63: Dimensão de \mathcal{T}^k">🔗</a></div>
 </article>
 <details id="teo-tensdim-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-tensdim-3-1">Visto em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-tensdim-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 60.1"><a href="#teo-tensdim-3" title="Copy heading and permalink for Demonstração 60.1" aria-label="Copy heading and permalink for Demonstração 60.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 63.1"><a href="#teo-tensdim-3" title="Copy heading and permalink for Demonstração 63.1" aria-label="Copy heading and permalink for Demonstração 63.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-5">
 <article class="definition definition-like" id="def-pullback"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pullback de tensores.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">64</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pullback de tensores.</span>
 </h3>
 <div class="para logical" id="def-pullback-2-1">
 <div class="para">Sejam <span class="process-math">\(T\in\mathcal{T}^k(W)\)</span> e <span class="process-math">\(f\colon V\to W\)</span> uma transformação linear entre os espaços vetoriais <span class="process-math">\(V\)</span> e <span class="process-math">\(W\text{.}\)</span> Definimos o <dfn class="terminology">pullback de <span class="process-math">\(M\)</span> por <span class="process-math">\(f\)</span></dfn> como o <span class="process-math">\(k-\)</span>tensor <span class="process-math">\(f^\ast
@@ -406,37 +411,37 @@ T(v_1,\ldots,v_k)=T\big(f(v_1),\ldots,f(v_k)\big).
 <div class="para" id="def-pullback-2-2">Isso define uma aplicação linear <span class="process-math">\(f^\ast\colon\mathcal{T}^k(W)\to\mathcal{T}^k(V)\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-pullback-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div> 
 <article class="remark remark-like" id="def-pullback-2-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">65</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="def-pullback-2-3-1">Observe que <span class="process-math">\(f^\ast(S\otimes T)=f^\ast S\otimes f^ast
 T\text{,}\)</span> para todos <span class="process-math">\(S\in\mathcal{T}^k(W)\)</span> e <span class="process-math">\(T\in\mathcal{T}^l(W)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-pullback-2-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 62"><a href="#def-pullback-2-3" title="Copy heading and permalink for Nota 62" aria-label="Copy heading and permalink for Nota 62">🔗</a></div>
-</article><div class="autopermalink" data-description="Definição 61: Pullback de tensores"><a href="#def-pullback" title="Copy heading and permalink for Definição 61: Pullback de tensores" aria-label="Copy heading and permalink for Definição 61: Pullback de tensores">🔗</a></div>
+<div class="autopermalink" data-description="Nota 65"><a href="#def-pullback-2-3" title="Copy heading and permalink for Nota 65" aria-label="Copy heading and permalink for Nota 65">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 64: Pullback de tensores"><a href="#def-pullback" title="Copy heading and permalink for Definição 64: Pullback de tensores" aria-label="Copy heading and permalink for Definição 64: Pullback de tensores">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-6">
 <article class="theorem theorem-like" id="teo-pullbackproduint"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">63</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pullback canônico de um produto interno.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">66</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pullback canônico de um produto interno.</span>
 </h3>
 <div class="para" id="teo-pullbackproduint-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetoria, com <span class="process-math">\(\dim V=m&gt;\)</span> e <span class="process-math">\(T\)</span> um produto interno sobre <span class="process-math">\(V\text{.}\)</span> Então existem uma base ortonormal <span class="process-math">\(\mathcal
 B=\big\{v_1,\ldots,v_n\big\}\)</span> de <span class="process-math">\(V\)</span> (ou seja, <span class="process-math">\(T(v_1,v_j)=\delta_{ij}\)</span>) e um isomorfismo <span class="process-math">\(f\colon\to\R^n\to V\)</span> tal que <span class="process-math">\(f^\ast
 T(v_1,v_2)=\langle v_1,v_2\rangle\text{,}\)</span> para todos <span class="process-math">\(v_1,v_2\in V\text{,}\)</span> onde <span class="process-math">\(\langle\cdot,\cdot\rangle\)</span> é o produto interno usual do <span class="process-math">\(\R^n\text{..}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-pullbackproduint-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Teorema 63: Pullback canônico de um produto interno"><a href="#teo-pullbackproduint" title="Copy heading and permalink for Teorema 63: Pullback canônico de um produto interno" aria-label="Copy heading and permalink for Teorema 63: Pullback canônico de um produto interno">🔗</a></div>
+<div class="autopermalink" data-description="Teorema 66: Pullback canônico de um produto interno"><a href="#teo-pullbackproduint" title="Copy heading and permalink for Teorema 66: Pullback canônico de um produto interno" aria-label="Copy heading and permalink for Teorema 66: Pullback canônico de um produto interno">🔗</a></div>
 </article>
 <details id="teo-pullbackproduint-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-pullbackproduint-3-1">Visto em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-pullbackproduint-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 63.1"><a href="#teo-pullbackproduint-3" title="Copy heading and permalink for Demonstração 63.1" aria-label="Copy heading and permalink for Demonstração 63.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 66.1"><a href="#teo-pullbackproduint-3" title="Copy heading and permalink for Demonstração 66.1" aria-label="Copy heading and permalink for Demonstração 66.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-7">
 <article class="definition definition-like" id="def-tensoralternado"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">64</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tensor alternado.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">67</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tensor alternado.</span>
 </h3>
 <div class="para logical" id="def-tensoralternado-2-1">
 <div class="para">Um <span class="process-math">\(k-\)</span>tensor <span class="process-math">\(\omega\in\mathcal{T}^k(V)\)</span> é um <dfn class="terminology">tensor alternado</dfn> se</div>
@@ -453,18 +458,18 @@ T(v_1,v_2)=\langle v_1,v_2\rangle\text{,}\)</span> para todos <span class="proce
 <div class="para" id="def-tensoralternado-2-2">O conjunto de todos os tensores alternados é denotado por <span class="process-math">\(\Lambda^k(V)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-tensoralternado-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div> 
 <article class="remark remark-like" id="def-tensoralternado-2-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">65</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">68</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="def-tensoralternado-2-3-1">O conjunto <span class="process-math">\(\Lambda^k(V)\)</span> é um subespaço vetorial de <span class="process-math">\(\mathcal T^k(V)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-tensoralternado-2-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 65"><a href="#def-tensoralternado-2-3" title="Copy heading and permalink for Nota 65" aria-label="Copy heading and permalink for Nota 65">🔗</a></div>
-</article><div class="autopermalink" data-description="Definição 64: Tensor alternado"><a href="#def-tensoralternado" title="Copy heading and permalink for Definição 64: Tensor alternado" aria-label="Copy heading and permalink for Definição 64: Tensor alternado">🔗</a></div>
+<div class="autopermalink" data-description="Nota 68"><a href="#def-tensoralternado-2-3" title="Copy heading and permalink for Nota 68" aria-label="Copy heading and permalink for Nota 68">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 67: Tensor alternado"><a href="#def-tensoralternado" title="Copy heading and permalink for Definição 67: Tensor alternado" aria-label="Copy heading and permalink for Definição 67: Tensor alternado">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-8">
 <article class="definition definition-like" id="def-alternador"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">66</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Alternador de um tensor.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">69</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Alternador de um tensor.</span>
 </h3>
 <div class="para logical" id="def-alternador-2-1">
 <div class="para">Dado <span class="process-math">\(T\in\mathcal{T}^k(V)\text{,}\)</span> definimos o tensor <span class="process-math">\(\alt(T)\in\mathcal T^k(V)\)</span> por</div>
@@ -477,22 +482,22 @@ T(v_1,v_2)=\langle v_1,v_2\rangle\text{,}\)</span> para todos <span class="proce
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-alternador-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div> 
 <article class="remark remark-like" id="def-alternador-2-2"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">67</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">70</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="def-alternador-2-2-1">Com isso temos uma aplicação <span class="process-math">\(\alt\colon\mathcal
 T^k(V)\to\mathcal T^k(V)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-alternador-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 67"><a href="#def-alternador-2-2" title="Copy heading and permalink for Nota 67" aria-label="Copy heading and permalink for Nota 67">🔗</a></div>
-</article><div class="autopermalink" data-description="Definição 66: Alternador de um tensor"><a href="#def-alternador" title="Copy heading and permalink for Definição 66: Alternador de um tensor" aria-label="Copy heading and permalink for Definição 66: Alternador de um tensor">🔗</a></div>
+<div class="autopermalink" data-description="Nota 70"><a href="#def-alternador-2-2" title="Copy heading and permalink for Nota 70" aria-label="Copy heading and permalink for Nota 70">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 69: Alternador de um tensor"><a href="#def-alternador" title="Copy heading and permalink for Definição 69: Alternador de um tensor" aria-label="Copy heading and permalink for Definição 69: Alternador de um tensor">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-9">
 <article class="theorem theorem-like" id="teo-propalt"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">68</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Propriedades de <span class="process-math">\(\alt\)</span>.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">71</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Propriedades de <span class="process-math">\(\alt\)</span>.</span>
 </h3>
 <div class="para logical" id="teo-propalt-2-1">
-<ol class="lower-roman ol-marker-2" id="teo-propalt-2-1-1">
+<ol class="lower-roman ol-marker-3" id="teo-propalt-2-1-1">
 <li id="teo-propalt-2-1-1-1">
 <div class="para" id="p-derived-teo-propalt-2-1-1-1"><span class="process-math">\(T\in\mathcal T^k(V)\implies \alt(T)\in\Lambda^k(V)\text{;}\)</span></div>
 <div class="autopermalink" data-description="Item i"><a href="#teo-propalt-2-1-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
@@ -510,18 +515,18 @@ T^k(V)\implies\alt\big(\alt(T)\big)=\alt(T)\text{.}\)</span></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#teo-propalt-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div> 
 <article class="remark remark-like" id="teo-propalt-2-2"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">69</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">72</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="teo-propalt-2-2-1">O operador <span class="process-math">\(\alt\)</span> tem todas as características de um tipo muito especial de transformação linear. Você consegue "projetar" de que tipo estamos falando?<div class="autopermalink" data-description="Parágrafo"><a href="#teo-propalt-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 69"><a href="#teo-propalt-2-2" title="Copy heading and permalink for Nota 69" aria-label="Copy heading and permalink for Nota 69">🔗</a></div>
-</article><div class="autopermalink" data-description="Teorema 68: Propriedades de \alt"><a href="#teo-propalt" title="Copy heading and permalink for Teorema 68: Propriedades de \alt" aria-label="Copy heading and permalink for Teorema 68: Propriedades de \alt">🔗</a></div>
+<div class="autopermalink" data-description="Nota 72"><a href="#teo-propalt-2-2" title="Copy heading and permalink for Nota 72" aria-label="Copy heading and permalink for Nota 72">🔗</a></div>
+</article><div class="autopermalink" data-description="Teorema 71: Propriedades de \alt"><a href="#teo-propalt" title="Copy heading and permalink for Teorema 71: Propriedades de \alt" aria-label="Copy heading and permalink for Teorema 71: Propriedades de \alt">🔗</a></div>
 </article>
 <details id="teo-propalt-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-propalt-3-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-propalt-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 68.1"><a href="#teo-propalt-3" title="Copy heading and permalink for Demonstração 68.1" aria-label="Copy heading and permalink for Demonstração 68.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 71.1"><a href="#teo-propalt-3" title="Copy heading and permalink for Demonstração 71.1" aria-label="Copy heading and permalink for Demonstração 71.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-9" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
@@ -530,7 +535,7 @@ T^k(V)\implies\alt\big(\alt(T)\big)=\alt(T)\text{.}\)</span></div>
 </div>
 <div class="para" id="handout-tensores-2-11">
 <article class="definition definition-like" id="def-wedge"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">70</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto "wedge".</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">73</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Produto "wedge".</span>
 </h3>
 <div class="para logical" id="def-wedge-2-1">
 <div class="para">Se <span class="process-math">\(\omega\in\Lambda^k(V)\)</span> e <span class="process-math">\(\eta\in\Lambda^l(V)\text{,}\)</span> definimos</div>
@@ -543,11 +548,11 @@ T^k(V)\implies\alt\big(\alt(T)\big)=\alt(T)\text{.}\)</span></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-wedge-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div> 
 <article class="remark remark-like" id="def-wedge-2-2"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">71</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">74</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="def-wedge-2-2-1">
 <div class="para">Este produto satisfaz as seguintes proripedades:</div>
-<ol class="lower-roman ol-marker-2" id="def-wedge-2-2-1-1">
+<ol class="lower-roman ol-marker-3" id="def-wedge-2-2-1-1">
 <li id="def-wedge-2-2-1-1-1">
 <div class="para" id="p-derived-def-wedge-2-2-1-1-1"><span class="process-math">\((\omega_1+\omega_2)\wedge\eta=
 \omega_1\wedge\eta+\omega_2\wedge\eta\text{;}\)</span></div>
@@ -576,17 +581,17 @@ T^k(V)\implies\alt\big(\alt(T)\big)=\alt(T)\text{.}\)</span></div>
 </ol>
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-wedge-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 71"><a href="#def-wedge-2-2" title="Copy heading and permalink for Nota 71" aria-label="Copy heading and permalink for Nota 71">🔗</a></div>
-</article><div class="autopermalink" data-description='Definição 70: Produto "wedge"'><a href="#def-wedge" title='Copy heading and permalink for Definição 70: Produto "wedge"' aria-label='Copy heading and permalink for Definição 70: Produto "wedge"'>🔗</a></div>
+<div class="autopermalink" data-description="Nota 74"><a href="#def-wedge-2-2" title="Copy heading and permalink for Nota 74" aria-label="Copy heading and permalink for Nota 74">🔗</a></div>
+</article><div class="autopermalink" data-description='Definição 73: Produto "wedge"'><a href="#def-wedge" title='Copy heading and permalink for Definição 73: Produto "wedge"' aria-label='Copy heading and permalink for Definição 73: Produto "wedge"'>🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-11" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-12">
 <article class="theorem theorem-like" id="teo-wedgeassoc"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">72</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Associatividade do produto wedge.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">75</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Associatividade do produto wedge.</span>
 </h3>
 <div class="para logical" id="teo-wedgeassoc-2-1">
-<ol class="lower-roman ol-marker-2" id="teo-wedgeassoc-2-1-1">
+<ol class="lower-roman ol-marker-3" id="teo-wedgeassoc-2-1-1">
 <li id="teo-wedgeassoc-2-1-1-1">
 <div class="para" id="p-derived-teo-wedgeassoc-2-1-1-1">se <span class="process-math">\(S\in\mathcal T^k(V)\text{,}\)</span> com <span class="process-math">\(\alt(S)=0\)</span> e <span class="process-math">\(T\in\mathcal T^k(V)\text{,}\)</span> então <span class="process-math">\(\alt(S\otimes
 YT)=\alt(T\times S)=0\text{;}\)</span>
@@ -614,19 +619,19 @@ U)=\alt\big(S\otimes\alt(T\otimes U)\big)\text{;}\)</span></div>
 </ol>
 <div class="autopermalink" data-description="Parágrafo"><a href="#teo-wedgeassoc-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Teorema 72: Associatividade do produto wedge"><a href="#teo-wedgeassoc" title="Copy heading and permalink for Teorema 72: Associatividade do produto wedge" aria-label="Copy heading and permalink for Teorema 72: Associatividade do produto wedge">🔗</a></div>
+<div class="autopermalink" data-description="Teorema 75: Associatividade do produto wedge"><a href="#teo-wedgeassoc" title="Copy heading and permalink for Teorema 75: Associatividade do produto wedge" aria-label="Copy heading and permalink for Teorema 75: Associatividade do produto wedge">🔗</a></div>
 </article>
 <details id="teo-wedgeassoc-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-wedgeassoc-3-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-wedgeassoc-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 72.1"><a href="#teo-wedgeassoc-3" title="Copy heading and permalink for Demonstração 72.1" aria-label="Copy heading and permalink for Demonstração 72.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 75.1"><a href="#teo-wedgeassoc-3" title="Copy heading and permalink for Demonstração 75.1" aria-label="Copy heading and permalink for Demonstração 75.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-12" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-13">
 <article class="theorem theorem-like" id="teo-basedimwedge"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">73</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Base e dimensão de <span class="process-math">\(\Lambda^k(V)\)</span>.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">76</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Base e dimensão de <span class="process-math">\(\Lambda^k(V)\)</span>.</span>
 </h3>
 <div class="para" id="teo-basedimwedge-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetorial,<span class="process-math">\(\mathcal
 B=\{v_1,\ldots,v_n\}\)</span> uma base de <span class="process-math">\(V\)</span> e <span class="process-math">\(\mathcal
@@ -634,36 +639,36 @@ B^\ast=\{\phi^1,\ldots,\phi^n\}\)</span> sua base dual. Então <span class="proc
 i_2\leq\cdots\leq i_k\leq n\}\)</span> é uma base de <span class="process-math">\(\Lambda^k(V)\text{.}\)</span> Em particular, <span class="process-math">\(\dim\Lambda^k(V)={{n}\choose{k}}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-basedimwedge-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="teo-basedimwedge-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">74</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">77</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="teo-basedimwedge-3-1">Se <span class="process-math">\(\dim V=n\text{,}\)</span> então <span class="process-math">\(\dim\Lambda^n(V)=1\)</span> e portanto se <span class="process-math">\(\omega\in\Lambda^n(V)\text{,}\)</span> então <span class="process-math">\(\omega=a\lambda\text{,}\)</span> com <span class="process-math">\(a\in\R\)</span> e <span class="process-math">\(\lambda\)</span> é qualquer <span class="process-math">\(n-\)</span>tensor alternado não-nulo. Se <span class="process-math">\(V=\R^n\text{,}\)</span> podemos tomar <span class="process-math">\(\lambda\)</span> como o determinante.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-basedimwedge-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 74"><a href="#teo-basedimwedge-3" title="Copy heading and permalink for Nota 74" aria-label="Copy heading and permalink for Nota 74">🔗</a></div>
-</article><div class="autopermalink" data-description="Teorema 73: Base e dimensão de \Lambda^k(V)"><a href="#teo-basedimwedge" title="Copy heading and permalink for Teorema 73: Base e dimensão de \Lambda^k(V)" aria-label="Copy heading and permalink for Teorema 73: Base e dimensão de \Lambda^k(V)">🔗</a></div>
+<div class="autopermalink" data-description="Nota 77"><a href="#teo-basedimwedge-3" title="Copy heading and permalink for Nota 77" aria-label="Copy heading and permalink for Nota 77">🔗</a></div>
+</article><div class="autopermalink" data-description="Teorema 76: Base e dimensão de \Lambda^k(V)"><a href="#teo-basedimwedge" title="Copy heading and permalink for Teorema 76: Base e dimensão de \Lambda^k(V)" aria-label="Copy heading and permalink for Teorema 76: Base e dimensão de \Lambda^k(V)">🔗</a></div>
 </article>
 <details id="teo-basedimwedge-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-basedimwedge-4-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-basedimwedge-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 73.1"><a href="#teo-basedimwedge-4" title="Copy heading and permalink for Demonstração 73.1" aria-label="Copy heading and permalink for Demonstração 73.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 76.1"><a href="#teo-basedimwedge-4" title="Copy heading and permalink for Demonstração 76.1" aria-label="Copy heading and permalink for Demonstração 76.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-13" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-tensores-2-14">
 <article class="theorem theorem-like" id="teo-determinante"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">75</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mudança de coordenadas e <span class="process-math">\(n-\)</span>tensores alternados.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">78</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mudança de coordenadas e <span class="process-math">\(n-\)</span>tensores alternados.</span>
 </h3>
 <div class="para" id="teo-determinante-2-1">Sejam <span class="process-math">\(V\)</span> um espaço vetorial,<span class="process-math">\(\mathcal
 B=\{v_1,\ldots,v_n\}\)</span> uma base de <span class="process-math">\(V\)</span> e <span class="process-math">\(\omega\in\Lambda^n(V)\text{.}\)</span> Se <span class="process-math">\(u_i=\sum\limits_{j=1}^n
 a_{ij}v_j\text{,}\)</span> então <span class="process-math">\(\omega(u_1,\ldots,u_n)=\det(a_{ij})\omega(v_1,\ldots,v_n)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-determinante-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Teorema 75: Mudança de coordenadas e n-tensores alternados"><a href="#teo-determinante" title="Copy heading and permalink for Teorema 75: Mudança de coordenadas e n-tensores alternados" aria-label="Copy heading and permalink for Teorema 75: Mudança de coordenadas e n-tensores alternados">🔗</a></div>
+<div class="autopermalink" data-description="Teorema 78: Mudança de coordenadas e n-tensores alternados"><a href="#teo-determinante" title="Copy heading and permalink for Teorema 78: Mudança de coordenadas e n-tensores alternados" aria-label="Copy heading and permalink for Teorema 78: Mudança de coordenadas e n-tensores alternados">🔗</a></div>
 </article>
 <details id="teo-determinante-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-determinante-3-1">Feita em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-determinante-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 75.1"><a href="#teo-determinante-3" title="Copy heading and permalink for Demonstração 75.1" aria-label="Copy heading and permalink for Demonstração 75.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 78.1"><a href="#teo-determinante-3" title="Copy heading and permalink for Demonstração 78.1" aria-label="Copy heading and permalink for Demonstração 78.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-tensores-2-14" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div></section><div class="autopermalink" data-description="Material de apoio: Tensores"><a href="#handout-tensores" title="Copy heading and permalink for Material de apoio: Tensores" aria-label="Copy heading and permalink for Material de apoio: Tensores">🔗</a></div>

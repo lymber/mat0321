@@ -141,11 +141,15 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
 \DeclareMathOperator\id{Id}
 \DeclareMathOperator\posto{posto}
 \DeclareMathOperator\supp{supp}
 \DeclareMathOperator\sgn{sgn}
 \DeclareMathOperator\alt{Alt}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\divg}{div}
+\DeclareMathOperator{\tr}{Tr}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -213,8 +217,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="listas.html" class="internal"><span class="title">Listas de Exercícios</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01 - “Recordação”</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista02.html" class="internal"><span class="title">Lista 02 – Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista03.html" class="internal"><span class="title">Lista 03 – Tensores, Formas Diferenciais, Cadeias e Stokes</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -265,64 +270,64 @@ eBookConfig.enable_chatcodes =  false;
 <section class="onepage" id="handout-partunit-2">
 <div class="para" id="handout-partunit-2-1">
 <article class="fact theorem-like" id="fact-colagem_continua"><h3 class="heading">
-<span class="type">Fato</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Colagem de funções contínuas.</span>
+<span class="type">Fato</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Colagem de funções contínuas.</span>
 </h3>
 <div class="para" id="fact-colagem_continua-2-1">Sejam <span class="process-math">\(A\subseteq\R^n\)</span> é um conjunto da forma <span class="process-math">\(A=\bigcup\limits_{i=1}^n B_i\text{,}\)</span> com cada <span class="process-math">\(B_i\)</span> fechado (logo <span class="process-math">\(A\)</span> é fechado) ou <span class="process-math">\(A=\bigcup\limits_{i\in I} B_\lambda\text{,}\)</span> com cada <span class="process-math">\(B_i\)</span> aberto (logo <span class="process-math">\(A\)</span> é aberto). Se, para cada <span class="process-math">\(1\leq i\leq n\)</span> ou <span class="process-math">\(i\in I\text{,}\)</span> <span class="process-math">\(f_i\colon
 B_i\to\R^k\)</span> é uma função contínua tal que <span class="process-math">\(f_i\big|_{B_i\cap B_j}=f_j\big|_{B_i\cap B_j}\text{,}\)</span> então existe uma única função contínua <span class="process-math">\(f\colon A\to\R^k\)</span> tal que <span class="process-math">\(f\big|_{B_i}=f_i\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#fact-colagem_continua-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Fato 31: Colagem de funções contínuas"><a href="#fact-colagem_continua" title="Copy heading and permalink for Fato 31: Colagem de funções contínuas" aria-label="Copy heading and permalink for Fato 31: Colagem de funções contínuas">🔗</a></div>
+<div class="autopermalink" data-description="Fato 34: Colagem de funções contínuas"><a href="#fact-colagem_continua" title="Copy heading and permalink for Fato 34: Colagem de funções contínuas" aria-label="Copy heading and permalink for Fato 34: Colagem de funções contínuas">🔗</a></div>
 </article>
 <details id="fact-colagem_continua-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="fact-colagem_continua-3-1">Segue-se do fato de que a continuidade é uma propriedade local.<div class="autopermalink" data-description="Parágrafo"><a href="#fact-colagem_continua-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 31.1"><a href="#fact-colagem_continua-3" title="Copy heading and permalink for Demonstração 31.1" aria-label="Copy heading and permalink for Demonstração 31.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 34.1"><a href="#fact-colagem_continua-3" title="Copy heading and permalink for Demonstração 34.1" aria-label="Copy heading and permalink for Demonstração 34.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-2-2">
 <article class="fact theorem-like" id="fact-colagem_suave"><h3 class="heading">
-<span class="type">Fato</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Colagem de funções suavess.</span>
+<span class="type">Fato</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Colagem de funções suavess.</span>
 </h3>
 <div class="para" id="fact-colagem_suave-2-1">O mesmo vale para uma coleção suave de funções quandos os <span class="process-math">\(B_i\)</span> são abertos.<div class="autopermalink" data-description="Parágrafo"><a href="#fact-colagem_suave-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="fact-colagem_suave-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="fact-colagem_suave-3-1">O que acontece se os <span class="process-math">\(B_i\)</span> são fechados?<div class="autopermalink" data-description="Parágrafo"><a href="#fact-colagem_suave-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 33"><a href="#fact-colagem_suave-3" title="Copy heading and permalink for Nota 33" aria-label="Copy heading and permalink for Nota 33">🔗</a></div>
-</article><div class="autopermalink" data-description="Fato 32: Colagem de funções suavess"><a href="#fact-colagem_suave" title="Copy heading and permalink for Fato 32: Colagem de funções suavess" aria-label="Copy heading and permalink for Fato 32: Colagem de funções suavess">🔗</a></div>
+<div class="autopermalink" data-description="Nota 36"><a href="#fact-colagem_suave-3" title="Copy heading and permalink for Nota 36" aria-label="Copy heading and permalink for Nota 36">🔗</a></div>
+</article><div class="autopermalink" data-description="Fato 35: Colagem de funções suavess"><a href="#fact-colagem_suave" title="Copy heading and permalink for Fato 35: Colagem de funções suavess" aria-label="Copy heading and permalink for Fato 35: Colagem de funções suavess">🔗</a></div>
 </article>
 <details id="fact-colagem_suave-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="fact-colagem_suave-4-1">Novamente usamos que o conceito de diferenciabilidade é local.<div class="autopermalink" data-description="Parágrafo"><a href="#fact-colagem_suave-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 32.1"><a href="#fact-colagem_suave-4" title="Copy heading and permalink for Demonstração 32.1" aria-label="Copy heading and permalink for Demonstração 32.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 35.1"><a href="#fact-colagem_suave-4" title="Copy heading and permalink for Demonstração 35.1" aria-label="Copy heading and permalink for Demonstração 35.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-2-3">
 <article class="definition definition-like" id="def-der_fechados"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Diferenciabilidade em fechados.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Diferenciabilidade em fechados.</span>
 </h3>
 <div class="para" id="def-der_fechados-2-1">Se <span class="process-math">\(B\subset\R^n\)</span> é um fechado, então <span class="process-math">\(f\colon
 B\subset\R^n\to\R^k\)</span> é <dfn class="terminology">diferenciável</dfn> se existe aberto em <span class="process-math">\(A\subset\R^n\)</span> tal que <span class="process-math">\(B\subset
 A\)</span> e <span class="process-math">\(\tilde f\colon A\to\R^k\text{,}\)</span> diferenciável, tal que <span class="process-math">\(\tilde f\big|_B=f\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-der_fechados-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="def-der_fechados-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="def-der_fechados-3-1">O conceito não depende do aberto <span class="process-math">\(A\)</span> contendo <span class="process-math">\(B\)</span>e da função <span class="process-math">\(\tilde f\)</span> que extende <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-der_fechados-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 35"><a href="#def-der_fechados-3" title="Copy heading and permalink for Nota 35" aria-label="Copy heading and permalink for Nota 35">🔗</a></div>
-</article><div class="autopermalink" data-description="Definição 34: Diferenciabilidade em fechados"><a href="#def-der_fechados" title="Copy heading and permalink for Definição 34: Diferenciabilidade em fechados" aria-label="Copy heading and permalink for Definição 34: Diferenciabilidade em fechados">🔗</a></div>
+<div class="autopermalink" data-description="Nota 38"><a href="#def-der_fechados-3" title="Copy heading and permalink for Nota 38" aria-label="Copy heading and permalink for Nota 38">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 37: Diferenciabilidade em fechados"><a href="#def-der_fechados" title="Copy heading and permalink for Definição 37: Diferenciabilidade em fechados" aria-label="Copy heading and permalink for Definição 37: Diferenciabilidade em fechados">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-2-4">
 <details id="ex-der_fechados" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exemplo</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Exemplo</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="ex-der_fechados-1-1">Denote, respectivamente, por <span class="process-math">\(\R_{\leq 0}\)</span> e <span class="process-math">\(\R_{\geq 0}\)</span> o conjunto dos números reais não positivos e não negativos. As funções <span class="process-math">\(f_1\colon\R_{\leq
@@ -330,13 +335,13 @@ A\)</span> e <span class="process-math">\(\tilde f\colon A\to\R^k\text{,}\)</spa
 </div> 
 <div class="para" id="ex-der_fechados-1-2">A interseção dos dois domínios é um fechado e não existe uma função suave que extende simultaneamente <span class="process-math">\(f_1\)</span> e <span class="process-math">\(f_2\)</span> para <span class="process-math">\(\R=\R_{\leq 0}\cup\R_{\geq 0}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#ex-der_fechados-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exemplo 36"><a href="#ex-der_fechados" title="Copy heading and permalink for Exemplo 36" aria-label="Copy heading and permalink for Exemplo 36">🔗</a></div>
+<div class="autopermalink" data-description="Exemplo 39"><a href="#ex-der_fechados" title="Copy heading and permalink for Exemplo 39" aria-label="Copy heading and permalink for Exemplo 39">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div></section><section class="onepage" id="handout-partunit-3">
 <div class="para" id="handout-partunit-3-1">
 <article class="lemma theorem-like" id="lema-launch_suave"><h3 class="heading">
-<span class="type">Lema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Função suave não analítica.</span>
+<span class="type">Lema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Função suave não analítica.</span>
 </h3>
 <div class="para" id="lema-launch_suave-2-1">A função <span class="process-math">\(f\colon\R\to\R\)</span> dada por <span class="process-math">\(f(x)=\begin{cases}
 e^{-1/x},&amp; x&gt; 0\\
@@ -344,15 +349,15 @@ e^{-1/x},&amp; x&gt; 0\\
 \end{cases}\)</span> é de classe <span class="process-math">\(\mathscr{C}^\infty\)</span> em toda a reta real.<div class="autopermalink" data-description="Parágrafo"><a href="#lema-launch_suave-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="lema-launch_suave-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="lema-launch_suave-3-1">A função acima é de classe <span class="process-math">\(\mathscr{C}^\infty\text{,}\)</span> mas não é analítica. Veja seu gráfico: 
 <figure class="figure figure-like" id="fig-launch_suave"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-lauch_suave.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gráfico de <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Figura 39"><a href="#fig-launch_suave" title="Copy heading and permalink for Figura 39" aria-label="Copy heading and permalink for Figura 39">🔗</a></div></figcaption>
+<figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gráfico de <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Figura 42"><a href="#fig-launch_suave" title="Copy heading and permalink for Figura 42" aria-label="Copy heading and permalink for Figura 42">🔗</a></div></figcaption>
 </figure><div class="autopermalink" data-description="Parágrafo"><a href="#lema-launch_suave-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 38"><a href="#lema-launch_suave-3" title="Copy heading and permalink for Nota 38" aria-label="Copy heading and permalink for Nota 38">🔗</a></div>
-</article><div class="autopermalink" data-description="Lema 37: Função suave não analítica"><a href="#lema-launch_suave" title="Copy heading and permalink for Lema 37: Função suave não analítica" aria-label="Copy heading and permalink for Lema 37: Função suave não analítica">🔗</a></div>
+<div class="autopermalink" data-description="Nota 41"><a href="#lema-launch_suave-3" title="Copy heading and permalink for Nota 41" aria-label="Copy heading and permalink for Nota 41">🔗</a></div>
+</article><div class="autopermalink" data-description="Lema 40: Função suave não analítica"><a href="#lema-launch_suave" title="Copy heading and permalink for Lema 40: Função suave não analítica" aria-label="Copy heading and permalink for Lema 40: Função suave não analítica">🔗</a></div>
 </article>
 <details id="lema-launch_suave-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
@@ -371,46 +376,46 @@ f^{(k)}(x)=p_k(x)\dfrac{e^{-1/x}}{x^2k},\text{ se
 </div>
 <div class="para" id="lema-launch_suave-4-2">Com isso é fácil mostrar que <span class="process-math">\(f^{(k)}\)</span> é contínua em <span class="process-math">\(x_0=0\text{,}\)</span> para todo natural <span class="process-math">\(k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lema-launch_suave-4-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 37.1"><a href="#lema-launch_suave-4" title="Copy heading and permalink for Demonstração 37.1" aria-label="Copy heading and permalink for Demonstração 37.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 40.1"><a href="#lema-launch_suave-4" title="Copy heading and permalink for Demonstração 40.1" aria-label="Copy heading and permalink for Demonstração 40.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div></section><section class="onepage" id="handout-partunit-4">
 <div class="para" id="handout-partunit-4-1">
 <article class="lemma theorem-like" id="lema-cutoff"><h3 class="heading">
-<span class="type">Lema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Funções "cut-off".</span>
+<span class="type">Lema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Funções "cut-off".</span>
 </h3>
 <div class="para" id="lema-cutoff-2-1">Dados <span class="process-math">\(r_1&lt; r_2\in\R\)</span> existe uma função suave <span class="process-math">\(h\colon\R\to\R\)</span> tal que <span class="process-math">\(h(x)=1\text{,}\)</span> para <span class="process-math">\(x\leq
 r_1\text{,}\)</span> <span class="process-math">\(0&lt; h(x)&lt; 1\text{,}\)</span> para <span class="process-math">\(r_1&lt; x&lt;
 r_2\)</span> e <span class="process-math">\(h(x)=0\text{,}\)</span> para <span class="process-math">\(x\geq r_2\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#lema-cutoff-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="lema-cutoff-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="lema-cutoff-3-1">Veja seu gráfico: 
 <figure class="figure figure-like" id="fig-cutoff"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-cutoff.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gráfico de <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Figura 42"><a href="#fig-cutoff" title="Copy heading and permalink for Figura 42" aria-label="Copy heading and permalink for Figura 42">🔗</a></div></figcaption>
+<figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gráfico de <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Figura 45"><a href="#fig-cutoff" title="Copy heading and permalink for Figura 45" aria-label="Copy heading and permalink for Figura 45">🔗</a></div></figcaption>
 </figure><div class="autopermalink" data-description="Parágrafo"><a href="#lema-cutoff-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 41"><a href="#lema-cutoff-3" title="Copy heading and permalink for Nota 41" aria-label="Copy heading and permalink for Nota 41">🔗</a></div>
-</article><div class="autopermalink" data-description='Lema 40: Funções "cut-off"'><a href="#lema-cutoff" title='Copy heading and permalink for Lema 40: Funções "cut-off"' aria-label='Copy heading and permalink for Lema 40: Funções "cut-off"'>🔗</a></div>
+<div class="autopermalink" data-description="Nota 44"><a href="#lema-cutoff-3" title="Copy heading and permalink for Nota 44" aria-label="Copy heading and permalink for Nota 44">🔗</a></div>
+</article><div class="autopermalink" data-description='Lema 43: Funções "cut-off"'><a href="#lema-cutoff" title='Copy heading and permalink for Lema 43: Funções "cut-off"' aria-label='Copy heading and permalink for Lema 43: Funções "cut-off"'>🔗</a></div>
 </article>
 <details id="lema-cutoff-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
-<div class="para" id="lema-cutoff-4-1">Basta tomar <span class="process-math">\(h(x)=\dfrac{f(r_2-x)}{f(r_2-x)+f(x-r1)}\text{,}\)</span> onde <span class="process-math">\(f\)</span> é a função definina no <a href="handout-partunit.html#lema-launch_suave" class="xref" data-knowl="./knowl/xref/lema-launch_suave.html" data-reveal-label="Revelar" data-close-label="Fechar" title="Lema 37: Função suave não analítica">Lema 37</a>.<div class="autopermalink" data-description="Parágrafo"><a href="#lema-cutoff-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+<div class="para" id="lema-cutoff-4-1">Basta tomar <span class="process-math">\(h(x)=\dfrac{f(r_2-x)}{f(r_2-x)+f(x-r1)}\text{,}\)</span> onde <span class="process-math">\(f\)</span> é a função definina no <a href="handout-partunit.html#lema-launch_suave" class="xref" data-knowl="./knowl/xref/lema-launch_suave.html" data-reveal-label="Revelar" data-close-label="Fechar" title="Lema 40: Função suave não analítica">Lema 40</a>.<div class="autopermalink" data-description="Parágrafo"><a href="#lema-cutoff-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 40.1"><a href="#lema-cutoff-4" title="Copy heading and permalink for Demonstração 40.1" aria-label="Copy heading and permalink for Demonstração 40.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 43.1"><a href="#lema-cutoff-4" title="Copy heading and permalink for Demonstração 43.1" aria-label="Copy heading and permalink for Demonstração 43.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-4-2">
 <article class="theorem theorem-like" id="teo-plateauRn"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Funções "plateau" em <span class="process-math">\(\R^n\)</span>.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Funções "plateau" em <span class="process-math">\(\R^n\)</span>.</span>
 </h3>
 <div class="para" id="teo-plateauRn-2-1">Dados <span class="process-math">\(0&lt;r_1&lt; r_2\in\R\)</span> existe uma função suave <span class="process-math">\(H\colon\R^n\to\R\)</span> tal que <span class="process-math">\(H(x)=1\text{,}\)</span> para <span class="process-math">\(x\in
 \overline{B_{r_1}(0)}\text{,}\)</span> <span class="process-math">\(0&lt; H(x)&lt; 1\text{,}\)</span> para <span class="process-math">\(x\in B_{r_2}(0)\setminus\overline{B_{r_1}(0)}\)</span> e <span class="process-math">\(H(x)=0\text{,}\)</span> para <span class="process-math">\(x\in\R^n\setminus B_{r_2}(0)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-plateauRn-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="teo-plateauRn-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="teo-plateauRn-3-1">Veja seu gráfico rm <span class="process-math">\(\R^3\text{:}\)</span> 
 <figure class="figure figure-like" id="fig-plateauRn"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
@@ -418,27 +423,27 @@ r_2\)</span> e <span class="process-math">\(h(x)=0\text{,}\)</span> para <span c
 <details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="img-plateauRn-description">Gráfico de uma função plateau em <span class="process-math">\(\R^3\text{.}\)</span>
 </div></details>
 </div>
-<figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gráfico de uma função plateau em <span class="process-math">\(\R^3\text{.}\)</span><div class="autopermalink" data-description="Figura 45"><a href="#fig-plateauRn" title="Copy heading and permalink for Figura 45" aria-label="Copy heading and permalink for Figura 45">🔗</a></div></figcaption>
+<figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gráfico de uma função plateau em <span class="process-math">\(\R^3\text{.}\)</span><div class="autopermalink" data-description="Figura 48"><a href="#fig-plateauRn" title="Copy heading and permalink for Figura 48" aria-label="Copy heading and permalink for Figura 48">🔗</a></div></figcaption>
 </figure><div class="autopermalink" data-description="Parágrafo"><a href="#teo-plateauRn-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 44"><a href="#teo-plateauRn-3" title="Copy heading and permalink for Nota 44" aria-label="Copy heading and permalink for Nota 44">🔗</a></div>
-</article><div class="autopermalink" data-description='Teorema 43: Funções "plateau" em \R^n'><a href="#teo-plateauRn" title='Copy heading and permalink for Teorema 43: Funções "plateau" em \R^n' aria-label='Copy heading and permalink for Teorema 43: Funções "plateau" em \R^n'>🔗</a></div>
+<div class="autopermalink" data-description="Nota 47"><a href="#teo-plateauRn-3" title="Copy heading and permalink for Nota 47" aria-label="Copy heading and permalink for Nota 47">🔗</a></div>
+</article><div class="autopermalink" data-description='Teorema 46: Funções "plateau" em \R^n'><a href="#teo-plateauRn" title='Copy heading and permalink for Teorema 46: Funções "plateau" em \R^n' aria-label='Copy heading and permalink for Teorema 46: Funções "plateau" em \R^n'>🔗</a></div>
 </article>
 <details id="teo-plateauRn-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
-<div class="para" id="teo-plateauRn-4-1">Basta tomar <span class="process-math">\(H(x)=h\big(|x|\big)\text{,}\)</span> onde <span class="process-math">\(h\)</span> é a função definina no <a href="handout-partunit.html#lema-cutoff" class="xref" data-knowl="./knowl/xref/lema-cutoff.html" data-reveal-label="Revelar" data-close-label="Fechar" title='Lema 40: Funções "cut-off"'>Lema 40</a>.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-plateauRn-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+<div class="para" id="teo-plateauRn-4-1">Basta tomar <span class="process-math">\(H(x)=h\big(|x|\big)\text{,}\)</span> onde <span class="process-math">\(h\)</span> é a função definina no <a href="handout-partunit.html#lema-cutoff" class="xref" data-knowl="./knowl/xref/lema-cutoff.html" data-reveal-label="Revelar" data-close-label="Fechar" title='Lema 43: Funções "cut-off"'>Lema 43</a>.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-plateauRn-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 43.1"><a href="#teo-plateauRn-4" title="Copy heading and permalink for Demonstração 43.1" aria-label="Copy heading and permalink for Demonstração 43.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 46.1"><a href="#teo-plateauRn-4" title="Copy heading and permalink for Demonstração 46.1" aria-label="Copy heading and permalink for Demonstração 46.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-4-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-4-3">
 <article class="lemma theorem-like" id="lema-paracomp"><h3 class="heading">
-<span class="type">Lema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Paracompacidade de <span class="process-math">\(\R^n\)</span>.</span>
+<span class="type">Lema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Paracompacidade de <span class="process-math">\(\R^n\)</span>.</span>
 </h3>
 <div class="para logical" id="lema-paracomp-2-1">
 <div class="para">Sejam <span class="process-math">\(\mathcal{A}=\big\{A_\lambda\big\}_{\lambda\in\Lambda}\)</span> uma coleção de abertos de <span class="process-math">\(\R^n\)</span> e <span class="process-math">\(A=\bigcup\limits_{\lambda\in\Lambda}A_\lambda\text{.}\)</span> Então existe uma coleção enumerável de bolas fechadas <span class="process-math">\(\mathcal{B}=\big\{B_i\big\}_{i\in|N}\)</span> tal que:</div>
-<ol class="lower-roman ol-marker-2" id="lema-paracomp-2-1-5">
+<ol class="lower-roman ol-marker-3" id="lema-paracomp-2-1-5">
 <li id="lema-paracomp-2-1-5-1">
 <div class="para" id="p-derived-lema-paracomp-2-1-5-1"><span class="process-math">\(A=\bigcup\limits_{i=1}^\infty B_i\text{;}\)</span></div>
 <div class="autopermalink" data-description="Item i"><a href="#lema-paracomp-2-1-5-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
@@ -456,23 +461,23 @@ r_2\)</span> e <span class="process-math">\(h(x)=0\text{,}\)</span> para <span c
 </ol>
 <div class="autopermalink" data-description="Parágrafo"><a href="#lema-paracomp-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Lema 46: Paracompacidade de \R^n"><a href="#lema-paracomp" title="Copy heading and permalink for Lema 46: Paracompacidade de \R^n" aria-label="Copy heading and permalink for Lema 46: Paracompacidade de \R^n">🔗</a></div>
+<div class="autopermalink" data-description="Lema 49: Paracompacidade de \R^n"><a href="#lema-paracomp" title="Copy heading and permalink for Lema 49: Paracompacidade de \R^n" aria-label="Copy heading and permalink for Lema 49: Paracompacidade de \R^n">🔗</a></div>
 </article>
 <details id="lema-paracomp-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="lema-paracomp-3-1">Feito em sala<div class="autopermalink" data-description="Parágrafo"><a href="#lema-paracomp-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 46.1"><a href="#lema-paracomp-3" title="Copy heading and permalink for Demonstração 46.1" aria-label="Copy heading and permalink for Demonstração 46.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 49.1"><a href="#lema-paracomp-3" title="Copy heading and permalink for Demonstração 49.1" aria-label="Copy heading and permalink for Demonstração 49.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-4-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-4-4">
 <article class="definition definition-like" id="def-partunit"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partição suave da unidade.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partição suave da unidade.</span>
 </h3>
 <div class="para logical" id="def-partunit-2-1">
 <div class="para">Sejam <span class="process-math">\(\mathcal{A}=\big\{A_\lambda\big\}_{\lambda\in\Lambda}\)</span> uma coleção de abertos de <span class="process-math">\(\R^n\)</span> e <span class="process-math">\(A=\bigcup\limits_{\lambda\in\Lambda}A_\lambda\text{.}\)</span> Uma <dfn class="terminology">partição suave da unidade</dfn> para <span class="process-math">\(A\)</span> é uma coleção <span class="process-math">\(\Phi=\big\{\phi_\lambda\big\}_{\lambda\in\Lambda}\text{,}\)</span> onde cada <span class="process-math">\(\phi_\lambda\colon \R^n\to\R\)</span> é suave, satisfazendo:</div>
-<ol class="lower-roman ol-marker-2" id="def-partunit-2-1-8">
+<ol class="lower-roman ol-marker-3" id="def-partunit-2-1-8">
 <li id="def-partunit-2-1-8-1">
 <div class="para" id="p-derived-def-partunit-2-1-8-1">
 <span class="process-math">\(0\leq\phi_\lambda(x)\leq 1\)</span> para todo <span class="process-math">\(x\in\R^n\)</span> e <span class="process-math">\(\lambda\in\Lambda\text{;}\)</span>
@@ -508,7 +513,7 @@ r_2\)</span> e <span class="process-math">\(h(x)=0\text{,}\)</span> para <span c
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-partunit-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="def-partunit-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="def-partunit-3-1">
 <div class="para">O <dfn class="terminology">suporte de uma função</dfn> <span class="process-math">\(f\colon
@@ -521,53 +526,53 @@ f=\overline{\big\{x\in A\colon f(x)\neq 0\big\}}.
 </div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-partunit-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 48"><a href="#def-partunit-3" title="Copy heading and permalink for Nota 48" aria-label="Copy heading and permalink for Nota 48">🔗</a></div>
-</article><div class="autopermalink" data-description="Definição 47: Partição suave da unidade"><a href="#def-partunit" title="Copy heading and permalink for Definição 47: Partição suave da unidade" aria-label="Copy heading and permalink for Definição 47: Partição suave da unidade">🔗</a></div>
+<div class="autopermalink" data-description="Nota 51"><a href="#def-partunit-3" title="Copy heading and permalink for Nota 51" aria-label="Copy heading and permalink for Nota 51">🔗</a></div>
+</article><div class="autopermalink" data-description="Definição 50: Partição suave da unidade"><a href="#def-partunit" title="Copy heading and permalink for Definição 50: Partição suave da unidade" aria-label="Copy heading and permalink for Definição 50: Partição suave da unidade">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-4-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-4-5">
 <article class="theorem theorem-like" id="teo-partunit"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Existência de partição suave da unidade em abertos.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Existência de partição suave da unidade em abertos.</span>
 </h3>
 <div class="para" id="teo-partunit-2-1">Sejam <span class="process-math">\(\mathcal{A}=\big\{A_\lambda\big\}_{\lambda\in\Lambda}\)</span> uma coleção de abertos de <span class="process-math">\(\R^n\)</span> e <span class="process-math">\(A=\bigcup\limits_{\lambda\in\Lambda}A_\lambda\text{.}\)</span> Então existe partição suave da unidade com suporte compacto e subordinada a <span class="process-math">\(\mathcal{A}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#teo-partunit-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Teorema 49: Existência de partição suave da unidade em abertos"><a href="#teo-partunit" title="Copy heading and permalink for Teorema 49: Existência de partição suave da unidade em abertos" aria-label="Copy heading and permalink for Teorema 49: Existência de partição suave da unidade em abertos">🔗</a></div>
+<div class="autopermalink" data-description="Teorema 52: Existência de partição suave da unidade em abertos"><a href="#teo-partunit" title="Copy heading and permalink for Teorema 52: Existência de partição suave da unidade em abertos" aria-label="Copy heading and permalink for Teorema 52: Existência de partição suave da unidade em abertos">🔗</a></div>
 </article>
 <details id="teo-partunit-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-partunit-3-1">Feito em sala.<div class="autopermalink" data-description="Parágrafo"><a href="#teo-partunit-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 49.1"><a href="#teo-partunit-3" title="Copy heading and permalink for Demonstração 49.1" aria-label="Copy heading and permalink for Demonstração 49.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 52.1"><a href="#teo-partunit-3" title="Copy heading and permalink for Demonstração 52.1" aria-label="Copy heading and permalink for Demonstração 52.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-4-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-4-6">
 <article class="corollary theorem-like" id="cor-partunitqqer"><h3 class="heading">
-<span class="type">Corolário</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Existência de partição suave da unidade.</span>
+<span class="type">Corolário</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Existência de partição suave da unidade.</span>
 </h3>
 <div class="para" id="cor-partunitqqer-2-1">Se <span class="process-math">\(A\subset\R^n\)</span> é um conjunto qualquer e <span class="process-math">\(\mathcal{A}=\big\{A_\lambda\big\}_{\lambda\in\Lambda}\)</span> é uma cobertura aberta de <span class="process-math">\(A\text{,}\)</span> então existe partição suave da unidade para <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#cor-partunitqqer-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Corolário 50: Existência de partição suave da unidade"><a href="#cor-partunitqqer" title="Copy heading and permalink for Corolário 50: Existência de partição suave da unidade" aria-label="Copy heading and permalink for Corolário 50: Existência de partição suave da unidade">🔗</a></div>
+<div class="autopermalink" data-description="Corolário 53: Existência de partição suave da unidade"><a href="#cor-partunitqqer" title="Copy heading and permalink for Corolário 53: Existência de partição suave da unidade" aria-label="Copy heading and permalink for Corolário 53: Existência de partição suave da unidade">🔗</a></div>
 </article>
 <details id="cor-partunitqqer-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="cor-partunitqqer-3-1">Basta observar que <span class="process-math">\(A\subset\bigcup\limits_{\lambda\in\Lambda}\)</span> e que este último, por ser um aberto, tem garantida a exitência de uma partição da unidade subordinada a <span class="process-math">\(\mathcal{A}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#cor-partunitqqer-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 50.1"><a href="#cor-partunitqqer-3" title="Copy heading and permalink for Demonstração 50.1" aria-label="Copy heading and permalink for Demonstração 50.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 53.1"><a href="#cor-partunitqqer-3" title="Copy heading and permalink for Demonstração 53.1" aria-label="Copy heading and permalink for Demonstração 53.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-4-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <div class="para" id="handout-partunit-4-7">
 <article class="definition definition-like" id="def-cobadm"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cobertura admissível.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cobertura admissível.</span>
 </h3>
 <div class="para" id="def-cobadm-2-1">Uma cobertura aberta <span class="process-math">\(\mathcal{A}=\{A_\lambda}_{\lambda\in\Lambda\)</span> para um aberto <span class="process-math">\(A\subset\R^n\)</span> é <dfn class="terminology">admissível</dfn> se <span class="process-math">\(A_\lambda\subset A\text{,}\)</span> para todo <span class="process-math">\(\lambda\in\Lambda\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#def-cobadm-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definição 51: Cobertura admissível"><a href="#def-cobadm" title="Copy heading and permalink for Definição 51: Cobertura admissível" aria-label="Copy heading and permalink for Definição 51: Cobertura admissível">🔗</a></div>
+<div class="autopermalink" data-description="Definição 54: Cobertura admissível"><a href="#def-cobadm" title="Copy heading and permalink for Definição 54: Cobertura admissível" aria-label="Copy heading and permalink for Definição 54: Cobertura admissível">🔗</a></div>
 </article> 
 <article class="definition definition-like" id="def-intpart"><h3 class="heading">
-<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Integral estendida.</span>
+<span class="type">Definição</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Integral estendida.</span>
 </h3>
 <div class="para" id="def-intpart-2-1">Sejam <span class="process-math">\(A\subset\R^n\)</span> um aberto, <span class="process-math">\(\mathcal{A}\)</span> uma cobertura aberta admissível para <span class="process-math">\(A\)</span>  e <span class="process-math">\(f\colon
 A\to\R\)</span> uma função localmente limitada, com conjunto de descontinuidades de medida nula.<div class="autopermalink" data-description="Parágrafo"><a href="#def-intpart-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
@@ -585,7 +590,7 @@ A\text{.}\)</span>
 </div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#def-intpart-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definição 52: Integral estendida"><a href="#def-intpart" title="Copy heading and permalink for Definição 52: Integral estendida" aria-label="Copy heading and permalink for Definição 52: Integral estendida">🔗</a></div>
+<div class="autopermalink" data-description="Definição 55: Integral estendida"><a href="#def-intpart" title="Copy heading and permalink for Definição 55: Integral estendida" aria-label="Copy heading and permalink for Definição 55: Integral estendida">🔗</a></div>
 </article><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-partunit-4-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>

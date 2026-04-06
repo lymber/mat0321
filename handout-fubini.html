@@ -141,11 +141,15 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
 \DeclareMathOperator\id{Id}
 \DeclareMathOperator\posto{posto}
 \DeclareMathOperator\supp{supp}
 \DeclareMathOperator\sgn{sgn}
 \DeclareMathOperator\alt{Alt}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\divg}{div}
+\DeclareMathOperator{\tr}{Tr}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -213,8 +217,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="listas.html" class="internal"><span class="title">Listas de Exercícios</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista01.html" class="internal"><span class="title">Lista 01 - “Recordação”</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista02.html" class="internal"><span class="title">Lista 02 – Integração em <span class="process-math">\(\R^n\)</span></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lista03.html" class="internal"><span class="title">Lista 03 – Tensores, Formas Diferenciais, Cadeias e Stokes</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -276,7 +281,7 @@ L(f,P)\qquad\text{e}\qquad\overline{\int_A} f(x)\, dx = \inf_P U(f,P),
 </div>
 <div class="para" id="handout-fubini-2-2">
 <article class="theorem theorem-like" id="teo-fubini"><h3 class="heading">
-<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Teorema de Fubini.</span>
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Teorema de Fubini.</span>
 </h3>
 <div class="para logical" id="teo-fubini-2-1">
 <div class="para">Sejam <span class="process-math">\(A\subset\R^n\)</span> e <span class="process-math">\(B\subset\R^m\)</span> retângulos fechados, e <span class="process-math">\(f\colon A\times B\to\R\)</span> uma função integrável. Para cada <span class="process-math">\(x\in A\text{,}\)</span> defina <span class="process-math">\(g_x\colon
@@ -301,7 +306,7 @@ dxdy = \int_A\mathscr{U}(x)\, dx.
 <div class="autopermalink" data-description="Parágrafo"><a href="#teo-fubini-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
 <article class="remark remark-like" id="teo-fubini-3"><h4 class="heading">
-<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Nota</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="teo-fubini-3-1">
 <div class="para">Escrevendo por extenso, temos</div>
@@ -322,14 +327,14 @@ dx=\int_{A\times B} f(x,y)\, dxdy =
 </div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#teo-fubini-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Nota 30"><a href="#teo-fubini-3" title="Copy heading and permalink for Nota 30" aria-label="Copy heading and permalink for Nota 30">🔗</a></div>
-</article><div class="autopermalink" data-description="Teorema 29: Teorema de Fubini"><a href="#teo-fubini" title="Copy heading and permalink for Teorema 29: Teorema de Fubini" aria-label="Copy heading and permalink for Teorema 29: Teorema de Fubini">🔗</a></div>
+<div class="autopermalink" data-description="Nota 33"><a href="#teo-fubini-3" title="Copy heading and permalink for Nota 33" aria-label="Copy heading and permalink for Nota 33">🔗</a></div>
+</article><div class="autopermalink" data-description="Teorema 32: Teorema de Fubini"><a href="#teo-fubini" title="Copy heading and permalink for Teorema 32: Teorema de Fubini" aria-label="Copy heading and permalink for Teorema 32: Teorema de Fubini">🔗</a></div>
 </article>
 <details id="teo-fubini-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
 <article class="hiddenproof knowl__content">
 <div class="para" id="teo-fubini-4-1">Feito em sala<div class="autopermalink" data-description="Parágrafo"><a href="#teo-fubini-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Demonstração 29.1"><a href="#teo-fubini-4" title="Copy heading and permalink for Demonstração 29.1" aria-label="Copy heading and permalink for Demonstração 29.1">🔗</a></div>
+<div class="autopermalink" data-description="Demonstração 32.1"><a href="#teo-fubini-4" title="Copy heading and permalink for Demonstração 32.1" aria-label="Copy heading and permalink for Demonstração 32.1">🔗</a></div>
 </article></details><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Parágrafo"><a href="#handout-fubini-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
 </div></section><div class="autopermalink" data-description="Material de apoio: Teorema de Fubini"><a href="#handout-fubini" title="Copy heading and permalink for Material de apoio: Teorema de Fubini" aria-label="Copy heading and permalink for Material de apoio: Teorema de Fubini">🔗</a></div>

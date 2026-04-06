@@ -96,40 +96,40 @@ var ptx_lunr_docs = [
   "url": "lista01.html",
   "type": "Lista de Exercícios",
   "number": "",
-  "title": "Lista 01",
-  "body": " Lista 01    Primeira Lista de Exercícios.       Justifique com detalhes a validade da propriedade (4) utilizada na demonstração feita em sala do Teorema da Função Inversa.      Seja dada por .  Mostre que é injetora no conjunto .  Descreva o conjunto .  Denotando por a inversa de , determine, se possível, .        Repita o exercício acima para dada por , sendo o conjunto .      Considere a função dada por   Mostre que a equação define uma função de classe em todo o plano.  Determine os pontos críticos de .  Classifique esses pontos críticos quanto a máximos locais, mínimos locais ou selas.  Escreva o polinômio de Taylor de ordem 1 e seu resto para em torno de .        Seja uma função contínua tal que . Mostre que existe função , de classe , tal que .      Identificando os espaço das matrizes quadradas de ordem , , com definimos a função por .  Mostre que é de classe .  Determine para cada .  Mostre que, numa vizinhança de , cada matriz possui uma única raiz quadrada, isto é, para cada nessa vizinhança existe uma única matriz tal que .        Seja .  Mostre que é, localmente, gráfico de uma função de classe .  Determine a dimensão do plano tangente em cada ponto desse gráfico.  Explicite o plano tangente a esse gráfico em .        Seja .  Mostre que é, localmente, gráfico de uma função real de classe .  Determine a dimensão do plano tangente a esse gráfico em .        Seja um polinômio com coeficientes reais tal que é uma raiz real simples de .  Mostre que todo polinômio de grau ``suficientemente próximo'' de tem uma raiz real pŕoxima de que varia suavemente em termos dos coeficientes do polinômio.  Determine a diferencial dessa função que associa os coeficientes do polinômio a essa raiz simples.    Pode-se obter resultado semelhante se a raiz de não é simples? Dê exemplos.      Seja uma função de classe . Para cada considere a função dada por . Suponha que exista tal que tem um ponto fixo , isto é, e que é uma transformação linear que não tem como autovalor. Mostre que, para suficientemente próximo de a função tem um único ponto fixo próximo de que varia suavemente com .      Demonstre a seguinte versão da forma local das imersões:   Se , de classe no aberto , é uma imersão em então existe um difeomorfismo entre os abertos , contendo e , contendo , tal que para todo .         Mostre que se é de classe no aberto com então não é injetora.      Seja uma função de classe no aberto . Um vetor é valor regular de se é sobrejetora, para todo .  Mostre que o gráfico de qualquer função é a imagem inversa de um valor regular.      Mostre que a curva em dada pelo sistema não é a imagem inversa de um valor regular.      O cone é imagem inversa de valor regular?      Seja dada por . Mostre que é valor regular de e descreva .  Mostre ainda que é gráfico de uma função numa vizinhança de . Determine o plano tangente ao gráfico de nesse ponto.      Mostre que se é valor regular de então, para cada existem abertos e tais que é o gráfico de uma função de classe .      Sejam uma imersão injetora de classe e uma curva de classe tal que .  Mostre que existem e , de classe tal que .    "
+  "title": "Lista 01 - “Recordação”",
+  "body": " Lista 01 - Recordação            Justifique com detalhes a validade da propriedade (4) utilizada na demonstração feita em sala do Teorema da Função Inversa.      Seja dada por .  Mostre que é injetora no conjunto .  Descreva o conjunto .  Denotando por a inversa de , determine, se possível, .        Repita o exercício acima para dada por , sendo o conjunto .      Considere a função dada por   Mostre que a equação define uma função de classe em todo o plano.  Determine os pontos críticos de .  Classifique esses pontos críticos quanto a máximos locais, mínimos locais ou selas.  Escreva o polinômio de Taylor de ordem 1 e seu resto para em torno de .        Seja uma função contínua tal que . Mostre que existe função , de classe , tal que .      Identificando os espaço das matrizes quadradas de ordem , , com definimos a função por .  Mostre que é de classe .  Determine para cada .  Mostre que, numa vizinhança de , cada matriz possui uma única raiz quadrada, isto é, para cada nessa vizinhança existe uma única matriz tal que .        Seja .  Mostre que é, localmente, gráfico de uma função de classe .  Determine a dimensão do plano tangente em cada ponto desse gráfico.  Explicite o plano tangente a esse gráfico em .        Seja .  Mostre que é, localmente, gráfico de uma função real de classe .  Determine a dimensão do plano tangente a esse gráfico em .        Seja um polinômio com coeficientes reais tal que é uma raiz real simples de .  Mostre que todo polinômio de grau  suficientemente próximo de tem uma raiz real pŕoxima de que varia suavemente em termos dos coeficientes do polinômio.  Determine a diferencial dessa função que associa os coeficientes do polinômio a essa raiz simples.    Pode-se obter resultado semelhante se a raiz de não é simples? Dê exemplos.      Seja uma função de classe . Para cada considere a função dada por . Suponha que exista tal que tem um ponto fixo , isto é, e que é uma transformação linear que não tem como autovalor. Mostre que, para suficientemente próximo de a função tem um único ponto fixo próximo de que varia suavemente com .      Demonstre a seguinte versão da forma local das imersões:   Se , de classe no aberto , é uma imersão em então existe um difeomorfismo entre os abertos , contendo e , contendo , tal que para todo .         Mostre que se é de classe no aberto com então não é injetora.      Seja uma função de classe no aberto . Um vetor é valor regular de se é sobrejetora, para todo .  Mostre que o gráfico de qualquer função é a imagem inversa de um valor regular.      Mostre que a curva em dada pelo sistema não é a imagem inversa de um valor regular.      O cone é imagem inversa de valor regular?      Seja dada por . Mostre que é valor regular de e descreva .  Mostre ainda que é gráfico de uma função numa vizinhança de . Determine o plano tangente ao gráfico de nesse ponto.      Mostre que se é valor regular de então, para cada existem abertos e tais que é o gráfico de uma função de classe .      Sejam uma imersão injetora de classe e uma curva de classe tal que .  Mostre que existem e , de classe tal que .    "
 },
 {
-  "id": "lista01-3",
+  "id": "lista01-2",
   "level": "2",
-  "url": "lista01.html#lista01-3",
+  "url": "lista01.html#lista01-2",
   "type": "Exercício da Lista",
   "number": "1",
   "title": "",
   "body": "   Justifique com detalhes a validade da propriedade (4) utilizada na demonstração feita em sala do Teorema da Função Inversa.   "
 },
 {
-  "id": "lista01-4",
+  "id": "lista01-3",
   "level": "2",
-  "url": "lista01.html#lista01-4",
+  "url": "lista01.html#lista01-3",
   "type": "Exercício da Lista",
   "number": "2",
   "title": "",
   "body": "  Seja dada por .  Mostre que é injetora no conjunto .  Descreva o conjunto .  Denotando por a inversa de , determine, se possível, .     "
 },
 {
-  "id": "lista01-5",
+  "id": "lista01-4",
   "level": "2",
-  "url": "lista01.html#lista01-5",
+  "url": "lista01.html#lista01-4",
   "type": "Exercício da Lista",
   "number": "3",
   "title": "",
   "body": "  Repita o exercício acima para dada por , sendo o conjunto .   "
 },
 {
-  "id": "lista01-6",
+  "id": "lista01-5",
   "level": "2",
-  "url": "lista01.html#lista01-6",
+  "url": "lista01.html#lista01-5",
   "type": "Exercício da Lista",
   "number": "4",
   "title": "",
@@ -145,90 +145,90 @@ var ptx_lunr_docs = [
   "body": "  Seja uma função contínua tal que . Mostre que existe função , de classe , tal que .   "
 },
 {
-  "id": "lista01-8",
+  "id": "lista01-7",
   "level": "2",
-  "url": "lista01.html#lista01-8",
+  "url": "lista01.html#lista01-7",
   "type": "Exercício da Lista",
   "number": "6",
   "title": "",
   "body": "  Identificando os espaço das matrizes quadradas de ordem , , com definimos a função por .  Mostre que é de classe .  Determine para cada .  Mostre que, numa vizinhança de , cada matriz possui uma única raiz quadrada, isto é, para cada nessa vizinhança existe uma única matriz tal que .     "
 },
 {
-  "id": "lista01-9",
+  "id": "lista01-8",
   "level": "2",
-  "url": "lista01.html#lista01-9",
+  "url": "lista01.html#lista01-8",
   "type": "Exercício da Lista",
   "number": "7",
   "title": "",
   "body": "  Seja .  Mostre que é, localmente, gráfico de uma função de classe .  Determine a dimensão do plano tangente em cada ponto desse gráfico.  Explicite o plano tangente a esse gráfico em .     "
 },
 {
-  "id": "lista01-10",
+  "id": "lista01-9",
   "level": "2",
-  "url": "lista01.html#lista01-10",
+  "url": "lista01.html#lista01-9",
   "type": "Exercício da Lista",
   "number": "8",
   "title": "",
   "body": "  Seja .  Mostre que é, localmente, gráfico de uma função real de classe .  Determine a dimensão do plano tangente a esse gráfico em .     "
 },
 {
-  "id": "lista01-11",
+  "id": "lista01-10",
   "level": "2",
-  "url": "lista01.html#lista01-11",
+  "url": "lista01.html#lista01-10",
   "type": "Exercício da Lista",
   "number": "9",
   "title": "",
-  "body": "  Seja um polinômio com coeficientes reais tal que é uma raiz real simples de .  Mostre que todo polinômio de grau ``suficientemente próximo'' de tem uma raiz real pŕoxima de que varia suavemente em termos dos coeficientes do polinômio.  Determine a diferencial dessa função que associa os coeficientes do polinômio a essa raiz simples.    Pode-se obter resultado semelhante se a raiz de não é simples? Dê exemplos.   "
+  "body": "  Seja um polinômio com coeficientes reais tal que é uma raiz real simples de .  Mostre que todo polinômio de grau  suficientemente próximo de tem uma raiz real pŕoxima de que varia suavemente em termos dos coeficientes do polinômio.  Determine a diferencial dessa função que associa os coeficientes do polinômio a essa raiz simples.    Pode-se obter resultado semelhante se a raiz de não é simples? Dê exemplos.   "
 },
 {
-  "id": "lista01-12",
+  "id": "lista01-11",
   "level": "2",
-  "url": "lista01.html#lista01-12",
+  "url": "lista01.html#lista01-11",
   "type": "Exercício da Lista",
   "number": "10",
   "title": "",
   "body": "  Seja uma função de classe . Para cada considere a função dada por . Suponha que exista tal que tem um ponto fixo , isto é, e que é uma transformação linear que não tem como autovalor. Mostre que, para suficientemente próximo de a função tem um único ponto fixo próximo de que varia suavemente com .   "
 },
 {
-  "id": "lista01-13",
+  "id": "lista01-12",
   "level": "2",
-  "url": "lista01.html#lista01-13",
+  "url": "lista01.html#lista01-12",
   "type": "Exercício da Lista",
   "number": "11",
   "title": "",
   "body": "  Demonstre a seguinte versão da forma local das imersões:   Se , de classe no aberto , é uma imersão em então existe um difeomorfismo entre os abertos , contendo e , contendo , tal que para todo .      "
 },
 {
-  "id": "lista01-14",
+  "id": "lista01-13",
   "level": "2",
-  "url": "lista01.html#lista01-14",
+  "url": "lista01.html#lista01-13",
   "type": "Exercício da Lista",
   "number": "12",
   "title": "",
   "body": "  Mostre que se é de classe no aberto com então não é injetora.   "
 },
 {
-  "id": "lista01-15",
+  "id": "lista01-14",
   "level": "2",
-  "url": "lista01.html#lista01-15",
+  "url": "lista01.html#lista01-14",
   "type": "Exercício da Lista",
   "number": "13",
   "title": "",
   "body": "  Seja uma função de classe no aberto . Um vetor é valor regular de se é sobrejetora, para todo .  Mostre que o gráfico de qualquer função é a imagem inversa de um valor regular.   "
 },
 {
-  "id": "lista01-16",
+  "id": "lista01-15",
   "level": "2",
-  "url": "lista01.html#lista01-16",
+  "url": "lista01.html#lista01-15",
   "type": "Exercício da Lista",
   "number": "14",
   "title": "",
   "body": "  Mostre que a curva em dada pelo sistema não é a imagem inversa de um valor regular.   "
 },
 {
-  "id": "lista01-17",
+  "id": "lista01-16",
   "level": "2",
-  "url": "lista01.html#lista01-17",
+  "url": "lista01.html#lista01-16",
   "type": "Exercício da Lista",
   "number": "15",
   "title": "",
@@ -244,9 +244,9 @@ var ptx_lunr_docs = [
   "body": "  Seja dada por . Mostre que é valor regular de e descreva .  Mostre ainda que é gráfico de uma função numa vizinhança de . Determine o plano tangente ao gráfico de nesse ponto.   "
 },
 {
-  "id": "lista01-19",
+  "id": "lista01-18",
   "level": "2",
-  "url": "lista01.html#lista01-19",
+  "url": "lista01.html#lista01-18",
   "type": "Exercício da Lista",
   "number": "17",
   "title": "",
@@ -268,111 +268,111 @@ var ptx_lunr_docs = [
   "type": "Lista de Exercícios",
   "number": "",
   "title": "Lista 02 – Integração em <span class=\"process-math\">\\(\\R^n\\)<\/span>",
-  "body": " Lista 02 Integração em    Segunda Lista de Exercícios.       Seja dada por   Mostre que é integrável e que .      Seja dada por   Mostre que é integrável e que .      Mostre que um conjunto ilimitado não pode ter conteúdo nulo.      Dê um exemplo de conjunto fechado de medida nula que não tem conteúdo nulo.      Mostre que se é um conjunto de conteúdo nulo então seu bordo também tem conteúdo nulo.      Mostre que se e são limitadas e integráveis sobre um conjunto limitado então também o é.      Mostre que:  se tem conteúdo nulo então é limitado por um retângulo fechado , é mensurável e ;  se é limitado, tem medida nula e existe então .      Determine para uma partição qualquer de e use que um retângulo não pode ter conteúdo nulo.      Dê um exemplo de conjunto limitado tal que não existe.      Mostre que se é crescente, então é integrável.      Sejam um conjunto mensurável e . Mostre que existe um compacto , mensurável, tal que .      Seja contínua. Mostre que       Use o teorema de Fubini para dar um prova simples do Teorema de Schwarz, ou seja, , se é uma função de classe .      Deduza uma fórmula para o cálculo do volume de um sólido em obtido pela rotação de uma região mensurável no plano ao redor do eixo (suponha que a região em questão não intercepta o eixo ).      Seja contínua com também contínua e defina por . Mostre que .    Escreva como uma integral iterada.  A hipótese sobre a continuidade de contínua é realmente necessária?      Sejam e conjuntos mensuráveis contidos num paralelepípedo . Defina e de modo análogo. Suponha que e sejam, para cada , conjuntos mensuráveis em de mesma área. Mostre que e têm o mesmo volume.      Seja dada por     Mostre que é contínua em .  Mostre que para todo e depois defina para mostrar que . Faça então e .    Mostre que é diferenciável em .  Mostre que para todo .  Conclua que é de classe . Ela é analítica real?  Esboce o gráfico de .  Seja um retângulo em . Construa uma função, de classe , tal que para e , em caso contrário.        Mostre que a coleção de funções dadas por , se , e , se , onde são uma partição da unidade.  Determine o suporte de cada e mostre que cada tem uma vizinhança que intercepta no máximo três desses suportes.      Sejam um subconjunto arbitrário de e . Dizemos que uma função é de classe em se existe um aberto , contendo , e uma função , de classe , tal que para todo .  Mostre nesse caso que se é de classe e cujo suporte está contido em então é uma função bem definida e de classe em .      Mostre que se é de classe em cada ponto , então pode ser estendida a uma função , onde é um aberto de contendo .    Determine uma cobertura apropriada para , defina como sua reunião e então tome uma partição da unidade subordinada a esta cobertura.      Seja a porção do primeiro quadrante de limitada pelas hipérboles e , além das retas e . Calcule .    Considere e .      Seja o tetraedro de vértices e . Calcule .    Considere uma mudança que ``endireita'' o tetraedro.      Defina por .    Mostre que é injetora, calcule e mostre que para todo . Determine o conjunto .  Explicite a expressão de .   Seja a região delimitada por círculos de raios e , e pela retas que passam pela origem que fazem ângulo e com o eixo dos , respectivamente. Se é uma função integrável tal que , mostre que   Mostre também que se então    Se , mostre que   Prove também que e conclua que .        Sejam . Considere o círculo no plano de raio e centro em . Ao rotacionar esse círculo em torno do eixo obtemos uma superfície chamada toro (vide Exercício da ). Se realizamos esse processo com o disco ao invés do círculo obtemos o toro sólido .  Determine o volume do toro sólido.    Você pode calcular isto diretamente, mas é bem mais conveniente utilizar as coordenadas cilíndricas do : . Determine a região no domínio de que tem o toro como imagem.  O resultado obtido é um caso particular do Exercício desta lista.    "
+  "body": " Lista 02 Integração em             Seja dada por   Mostre que é integrável e que .      Seja dada por   Mostre que é integrável e que .      Mostre que um conjunto ilimitado não pode ter conteúdo nulo.      Dê um exemplo de conjunto fechado de medida nula que não tem conteúdo nulo.      Mostre que se é um conjunto de conteúdo nulo então seu bordo também tem conteúdo nulo.      Mostre que se e são limitadas e integráveis sobre um conjunto limitado então também o é.      Mostre que:  se tem conteúdo nulo então é limitado por um retângulo fechado , é mensurável e ;  se é limitado, tem medida nula e existe então .      Determine para uma partição qualquer de e use que um retângulo não pode ter conteúdo nulo.      Dê um exemplo de conjunto limitado tal que não existe.      Mostre que se é crescente, então é integrável.      Sejam um conjunto mensurável e . Mostre que existe um compacto , mensurável, tal que .        Seja contínua. Mostre que       Use o teorema de Fubini para dar um prova simples do Teorema de Schwarz, ou seja, , se é uma função de classe .      Deduza uma fórmula para o cálculo do volume de um sólido em obtido pela rotação de uma região mensurável no plano ao redor do eixo (suponha que a região em questão não intercepta o eixo ).      Seja contínua com também contínua e defina por . Mostre que .    Escreva como uma integral iterada.  A hipótese sobre a continuidade de contínua é realmente necessária?      Sejam e conjuntos mensuráveis contidos num paralelepípedo . Defina e de modo análogo. Suponha que e sejam, para cada , conjuntos mensuráveis em de mesma área. Mostre que e têm o mesmo volume.      Seja dada por     Mostre que é contínua em .  Mostre que para todo e depois defina para mostrar que . Faça então e .    Mostre que é diferenciável em .  Mostre que para todo .  Conclua que é de classe . Ela é analítica real?  Esboce o gráfico de .  Seja um retângulo em . Construa uma função, de classe , tal que para e , em caso contrário.          Mostre que a coleção de funções dadas por , se , e , se , onde são uma partição da unidade.  Determine o suporte de cada e mostre que cada tem uma vizinhança que intercepta no máximo três desses suportes.      Sejam um subconjunto arbitrário de e . Dizemos que uma função é de classe em se existe um aberto , contendo , e uma função , de classe , tal que para todo .  Mostre nesse caso que se é de classe e cujo suporte está contido em então é uma função bem definida e de classe em .      Mostre que se é de classe em cada ponto , então pode ser estendida a uma função , onde é um aberto de contendo .    Determine uma cobertura apropriada para , defina como sua reunião e então tome uma partição da unidade subordinada a esta cobertura.      Seja a porção do primeiro quadrante de limitada pelas hipérboles e , além das retas e . Calcule .    Considere e .      Seja o tetraedro de vértices e . Calcule .    Considere uma mudança que endireita o tetraedro.        Defina por .    Mostre que é injetora, calcule e mostre que para todo . Determine o conjunto .  Explicite a expressão de .   Seja a região delimitada por círculos de raios e , e pela retas que passam pela origem que fazem ângulo e com o eixo dos , respectivamente. Se é uma função integrável tal que , mostre que   Mostre também que se então    Se , mostre que   Prove também que e conclua que .        Sejam . Considere o círculo no plano de raio e centro em . Ao rotacionar esse círculo em torno do eixo obtemos uma superfície chamada toro (vide Exercício da ). Se realizamos esse processo com o disco ao invés do círculo obtemos o toro sólido .  Determine o volume do toro sólido.    Você pode calcular isto diretamente, mas é bem mais conveniente utilizar as coordenadas cilíndricas do : . Determine a região no domínio de que tem o toro como imagem.  O resultado obtido é um caso particular do Exercício desta lista.     "
 },
 {
-  "id": "lista02-3",
+  "id": "lista02-2-1",
   "level": "2",
-  "url": "lista02.html#lista02-3",
+  "url": "lista02.html#lista02-2-1",
   "type": "Exercício da Lista",
   "number": "1",
   "title": "",
   "body": "   Seja dada por   Mostre que é integrável e que .   "
 },
 {
-  "id": "lista02-4",
+  "id": "lista02-2-2",
   "level": "2",
-  "url": "lista02.html#lista02-4",
+  "url": "lista02.html#lista02-2-2",
   "type": "Exercício da Lista",
   "number": "2",
   "title": "",
   "body": "  Seja dada por   Mostre que é integrável e que .   "
 },
 {
-  "id": "lista02-5",
+  "id": "lista02-2-3",
   "level": "2",
-  "url": "lista02.html#lista02-5",
+  "url": "lista02.html#lista02-2-3",
   "type": "Exercício da Lista",
   "number": "3",
   "title": "",
   "body": "  Mostre que um conjunto ilimitado não pode ter conteúdo nulo.   "
 },
 {
-  "id": "lista02-6",
+  "id": "lista02-2-4",
   "level": "2",
-  "url": "lista02.html#lista02-6",
+  "url": "lista02.html#lista02-2-4",
   "type": "Exercício da Lista",
   "number": "4",
   "title": "",
   "body": "  Dê um exemplo de conjunto fechado de medida nula que não tem conteúdo nulo.   "
 },
 {
-  "id": "lista02-7",
+  "id": "lista02-2-5",
   "level": "2",
-  "url": "lista02.html#lista02-7",
+  "url": "lista02.html#lista02-2-5",
   "type": "Exercício da Lista",
   "number": "5",
   "title": "",
   "body": "  Mostre que se é um conjunto de conteúdo nulo então seu bordo também tem conteúdo nulo.   "
 },
 {
-  "id": "lista02-8",
+  "id": "lista02-2-6",
   "level": "2",
-  "url": "lista02.html#lista02-8",
+  "url": "lista02.html#lista02-2-6",
   "type": "Exercício da Lista",
   "number": "6",
   "title": "",
   "body": "  Mostre que se e são limitadas e integráveis sobre um conjunto limitado então também o é.   "
 },
 {
-  "id": "lista02-9",
+  "id": "lista02-2-7",
   "level": "2",
-  "url": "lista02.html#lista02-9",
+  "url": "lista02.html#lista02-2-7",
   "type": "Exercício da Lista",
   "number": "7",
   "title": "",
   "body": "  Mostre que:  se tem conteúdo nulo então é limitado por um retângulo fechado , é mensurável e ;  se é limitado, tem medida nula e existe então .      Determine para uma partição qualquer de e use que um retângulo não pode ter conteúdo nulo.   "
 },
 {
-  "id": "lista02-10",
+  "id": "lista02-2-8",
   "level": "2",
-  "url": "lista02.html#lista02-10",
+  "url": "lista02.html#lista02-2-8",
   "type": "Exercício da Lista",
   "number": "8",
   "title": "",
   "body": "  Dê um exemplo de conjunto limitado tal que não existe.   "
 },
 {
-  "id": "lista02-11",
+  "id": "lista02-2-9",
   "level": "2",
-  "url": "lista02.html#lista02-11",
+  "url": "lista02.html#lista02-2-9",
   "type": "Exercício da Lista",
   "number": "9",
   "title": "",
   "body": "  Mostre que se é crescente, então é integrável.   "
 },
 {
-  "id": "lista02-12",
+  "id": "lista02-2-10",
   "level": "2",
-  "url": "lista02.html#lista02-12",
+  "url": "lista02.html#lista02-2-10",
   "type": "Exercício da Lista",
   "number": "10",
   "title": "",
   "body": "  Sejam um conjunto mensurável e . Mostre que existe um compacto , mensurável, tal que .   "
 },
 {
-  "id": "lista02-13",
+  "id": "lista02-3-1",
   "level": "2",
-  "url": "lista02.html#lista02-13",
+  "url": "lista02.html#lista02-3-1",
   "type": "Exercício da Lista",
   "number": "11",
   "title": "",
   "body": "  Seja contínua. Mostre que    "
 },
 {
-  "id": "lista02-14",
+  "id": "lista02-3-2",
   "level": "2",
-  "url": "lista02.html#lista02-14",
+  "url": "lista02.html#lista02-3-2",
   "type": "Exercício da Lista",
   "number": "12",
   "title": "",
@@ -388,94 +388,337 @@ var ptx_lunr_docs = [
   "body": "  Deduza uma fórmula para o cálculo do volume de um sólido em obtido pela rotação de uma região mensurável no plano ao redor do eixo (suponha que a região em questão não intercepta o eixo ).   "
 },
 {
-  "id": "lista02-16",
+  "id": "lista02-3-4",
   "level": "2",
-  "url": "lista02.html#lista02-16",
+  "url": "lista02.html#lista02-3-4",
   "type": "Exercício da Lista",
   "number": "14",
   "title": "",
   "body": "  Seja contínua com também contínua e defina por . Mostre que .    Escreva como uma integral iterada.  A hipótese sobre a continuidade de contínua é realmente necessária?   "
 },
 {
-  "id": "lista02-17",
+  "id": "lista02-3-5",
   "level": "2",
-  "url": "lista02.html#lista02-17",
+  "url": "lista02.html#lista02-3-5",
   "type": "Exercício da Lista",
   "number": "15",
   "title": "",
   "body": "  Sejam e conjuntos mensuráveis contidos num paralelepípedo . Defina e de modo análogo. Suponha que e sejam, para cada , conjuntos mensuráveis em de mesma área. Mostre que e têm o mesmo volume.   "
 },
 {
-  "id": "lista02-18",
+  "id": "lista02-3-6",
   "level": "2",
-  "url": "lista02.html#lista02-18",
+  "url": "lista02.html#lista02-3-6",
   "type": "Exercício da Lista",
   "number": "16",
   "title": "",
   "body": "  Seja dada por     Mostre que é contínua em .  Mostre que para todo e depois defina para mostrar que . Faça então e .    Mostre que é diferenciável em .  Mostre que para todo .  Conclua que é de classe . Ela é analítica real?  Esboce o gráfico de .  Seja um retângulo em . Construa uma função, de classe , tal que para e , em caso contrário.     "
 },
 {
-  "id": "lista02-19",
+  "id": "lista02-4-1",
   "level": "2",
-  "url": "lista02.html#lista02-19",
+  "url": "lista02.html#lista02-4-1",
   "type": "Exercício da Lista",
   "number": "17",
   "title": "",
   "body": "  Mostre que a coleção de funções dadas por , se , e , se , onde são uma partição da unidade.  Determine o suporte de cada e mostre que cada tem uma vizinhança que intercepta no máximo três desses suportes.   "
 },
 {
-  "id": "lista02-20",
+  "id": "lista02-4-2",
   "level": "2",
-  "url": "lista02.html#lista02-20",
+  "url": "lista02.html#lista02-4-2",
   "type": "Exercício da Lista",
   "number": "18",
   "title": "",
   "body": "  Sejam um subconjunto arbitrário de e . Dizemos que uma função é de classe em se existe um aberto , contendo , e uma função , de classe , tal que para todo .  Mostre nesse caso que se é de classe e cujo suporte está contido em então é uma função bem definida e de classe em .   "
 },
 {
-  "id": "lista02-21",
+  "id": "lista02-4-3",
   "level": "2",
-  "url": "lista02.html#lista02-21",
+  "url": "lista02.html#lista02-4-3",
   "type": "Exercício da Lista",
   "number": "19",
   "title": "",
   "body": "  Mostre que se é de classe em cada ponto , então pode ser estendida a uma função , onde é um aberto de contendo .    Determine uma cobertura apropriada para , defina como sua reunião e então tome uma partição da unidade subordinada a esta cobertura.   "
 },
 {
-  "id": "lista02-22",
+  "id": "lista02-4-4",
   "level": "2",
-  "url": "lista02.html#lista02-22",
+  "url": "lista02.html#lista02-4-4",
   "type": "Exercício da Lista",
   "number": "20",
   "title": "",
   "body": "  Seja a porção do primeiro quadrante de limitada pelas hipérboles e , além das retas e . Calcule .    Considere e .   "
 },
 {
-  "id": "lista02-23",
+  "id": "lista02-4-5",
   "level": "2",
-  "url": "lista02.html#lista02-23",
+  "url": "lista02.html#lista02-4-5",
   "type": "Exercício da Lista",
   "number": "21",
   "title": "",
-  "body": "  Seja o tetraedro de vértices e . Calcule .    Considere uma mudança que ``endireita'' o tetraedro.   "
+  "body": "  Seja o tetraedro de vértices e . Calcule .    Considere uma mudança que endireita o tetraedro.   "
 },
 {
-  "id": "lista02-24",
+  "id": "ex-polares",
   "level": "2",
-  "url": "lista02.html#lista02-24",
+  "url": "lista02.html#ex-polares",
   "type": "Exercício da Lista",
   "number": "22",
   "title": "",
   "body": "  Defina por .    Mostre que é injetora, calcule e mostre que para todo . Determine o conjunto .  Explicite a expressão de .   Seja a região delimitada por círculos de raios e , e pela retas que passam pela origem que fazem ângulo e com o eixo dos , respectivamente. Se é uma função integrável tal que , mostre que   Mostre também que se então    Se , mostre que   Prove também que e conclua que .     "
 },
 {
-  "id": "lista02-25",
+  "id": "lista02-5-2",
   "level": "2",
-  "url": "lista02.html#lista02-25",
+  "url": "lista02.html#lista02-5-2",
   "type": "Exercício da Lista",
   "number": "23",
   "title": "",
   "body": "  Sejam . Considere o círculo no plano de raio e centro em . Ao rotacionar esse círculo em torno do eixo obtemos uma superfície chamada toro (vide Exercício da ). Se realizamos esse processo com o disco ao invés do círculo obtemos o toro sólido .  Determine o volume do toro sólido.    Você pode calcular isto diretamente, mas é bem mais conveniente utilizar as coordenadas cilíndricas do : . Determine a região no domínio de que tem o toro como imagem.  O resultado obtido é um caso particular do Exercício desta lista.   "
+},
+{
+  "id": "lista03",
+  "level": "1",
+  "url": "lista03.html",
+  "type": "Lista de Exercícios",
+  "number": "",
+  "title": "Lista 03 – Tensores, Formas Diferenciais, Cadeias e Stokes",
+  "body": " Lista 03 Tensores, Formas Diferenciais, Cadeias e Stokes             Se é um tensor em , mostre que existe uma matriz , digamos , tal que para todo . Em seguida, se , determine a matriz que representa o 1-tensor em .      Mostre que se é um tensor simétrico então . Vale a recíproca?      Sejam vetores em e . Se é uma upla rbitrária do conjunto , mostre que onde é a submatriz quadrada , obtida a partir das linhas de indexadas por .      Seja um tensor alternado. Mostre que, se é ímpar, então existe não-nulo tal que para todo .      Mostre que a cada corresponde um único tal que para toda e todos . Mostre ainda que a correspondência é um isomorfismo entre os espaços vetoriais e .    Basta verificar para qualquer base ortonormal positiva de .      Mostre que se e são diferenciáveis então e .      Seja uma curva diferenciável. Mostre que o vetor velocidade de no instante é . Mostre também que se é diferenciável, então o vetor tangente a em é .      Considere as formas em dadas por Mostre, calculando diretamente, que e .      Seja , onde é um aberto. Dizemos que é nula em se é o tensor identicamente nulo.  Mostre que se é nula numa vizinhança de então é nula de em .  Construa um exemplo onde é nula em , mas não é nula em .        Sejam , onde é aberto de tais que para todo . Se é uma forma satisfazendo mostre que existe tal que .        Sejam e uma função de classe tal que para todo . Mostre que se e somente se a forma em satisfaz .      Seja e considere a forma dada por Mostre que é fechada e exata em .      Sejam e um inteiro positivo fixado. Considere a forma em dada por onde e significa que é omitido daquela parcela.  Calcule .  Para quais valores de temos ?        O operador pode ser visto como um tipo de derivada direcional. Isso é o que garante o teorema abaixo, que será demonstrado neste exercício.   Sejam um aberto de e . Dados em definimos as funções , respectivamente, por Então      Para provar o resultado acima, seiga os seguintes passos:  Seja , matriz . Para cada defina , matriz . Dada a upla mostre que   Verifique a validade do teorema se , ou seja, se .  Conclua o resultado enunciado.          Seja um aberto de . Denote por o conjunto dos campos escalares sobre e por o conjunto dos campos de vetores sobre . Mostre que existem isomorfismos e entre espaços vetoriais como nos diagramas abaixo tais que e , onde é o campo gradiente de uma função dado por e é o divergente de um campo de vetores em dado por       Para cada campo de vetores em defina as formas   Mostre que e .  Use as identidades acima para provar que e .        Seja uma função de classe . Mostre, através de cálculos diretos que onde é a matriz composta das colunas , e da matriz de na base canônica.      Sejam e dada por Calcule diretamente , e .        Demonstre o teorema abaixo.  Expressão para calcular  Sejam um aberto de e uma função de classe , e . Se é uma upla ascendente em , então onde , para toda upla ascendente e é o conjunto de todas as uplas ascendentes do conjunto .        Neste exercício obtemos condições necessárias e suficientes para que os isomorfismos lineares e definidos no Exercício tenham bom comportamento quando submetidas a ação de um difeomorfismo entre abertos de .  Sejam então um difeomorfismo entre abertos de , e . Ao campo de vetores em dado por associamos o campo em .  Mostre que , para todo campo de vetores em se e somente se a matriz de na base canônica é ortogonal para todo .  Mostre que equivale a .    Mostre que para todo campo se e somente se .  Mostre que equivale a .    Para cada campo escalar em associamos o campo escalar em . Mostre que para toda se e somente se .        Seja um difeomorfismo. Suponha que toda forma fechada em também é exata. Mostre que o mesmo vale em .    Pense em pull-backs.        Seja a segunda coordenada da inversa de dada no Exercício da . Mostre que onde é o cubo singular dado por .  Use o teorema de Stokes para cadeias singulares para concluir que não pode ser o bordo de nenhuma cadeia em .      Sejam e  cubos singulares em satisfazendo e . Mostre que existe um um cubo singular tal que onde e são degenerados, ou seja, pontos em . Conclua que para toda forma exata de . Dê um contra-exemplo em quando é fechada, mas não é exata.      Mostre que se é uma forma num aberto de e para todos cubos singulares com e , então é exata.    Lembre-se da construção de uma função potencial para um campo de vetores em feita em sala.       Bônus Introdução às funções analíticas   Uma função é diferenciável em se existe. Se é diferenciável em todo ponto de um aberto e é continua em então dizemos que é analítica em .  Mostre que é analítica e não o é. Mostre também que somas, produtos e quocientes de funçções analíticas também são analíticas.  Mostre que se , onde para , temos e , é analítica então e (equações de Cauchy-Riemann). Vale a recíproca?  Seja uma transformação linear. Mostre que corresponde a uma multiplicação por um número complexo se e somente se e , onde é a matriz de em relação à base . Com isso, considerando analítica como uma função diferenciável de em , temos que corresponde à multiplicação por um número complexo. Determine esse número.  Se são formas diferenciais em um aberto de definimos Mostre que se e somente se satisfaz as equações de Cauchy-Riemann.  Se é analítica em então para toda curva fechada tal que ,onde é alguma cadeia em .  Mostre que para alguma função e conclua que .   Se é analítica no disco unitário aberto, , mostre que o é em e para .  Usando o item acima para calcular , conclua o:           Fórmula integral de Cauchy   Sejam , uma função analítica e uma curva fechada em então onde é o winding number da curva em torno da origem.     O winding number em torno da origem de uma curva fechada com imagem em é o único inteiro tal que para alguma cadeia . (É necessário verificar a existência e unicidade de tal ).   "
+},
+{
+  "id": "lista03-2-1",
+  "level": "2",
+  "url": "lista03.html#lista03-2-1",
+  "type": "Exercício da Lista",
+  "number": "1",
+  "title": "",
+  "body": "   Se é um tensor em , mostre que existe uma matriz , digamos , tal que para todo . Em seguida, se , determine a matriz que representa o 1-tensor em .   "
+},
+{
+  "id": "lista03-2-2",
+  "level": "2",
+  "url": "lista03.html#lista03-2-2",
+  "type": "Exercício da Lista",
+  "number": "2",
+  "title": "",
+  "body": "  Mostre que se é um tensor simétrico então . Vale a recíproca?   "
+},
+{
+  "id": "lista03-2-3",
+  "level": "2",
+  "url": "lista03.html#lista03-2-3",
+  "type": "Exercício da Lista",
+  "number": "3",
+  "title": "",
+  "body": "  Sejam vetores em e . Se é uma upla rbitrária do conjunto , mostre que onde é a submatriz quadrada , obtida a partir das linhas de indexadas por .   "
+},
+{
+  "id": "lista03-2-4",
+  "level": "2",
+  "url": "lista03.html#lista03-2-4",
+  "type": "Exercício da Lista",
+  "number": "4",
+  "title": "",
+  "body": "  Seja um tensor alternado. Mostre que, se é ímpar, então existe não-nulo tal que para todo .   "
+},
+{
+  "id": "lista03-2-5",
+  "level": "2",
+  "url": "lista03.html#lista03-2-5",
+  "type": "Exercício da Lista",
+  "number": "5",
+  "title": "",
+  "body": "  Mostre que a cada corresponde um único tal que para toda e todos . Mostre ainda que a correspondência é um isomorfismo entre os espaços vetoriais e .    Basta verificar para qualquer base ortonormal positiva de .   "
+},
+{
+  "id": "lista03-2-6",
+  "level": "2",
+  "url": "lista03.html#lista03-2-6",
+  "type": "Exercício da Lista",
+  "number": "6",
+  "title": "",
+  "body": "  Mostre que se e são diferenciáveis então e .   "
+},
+{
+  "id": "lista03-2-7",
+  "level": "2",
+  "url": "lista03.html#lista03-2-7",
+  "type": "Exercício da Lista",
+  "number": "7",
+  "title": "",
+  "body": "  Seja uma curva diferenciável. Mostre que o vetor velocidade de no instante é . Mostre também que se é diferenciável, então o vetor tangente a em é .   "
+},
+{
+  "id": "lista03-2-8",
+  "level": "2",
+  "url": "lista03.html#lista03-2-8",
+  "type": "Exercício da Lista",
+  "number": "8",
+  "title": "",
+  "body": "  Considere as formas em dadas por Mostre, calculando diretamente, que e .   "
+},
+{
+  "id": "lista03-2-9",
+  "level": "2",
+  "url": "lista03.html#lista03-2-9",
+  "type": "Exercício da Lista",
+  "number": "9",
+  "title": "",
+  "body": "  Seja , onde é um aberto. Dizemos que é nula em se é o tensor identicamente nulo.  Mostre que se é nula numa vizinhança de então é nula de em .  Construa um exemplo onde é nula em , mas não é nula em .     "
+},
+{
+  "id": "lista03-2-10",
+  "level": "2",
+  "url": "lista03.html#lista03-2-10",
+  "type": "Exercício da Lista",
+  "number": "10",
+  "title": "",
+  "body": "  Sejam , onde é aberto de tais que para todo . Se é uma forma satisfazendo mostre que existe tal que .   "
+},
+{
+  "id": "lista03-3-1",
+  "level": "2",
+  "url": "lista03.html#lista03-3-1",
+  "type": "Exercício da Lista",
+  "number": "11",
+  "title": "",
+  "body": "  Sejam e uma função de classe tal que para todo . Mostre que se e somente se a forma em satisfaz .   "
+},
+{
+  "id": "lista03-3-2",
+  "level": "2",
+  "url": "lista03.html#lista03-3-2",
+  "type": "Exercício da Lista",
+  "number": "12",
+  "title": "",
+  "body": "  Seja e considere a forma dada por Mostre que é fechada e exata em .   "
+},
+{
+  "id": "lista03-3-3",
+  "level": "2",
+  "url": "lista03.html#lista03-3-3",
+  "type": "Exercício da Lista",
+  "number": "13",
+  "title": "",
+  "body": "  Sejam e um inteiro positivo fixado. Considere a forma em dada por onde e significa que é omitido daquela parcela.  Calcule .  Para quais valores de temos ?     "
+},
+{
+  "id": "lista03-3-4",
+  "level": "2",
+  "url": "lista03.html#lista03-3-4",
+  "type": "Exercício da Lista",
+  "number": "14",
+  "title": "",
+  "body": "  O operador pode ser visto como um tipo de derivada direcional. Isso é o que garante o teorema abaixo, que será demonstrado neste exercício.   Sejam um aberto de e . Dados em definimos as funções , respectivamente, por Então      Para provar o resultado acima, seiga os seguintes passos:  Seja , matriz . Para cada defina , matriz . Dada a upla mostre que   Verifique a validade do teorema se , ou seja, se .  Conclua o resultado enunciado.     "
+},
+{
+  "id": "ex-diagrama",
+  "level": "2",
+  "url": "lista03.html#ex-diagrama",
+  "type": "Exercício da Lista",
+  "number": "15",
+  "title": "",
+  "body": "  Seja um aberto de . Denote por o conjunto dos campos escalares sobre e por o conjunto dos campos de vetores sobre . Mostre que existem isomorfismos e entre espaços vetoriais como nos diagramas abaixo tais que e , onde é o campo gradiente de uma função dado por e é o divergente de um campo de vetores em dado por    "
+},
+{
+  "id": "lista03-4-2",
+  "level": "2",
+  "url": "lista03.html#lista03-4-2",
+  "type": "Exercício da Lista",
+  "number": "16",
+  "title": "",
+  "body": "  Para cada campo de vetores em defina as formas   Mostre que e .  Use as identidades acima para provar que e .     "
+},
+{
+  "id": "lista03-4-3",
+  "level": "2",
+  "url": "lista03.html#lista03-4-3",
+  "type": "Exercício da Lista",
+  "number": "17",
+  "title": "",
+  "body": "  Seja uma função de classe . Mostre, através de cálculos diretos que onde é a matriz composta das colunas , e da matriz de na base canônica.   "
+},
+{
+  "id": "lista03-4-4",
+  "level": "2",
+  "url": "lista03.html#lista03-4-4",
+  "type": "Exercício da Lista",
+  "number": "18",
+  "title": "",
+  "body": "  Sejam e dada por Calcule diretamente , e .   "
+},
+{
+  "id": "lista03-5-1",
+  "level": "2",
+  "url": "lista03.html#lista03-5-1",
+  "type": "Exercício da Lista",
+  "number": "19",
+  "title": "",
+  "body": "  Demonstre o teorema abaixo.  Expressão para calcular  Sejam um aberto de e uma função de classe , e . Se é uma upla ascendente em , então onde , para toda upla ascendente e é o conjunto de todas as uplas ascendentes do conjunto .     "
+},
+{
+  "id": "lista03-5-2",
+  "level": "2",
+  "url": "lista03.html#lista03-5-2",
+  "type": "Exercício da Lista",
+  "number": "20",
+  "title": "",
+  "body": "  Neste exercício obtemos condições necessárias e suficientes para que os isomorfismos lineares e definidos no Exercício tenham bom comportamento quando submetidas a ação de um difeomorfismo entre abertos de .  Sejam então um difeomorfismo entre abertos de , e . Ao campo de vetores em dado por associamos o campo em .  Mostre que , para todo campo de vetores em se e somente se a matriz de na base canônica é ortogonal para todo .  Mostre que equivale a .    Mostre que para todo campo se e somente se .  Mostre que equivale a .    Para cada campo escalar em associamos o campo escalar em . Mostre que para toda se e somente se .     "
+},
+{
+  "id": "lista03-5-3",
+  "level": "2",
+  "url": "lista03.html#lista03-5-3",
+  "type": "Exercício da Lista",
+  "number": "21",
+  "title": "",
+  "body": "  Seja um difeomorfismo. Suponha que toda forma fechada em também é exata. Mostre que o mesmo vale em .    Pense em pull-backs.   "
+},
+{
+  "id": "lista03-6-1",
+  "level": "2",
+  "url": "lista03.html#lista03-6-1",
+  "type": "Exercício da Lista",
+  "number": "22",
+  "title": "",
+  "body": "  Seja a segunda coordenada da inversa de dada no Exercício da . Mostre que onde é o cubo singular dado por .  Use o teorema de Stokes para cadeias singulares para concluir que não pode ser o bordo de nenhuma cadeia em .   "
+},
+{
+  "id": "lista03-6-2",
+  "level": "2",
+  "url": "lista03.html#lista03-6-2",
+  "type": "Exercício da Lista",
+  "number": "23",
+  "title": "",
+  "body": "  Sejam e  cubos singulares em satisfazendo e . Mostre que existe um um cubo singular tal que onde e são degenerados, ou seja, pontos em . Conclua que para toda forma exata de . Dê um contra-exemplo em quando é fechada, mas não é exata.   "
+},
+{
+  "id": "lista03-6-3",
+  "level": "2",
+  "url": "lista03.html#lista03-6-3",
+  "type": "Exercício da Lista",
+  "number": "24",
+  "title": "",
+  "body": "  Mostre que se é uma forma num aberto de e para todos cubos singulares com e , então é exata.    Lembre-se da construção de uma função potencial para um campo de vetores em feita em sala.   "
+},
+{
+  "id": "lista03-7-1",
+  "level": "2",
+  "url": "lista03.html#lista03-7-1",
+  "type": "Exercício da Lista",
+  "number": "25",
+  "title": "“Bônus”– Introdução às funções analíticas.",
+  "body": " Bônus Introdução às funções analíticas   Uma função é diferenciável em se existe. Se é diferenciável em todo ponto de um aberto e é continua em então dizemos que é analítica em .  Mostre que é analítica e não o é. Mostre também que somas, produtos e quocientes de funçções analíticas também são analíticas.  Mostre que se , onde para , temos e , é analítica então e (equações de Cauchy-Riemann). Vale a recíproca?  Seja uma transformação linear. Mostre que corresponde a uma multiplicação por um número complexo se e somente se e , onde é a matriz de em relação à base . Com isso, considerando analítica como uma função diferenciável de em , temos que corresponde à multiplicação por um número complexo. Determine esse número.  Se são formas diferenciais em um aberto de definimos Mostre que se e somente se satisfaz as equações de Cauchy-Riemann.  Se é analítica em então para toda curva fechada tal que ,onde é alguma cadeia em .  Mostre que para alguma função e conclua que .   Se é analítica no disco unitário aberto, , mostre que o é em e para .  Usando o item acima para calcular , conclua o:      "
+},
+{
+  "id": "lista03-8-1",
+  "level": "2",
+  "url": "lista03.html#lista03-8-1",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "winding number "
 },
 {
   "id": "handout-func_diff",
@@ -491,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#lema-tvm",
   "type": "Lema",
-  "number": "2",
+  "number": "5",
   "title": "Desigualdade do Valor Médio.",
   "body": " Desigualdade do Valor Médio   Sejam um retângulo e uma função de classe . Se , para todo , então .    Feito em sala.   "
 },
@@ -500,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#teo-tfinv",
   "type": "Teorema",
-  "number": "3",
+  "number": "6",
   "title": "Teorema da Função Inversa.",
   "body": " Teorema da Função Inversa   Sejam uma função de classe e tal que . Então existem abertos com e tais que tem inversa diferenciável satisfazendo     Feito em sala.   "
 },
@@ -518,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#teo-tfimp",
   "type": "Teorema",
-  "number": "5",
+  "number": "8",
   "title": "Teorema da Função Implícita.",
   "body": " Teorema da Função Implícita   Sejam uma função de classe definida num aberto contendo , com e tal que .  Se a submatriz do Jacobiano tem determinante não nulo, então existem abertos e , com e e uma função , de classe , satisfazendo para todo .  Além disso, para todo .    Feito em sala.   "
 },
@@ -536,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#prop-iminj",
   "type": "Proposição",
-  "number": "7",
+  "number": "10",
   "title": "Homeomorfismo Sobre a Imagem.",
   "body": " Homeomorfismo Sobre a Imagem   Seja uma imersão de classe em . Então é localmente injetora em , ou seja, existe um aberto , tal que é bijetora.  Além disso, é contínua.    Feito em sala.   "
 },
@@ -545,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#teo-fli",
   "type": "Teorema",
-  "number": "8",
+  "number": "11",
   "title": "Forma Local das Imersões.",
   "body": " Forma Local das Imersões   Sejam uma imersão de classe em . Então existe , , tal que é o gráfico de uma função de classe .    Feito em sala.   "
 },
@@ -563,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#teo-fls",
   "type": "Teorema",
-  "number": "10",
+  "number": "13",
   "title": "Forma Local das Submersões.",
   "body": " Forma Local das Submersões   Sejam uma submersão de classe em . Então existe , , tal que é um aberto de .    Feito em sala.   "
 },
@@ -572,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#cor-fls",
   "type": "Corolário",
-  "number": "11",
+  "number": "14",
   "title": "",
   "body": "  Sejam uma submersão de classe em . Então é aberta (isto é, a imagem direta por de qualquer aberto é um aberto) e, se , então não é injetora.    Feito em sala.   "
 },
@@ -581,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-func_diff.html#teo-posto",
   "type": "Teorema",
-  "number": "12",
+  "number": "15",
   "title": "Teorema do Posto.",
   "body": " Teorema do Posto   Seja uma função de classe tal que , para algum em uma vizinhança de . Então existe , aberto com , tal que é o gráfico de uma função de classe .    Feito em sala.   "
 },
@@ -617,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intRn.html#lem-somas",
   "type": "Lema",
-  "number": "17",
+  "number": "20",
   "title": "Propriedades das somas superior e inferior.",
   "body": " Propriedades das somas superior e inferior   Se , então e .    Feito em sala   "
 },
@@ -626,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intRn.html#cor-somas",
   "type": "Corolário",
-  "number": "18",
+  "number": "21",
   "title": "Comparação entre somas superior e inferior.",
   "body": " Comparação entre somas superior e inferior   Sejam e partições quaisquer. Então ., então e .    Feito em sala   "
 },
@@ -644,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intRn.html#prop-crit",
   "type": "Proposição",
-  "number": "20",
+  "number": "23",
   "title": "Critério de integrabilidade.",
   "body": " Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se para todo existe partição de tal que .    Feito em sala   "
 },
@@ -653,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intRn.html#prop-propint",
   "type": "Proposição",
-  "number": "21",
+  "number": "24",
   "title": "Propriedades da integral.",
   "body": " Propriedades da integral   Sejam um retângulo limitado, funções limitadas e integrávels e . Então    é integrável e .          é integrável e .       Parte feita em sala e parte é um exercício.   "
 },
@@ -671,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intRn.html#teo-crit",
   "type": "Teorema",
-  "number": "25",
+  "number": "28",
   "title": "Critério de integrabilidade.",
   "body": " Critério de integrabilidade   Uma função limitada , definida no retângulo limitado , é integrável se e somente se o conjunto tem medida nula.    Feito em sala   "
 },
@@ -698,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-fubini.html#teo-fubini",
   "type": "Teorema",
-  "number": "29",
+  "number": "32",
   "title": "Teorema de Fubini.",
   "body": " Teorema de Fubini   Sejam e retângulos fechados, e uma função integrável. Para cada , defina por por e   Então as funções e são integráveis em e vale que     Escrevendo por extenso, temos ou seja,     Feito em sala   "
 },
@@ -716,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#fact-colagem_continua",
   "type": "Fato",
-  "number": "31",
+  "number": "34",
   "title": "Colagem de funções contínuas.",
   "body": " Colagem de funções contínuas   Sejam é um conjunto da forma , com cada fechado (logo é fechado) ou , com cada aberto (logo é aberto). Se, para cada ou , é uma função contínua tal que , então existe uma única função contínua tal que .    Segue-se do fato de que a continuidade é uma propriedade local.   "
 },
@@ -725,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#fact-colagem_suave",
   "type": "Fato",
-  "number": "32",
+  "number": "35",
   "title": "Colagem de funções suavess.",
   "body": " Colagem de funções suavess   O mesmo vale para uma coleção suave de funções quandos os são abertos.    O que acontece se os são fechados?    Novamente usamos que o conceito de diferenciabilidade é local.   "
 },
@@ -743,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#ex-der_fechados",
   "type": "Exemplo",
-  "number": "36",
+  "number": "39",
   "title": "",
   "body": "  Denote, respectivamente, por e o conjunto dos números reais não positivos e não negativos. As funções , dada por , e , dada por .  A interseção dos dois domínios é um fechado e não existe uma função suave que extende simultaneamente e para .   "
 },
@@ -752,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#lema-launch_suave",
   "type": "Lema",
-  "number": "37",
+  "number": "40",
   "title": "Função suave não analítica.",
   "body": " Função suave não analítica   A função dada por é de classe em toda a reta real.    A função acima é de classe , mas não é analítica. Veja seu gráfico:  Gráfico de .         O resultado é imediato para ou . Em , basta verificar (por indução) que onde é um polinômio de grau no máximo .  Com isso é fácil mostrar que é contínua em , para todo natural .   "
 },
@@ -761,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#lema-cutoff",
   "type": "Lema",
-  "number": "40",
+  "number": "43",
   "title": "Funções \"cut-off\".",
   "body": " Funções \"cut-off\"   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico:  Gráfico de .         Basta tomar , onde é a função definina no .   "
 },
@@ -770,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#teo-plateauRn",
   "type": "Teorema",
-  "number": "43",
+  "number": "46",
   "title": "Funções \"plateau\" em <span class=\"process-math\">\\(\\R^n\\)<\/span>.",
   "body": " Funções \"plateau\" em   Dados existe uma função suave tal que , para , , para e , para .    Veja seu gráfico rm :  Gráfico de uma função plateau em .   Gráfico de uma função plateau em .        Basta tomar , onde é a função definina no .   "
 },
@@ -779,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#lema-paracomp",
   "type": "Lema",
-  "number": "46",
+  "number": "49",
   "title": "Paracompacidade de <span class=\"process-math\">\\(\\R^n\\)<\/span>.",
   "body": " Paracompacidade de   Sejam uma coleção de abertos de e . Então existe uma coleção enumerável de bolas fechadas tal que:   ;  cada está contido em algum ;  cada admite uma vizinhança aberta que intersecta somente uma quantidade finita dos .      Feito em sala   "
 },
@@ -797,7 +1040,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#teo-partunit",
   "type": "Teorema",
-  "number": "49",
+  "number": "52",
   "title": "Existência de partição suave da unidade em abertos.",
   "body": " Existência de partição suave da unidade em abertos   Sejam uma coleção de abertos de e . Então existe partição suave da unidade com suporte compacto e subordinada a .    Feito em sala.   "
 },
@@ -806,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-partunit.html#cor-partunitqqer",
   "type": "Corolário",
-  "number": "50",
+  "number": "53",
   "title": "Existência de partição suave da unidade.",
   "body": " Existência de partição suave da unidade   Se é um conjunto qualquer e é uma cobertura aberta de , então existe partição suave da unidade para .    Basta observar que e que este último, por ser um aberto, tem garantida a exitência de uma partição da unidade subordinada a .   "
 },
@@ -833,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-mudvar.html#teo-mudvar",
   "type": "Teorema",
-  "number": "53",
+  "number": "56",
   "title": "Mudança de variáveis.",
   "body": " Mudança de variáveis   Sejam um aberto e uma função injetora de classe , com , para todo . Se é integrável, então     A prova do teorema é feita por indução, após uma série de reduções, listadas a seguir:    Se é uma cobertura admissível para e o teorema vale para cada , então também vale para o aberto .  Se o teorema vale para a função constante , então também vale para qualquer função integrável.  Se o teorema vale para duas funções \"mudança de variável\", e , com , então também vale para .  O teorema vale se a função é linear.    Utilizamos duas funções convenientes para serem as funções e de modo que ao menos uma das coordenadas de sua composta fique fixa, permitindo, através do teorema de Fubini, aplicar a hipótese de indução.   "
 },
@@ -842,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-mudvar.html#teo-sard",
   "type": "Teorema",
-  "number": "54",
+  "number": "57",
   "title": "Teorema de Sard.",
   "body": " Teorema de Sard   Sejam um aberto e uma função de classe . Então, se , o conjunto tem medida nula.   "
 },
@@ -869,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#ex-tensor_prodesc",
   "type": "Exemplo",
-  "number": "57",
+  "number": "60",
   "title": "Produto escalar.",
   "body": " Produto escalar   Se é um espaço vetorial com produto escalar (ou produto interno), então este produto interno pode ser visto como um tensor (siméstrico e positivo-definido).   "
 },
@@ -887,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#teo-tensdim",
   "type": "Teorema",
-  "number": "60",
+  "number": "63",
   "title": "Dimensão de <span class=\"process-math\">\\(\\mathcal{T}^k\\)<\/span>.",
   "body": " Dimensão de   Sejam um espaço vetorial, uma base de e a base dual de para , ou seja, . Então os tensores , formam uma base para . Em particular .    Visto em sala.   "
 },
@@ -905,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#teo-pullbackproduint",
   "type": "Teorema",
-  "number": "63",
+  "number": "66",
   "title": "Pullback canônico de um produto interno.",
   "body": " Pullback canônico de um produto interno   Sejam um espaço vetoria, com e um produto interno sobre . Então existem uma base ortonormal de (ou seja, ) e um isomorfismo tal que , para todos , onde é o produto interno usual do ..    Visto em sala.   "
 },
@@ -923,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#def-alternador",
   "type": "Definição",
-  "number": "66",
+  "number": "69",
   "title": "Alternador de um tensor.",
   "body": " Alternador de um tensor   Dado , definimos o tensor por    Com isso temos uma aplicação .    "
 },
@@ -932,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#teo-propalt",
   "type": "Teorema",
-  "number": "68",
+  "number": "71",
   "title": "Propriedades de <span class=\"process-math\">\\(\\alt\\)<\/span>.",
   "body": " Propriedades de      ;   ;   .     O operador tem todas as características de um tipo muito especial de transformação linear. Você consegue \"projetar\" de que tipo estamos falando?     Feita em sala.   "
 },
@@ -941,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#def-wedge",
   "type": "Definição",
-  "number": "70",
+  "number": "73",
   "title": "Produto \"wedge\".",
   "body": " Produto \"wedge\"   Se e , definimos    Este produto satisfaz as seguintes proripedades:  ;  ;  ;  ; ;      "
 },
@@ -950,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#teo-wedgeassoc",
   "type": "Teorema",
-  "number": "72",
+  "number": "75",
   "title": "Associatividade do produto wedge.",
   "body": " Associatividade do produto wedge     se , com e , então ;   ;  se , e , então .      Feita em sala.   "
 },
@@ -959,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#teo-basedimwedge",
   "type": "Teorema",
-  "number": "73",
+  "number": "76",
   "title": "Base e dimensão de <span class=\"process-math\">\\(\\Lambda^k(V)\\)<\/span>.",
   "body": " Base e dimensão de   Sejam um espaço vetorial, uma base de e sua base dual. Então é uma base de . Em particular, .    Se , então e portanto se , então , com e é qualquer tensor alternado não-nulo. Se , podemos tomar como o determinante.    Feita em sala.   "
 },
@@ -968,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-tensores.html#teo-determinante",
   "type": "Teorema",
-  "number": "75",
+  "number": "78",
   "title": "Mudança de coordenadas e <span class=\"process-math\">\\(n-\\)<\/span>tensores alternados.",
   "body": " Mudança de coordenadas e tensores alternados   Sejam um espaço vetorial, uma base de e . Se , então .    Feita em sala.   "
 },
