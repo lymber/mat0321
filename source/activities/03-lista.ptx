@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="lista03">
+  <title>Lista 03 <ndash /> Tensores, Formas Diferenciais, Cadeias e
+  Stokes</title>
+
+  <!-- Optional introduction -->
+  <!-- <introduction> -->
+  <!--   <p> -->
+  <!--     Segunda Lista de Exercícios. -->
+  <!--   </p> -->
+  <!-- </introduction> -->
+
+  <page>
+  <!-- Exercises start here. -->
+  <exercise>  <!-- option to leave blank space: workspace="2in" -->
+    <statement>
+      <p>
+	Se <m>\omega</m> é um <m>1-</m>tensor em <m>\R^n</m>, mostre que
+	existe uma matriz <m>1\times n</m>, digamos <m>A</m>, tal que
+	<m>\omega(y)=Ay</m> para todo <m>y\in\R^n</m>. Em seguida, se
+	<m>T\in L(\R^m,\R^n)</m>, determine a matriz que representa o
+	1-tensor <m>T^\ast\omega</m> em <m>\R^m</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>\omega</m> é um tensor simétrico então
+	<m>\alt(\omega)=0</m>. Vale a recíproca?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>x_1,\ldots,x_k</m> vetores em <m>\R^n</m> e
+	<m>X=[x_1\cdots x_k]\in M_{n\times k}(\R)</m>. Se
+	<m>I=(i_1,\ldots,i_k)</m> é uma <m>k-</m>upla rbitrária do
+	conjunto <m>\{1,\ldots,n\}</m>, mostre que
+	<me>\phi_{i_1}\wedge\ldots\wedge\phi_{i_k}(x_1,\ldots,x_k)=\det(X_I),</me>
+	onde <m>X_I</m> é a submatriz quadrada <m>k\times k</m>, obtida
+	a partir das linhas de <m>X</m> indexadas por <m>I</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>\omega\colon\R^m\times\R^m\to\R</m> um <m>2-</m>tensor
+	alternado. Mostre que, se <m>m</m> é ímpar, então existe
+	<m>v\in\R^m</m> não-nulo tal que <m>\omega(v,u)=0</m> para todo
+	<m>u\in\R^m</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que a cada <m>\omega\in\Lambda^{m-1}(\R^m)</m>
+	corresponde um único <m>v\in\R^m</m> tal que <me>(\omega\wedge
+	f)(v_1,\ldots,v_m)=f(v)\,\mathrm{vol}(v_1,\ldots,v_m),</me> para
+	toda <m>f\in\Lambda^1(\R^m)</m> e todos
+	<m>v_1,\ldots,v_m\in\R^m</m>. Mostre ainda que a correspondência
+	<m>\omega\mapsto v</m> é um isomorfismo entre os espaços
+	vetoriais <m>\Lambda^{m-1}(\R^m)</m> e <m>\R^m</m>.
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+	Basta verificar para qualquer base ortonormal positiva de
+	<m>\R^m</m>.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>f\colon\R^n\to\R^m</m> e <m>g\colon\R^m\to\R^k</m> são
+	diferenciáveis então <m>(g\circ f)_\ast=g_\ast\circ f_\ast</m> e <m>(g\circ
+	f)^\ast=f^\ast\circ g^\ast</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>\gamma\colon[a,b]\to\R^n</m> uma curva diferenciável. Mostre que o
+	vetor velocidade de <m>\gamma</m> no instante <m>t</m> é
+	<m>v=\gamma_\ast(t)(1)</m>. Mostre também que se <m>f\colon\R^n\to\R^m</m> é
+	diferenciável, então o vetor tangente a <m>f\circ\gamma</m> em <m>t</m> é
+	<m>f_\ast(v)</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Considere as <m>1-</m>formas em <m>\R^3</m> dadas por
+	<me>
+	  \omega=xy\,dx+3\,dy-yz\, dz\quad\text{e}\quad
+	  \eta=x\,dx-yz^2\,dy+2x\,dz.
+	</me>
+	Mostre, calculando diretamente, que <m>d^2\omega=0</m> e
+	<m>d(\omega\wedge\eta)=d\omega\wedge\eta-\omega\wedge d\eta</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>\omega\in\Omega^k(A)</m>, onde <m>A\subset\R^n</m> é um
+	aberto. Dizemos que <m>\omega</m> é nula em <m>x\in A</m> se
+	<m>\omega(x)</m> é o <m>k-</m>tensor identicamente nulo.
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que se <m>\omega</m> é nula numa vizinhança de
+	    <m>x_0\in A</m> então <m>d\omega</m> é nula de em <m>x_0</m>.
+	  </li>
+	  
+	  <li>
+	    Construa um exemplo onde <m>\omega</m> é nula em <m>x_0</m>, mas
+	    <m>d\omega</m> não é nula em <m>x_0</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>\eta,\theta\in\Omega^1(A)</m>, onde <m>A</m> é aberto de <m>\R^3</m>
+	tais que <m>\eta\wedge\theta(x)\neq 0</m> para todo <m>x\in A</m>. Se
+	<m>\omega</m> é uma forma satisfazendo
+	<m>\omega\wedge\eta=\omega\wedge\theta=0</m> mostre que existe
+	<m>f\colon A\to\R</m> tal que <m>\omega=f\,\eta\wedge\theta</m>.
+      </p>
+    </statement>
+  </exercise>
+  </page>
+
+  <page>
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>\omega\in\Omega^1(\R^n)</m> e <m>f\colon\R^n\to\R</m> uma função de
+	classe <m>\mathscr{C}^\infty</m> tal que <m>f(x)\neq 0</m> para todo
+	<m>x\in\R^n</m>. Mostre que <m>d(f\omega)=0</m> se e somente se a
+	<m>1-</m>forma <m>\alpha=\omega-(1/f)\, dx_{n+1}</m> em <m>\R^{n+1}</m>
+	satisfaz <m>\alpha\wedge d\alpha=0</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>A=\R^2\setminus\big\{(0,0)\big\}</m> e considere a <m>1-</m>forma
+	dada por <me>\omega=\frac{x}{x^2+y^2}\,dx+\frac{y}{x^2+y^2}\,dy.</me>
+	Mostre que <m>\omega</m> é fechada e exata em <m>A</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>A=\R^n\setminus\{0\}</m> e <m>m</m> um inteiro positivo
+	fixado. Considere a <m>(n-1)-</m>forma em <m>A</m> dada por
+	<me>\eta=\sum_{i=1}^n (-1)^{i-1}f_i\,dx_1\wedge\ldots\wedge\widehat{dx_i}\wedge\ldots\wedge
+	dx_n,</me> onde <m>f_i(x)=\dfrac{x_i}{|x|^m}</m> e <m>\widehat{dx_i}</m>
+	significa que <m>dx_i</m> é omitido daquela parcela.
+
+	<ol marker="a.">
+	  <li> Calcule <m>d\eta</m>.</li>
+
+	  <li>Para quais valores de <m>m</m> temos <m>d\eta=0</m>?</li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	O operador <m>d\colon\Omega^k(\R^n)\to\Omega^{k+1}(\R^n)</m>
+	pode ser visto como um tipo de derivada direcional. Isso é o que
+	garante o teorema abaixo, que será demonstrado neste exercício.
+
+	<theorem>
+	  <statement>
+	    <p>
+	      Sejam <m>A</m> um aberto de <m>\R^n</m> e
+	      <m>\omega\in\Omega^{k-1}(A)</m>. Dados <m>v_1,\ldots,v_k</m>
+	      em <m>\R^n</m> definimos as funções <m>h,g\colon A\to\R</m>,
+	      respectivamente, por
+	      <md>
+		<mrow>\hfill h(x)&amp;=d\omega(x)\big(v_1(x),\ldots,v_k(x)\big)\quad\text{e}</mrow>
+		<mrow>g_j(x)&amp;=\omega(x)\big(v_1(x),\ldots,\widehat{v_j(x)},\ldots,v_k(x)\big).</mrow>
+	      </md>
+	      Então <me>h(x)=\sum_{j=1}^k (-1)^{j-1}Dg_j(x)(v_j).</me>
+	    </p>
+	  </statement>
+	</theorem>
+      </p>
+
+      <p>
+	Para provar o resultado acima, seiga os seguintes passos:
+
+	<ol marker="i.">
+	  <li>
+	    Seja <m>X=[v_1\cdots v_k]</m>, matriz <m>n\times k</m>. Para
+	    cada <m>1\leq j\leq k</m> defina <m>Y_j=[v_1\cdots
+	    \widehat{v_j}\cdots v_k]</m>, matriz <m>n\times
+	    (k-1)</m>. Dada a <m>k-</m>upla <m>I=(i,i_1,\ldots,i_k)</m>
+	    mostre que <me>\det X(i,i_1,\ldots,i_k)=\sum_{j=1}^k
+	    (-1)^{j-1}v_{ij}\det Y_j(i_1,\ldots,i_{k-1}).</me>
+	  </li>
+
+	  <li>
+	    Verifique a validade do teorema se <m>\omega=f\, dx_I</m>,
+	    ou seja, se <m>\omega=f\, dx_i\wedge
+	    dx_{i_1}\wedge\ldots\wedge dx_{i_k}</m>.
+	  </li>
+
+	  <li>
+	    Conclua o resultado enunciado.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+  </page>
+  
+  <page>
+  <exercise xml:id="ex-diagrama">
+    <statement>
+      <p>
+	Seja <m>A</m> um aberto de <m>\R^n</m>. Denote por
+	<m>\mathscr{S}(A)</m> o conjunto dos campos escalares sobre
+	<m>A</m> e por <m>\mathscr{X}(A)</m> o conjunto dos campos de
+	vetores sobre <m>A</m>. Mostre que existem isomorfismos
+	<m>\alpha_i</m> e <m>\beta_j</m> entre espaços vetoriais como
+	nos diagramas abaixo
+	<me>
+	  \begin{CD}
+	  \mathscr{S}(A) @>\alpha_0 >> \Omega^0(A)\\
+	  @VV\nabla V @VV d V\\
+	  \mathscr{X}(A) @>\alpha_1 >> \Omega^1(A)
+	  \end{CD}
+	  \qquad\mbox{e}\qquad
+	  \begin{CD}
+	  \mathscr{X}(A) @>\beta_{n-1} >> \Omega^{n-1}(A)\\
+	  @VV\divg V @VV d V\\
+	  \mathscr{S}(A) @>\beta_n>> \Omega^n(A)
+	  \end{CD}
+	</me>
+	tais que <m>d\circ\alpha_0=\alpha_1\circ\nabla</m> e
+	<m>d\circ\beta_{n-1}=\beta_n\circ\divg</m>, onde <m>\nabla
+	f</m> é o <term>campo gradiente</term> de uma função <m>f\colon
+	A\to\R</m> dado por <me>\nabla f(p)=\sum_{i=1}^n \frac{\partial
+	f}{\partial x_i}(p) e_i(p)</me> e <m>\divg{F}</m> é o
+	<term>divergente</term> de um campo de vetores
+	<m>F=(F_1,\ldots,F_n)</m> em <m>A</m> dado por
+	<me>\divg{F}(p)=\sum_{i=1}^n \frac{\partial F_i}{\partial
+	x_i}(p)=\tr{DF(p)}.</me>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Para cada campo de vetores <m>F=(F_1,F_2,F_3)</m> em <m>\R^3</m> defina as
+	formas
+	<md>
+	  <mrow>\omega_F&amp;=F_1\,dx+F_2\,dy+F_3\,dz,</mrow>
+	  <mrow>\eta_F&amp;=F_1\,dy\wedge dz+F_2\,dz\wedge
+	  dx+F_3\,dx\wedge dy</mrow>
+	</md>
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que <m>df=\omega_{\nabla f}, d\omega_F=\eta_{\rot{F}}</m>
+	    e <m>d\eta_F=\divg{F}\,dx\wedge dy\wedge dz</m>.
+	  </li>
+
+	  <li>
+	    Use as identidades acima para provar que <m>\rot{\nabla
+	    f}=0</m> e <m>\divg{\rot F}=0</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	 Seja <m>f\colon\R^3\to\R^6</m> uma função de classe
+	 <m>\mathscr{C}^\infty</m>. Mostre, através de cálculos diretos
+	 que <me>df_1\wedge df_3\wedge df_5 = \det M\,dx_1\wedge
+	 dx_3\wedge dx_5,</me> onde <m>M</m> é a matriz composta das
+	 colunas <m>1</m>, <m>3</m> e <m>5</m> da matriz de <m>Df</m> na
+	 base canônica.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>\omega=xy\,dx+2z\,dy-y\,dz\in\Omega^1(\R^3)</m> e
+	<m>f\colon\R^2\to\R^3</m> dada por <me>f(u,v)=(uv, u^2,
+	3u+v).</me> Calcule diretamente <m>d\omega</m>, <m>f^\ast(d\omega)</m> e
+	<m>d(f^\ast\omega)</m>.
+      </p>
+    </statement>
+  </exercise>
+  </page>
+
+  <page>
+  <exercise>
+    <statement>
+      <p>
+	Demonstre o teorema abaixo.
+	<theorem>
+	  <title>Expressão para calcular <m>f^\ast\omega</m></title>
+	  <statement>
+	    Sejam <m>A</m> um aberto de <m>\R^k</m> e <m>f\colon
+	    A\to\R^n</m> uma função de classe <m>\mathscr{C}^\infty</m>,
+	    <m>x\in\R^k</m> e <m>y\in\R^n</m>. Se
+	    <m>I=(i_1,\ldots,i_l)</m> é uma <m>l-</m>upla ascendente em
+	    <m>\{1,\ldots,n\}</m>, então <me>f^\ast(dy_I)=\sum_{[J]}
+	    \left(\det \frac{\partial f_I}{\partial
+	    x_J}\right)\,dx_J,</me> onde
+	    <m>dz_I=dy_{i_1}\wedge\ldots\wedge dy_{i_r}</m>,
+	    <m>f_I=(f_{i_1},\ldots,f_{i_r})</m> para toda <m>r-</m>upla
+	    ascendente <m>I=(i_1,\ldots,i_r)</m> e <m>[J]</m> é o
+	    conjunto de todas as <m>l-</m>uplas ascendentes do conjunto
+	    <m>\{1,\ldots,k\}</m>.
+	  </statement>
+	</theorem>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Neste exercício obtemos condições necessárias e suficientes para
+	que os isomorfismos lineares <m>\alpha_i</m> e <m>\beta_j</m>
+	definidos no Exercício <xref ref="ex-diagrama" text="global"/>
+	tenham bom comportamento quando submetidas a ação de um
+	difeomorfismo <m>f\colon A\to B</m> entre abertos de <m>R^n</m>.
+      </p>
+
+      <p>
+	Sejam então <m>f\colon A\to B</m> um difeomorfismo entre abertos de <m>\R^n</m>,
+	<m>x\in A</m> e <m>y\in B</m>. Ao campo de vetores em <m>A</m> dado por
+	<m>F(x)=f(x)_x</m> associamos o campo
+	<m>G(y)=f_\ast\Big(F\big(f^{-1}(y)\big)\Big)</m> em <m>B</m>.
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que <m>f^\ast(\alpha_1 G)=\alpha_1 F</m>, para todo
+	    campo de vetores <m>F</m> em <m>A</m> se e somente se a
+	    matriz de <m>Df(x)</m> na base canônica é ortogonal para
+	    todo <m>x\in A</m>.
+	    <hint>
+	      <p>Mostre que <m>f^\ast(\alpha_1 G)=\alpha_1 F</m> equivale a
+	      <m>Df(x)^tDf(x)\big(f(x)\big)=f(x)</m>.</p>
+	    </hint>
+	  </li>
+
+	  <li>
+	    Mostre que <m>f^\ast(\beta_{n-1}G)=\beta_{n-1}F</m> para
+	    todo campo <m>F</m> se e somente se <m>\det Df(x)=1</m>.
+	    <hint>
+	      <p>Mostre que <m>f^\ast(\beta_{n-1}G)=\beta_{n-1}F</m>
+	      equivale a <m>f(x)=\det Df(x) f(x)</m>.</p>
+	    </hint>
+	  </li>
+
+	  <li>
+	    Para cada campo escalar <m>h</m> em <m>A</m> associamos o
+	    campo escalar <m>k=h\circ\alpha^{-1}</m> em <m>B</m>. Mostre
+	    que <m>f_\ast(\beta_n k)=\beta_n h</m> para toda <m>h</m> se
+	    e somente se <m>\det Df=1</m>.
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Seja <m>f:U\to\R^n</m> um difeomorfismo. Suponha que toda forma fechada em
+	<m>U</m> também é exata. Mostre que o mesmo vale em <m>f(U)</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Pense em pull-backs.
+      </p>
+    </hint>
+  </exercise>
+  </page>
+    
+  <page>
+    <exercise>
+    <statement>
+      <p>
+	Seja <m>\theta\colon\R^2\to]0,2\pi[</m> a segunda coordenada da
+	inversa de <m>f\colon\R^2\to\R^2</m> dada no Exercício <xref
+	ref="ex-polares" text="global"/> da <xref ref="lista01"
+	text="title" />. Mostre que <me>\int_{C_{r,n}}d\theta = 2\pi
+	n,</me> onde <m>C_{r,n}</m> é o <m>1-</m>cubo singular dado por
+	<m>C_{r,n}=(\cos 2\pi nt, \sin 2\pi nt)</m>.
+      </p>
+
+      <p>
+	Use o teorema de Stokes para <m>1-</m>cadeias singulares para
+	concluir que <m>C_{r,n}</m> não pode ser o bordo de nenhuma
+	<m>2-</m>cadeia em <m>\R^2\setminus\big\{(0,0)\big\}</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Sejam <m>c_1</m> e <m>c_2</m> <m>1-</m>cubos singulares em
+	<m>\R^2</m> satisfazendo <m>c_1(0)=c_2(0)</m> e
+	<m>c_1(1)=c_2(1)</m>. Mostre que existe um um <m>2-</m>cubo
+	singular <m>c</m> tal que <m>\partial c=c_1-c_2+c_3-c_4</m> onde
+	<m>c_3</m> e <m>c_4</m> são degenerados, ou seja, pontos em
+	<m>\R^2</m>. Conclua que <me>\int_{c_1}
+	\omega=\int_{c_2}\omega</me> para toda <m>1-</m>forma exata
+	<m>\omega</m> de <m>\R^2</m>. Dê um contra-exemplo em
+	<m>\R^2\setminus\big\{(0,0)\big\}</m> quando <m>\omega</m> é
+	fechada, mas não é exata.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+	Mostre que se <m>\omega</m> é uma <m>1-</m>forma num aberto de
+	<m>\R^2</m> e <me>\int_{c_1} \omega=\int_{c_2}\omega</me> para
+	todos <m>1-</m>cubos singulares com <m>c_1(0)=c_2(0)</m> e
+	<m>c_1(1)=c_2(1)</m>, então <m>\omega</m> é exata.
+      </p>
+    </statement>
+    <hint>
+      <p>
+	Lembre-se da construção de uma função potencial para um campo de
+	vetores em <m>\R^2</m> feita em sala.
+      </p>
+    </hint>
+  </exercise>
+  </page>
+
+  <page>
+  <exercise>
+    <title><q>Bônus</q><ndash /> Introdução às funções analíticas</title>
+    <statement>
+      <p>
+	Uma função <m>f\colon\C\to\C</m> é <term>diferenciável em <m>z_0</m></term> se
+	<me>f'(z_0)=\lim_{z\to z_0}\frac{f(z)-f(z_0)}{z-z_0}</me> existe. Se
+	<m>f</m> é diferenciável em todo ponto de um aberto <m>A\subset\C</m> e
+	<m>f'</m> é continua em <m>A</m> então dizemos que <m>f</m> é <term>analítica
+	em <m>A</m></term>.
+
+	<ol marker="a.">
+	  <li>
+	    Mostre que <m>f(z)=z</m> é analítica e
+	    <m>f(z)=\overline{z}</m> não o é. Mostre também que somas,
+	    produtos e quocientes de funçções analíticas também são
+	    analíticas.
+	  </li>
+	  <li>
+	    Mostre que se <m>f(z)=u(z)+iv(z)</m>, onde para <m>z=x+iy</m>, temos
+	    <m>u(z)=u(x,y)=\Re f(z)</m> e <m>v(z)=v(x,y)=\Im f(z)</m>, é
+	    analítica então <m>u_x=v_y</m> e <m>u_y=-v_x</m> (equações de
+	    Cauchy-Riemann). Vale a recíproca?
+	  </li>
+	  <li>
+	    Seja <m>T\colon\C\to\C</m> uma transformação <m>\R-</m>linear. Mostre
+	    que <m>T</m> corresponde a uma multiplicação por um número
+	    complexo se e somente se <m>a=d</m> e <m>b=-c</m>, onde
+	    <m>\left(\begin{smallmatrix} a&amp;b\\ c&amp;d
+	    \end{smallmatrix}\right)</m> é a matriz de <m>T</m> em relação
+	    à base <m>\{1,i\}</m>. Com isso, considerando <m>f\colon\C\to\C</m>
+	    analítica como uma função diferenciável de <m>\R^2</m> em
+	    <m>\R^2</m>, temos que <m>Df(z_0)</m> corresponde à
+	    multiplicação por um número complexo. Determine esse número.
+	  </li>
+	  <li>
+	    Se <m>\omega,\eta,\mu, \lambda</m> são formas
+	    diferenciais em um aberto de <m>\R^2</m> definimos
+	    <md>
+	      <mrow>&amp;d(\omega+i\eta)=dw+id\eta,\quad dz=dx+idy,\hfill</mrow>
+	      <mrow>&amp;\int_c \omega+i\eta=\int_c\omega+i\int_c\eta,\hfill</mrow>
+	      <mrow>&amp;(\omega+i\eta)\wedge(\mu+i\lambda)=
+	      (\omega\wedge\mu-\eta\wedge\lambda)+i(\eta\wedge\mu+\omega\wedge\lambda).\hfill</mrow>
+	    </md>
+	    Mostre que <m>d(f\,dz)=0</m> se e somente se <m>f</m>
+	    satisfaz as equações de Cauchy-Riemann.
+	  </li>
+	  <li>
+	    Se <m>f</m> é analítica em <m>A</m> então
+	    <m>\displaystyle\int_cf\,dz=0</m> para toda curva fechada
+	    tal que <m>c=\partial c'</m>,onde <m>c'</m> é alguma
+	    <m>2-</m>cadeia em <m>A</m>.
+	  </li>
+	  <li>
+	    Mostre que <m>dz/z=id\theta+dh</m> para alguma função
+	    <m>h\colon\C\setminus\{0\}\to\R</m> e conclua que
+	    <m>\displaystyle\int_{C_{r,n}} (1/z)\,dz=2\pi i n</m>.
+	  </li>
+	  <li>
+	    <p>Se <m>f</m> é analítica no disco unitário aberto, <m>D</m>,
+	    mostre que <m>f(z)/z</m> o é em <m>D\setminus\{0\}</m>
+	    e <me>\int_{C_{r_1,n}}\frac{f(z)}{z}\, dz =
+	    \int_{C_{r_2,n}}\frac{f(z)}{z}\, dz,</me> para
+	    <m>0&lt;r_1,r_2&lt;1</m>.</p>
+
+	    <p>Usando o item acima para calcular
+	    <m>\displaystyle{\lim\limits_{r\to 0}\int_{C_{r,n}}
+	    \frac{f(z)}{z}\, dz</m>, conclua o:
+	    </p>
+	  </li>
+	</ol>
+      </p>
+    </statement>
+  </exercise>
+  </page>
+
+  <page>
+    <p>
+      <theorem>
+	<title>Fórmula integral de Cauchy</title>
+	<statement>
+	  <p>
+	    Sejam <m>D=\big\{z\in\C\colon |z|&lt;1\big\}</m>,
+	    <m>f\colon D\to\C</m> uma função analítica e <m>c</m>
+	    uma curva fechada em <m>D\setminus\{0\}</m> então
+	    <me>\int_c\frac{f(z)}{z}\, dz=2\pi i\, n\, f(0),</me>
+	    onde <m>n</m> é o <term>winding number</term> da curva
+	    <m>c</m> em torno da origem.
+	  </p>
+	</statement>
+      </theorem>
+    </p>
+    
+    <p>O winding number em torno da origem de uma curva fechada
+    <m>c</m> com imagem em <m>\R^2\setminus\big\{(0,0)\big\}</m> é
+    o único inteiro <m>n</m> tal que <m>c-C_{1,n}=\partial c'</m>
+    para alguma <m>2-</m>cadeia <m>c'</m>. (É necessário verificar
+    a existência e unicidade de tal <m>n</m>).</p>
+  </page>
+</worksheet>
