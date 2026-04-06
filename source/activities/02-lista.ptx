@@ -5,12 +5,13 @@
   <title>Lista 02 <ndash /> Integração em <m>\R^n</m></title>
 
   <!-- Optional introduction -->
-  <introduction>
-    <p>
-      Segunda Lista de Exercícios.
-    </p>
-  </introduction>
+  <!-- <introduction> -->
+  <!--   <p> -->
+  <!--     Segunda Lista de Exercícios. -->
+  <!--   </p> -->
+  <!-- </introduction> -->
 
+  <page>
   <!-- Exercises start here. -->
   <exercise>  <!-- option to leave blank space: workspace="2in" -->
     <statement>
@@ -137,7 +138,9 @@
       </p>
     </statement>
   </exercise>
+  </page>
 
+  <page>
   <exercise>
     <statement>
       <p>
@@ -174,7 +177,7 @@
     <statement>
       <p>
 	Seja <m>f\colon[a,b]\times[c,d]\to\R</m> contínua com
-	<m>\frac{\partial f}{\partial y}</m> também contínua e defina
+	<m>\dfrac{\partial f}{\partial y}</m> também contínua e defina
 	<m>F\colon[c,d]\to\R</m> por <m>F(y)=\displaystyle\int_a^b
 	f(x,y)\,dx</m>. Mostre que <m>F'(y)=\displaystyle\int_a^b\frac{\partial
 	f}{\partial y}(x,y)\,dx</m>.
@@ -259,7 +262,9 @@
       </p>
     </statement>
   </exercise>
-
+  </page>
+  
+  <page>
   <exercise>
     <statement>
       <p>
@@ -351,11 +356,13 @@
     </statement>
     <hint>
       <p>
-	Considere uma mudança que ``endireita'' o tetraedro.
+	Considere uma mudança que <q>endireita</q> o tetraedro.
       </p>
     </hint>
   </exercise>
-
+  </page>
+    
+  <page>
     <exercise>
     <statement>
       <p>
@@ -438,5 +445,5 @@
       </p>
     </hint>
   </exercise>
-  
+  </page>
 </worksheet>
