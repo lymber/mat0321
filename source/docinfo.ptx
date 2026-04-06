@@ -20,6 +20,7 @@
     \DeclareMathOperator\alt{Alt}
     \DeclareMathOperator{\rot}{rot}
     \DeclareMathOperator{\divg}{div}
+    \DeclareMathOperator{\tr}{Tr}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
