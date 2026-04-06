@@ -363,7 +363,7 @@
   </page>
     
   <page>
-    <exercise>
+    <exercise xml:id="ex-polares">
     <statement>
       <p>
 	Defina <m>f\colon]0,\infty[\times]0,2\pi[\to\R^2</m> por
