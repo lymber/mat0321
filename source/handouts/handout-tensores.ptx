@@ -406,6 +406,139 @@
 	</proof>
       </theorem>
     </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-orientacao">
+	<title>Orientação de um espaço vetorial</title>
+	<statement>
+	  <p>
+	    Sejam <m>V</m> um espaço vetorial de dimensão <m>n</m> e
+	    <m>\omega\in\Lambda^n(V)</m> não-nula. Então para cada base
+	    <m>\mathcal{B}=\{v_1,\ldots,v_n\}</m> de <m>V</m>, temos que
+	    <m>\omega(v_1,\ldots,v_n)&gt;0</m> ou
+	    <m>\omega(v_1,\ldots,v_n)&lt;0</m>. Particionamos o conjunto
+	    de bases de <m>V</m> de acordo com esse sinal.
+	  </p>
+
+	  <p>
+	    Duas bases de <m>V</m> têm a <term>mesma orientação</term>
+	    se e somente <m>\det(a_{ij})&gt;0</m>, onde <m>(a_{ij})</m>
+	    é a matriz mudança de base entre elas.
+	  </p>
+
+	  <remark>
+	    <p>
+	      A definição acima independe da <m>n-</m>forma
+	      <m>\omega</m> escolhida.
+	    </p>
+
+	    <p>
+	      <term>Notação:</term>
+	      <md>
+		<mrow>\big[v_1,\ldots,v_n\big]&amp;=\big\{\text{bases
+		de } V \text{ com a mesma orientação de }
+		\{v_1,\ldots,v_n\}\big\}</mrow> 
+		<mrow>-\big[v_1,\ldots,v_n\big]&amp;=\big\{\text{bases
+		de } V \text{ com orientação oposta à de }
+		\{v_1,\ldots,v_n\}\big\}</mrow>
+	      </md>
+	    </p>
+	  </remark>
+
+	  <p>
+	    Uma <term>orientação para <m>V</m></term> é a escolha de uma dessas
+	    classes de equivalência, tipicamente chamada de classe das
+	    bases de orentação positiva.
+	  </p>
+	</statement>
+
+	<remark>
+	  <p>
+	    A orientação usual do <m>\R^n</m> é aquela onde a base
+	    canônica é positiva.
+	  </p>
+	</remark>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <definition xml:id="def-forma_volume">
+	<title>Forma volume</title>
+	<statement>
+	  <p>
+	    Sejam <m>V</m> um espaço vetorial de dimensão <m>n</m> com
+	    um produto interno <m>T\in\mathcal{T}^2(V)</m>,
+	    <m>\mu=[v_1,\ldots,v_n]</m> uma orientação de <m>V</m> e
+	    <m>\omega\in\Lambda^n(V)</m> tal que
+	    <m>\omega(v_1,\ldots,v_n)=1</m>. Nessas condições
+	    <term><m>\omega</m> é a forma volume de <m>V</m>, dada por
+	    <m>\mu</m> e <m>T</m></term>.
+	  </p>
+
+	  <remark>
+	    <p>
+	      Em particular, <m>\det</m> é a forma volume de <m>\R^n</m>
+	      definida por <m>\langle\cdot,\cdot,\rangle</m> e
+	      <m>[e_1,\ldots,e_n]</m>. Nesse sentido,
+	      <m>\det(v_1,\ldots,v_n)</m> é o volume
+	      <m>n-</m>dimensional do paralelepípedo gerado por
+	      <m>\big\{v_1,\ldots,v_n\big\}</m>. 
+	    </p>
+	  </remark>
+	</statement>
+      </definition>
+    </p>
+    
+    <p workspace="1in">
+      <definition xml:id="def-prodvet">
+	<title>Produto vetorial em <m>\R^n</m></title>
+	<statement>
+	  <p>
+	    Dados <m>v_1,\ldots,v_{n-1}\in\R^n</m>, defina
+	    <m>\phi\in\Lambda^1(\R^n)</m> por
+	    <me>\phi(w)=\det(v_1,\ldots,v_{n-1}, w).</me>
+	  </p>
+	  
+	  <p>
+	    Como <m>\phi\in\Lambda^1(\R^n)\simeq V^\ast</m>, existe
+	    <m>z\in\R^n</m>, tal que <m>\phi(w)=\langle
+	    w,z\rangle</m>. O vetor <m>z</m> é denotado por
+	    <m>z=v_1\times\cdots\times v_{n-1}</m> e é chamado de
+	    <term>produto vetorial dos vetores
+	    <m>v_1,\ldots,v_{n-1}</m></term>.
+	  </p>
+	</statement>
+      </definition>
+    </p>
+
+    <p workspace="1in">
+      <proposition xml:id="prop-prodvet">
+	<title>Propriedades do produto vetorial</title>
+	<statement>
+	  <p>
+	    Sejam <m>v_1,\ldots,v_{n-1}\in\R^n</m>, então
+
+	    <ol marker="i.">
+	      <li>se <m>\sigma\in S_n</m>, então
+	      <m>v_{\sigma(1)}\times\cdots\times
+	      v_{\sigma(n-1)}=\sgn\sigma v_1\times\cdots\times
+	      v_{n-1}</m>;</li>
+	      <li><m>v_1\times\cdots\alpha v_i\cdots\times
+	      v_{n-1}=\alpha_i v_1\times\cdots\times v_{n-1}</m>;</li>
+	      <li><md>
+		<mrow>v_1\times&amp;\cdots\times(v_i+w_i)\times\cdots\times
+		v_{n-1}=</mrow>
+		<mrow>&amp;v_1\times\cdots v_i\times\cdots\times
+		v_{n-1}+v_1\times\cdots w_i\times\cdots\times
+	      v_{n-1};</mrow></md></li>
+	      <li><m>\big\langle v_1\times\cdots\times
+	      v_{n-1},v_i\rangle=0</m>, para cada <m>1\leq i\leq
+	      n-1</m>.</li>
+	    </ol>
+	  </p>
+	</statement>
+      </proposition>
+    </p>
   </page>
 
 </handout>
