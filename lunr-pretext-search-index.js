@@ -352,9 +352,9 @@ var ptx_lunr_docs = [
   "body": "  Mostre que se é crescente, então é integrável.   "
 },
 {
-  "id": "lista02-2-10",
+  "id": "home02-1",
   "level": "2",
-  "url": "lista02.html#lista02-2-10",
+  "url": "lista02.html#home02-1",
   "type": "Exercício da Lista",
   "number": "10",
   "title": "",
@@ -469,9 +469,9 @@ var ptx_lunr_docs = [
   "body": "  Defina por .    Mostre que é injetora, calcule e mostre que para todo . Determine o conjunto .  Explicite a expressão de .   Seja a região delimitada por círculos de raios e , e pela retas que passam pela origem que fazem ângulo e com o eixo dos , respectivamente. Se é uma função integrável tal que , mostre que   Mostre também que se então    Se , mostre que   Prove também que e conclua que .     "
 },
 {
-  "id": "lista02-5-2",
+  "id": "home02-2",
   "level": "2",
-  "url": "lista02.html#lista02-5-2",
+  "url": "lista02.html#home02-2",
   "type": "Exercício da Lista",
   "number": "23",
   "title": "",
@@ -1237,6 +1237,33 @@ var ptx_lunr_docs = [
   "id": "tarefas-2-3-2",
   "level": "2",
   "url": "tarefas-2.html#tarefas-2-3-2",
+  "type": "Exercício da Lista",
+  "number": "2",
+  "title": "",
+  "body": "  Resolva o Exercício da    "
+},
+{
+  "id": "tarefas-3",
+  "level": "1",
+  "url": "tarefas-3.html",
+  "type": "Lista de Exercícios",
+  "number": "",
+  "title": "Atividade 02",
+  "body": " Atividade 02    Instruções: Resolva os exercícios abaixo e entregue-os até 16\/04 durante a aula ou durante a monitoria.      Resolva o Exercício da       Resolva o Exercício da      "
+},
+{
+  "id": "tarefas-3-3-1",
+  "level": "2",
+  "url": "tarefas-3.html#tarefas-3-3-1",
+  "type": "Exercício da Lista",
+  "number": "1",
+  "title": "",
+  "body": "  Resolva o Exercício da    "
+},
+{
+  "id": "tarefas-3-3-2",
+  "level": "2",
+  "url": "tarefas-3.html#tarefas-3-3-2",
   "type": "Exercício da Lista",
   "number": "2",
   "title": "",
