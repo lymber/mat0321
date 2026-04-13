@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="cronograma-semana-07">
+  <title>Semana 07</title>
+
+  <introduction>
+    <p>
+      Linhas gerais do que foi coberto na sétima semana de aulas.
+    </p>
+  </introduction>
+
+  <!-- Can also be <handout> instead of <subsection> to get a printable version -->
+  <subsection>
+    <title>14/04 <ndash /> Terça</title>
+
+    <p>
+      Produto exterior: mais propriedades. Orientação de espaços
+      vetoriais. Produto vetorial em <m>\R^n</m>. Veja <xref
+      ref="handout-tensores" text="title"/>.
+    </p>
+
+    <p>
+      Campos de vetores e formas diferenciais: primeiros passos.Veja
+      <xref ref="handout-campos_formas" text="title"/>.
+    </p>
+
+    <p>
+      Aula cancelada devido à paralização estudantil. Conteúdos
+      retomados na semana seguinte.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>16/04 <ndash /> Quinta</title>
+
+    <p>
+      Primeira Prova.
+    </p>
+  </subsection>
+</section>
