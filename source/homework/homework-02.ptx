@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Atividade 02</title>
+  <introduction>
+    <p>
+      <alert>Instruções:</alert> Resolva os exercícios abaixo e
+      entregue-os até 16/04 durante a aula ou durante a monitoria.
+    </p>
+  </introduction>
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Resolva o Exercício <xref ref="home02-1" text="global"/> da
+	  <xref ref="lista02" text="title"/>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Resolva o Exercício <xref ref="home02-2" text="global"/> da
+	  <xref ref="lista02" text="title"/>
+        </p>
+      </statement>
+    </exercise>
+    
+  </page>
+</worksheet>

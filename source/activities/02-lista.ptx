@@ -128,7 +128,7 @@
     </statement>
   </exercise>
 
-  <exercise>
+  <exercise xml:id="home02-1">
     <statement>
       <p>
 	Sejam <m>A</m> um conjunto <m>J-</m>mensurável e <m>\epsilon
@@ -416,7 +416,7 @@
     </statement>
   </exercise>
 
-    <exercise>
+    <exercise xml:id="home02-2">
     <statement>
       <p>
 	Sejam <m>0&lt;a&lt;b</m>. Considere o círculo no plano
