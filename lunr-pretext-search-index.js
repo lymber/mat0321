@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Seção",
   "number": "",
   "title": "Informações da disciplina",
-  "body": " Informações da disciplina  Este é o conjunto de informações para o Cálculo Integral (MAT0321) no primeiro semestre de 2026, que consiste de 4 créditos-aula, ou seja 4 horas-aula semanais, totalizando 60 horas-aula.    Ministrante  Prof. Alexandre Lymberopoulos, Sala 151-A, lymber@ime.usp.br .    Aulas  Terças: 08:00 - 09:40 (Sala A-132)  Quintas: 10:00 - 11:40 (Sala A-132)    Horários de Atendimento  Segundas-feiras: das 14:00 às 16:00.    Monitoria  Temos dois monitores para o curso, com os seguintes hor[arios de atedimento:   Caio: Terças, às 14:00, na sala B-143;    Raul: Quintas, às 13:00, na sala B-143.       Descrição e Ementa  Objetivos: Estudo da integral de Riemann em , integração de formas diferenciais, Teorema de Stokes.  Conteúdo Programático:  Integral de Riemann em . Integrabilidade de funções contínuas. Critérios de integrabilidade.Demonstração do teorema de mudança de variáveis e de Fubini.  Formas diferenciais em . Campos vetoriais. Relação entre formas e operadores vetoriais.  Teorema de Stokes (em linguagem de formas diferenciais). Aplicações à análise vetorial clássica.  Formas exatas e formas fechadas.  Tópicos adicionais se o tempo permitir.      Pré-requisitos  MAT0311 - Cálculo Diferencial e Integral V    Bibliografia   Calculus on Manifolds: A Modern Approach to Classical Theorems of Advanced Calculus de Michael Spivak.   Analisys on Manifolds de James R. Munkres.   Um Curso de Análise, volume 2 de Elon Lages Lina.     "
+  "body": " Informações da disciplina  Este é o conjunto de informações para o Cálculo Integral (MAT0321) no primeiro semestre de 2026, que consiste de 4 créditos-aula, ou seja 4 horas-aula semanais, totalizando 60 horas-aula.    Ministrante  Prof. Alexandre Lymberopoulos, Sala 151-A, lymber@ime.usp.br .    Aulas  Terças: 08:00 - 09:40 (Sala B-139)  Quintas: 10:00 - 11:40 (Sala B-143)    Horários de Atendimento  Segundas-feiras: das 14:00 às 16:00.    Monitoria  Temos dois monitores para o curso, com os seguintes hor[arios de atedimento:   Caio: Terças, às 14:00, na sala B-143;    Raul: Quintas, às 13:00, na sala B-143.       Descrição e Ementa  Objetivos: Estudo da integral de Riemann em , integração de formas diferenciais, Teorema de Stokes.  Conteúdo Programático:  Integral de Riemann em . Integrabilidade de funções contínuas. Critérios de integrabilidade.Demonstração do teorema de mudança de variáveis e de Fubini.  Formas diferenciais em . Campos vetoriais. Relação entre formas e operadores vetoriais.  Teorema de Stokes (em linguagem de formas diferenciais). Aplicações à análise vetorial clássica.  Formas exatas e formas fechadas.  Tópicos adicionais se o tempo permitir.      Pré-requisitos  MAT0311 - Cálculo Diferencial e Integral V    Bibliografia   Calculus on Manifolds: A Modern Approach to Classical Theorems of Advanced Calculus de Michael Spivak.   Analisys on Manifolds de James R. Munkres.   Um Curso de Análise, volume 2 de Elon Lages Lina.     "
 },
 {
   "id": "info-2",
@@ -89,6 +89,15 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Semana 06",
   "body": " Semana 06   Linhas gerais do que foi coberto na sexta semana de aulas.     07\/04 Terça  Mudança de variáveis na integral. Veja . Exemplos.  Rudimentos de tensores. Veja .    09\/04 Quinta  Mais tensores. Produto tensorial e produto exterior. Veja .   "
+},
+{
+  "id": "cronograma-semana-07",
+  "level": "1",
+  "url": "cronograma-semana-07.html",
+  "type": "Seção",
+  "number": "",
+  "title": "Semana 07",
+  "body": " Semana 07   Linhas gerais do que foi coberto na sétima semana de aulas.     14\/04 Terça  Produto exterior: mais propriedades. Orientação de espaços vetoriais. Produto vetorial em . Veja .  Campos de vetores e formas diferenciais: primeiros passos.Veja .  Aula cancelada devido à paralização estudantil. Conteúdos retomados na semana seguinte.    16\/04 Quinta  Primeira Prova.   "
 },
 {
   "id": "lista01",
@@ -1096,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Material de apoio",
   "number": "",
   "title": "Tensores",
-  "body": " Tensores     tensor   Sejam um espaço vetorial e o produto cartesiano de cópias de . Um tensor é uma aplicação multinear , ou seja, para todo .  Definimos as operações de soma de tensores e multiplicação de uma escalar por um tensor de maneira natural:    O conjunto é um espaço vetorial.        Produto escalar   Se é um espaço vetorial com produto escalar (ou produto interno), então este produto interno pode ser visto como um tensor (siméstrico e positivo-definido).       Produto tensorial   Sejam e . O produto tensorial , , é dado por    Observe que .  Além disso, valem as propriedades:   ;   ;   ;   .    Observe também que .        Dimensão de   Sejam um espaço vetorial, uma base de e a base dual de para , ou seja, . Então os tensores , formam uma base para . Em particular .    Visto em sala.       Pullback de tensores   Sejam e uma transformação linear entre os espaços vetoriais e . Definimos o pullback de por como o tensor , dado por   Isso define uma aplicação linear    Observe que , para todos e .        Pullback canônico de um produto interno   Sejam um espaço vetoria, com e um produto interno sobre . Então existem uma base ortonormal de (ou seja, ) e um isomorfismo tal que , para todos , onde é o produto interno usual do ..    Visto em sala.       Tensor alternado   Um tensor é um tensor alternado se para todos .  O conjunto de todos os tensores alternados é denotado por .   O conjunto é um subespaço vetorial de .        Alternador de um tensor   Dado , definimos o tensor por    Com isso temos uma aplicação .        Propriedades de      ;   ;   .     O operador tem todas as características de um tipo muito especial de transformação linear. Você consegue \"projetar\" de que tipo estamos falando?     Feita em sala.     Se e , nem sempre . Vamos \"consertar\" isso:    Produto \"wedge\"   Se e , definimos    Este produto satisfaz as seguintes proripedades:  ;  ;  ;  ; ;          Associatividade do produto wedge     se , com e , então ;   ;  se , e , então .      Feita em sala.       Base e dimensão de   Sejam um espaço vetorial, uma base de e sua base dual. Então é uma base de . Em particular, .    Se , então e portanto se , então , com e é qualquer tensor alternado não-nulo. Se , podemos tomar como o determinante.    Feita em sala.       Mudança de coordenadas e tensores alternados   Sejam um espaço vetorial, uma base de e . Se , então .    Feita em sala.      "
+  "body": " Tensores     tensor   Sejam um espaço vetorial e o produto cartesiano de cópias de . Um tensor é uma aplicação multinear , ou seja, para todo .  Definimos as operações de soma de tensores e multiplicação de uma escalar por um tensor de maneira natural:    O conjunto é um espaço vetorial.        Produto escalar   Se é um espaço vetorial com produto escalar (ou produto interno), então este produto interno pode ser visto como um tensor (siméstrico e positivo-definido).       Produto tensorial   Sejam e . O produto tensorial , , é dado por    Observe que .  Além disso, valem as propriedades:   ;   ;   ;   .    Observe também que .        Dimensão de   Sejam um espaço vetorial, uma base de e a base dual de para , ou seja, . Então os tensores , formam uma base para . Em particular .    Visto em sala.       Pullback de tensores   Sejam e uma transformação linear entre os espaços vetoriais e . Definimos o pullback de por como o tensor , dado por   Isso define uma aplicação linear    Observe que , para todos e .        Pullback canônico de um produto interno   Sejam um espaço vetoria, com e um produto interno sobre . Então existem uma base ortonormal de (ou seja, ) e um isomorfismo tal que , para todos , onde é o produto interno usual do ..    Visto em sala.       Tensor alternado   Um tensor é um tensor alternado se para todos .  O conjunto de todos os tensores alternados é denotado por .   O conjunto é um subespaço vetorial de .        Alternador de um tensor   Dado , definimos o tensor por    Com isso temos uma aplicação .        Propriedades de      ;   ;   .     O operador tem todas as características de um tipo muito especial de transformação linear. Você consegue \"projetar\" de que tipo estamos falando?     Feita em sala.     Se e , nem sempre . Vamos \"consertar\" isso:    Produto \"wedge\"   Se e , definimos    Este produto satisfaz as seguintes proripedades:  ;  ;  ;  ; ;          Associatividade do produto wedge     se , com e , então ;   ;  se , e , então .      Feita em sala.       Base e dimensão de   Sejam um espaço vetorial, uma base de e sua base dual. Então é uma base de . Em particular, .    Se , então e portanto se , então , com e é qualquer tensor alternado não-nulo. Se , podemos tomar como o determinante.    Feita em sala.       Mudança de coordenadas e tensores alternados   Sejam um espaço vetorial, uma base de e . Se , então .    Feita em sala.       Orientação de um espaço vetorial   Sejam um espaço vetorial de dimensão e não-nula. Então para cada base de , temos que ou . Particionamos o conjunto de bases de de acordo com esse sinal.  Duas bases de têm a mesma orientação se e somente , onde é a matriz mudança de base entre elas.   A definição acima independe da forma escolhida.   Notação:     Uma orientação para é a escolha de uma dessas classes de equivalência, tipicamente chamada de classe das bases de orentação positiva.    A orientação usual do é aquela onde a base canônica é positiva.       Forma volume   Sejam um espaço vetorial de dimensão com um produto interno , uma orientação de e tal que . Nessas condições é a forma volume de , dada por e .   Em particular, é a forma volume de definida por e . Nesse sentido, é o volume dimensional do paralelepípedo gerado por .        Produto vetorial em   Dados , defina por   Como , existe , tal que . O vetor é denotado por e é chamado de produto vetorial dos vetores .       Propriedades do produto vetorial   Sejam , então  se , então ;  ;   , para cada .        "
 },
 {
   "id": "handout-tensores-2-1",
@@ -1214,6 +1223,60 @@ var ptx_lunr_docs = [
   "number": "78",
   "title": "Mudança de coordenadas e <span class=\"process-math\">\\(n-\\)<\/span>tensores alternados.",
   "body": " Mudança de coordenadas e tensores alternados   Sejam um espaço vetorial, uma base de e . Se , então .    Feita em sala.   "
+},
+{
+  "id": "handout-tensores-2-15",
+  "level": "2",
+  "url": "handout-tensores.html#handout-tensores-2-15",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mesma orientação Notação: orientação para "
+},
+{
+  "id": "handout-tensores-2-16",
+  "level": "2",
+  "url": "handout-tensores.html#handout-tensores-2-16",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "é a forma volume de , dada por e "
+},
+{
+  "id": "handout-tensores-2-17",
+  "level": "2",
+  "url": "handout-tensores.html#handout-tensores-2-17",
+  "type": "Parágrafo (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "produto vetorial dos vetores "
+},
+{
+  "id": "prop-prodvet",
+  "level": "2",
+  "url": "handout-tensores.html#prop-prodvet",
+  "type": "Proposição",
+  "number": "85",
+  "title": "Propriedades do produto vetorial.",
+  "body": " Propriedades do produto vetorial   Sejam , então  se , então ;  ;   , para cada .     "
+},
+{
+  "id": "handout-campos_formas",
+  "level": "1",
+  "url": "handout-campos_formas.html",
+  "type": "Material de apoio",
+  "number": "",
+  "title": "Campos de Vetores",
+  "body": " Campos de Vetores     Espaço tangente a em   Coming soon.      "
+},
+{
+  "id": "def-esp_tan-Rn",
+  "level": "2",
+  "url": "handout-campos_formas.html#def-esp_tan-Rn",
+  "type": "Definição",
+  "number": "86",
+  "title": "Espaço tangente a <span class=\"process-math\">\\(\\R^n\\)<\/span> em <span class=\"process-math\">\\(p\\in\\R^n\\)<\/span>.",
+  "body": " Espaço tangente a em   Coming soon.   "
 },
 {
   "id": "tarefas-2",
