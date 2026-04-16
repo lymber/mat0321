@@ -361,7 +361,7 @@
 	    Sejam <m>V</m> um espaço vetorial,<m>\mathcal
 	    B=\{v_1,\ldots,v_n\}</m> uma base de <m>V</m> e <m>\mathcal
 	    B^\ast=\{\phi^1,\ldots,\phi^n\}</m> sua base dual. Então
-	    <m>\{\phi^{i_1}\wedge\cdots\phi^{i_k}\colon 1\leq i_1\leq
+	    <m>\{\phi^{i_1}\wedge\cdots\wedge\phi^{i_k}\colon 1\leq i_1\leq
 	    i_2\leq\cdots\leq i_k\leq n\}</m> é uma base de
 	    <m>\Lambda^k(V)</m>. Em particular,
 	    <m>\dim\Lambda^k(V)={{n}\choose{k}}</m>.
